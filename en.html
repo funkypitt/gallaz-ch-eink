@@ -18,7 +18,7 @@
 </header>
 
 <h1>Built for e-ink screens</h1>
-<p class="lede">Seven projects designed for e-paper readers, tablets, and dual-screen laptops: three Android readers, one browser extension, two digital-detox tools, and a Linux driver for a dual-display laptop. Long-form reading, high contrast, tap navigation, no ads, no accounts.</p>
+<p class="lede">Eight projects designed for e-paper readers, tablets, and dual-screen laptops: three Android readers, one browser extension, two digital-detox tools, and a Linux pair (display driver + e-book reader) for a dual-screen laptop. Long-form reading, high contrast, tap navigation, no ads, no accounts.</p>
 
 <!-- ==================== Android ==================== -->
 <section class="platform">
@@ -186,6 +186,31 @@ sudo bash installer.sh</pre>
       <li>Pick <em>option 2</em> (Python scripts — recommended, easier to debug and update). The installer detects your desktop environment and installs the necessary dependencies.</li>
     </ol>
     <p>Tested configurations: GNOME and XFCE on X11. Other sessions (GNOME Wayland, KDE Plasma, Cinnamon) are supported but less battle-tested.</p>
+  </section>
+
+  <article class="app">
+    <h2>eInk Reader</h2>
+    <p class="meta">Linux · GPL-3.0 · Python / PyQt5</p>
+    <p>E-ink-optimised e-book reader — a <a href="https://github.com/BasioMeusPuga/Lector">Lector</a> fork tuned for the <em>ThinkBook Plus Gen 4 IRU</em> eInk display. Page mode only (no scroll; single-page or two-up), and after every page turn it talks to the Tinta4PlusU helper daemon via a Unix socket and sends a <em>clear-ghosts</em> command to wipe ghosting artefacts. Works fine without Tinta4PlusU too — page turns still happen, just without the explicit eInk clear pulse. Supported formats: EPUB, MOBI, PDF, DJVU, FB2, CBR/CBZ comics, Markdown, plain text.</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/funkypitt/eink-reader">Source code</a>
+      <a class="btn" href="https://github.com/funkypitt/eink-reader/archive/refs/heads/main.zip">Download (ZIP)</a>
+    </div>
+  </article>
+
+  <section class="install">
+    <h3>Installation (eInk Reader)</h3>
+    <p>Tinta4PlusU is strongly recommended alongside — it's what responds to the clear-ghosts signal after each page turn. Without it, eInk Reader is still usable but ghosting can build up.</p>
+    <ol>
+      <li>Clone and run the installer:
+        <pre>git clone https://github.com/funkypitt/eink-reader.git
+cd eink-reader
+sudo bash installer.sh</pre>
+      </li>
+      <li>The installer drops the files in <code>/opt/eink-reader</code>, adds an <code>eink-reader</code> command in <code>/usr/local/bin</code>, and creates a desktop-menu entry. Uninstall: <code>sudo bash installer.sh --uninstall</code>.</li>
+      <li>Launch from the application menu, or from a terminal: <code>eink-reader</code>.</li>
+    </ol>
+    <p>Dependencies: Python 3.6+, PyQt5, beautifulsoup4, lxml, PyMuPDF (for PDF), python-djvulibre optional (for DJVU). The installer handles them.</p>
   </section>
 </section>
 
