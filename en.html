@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>E-ink apps — gallaz.ch</title>
-<meta name="description" content="Android apps designed for e-ink readers and tablets: ePub magazine reader, e-book reader, RSS reader.">
+<title>E-ink projects — gallaz.ch</title>
+<meta name="description" content="Projects built for e-ink screens: ePub magazine reader, e-book reader, RSS reader, Chrome paginator extension, and the ThinkBook Plus Twist driver for Linux.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,71 +17,138 @@
   </nav>
 </header>
 
-<h1>Apps for e-ink readers</h1>
-<p class="lede">Three Android apps designed for e-ink screens: long-form reading, high contrast, tap navigation, no ads, no accounts.</p>
+<h1>Built for e-ink screens</h1>
+<p class="lede">Five projects designed for e-paper readers, tablets, and dual-screen laptops: three Android apps, one browser extension, and a Linux driver for a dual-display laptop. Long-form reading, high contrast, tap navigation, no ads, no accounts.</p>
 
-<section class="repo">
-  <h2>F-Droid repository</h2>
-  <p>All apps ship from a personal F-Droid repository. Add it once and the F-Droid client will keep them up to date.</p>
-  <p>
-    <a class="btn primary" href="fdroidrepos://funkypitt.github.io/fdroid-repo/repo?fingerprint=64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C">Add to F-Droid</a>
-  </p>
-  <p>Address:&nbsp; <code>https://funkypitt.github.io/fdroid-repo/repo</code></p>
-  <p>Fingerprint:&nbsp; <code>64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C</code></p>
+<!-- ==================== Android ==================== -->
+<section class="platform">
+  <h2>Android apps</h2>
+
+  <section class="repo">
+    <h2>F-Droid repository</h2>
+    <p>The three Android apps ship from a personal F-Droid repository. Add it once and the F-Droid client will keep them up to date.</p>
+    <p>
+      <a class="btn primary" href="fdroidrepos://funkypitt.github.io/fdroid-repo/repo?fingerprint=64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C">Add to F-Droid</a>
+    </p>
+    <p>Address:&nbsp; <code>https://funkypitt.github.io/fdroid-repo/repo</code></p>
+    <p>Fingerprint:&nbsp; <code>64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C</code></p>
+  </section>
+
+  <article class="app">
+    <h2>ePub Magazine reader</h2>
+    <p class="meta">v0.2.5 · GPL-3.0 · <code>ua.acclorite.book_story.debug</code></p>
+    <p>ePub viewer tuned for daily newspaper and magazine issues. Auto-detects magazine ePubs on open, paginates the table of contents with one card per article (section, title, optional cover image), and renders each article in a vertically-scrolled view. Tap-driven navigation (left / right turn the page, centre toggles the toolbar). Calibrated against the ePub formats produced for <em>NZZ</em>, <em>24 heures</em>, <em>Courrier International</em>, and <em>The Economist</em>.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.5-magazine-debug.apk">Download APK</a>
+      <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Source code</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>OpenLibe e-Ink Remix</h2>
+    <p class="meta">v1.0.11 · AGPL-3.0 · <code>dev.wath.openlibeextendedeinkremix</code></p>
+    <p>E-book reader and library browser optimised for e-ink displays. Paginated EPUB reading with adaptive font sizing, high-contrast themes, and tap zones designed for e-paper. Search and download from online library catalogs; local library management.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/OpenLibeExtended-eInk-Remix.apk">Download APK</a>
+      <a class="btn" href="https://github.com/funkypitt/funky-openlib">Source code</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>Pluralis</h2>
+    <p class="meta">v1.4.1 · GPL-3.0 · <code>com.pluralis.pluralis</code></p>
+    <p>E-ink friendly RSS / Atom feed reader. Paginated reading mode, serif typography, adaptive font sizing, tap zones for page turns. Bookmarks, OPML import/export, paid-Substack support via cookie authentication. No ads, no accounts.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/pluralis.apk">Download APK</a>
+      <a class="btn" href="https://github.com/funkypitt/pluralis">Source code</a>
+    </div>
+  </article>
+
+  <section class="install">
+    <h3>Installation (Android)</h3>
+
+    <h4>Option 1 — via F-Droid (recommended, auto-updates)</h4>
+    <ol>
+      <li>Install the <a href="https://f-droid.org/">F-Droid</a> client if you don't already have it.</li>
+      <li>From the Android device, tap <a href="fdroidrepos://funkypitt.github.io/fdroid-repo/repo?fingerprint=64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C">“Add to F-Droid”</a> above. F-Droid opens its "add repository" page with the address and fingerprint pre-filled — confirm.</li>
+      <li>Refresh the catalog, then search for the app you want and install it like any other.</li>
+    </ol>
+    <p>Manual fallback if the deep link doesn't work: in F-Droid &gt; Settings &gt; Repositories &gt; <em>+</em>, paste the address and fingerprint shown above.</p>
+
+    <h4>Option 2 — direct APK (one-shot install)</h4>
+    <ol>
+      <li>Allow installs from unknown sources for your browser (Settings &gt; Apps &gt; your browser &gt; Install unknown apps).</li>
+      <li>Tap "Download APK" under the app you want.</li>
+      <li>Open the downloaded file and confirm the install. Updates are not automatic with this method.</li>
+    </ol>
+  </section>
 </section>
 
-<article class="app">
-  <h2>ePub Magazine reader</h2>
-  <p class="meta">v0.2.5 · GPL-3.0 · <code>ua.acclorite.book_story.debug</code></p>
-  <p>ePub viewer tuned for daily newspaper and magazine issues. Auto-detects magazine ePubs on open, paginates the table of contents with one card per article (section, title, optional cover image), and renders each article in a vertically-scrolled view. Tap-driven navigation (left / right turn the page, centre toggles the toolbar). Calibrated against the ePub formats produced for <em>NZZ</em>, <em>24 heures</em>, <em>Courrier International</em>, and <em>The Economist</em>.</p>
-  <div class="links">
-    <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.5-magazine-debug.apk">Download APK</a>
-    <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Source code</a>
-  </div>
-</article>
+<!-- ==================== Browser ==================== -->
+<section class="platform">
+  <h2>Browser extension</h2>
 
-<article class="app">
-  <h2>OpenLibe e-Ink Remix</h2>
-  <p class="meta">v1.0.11 · AGPL-3.0 · <code>dev.wath.openlibeextendedeinkremix</code></p>
-  <p>E-book reader and library browser optimised for e-ink displays. Paginated EPUB reading with adaptive font sizing, high-contrast themes, and tap zones designed for e-paper. Search and download from online library catalogs; local library management.</p>
-  <div class="links">
-    <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/OpenLibeExtended-eInk-Remix.apk">Download APK</a>
-    <a class="btn" href="https://github.com/funkypitt/funky-openlib">Source code</a>
-  </div>
-</article>
+  <article class="app">
+    <h2>PageTurn</h2>
+    <p class="meta">v1.0.0 · Chrome extension (Manifest v3) + bookmarklet</p>
+    <p>Chrome extension and bookmarklet that turn scrollable web pages into paginated reading — like a book. Instant page turns with no animation (essential on e-ink). Auto-detects article content on Substack, Medium, WordPress, Ghost, Dev.to, Hashnode, Blogger, Hugo, Jekyll. Strips navigation bars, ads, sidebars, newsletter pop-ups, and comments. Keyboard, swipe, and edge-tap navigation. Zero data collection.</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/funkypitt/pageturn">Source code</a>
+      <a class="btn" href="https://github.com/funkypitt/pageturn/archive/refs/heads/main.zip">Download (ZIP)</a>
+    </div>
+  </article>
 
-<article class="app">
-  <h2>Pluralis</h2>
-  <p class="meta">v1.4.1 · GPL-3.0 · <code>com.pluralis.pluralis</code></p>
-  <p>E-ink friendly RSS / Atom feed reader. Paginated reading mode, serif typography, adaptive font sizing, tap zones for page turns. Bookmarks, OPML import/export, paid-Substack support via cookie authentication. No ads, no accounts.</p>
-  <div class="links">
-    <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/pluralis.apk">Download APK</a>
-    <a class="btn" href="https://github.com/funkypitt/pluralis">Source code</a>
-  </div>
-</article>
+  <section class="install">
+    <h3>Installation (PageTurn)</h3>
 
-<section class="install">
-  <h2>Installation</h2>
+    <h4>Option 1 — bookmarklet (simplest, works anywhere)</h4>
+    <p>Drag the button below to your bookmarks bar:</p>
+    <p><a class="btn primary" href="javascript:!function()%7B%22use%20strict%22;if(window.__pageturnActive)%22function%22==typeof%20window.__pageturnDeactivate&&window.__pageturnDeactivate();else%7Bwindow.__pageturnActive=!0;var%20t=document.createElement(%22style%22);t.id=%22pageturn-style%22,t.textContent=%22body.pageturn-active%7Boverflow:hidden!important;margin:0!important;padding:0!important;height:100vh!important;width:100vw!important%7Dbody.pageturn-active%3E*:not(#pageturn-wrapper):not(#pageturn-indicator):not(#pageturn-close)%7Bdisplay:none!important%7D#pageturn-wrapper%7Bposition:fixed!important;top:0!important;left:0!important;width:100vw!important;height:100vh!important;overflow:hidden!important;background:#fff!important;z-index:2147483640!important;padding:2vh%204vw!important;box-sizing:border-box!important%7D#pageturn-columns%7Bcolumn-fill:auto!important;column-gap:0!important;height:100%25!important;transition:none!important;will-change:transform!important;font-family:Georgia,'Times%20New%20Roman',serif!important;font-size:19px!important;line-height:1.7!important;color:#1a1a1a!important%7D#pageturn-columns%20*%7Bmax-width:100%25!important;box-sizing:border-box!important%7D#pageturn-columns%20img%7Bmax-height:80vh!important;width:auto!important;height:auto!important;display:block!important;margin:1em%20auto!important;break-inside:avoid!important%7D#pageturn-columns%20h1,#pageturn-columns%20h2,#pageturn-columns%20h3,#pageturn-columns%20h4,#pageturn-columns%20h5,#pageturn-columns%20h6%7Bbreak-after:avoid!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe%20UI',Helvetica,Arial,sans-serif!important;color:#000!important%7D#pageturn-columns%20h1%7Bfont-size:1.6em!important;margin:.5em%200!important%7D#pageturn-columns%20h2%7Bfont-size:1.3em!important;margin:.8em%200%20.4em!important%7D#pageturn-columns%20p%7Bmargin:.6em%200!important;orphans:3!important;widows:3!important%7D#pageturn-columns%20blockquote%7Bborder-left:3px%20solid%20#888!important;margin:1em%200!important;padding:.2em%200%20.2em%201.2em!important;color:#444!important;font-style:italic!important%7D#pageturn-columns%20pre,#pageturn-columns%20code%7Bfont-family:'SFMono-Regular',Consolas,'Liberation%20Mono',Menlo,monospace!important;font-size:.85em!important%7D#pageturn-columns%20pre%7Bbackground:#f5f5f5!important;padding:1em!important;overflow-x:auto!important;break-inside:avoid!important;border-radius:4px!important%7D#pageturn-columns%20a%7Bcolor:#1a1a1a!important;text-decoration:underline!important%7D#pageturn-columns%20figure%7Bmargin:1em%200!important;break-inside:avoid!important%7D#pageturn-columns%20figcaption%7Bfont-size:.85em!important;color:#666!important;text-align:center!important;margin-top:.4em!important%7D#pageturn-indicator%7Bposition:fixed!important;bottom:12px!important;left:50%25!important;transform:translateX(-50%25)!important;background:rgba(0,0,0,.7)!important;color:#fff!important;padding:5px%2014px!important;border-radius:14px!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe%20UI',Helvetica,Arial,sans-serif!important;font-size:13px!important;font-weight:500!important;z-index:2147483647!important;pointer-events:none!important;user-select:none!important;letter-spacing:.5px!important%7D#pageturn-close%7Bposition:fixed!important;top:10px!important;right:10px!important;z-index:2147483647!important;background:rgba(0,0,0,.6)!important;color:#fff!important;border:none!important;border-radius:50%25!important;width:36px!important;height:36px!important;font-size:20px!important;line-height:36px!important;text-align:center!important;cursor:pointer!important;padding:0!important;font-family:sans-serif!important;-webkit-tap-highlight-color:transparent!important%7D%22,document.head.appendChild(t);var%20e=0,n=1,o=0,a=null,r=null,i=null,p=null,m=0,c=null,l=0,d=0,s=0,u=!1,g=%5B%22.available-content%22,%22.post-content%22,%22article.post%22,%22.body.markup%22,%22article%5Bdata-post-id%5D%22,'article%20section%5Bdata-field=%22body%22%5D',%22.meteredContent%22,%22.entry-content%22,%22.article-content%22,%22.post-body%22,%22.blog-post-content%22,%22.gh-content%22,%22.post-full-content%22,%22.post-body.entry-content%22,%22.hentry%20.entry-content%22,%22#article-body%22,%22.crayons-article__body%22,%22.blog-content-wrapper%22,%22.post__content%22,%22.page__content%22,%22article%22,'%5Brole=%22article%22%5D',%22main%22,'%5Brole=%22main%22%5D',%22.article-body%22,%22.story-body%22,%22.content-body%22,%22#content%22,%22.content%22%5D,f=%5B%22nav%22,%22header%22,%22footer%22,%22.sidebar%22,%22aside%22,'%5Brole=%22complementary%22%5D','%5Brole=%22navigation%22%5D','%5Brole=%22banner%22%5D','%5Brole=%22contentinfo%22%5D',%22.share-buttons%22,%22.social-share%22,%22.comments%22,%22#comments%22,%22.comment-section%22,%22.related-posts%22,%22.newsletter-signup%22,%22.subscription-widget%22,%22.subscribe-widget%22,%22.subscribe-prompt%22,%22.paywall%22,%22.subscribe-footer%22,%22.post-footer%22,%22.subscription-widget-wrap%22,%22.footer-wrap%22,%22.header-anchor-widget%22,%22.like-button-container%22,%22.post-ufi%22,%22.recommendations%22,'div%5Bdata-testid=%22audioPlayButton%22%5D',%22.pw-multi-vote-count%22,'%5Bclass*=%22ad-%22%5D','%5Bclass*=%22promo%22%5D','%5Bid*=%22ad-%22%5D',%22iframe%22,%22script%22,%22style%22,%22noscript%22%5D;window.__pageturnDeactivate=x;var%20h=50,v=500,b=0,y=null;!function()%7Bm=window.scrollY,c=document.body.className;var%20t=w();if(t)%7Bvar%20e=t.cloneNode(!0);!function(t)%7Bfor(var%20e=0;e%3Cf.length;e++)try%7Bt.querySelectorAll(f%5Be%5D).forEach(function(t)%7Bt.remove()%7D)%7Dcatch(t)%7B%7Dt.querySelectorAll('%5Bstyle*=%22display:none%22%5D,%5Bstyle*=%22display:%20none%22%5D,%5Bhidden%5D,.hidden,.visually-hidden').forEach(function(t)%7Bt.remove()%7D),t.querySelectorAll(%22div%22).forEach(function(t)%7B0===t.children.length&&0===t.textContent.trim().length&&t.remove()%7D)%7D(e),(a=document.createElement(%22div%22)).id=%22pageturn-wrapper%22,(r=document.createElement(%22div%22)).id=%22pageturn-columns%22,r.innerHTML=e.innerHTML,a.appendChild(r),(i=document.createElement(%22div%22)).id=%22pageturn-indicator%22,(p=document.createElement(%22button%22)).id=%22pageturn-close%22,p.textContent=%22%C3%97%22,p.addEventListener(%22click%22,function(t)%7Bt.preventDefault(),t.stopPropagation(),x()%7D),document.body.classList.add(%22pageturn-active%22),document.body.appendChild(a),document.body.appendChild(i),document.body.appendChild(p),document.body.style.touchAction=%22none%22,requestAnimationFrame(function()%7Bk(),E(0)%7D),document.addEventListener(%22keydown%22,L,!0),window.addEventListener(%22resize%22,A),a.addEventListener(%22touchstart%22,_,%7Bpassive:!1%7D),a.addEventListener(%22touchmove%22,C,%7Bpassive:!1%7D),a.addEventListener(%22touchend%22,M,%7Bpassive:!1%7D),a.addEventListener(%22click%22,z)%7D%7D()%7Dfunction%20w()%7Bfor(var%20t=0;t%3Cg.length;t++)%7Bvar%20e=document.querySelector(g%5Bt%5D);if(e&&e.textContent.trim().length%3E200)return%20e%7Dreturn%20function()%7Bfor(var%20t=document.querySelectorAll(%22div,%20section,%20article,%20main%22),e=null,n=0,o=0;o%3Ct.length;o++)%7Bvar%20a=t%5Bo%5D;if(a!==document.body&&a!==document.documentElement)%7Bvar%20r=a.textContent.trim().length;r%3En&&r%3E500&&(e=a,n=r)%7D%7Dreturn%20e%7C%7Cdocument.body%7D()%7Dfunction%20x()%7Bwindow.__pageturnActive=!1,window.__pageturnDeactivate=null,document.removeEventListener(%22keydown%22,L,!0),window.removeEventListener(%22resize%22,A),a&&(a.removeEventListener(%22touchstart%22,_),a.removeEventListener(%22touchmove%22,C),a.removeEventListener(%22touchend%22,M),a.removeEventListener(%22click%22,z)),a&&a.parentNode&&a.parentNode.removeChild(a),i&&i.parentNode&&i.parentNode.removeChild(i),p&&p.parentNode&&p.parentNode.removeChild(p);var%20t=document.getElementById(%22pageturn-style%22);t&&t.remove(),document.body.classList.remove(%22pageturn-active%22),null!==c&&(document.body.className=c),document.body.style.touchAction=%22%22,window.scrollTo(0,m),a=null,r=null,i=null,p=null%7Dfunction%20k()%7Bif(r&&a)%7Bvar%20t=getComputedStyle(a);o=a.clientWidth-parseFloat(t.paddingLeft)-parseFloat(t.paddingRight),r.style.columnWidth=o+%22px%22,r.offsetHeight,n=Math.max(1,Math.round(r.scrollWidth/o))%7D%7Dfunction%20E(t)%7Be=Math.max(0,Math.min(t,n-1)),r.style.transform=%22translateX(-%22+e*o+%22px)%22,i&&(i.textContent=e+1+%22%20/%20%22+n)%7Dfunction%20L(t)%7Bswitch(t.key)%7Bcase%22ArrowRight%22:case%22%20%22:t.shiftKey&&%22%20%22===t.key?E(e-1):E(e+1),t.preventDefault(),t.stopPropagation();break;case%22ArrowLeft%22:E(e-1),t.preventDefault(),t.stopPropagation();break;case%22Escape%22:x(),t.preventDefault(),t.stopPropagation();break;case%22Home%22:E(0),t.preventDefault(),t.stopPropagation();break;case%22End%22:E(n-1),t.preventDefault(),t.stopPropagation()%7D%7Dfunction%20_(t)%7B1===t.touches.length&&(l=t.touches%5B0%5D.clientX,d=t.touches%5B0%5D.clientY,s=Date.now(),u=!1)%7Dfunction%20C(t)%7Bif(1===t.touches.length)%7Bvar%20e=t.touches%5B0%5D.clientX-l,n=t.touches%5B0%5D.clientY-d;Math.abs(e)%3EMath.abs(n)&&Math.abs(e)%3E10&&(u=!0,t.preventDefault())%7D%7Dfunction%20M(t)%7Bif(u)%7Bvar%20n=t.changedTouches%5B0%5D.clientX-l,o=Date.now()-s;Math.abs(n)%3E=h&&o%3C=v&&E(n%3C0?e+1:e-1),u=!1%7D%7Dfunction%20z(t)%7Bif(!u)%7Bvar%20n=Date.now();if(!(n-b%3C300))%7Bb=n;var%20o=t.clientX,a=window.innerWidth;o%3C.3*a?E(e-1):o%3E.7*a&&E(e+1)%7D%7D%7Dfunction%20A()%7BclearTimeout(y),y=setTimeout(function()%7Bvar%20t=n%3C=1?0:e/(n-1);k(),E(Math.round(t*(n-1)))%7D,150)%7D%7D();">PageTurn</a></p>
+    <p>Click it from any article page to switch into paginated mode. Click again (or press Esc) to exit.</p>
 
-  <h3>Option 1 — via F-Droid (recommended, auto-updates)</h3>
-  <ol>
-    <li>Install the <a href="https://f-droid.org/">F-Droid</a> client if you don't already have it.</li>
-    <li>From the Android device, tap <a href="fdroidrepos://funkypitt.github.io/fdroid-repo/repo?fingerprint=64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C">“Add to F-Droid”</a> above. F-Droid opens its "add repository" page with the address and fingerprint pre-filled — confirm.</li>
-    <li>Refresh the catalog (refresh icon), then search for the app you want and install it like any other.</li>
-  </ol>
-  <p>Manual fallback if the deep link doesn't work: in F-Droid &gt; Settings &gt; Repositories &gt; <em>+</em>, paste the address and fingerprint shown above.</p>
+    <h4>Option 2 — Chrome extension (load unpacked)</h4>
+    <ol>
+      <li>Download the ZIP above, or clone <code>git clone https://github.com/funkypitt/pageturn.git</code>.</li>
+      <li>Open <code>chrome://extensions/</code> and enable <em>Developer mode</em>.</li>
+      <li>Click <em>Load unpacked</em> and select the extracted folder.</li>
+      <li>On any article, click the PageTurn icon or press <kbd>Alt</kbd>+<kbd>P</kbd>.</li>
+    </ol>
+    <p>Shortcuts once active: <kbd>→</kbd> / <kbd>Space</kbd> next page, <kbd>←</kbd> previous, <kbd>Esc</kbd> exit. On a touchscreen: swipe or tap the edges.</p>
+  </section>
+</section>
 
-  <h3>Option 2 — direct APK (one-shot install)</h3>
-  <ol>
-    <li>Allow installs from unknown sources for your browser (Settings &gt; Apps &gt; your browser &gt; Install unknown apps).</li>
-    <li>Tap "Download APK" under the app you want.</li>
-    <li>Open the downloaded file and confirm the install.</li>
-  </ol>
-  <p>Updates are not automatic with this method — check back here periodically.</p>
+<!-- ==================== Linux desktop ==================== -->
+<section class="platform">
+  <h2>Linux — dual-display laptop</h2>
+
+  <article class="app">
+    <h2>Tinta4PlusU</h2>
+    <p class="meta">Linux · ThinkBook Plus Gen 4 IRU</p>
+    <p>Linux GUI for driving the color e-ink display of the <em>Lenovo ThinkBook Plus Gen 4 IRU</em>. Universal fork of the original <a href="https://github.com/joncox123/Tinta4Plus">Tinta4Plus</a> with support for GNOME (X11 / Wayland), KDE Plasma (X11 / Wayland), Cinnamon, and XFCE, plus a system installer. Handles routing between the 2880×1800 OLED and the secondary 2560×1600 color e-ink panel, plus frontlight and brightness via the embedded controller.</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/funkypitt/Tinta4Plus-Universal">Source code</a>
+      <a class="btn" href="https://github.com/funkypitt/Tinta4Plus-Universal/archive/refs/heads/main.zip">Download (ZIP)</a>
+    </div>
+  </article>
+
+  <section class="install">
+    <h3>Installation (Tinta4PlusU)</h3>
+    <p>Base: Ubuntu 24.04 LTS or later (Xubuntu, Kubuntu, Linux Mint all work).</p>
+    <ol>
+      <li><strong>Disable Secure Boot</strong> in the BIOS (Security &gt; Secure Boot &gt; Disabled). Required for embedded-controller access (frontlight).</li>
+      <li>Clone and install:
+        <pre>git clone https://github.com/funkypitt/Tinta4Plus-Universal.git
+cd Tinta4Plus-Universal
+sudo bash installer.sh</pre>
+      </li>
+      <li>Pick <em>option 2</em> (Python scripts — recommended, easier to debug and update). The installer detects your desktop environment and installs the necessary dependencies.</li>
+    </ol>
+    <p>Tested configurations: GNOME and XFCE on X11. Other sessions (GNOME Wayland, KDE Plasma, Cinnamon) are supported but less battle-tested.</p>
+  </section>
 </section>
 
 <footer class="site">
-  <p>Each app's source code is available under a free license · <a href="https://github.com/funkypitt">github.com/funkypitt</a></p>
+  <p>Source code for each project is released under a free license · <a href="https://github.com/funkypitt">github.com/funkypitt</a></p>
 </footer>
 </main>
 </body>

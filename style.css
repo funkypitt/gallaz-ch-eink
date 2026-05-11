@@ -151,26 +151,42 @@ a.btn:hover, a.btn:focus { background: var(--fg); color: var(--bg); }
 a.btn.primary { background: var(--fg); color: var(--bg); }
 a.btn.primary:hover, a.btn.primary:focus { background: var(--bg); color: var(--fg); }
 
-section.install {
-  border-top: 1px solid var(--rule);
-  padding-top: 2rem;
-  margin-top: 2rem;
+section.platform {
+  border-top: 2px solid var(--fg);
+  padding-top: 1.4rem;
+  margin-top: 3rem;
 }
 
-section.install h2 {
-  font-size: 1.4rem;
+section.platform > h2 {
+  font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 1rem;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  margin: 0 0 2rem;
+  color: var(--muted);
+}
+
+section.install {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.4rem;
+  margin-top: 2rem;
 }
 
 section.install h3 {
   font-size: 1rem;
   font-weight: 700;
-  margin: 1.6rem 0 0.6rem;
+  margin: 0 0 0.6rem;
 }
 
-section.install ol { padding-left: 1.4rem; }
+section.install h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 1.2rem 0 0.4rem;
+}
+
+section.install ol, section.install ul { padding-left: 1.4rem; }
 section.install li { margin: 0.4rem 0; }
+section.install p { margin: 0.6rem 0; }
 
 footer.site {
   margin-top: 4rem;
