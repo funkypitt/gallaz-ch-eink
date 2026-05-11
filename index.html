@@ -18,7 +18,7 @@
 </header>
 
 <h1>Pour les écrans à encre électronique</h1>
-<p class="lede">Cinq projets pensés pour les liseuses, tablettes et ordinateurs à encre électronique : trois applications Android, une extension navigateur, et le pilote Linux d'un ordinateur double écran. Lecture longue, contraste élevé, navigation au tap, sans publicités ni comptes.</p>
+<p class="lede">Sept projets pensés pour les liseuses, tablettes et ordinateurs à encre électronique : trois lecteurs Android, une extension navigateur, deux outils de détox numérique, et le pilote Linux d'un ordinateur double écran. Lecture longue, contraste élevé, navigation au tap, sans publicités ni comptes.</p>
 
 <!-- ==================== Android ==================== -->
 <section class="platform">
@@ -38,6 +38,7 @@
     <h2>Lecteur ePub Magazine</h2>
     <p class="meta">v0.2.5 · GPL-3.0 · <code>ua.acclorite.book_story.debug</code></p>
     <p>Lecteur ePub adapté aux numéros quotidiens de presse et de magazine. Détecte les ePubs de presse à l'ouverture, pagine la table des matières avec une carte par article (rubrique, titre, image optionnelle), et affiche chaque article dans une vue à défilement vertical. Navigation par tap (gauche/droite tournent la page, centre affiche les contrôles). Calibré sur les ePubs produits pour <em>NZZ</em>, <em>24 heures</em>, <em>Courrier International</em> et <em>The Economist</em>.</p>
+    <p><strong>Source des ePubs&nbsp;:</strong> compatible avec les ePubs générés par la fonction <em>Récupérer les actualités</em> de <a href="https://calibre-ebook.com/">Calibre</a> (Calibre &gt; Récupérer les actualités &gt; choisir une recette). Configurer une recette pour son journal préféré et l'envoyer vers l'appareil chaque matin&nbsp;: la table des matières et les articles sont reconnus sans configuration supplémentaire.</p>
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.5-magazine-debug.apk">Télécharger l'APK</a>
       <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Code source</a>
@@ -114,6 +115,47 @@
       <li>Sur un article, cliquer l'icône PageTurn ou appuyer sur <kbd>Alt</kbd>+<kbd>P</kbd>.</li>
     </ol>
     <p>Raccourcis une fois actif&nbsp;: <kbd>→</kbd> / <kbd>Espace</kbd> page suivante, <kbd>←</kbd> précédente, <kbd>Échap</kbd> sortir. Sur écran tactile&nbsp;: swipe ou tap sur les bords.</p>
+  </section>
+</section>
+
+<!-- ==================== Digital detox ==================== -->
+<section class="platform">
+  <h2>Détox numérique</h2>
+  <p style="margin: -1rem 0 2rem; color: var(--muted); font-style: italic;">Couper YouTube, Instagram et TikTok à la racine — Android et navigateur. Pas de contrôle parental, pas de mot de passe&nbsp;: ce sont des outils auto-imposés. Le frottement vient du fait de devoir consciemment ouvrir l'application pour les désactiver, pas d'un secret à deviner. Naturellement complémentaires d'une vie de lecture sur encre électronique.</p>
+
+  <article class="app">
+    <h2>Social Detox (Android)</h2>
+    <p class="meta">v1.0.0 · GPL-3.0 · <code>com.parentcontrol.socialblocker.detox</code></p>
+    <p>VPN local Android qui intercepte les requêtes DNS pour YouTube, Instagram et TikTok et les bloque silencieusement. Seul le DNS (UDP 53) passe par l'interface virtuelle&nbsp;: pas de proxy en amont, pas de certificat, le reste du trafic n'est pas touché. Toggle par plateforme, plages horaires d'autorisation quotidiennes optionnelles (ex. <code>6-8,18-22</code>), démarrage automatique au boot, service au premier plan pour qu'Android ne le tue pas. À combiner avec <em>VPN permanent</em> dans les paramètres réseau pour une protection stricte.</p>
+    <p>Fork de <a href="https://github.com/funkypitt/SocialBlocker">SocialBlocker</a> sans la barrière de mot de passe — pensé comme outil auto-imposé.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/SocialDetox-v1.0.0-debug.apk">Télécharger l'APK</a>
+      <a class="btn" href="https://github.com/funkypitt/SocialBlocker-Detox">Code source</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>Social Media Blocker (Chrome)</h2>
+    <p class="meta">v1.0 · Extension Chrome / Firefox (Manifest v3)</p>
+    <p>Extension navigateur qui bloque les sites de médias sociaux et de partage vidéo. Pour débloquer, il faut résoudre cinq problèmes de mathématiques de difficulté croissante&nbsp;: la friction est conçue pour casser le réflexe automatique d'aller sur ces sites, sans les rendre totalement inaccessibles. Aucune collecte de données, aucune connexion réseau sortante.</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/funkypitt/social-blocker">Code source</a>
+      <a class="btn primary" href="https://github.com/funkypitt/social-blocker/raw/main/social-blocker-chrome.zip">Télécharger (Chrome ZIP)</a>
+      <a class="btn" href="https://github.com/funkypitt/social-blocker/raw/main/social-blocker-firefox.zip">Télécharger (Firefox ZIP)</a>
+    </div>
+  </article>
+
+  <section class="install">
+    <h3>Installation (Social Detox Android)</h3>
+    <p>Comme les autres applications Android plus haut&nbsp;: soit ajouter le dépôt F-Droid une fois (mises à jour automatiques), soit télécharger l'APK directement. La première fois, Android demandera l'autorisation pour le VPN local — c'est normal et nécessaire&nbsp;; tout reste sur l'appareil.</p>
+
+    <h3>Installation (Social Media Blocker — extension)</h3>
+    <ol>
+      <li>Télécharger le ZIP Chrome ou Firefox ci-dessus, puis le décompresser.</li>
+      <li>Sur Chrome&nbsp;: ouvrir <code>chrome://extensions/</code>, activer le <em>mode développeur</em>, cliquer <em>Charger l'extension non empaquetée</em> et choisir le dossier décompressé.</li>
+      <li>Sur Firefox&nbsp;: ouvrir <code>about:debugging#/runtime/this-firefox</code>, cliquer <em>Charger un module temporaire</em>, choisir le <code>manifest.json</code> du dossier.</li>
+    </ol>
+    <p>Pour débloquer un site, l'extension présente cinq problèmes de mathématiques. Réussir les cinq lève le blocage jusqu'au prochain redémarrage du navigateur.</p>
   </section>
 </section>
 

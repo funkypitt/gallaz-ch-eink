@@ -18,7 +18,7 @@
 </header>
 
 <h1>Built for e-ink screens</h1>
-<p class="lede">Five projects designed for e-paper readers, tablets, and dual-screen laptops: three Android apps, one browser extension, and a Linux driver for a dual-display laptop. Long-form reading, high contrast, tap navigation, no ads, no accounts.</p>
+<p class="lede">Seven projects designed for e-paper readers, tablets, and dual-screen laptops: three Android readers, one browser extension, two digital-detox tools, and a Linux driver for a dual-display laptop. Long-form reading, high contrast, tap navigation, no ads, no accounts.</p>
 
 <!-- ==================== Android ==================== -->
 <section class="platform">
@@ -38,6 +38,7 @@
     <h2>ePub Magazine reader</h2>
     <p class="meta">v0.2.5 · GPL-3.0 · <code>ua.acclorite.book_story.debug</code></p>
     <p>ePub viewer tuned for daily newspaper and magazine issues. Auto-detects magazine ePubs on open, paginates the table of contents with one card per article (section, title, optional cover image), and renders each article in a vertically-scrolled view. Tap-driven navigation (left / right turn the page, centre toggles the toolbar). Calibrated against the ePub formats produced for <em>NZZ</em>, <em>24 heures</em>, <em>Courrier International</em>, and <em>The Economist</em>.</p>
+    <p><strong>Where the ePubs come from:</strong> compatible with the ePubs produced by <a href="https://calibre-ebook.com/">Calibre</a>'s <em>Fetch news</em> feature (Calibre &gt; Fetch news &gt; pick a recipe). Set up a recipe for your favourite paper and push the output to your device every morning — the table of contents and articles are recognised with no further configuration.</p>
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.5-magazine-debug.apk">Download APK</a>
       <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Source code</a>
@@ -114,6 +115,47 @@
       <li>On any article, click the PageTurn icon or press <kbd>Alt</kbd>+<kbd>P</kbd>.</li>
     </ol>
     <p>Shortcuts once active: <kbd>→</kbd> / <kbd>Space</kbd> next page, <kbd>←</kbd> previous, <kbd>Esc</kbd> exit. On a touchscreen: swipe or tap the edges.</p>
+  </section>
+</section>
+
+<!-- ==================== Digital detox ==================== -->
+<section class="platform">
+  <h2>Digital detox</h2>
+  <p style="margin: -1rem 0 2rem; color: var(--muted); font-style: italic;">Cut YouTube, Instagram, and TikTok at the source — Android and browser. No parental control, no password: these are self-imposed tools. The friction is the conscious act of opening the app to disable it, not a secret to guess. A natural companion to a reading-on-e-ink lifestyle.</p>
+
+  <article class="app">
+    <h2>Social Detox (Android)</h2>
+    <p class="meta">v1.0.0 · GPL-3.0 · <code>com.parentcontrol.socialblocker.detox</code></p>
+    <p>Local Android VPN that intercepts DNS queries for YouTube, Instagram, and TikTok and silently drops them. Only DNS (UDP 53) is routed through the virtual interface — no upstream proxy, no certificate, the rest of your traffic is untouched. Per-platform toggles, optional daily allow-windows (e.g. <code>6-8,18-22</code>), auto-start on boot, foreground service so Android doesn't kill it. Combine with <em>Always-on VPN</em> in network settings for stricter enforcement.</p>
+    <p>Fork of <a href="https://github.com/funkypitt/SocialBlocker">SocialBlocker</a> with the password gate removed — designed as a self-imposed tool.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/SocialDetox-v1.0.0-debug.apk">Download APK</a>
+      <a class="btn" href="https://github.com/funkypitt/SocialBlocker-Detox">Source code</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>Social Media Blocker (Chrome)</h2>
+    <p class="meta">v1.0 · Chrome / Firefox extension (Manifest v3)</p>
+    <p>Browser extension that blocks social media and video-sharing sites. To unblock, solve five math problems of increasing difficulty: the friction is designed to break the automatic "open Twitter" reflex without making the sites entirely inaccessible. Zero data collection, no outbound network traffic.</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/funkypitt/social-blocker">Source code</a>
+      <a class="btn primary" href="https://github.com/funkypitt/social-blocker/raw/main/social-blocker-chrome.zip">Download (Chrome ZIP)</a>
+      <a class="btn" href="https://github.com/funkypitt/social-blocker/raw/main/social-blocker-firefox.zip">Download (Firefox ZIP)</a>
+    </div>
+  </article>
+
+  <section class="install">
+    <h3>Installation (Social Detox Android)</h3>
+    <p>Same as the other Android apps above: either add the F-Droid repository once (auto-updates) or download the APK directly. On first launch Android will ask for local-VPN permission — that's expected and required; nothing leaves the device.</p>
+
+    <h3>Installation (Social Media Blocker — browser extension)</h3>
+    <ol>
+      <li>Download the Chrome or Firefox ZIP above and extract it.</li>
+      <li>On Chrome: open <code>chrome://extensions/</code>, enable <em>Developer mode</em>, click <em>Load unpacked</em>, and select the extracted folder.</li>
+      <li>On Firefox: open <code>about:debugging#/runtime/this-firefox</code>, click <em>Load Temporary Add-on</em>, and pick the <code>manifest.json</code> inside the folder.</li>
+    </ol>
+    <p>To unblock a site, the extension presents five math problems. Solving all five lifts the block until the next browser restart.</p>
   </section>
 </section>
 
