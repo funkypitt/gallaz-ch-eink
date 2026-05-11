@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Applications e-ink — gallaz.ch</title>
+<meta name="description" content="Applications Android conçues pour les liseuses et tablettes à encre électronique : lecteur de magazines ePub, lecteur d'e-books, lecteur RSS.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="site">
+  <div class="title">gallaz.ch / e-ink</div>
+  <nav>
+    <a href="index.html" class="active">FR</a>
+    <a href="en.html">EN</a>
+  </nav>
+</header>
+
+<h1>Applications pour liseuses e-ink</h1>
+<p class="lede">Trois applications Android conçues pour les écrans à encre électronique : lecture longue, contraste élevé, navigation au tap, sans publicités ni comptes.</p>
+
+<section class="repo">
+  <h2>Dépôt F-Droid</h2>
+  <p>Toutes les applications sont distribuées via un dépôt F-Droid personnel. L'ajouter une fois permet de recevoir les mises à jour automatiquement.</p>
+  <p>
+    <a class="btn primary" href="fdroidrepos://funkypitt.github.io/fdroid-repo/repo?fingerprint=64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C">Ajouter dans F-Droid</a>
+  </p>
+  <p>Adresse&nbsp;: <code>https://funkypitt.github.io/fdroid-repo/repo</code></p>
+  <p>Empreinte&nbsp;: <code>64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C</code></p>
+</section>
+
+<article class="app">
+  <h2>Lecteur ePub Magazine</h2>
+  <p class="meta">v0.2.5 · GPL-3.0 · <code>ua.acclorite.book_story.debug</code></p>
+  <p>Lecteur ePub adapté aux numéros quotidiens de presse et de magazine. Détecte les ePubs de presse à l'ouverture, pagine la table des matières avec une carte par article (rubrique, titre, image optionnelle), et affiche chaque article dans une vue à défilement vertical. Navigation par tap (gauche/droite tournent la page, centre affiche les contrôles). Calibré sur les ePubs produits pour <em>NZZ</em>, <em>24 heures</em>, <em>Courrier International</em> et <em>The Economist</em>.</p>
+  <div class="links">
+    <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.5-magazine-debug.apk">Télécharger l'APK</a>
+    <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Code source</a>
+  </div>
+</article>
+
+<article class="app">
+  <h2>OpenLibe e-Ink Remix</h2>
+  <p class="meta">v1.0.11 · AGPL-3.0 · <code>dev.wath.openlibeextendedeinkremix</code></p>
+  <p>Lecteur d'e-books et navigateur de bibliothèque optimisé pour l'encre électronique. Lecture EPUB paginée, taille de police adaptative, thèmes à fort contraste, zones de tap conçues pour le papier électronique. Recherche et téléchargement depuis des catalogues de bibliothèques en ligne, gestion locale de la bibliothèque.</p>
+  <div class="links">
+    <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/OpenLibeExtended-eInk-Remix.apk">Télécharger l'APK</a>
+    <a class="btn" href="https://github.com/funkypitt/funky-openlib">Code source</a>
+  </div>
+</article>
+
+<article class="app">
+  <h2>Pluralis</h2>
+  <p class="meta">v1.4.1 · GPL-3.0 · <code>com.pluralis.pluralis</code></p>
+  <p>Lecteur de flux RSS / Atom pensé pour l'encre électronique. Mode de lecture paginé, typographie serif, taille de police adaptative, zones de tap pour tourner les pages. Marque-pages, import/export OPML, support des Substack payants par authentification via cookie. Aucune publicité, aucun compte.</p>
+  <div class="links">
+    <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/pluralis.apk">Télécharger l'APK</a>
+    <a class="btn" href="https://github.com/funkypitt/pluralis">Code source</a>
+  </div>
+</article>
+
+<section class="install">
+  <h2>Installation</h2>
+
+  <h3>Option 1 — Via F-Droid (recommandé, mises à jour automatiques)</h3>
+  <ol>
+    <li>Installer le client <a href="https://f-droid.org/">F-Droid</a> s'il n'est pas déjà présent.</li>
+    <li>Toucher <a href="fdroidrepos://funkypitt.github.io/fdroid-repo/repo?fingerprint=64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C">« Ajouter dans F-Droid »</a> ci-dessus depuis l'appareil Android. F-Droid ouvre la page d'ajout du dépôt avec l'adresse et l'empreinte pré-remplies — confirmer.</li>
+    <li>Mettre à jour le catalogue (icône d'actualisation), puis chercher l'application souhaitée et l'installer comme n'importe quelle autre.</li>
+  </ol>
+  <p>Ajout manuel si le lien ne s'ouvre pas&nbsp;: dans F-Droid &gt; Paramètres &gt; Dépôts &gt; <em>+</em>, coller l'adresse et l'empreinte indiquées plus haut.</p>
+
+  <h3>Option 2 — APK direct (installation ponctuelle)</h3>
+  <ol>
+    <li>Activer l'installation depuis des sources inconnues pour le navigateur (Paramètres &gt; Applications &gt; le navigateur &gt; Installer des applis inconnues).</li>
+    <li>Toucher « Télécharger l'APK » sous l'application choisie.</li>
+    <li>Ouvrir le fichier téléchargé et confirmer l'installation.</li>
+  </ol>
+  <p>Les mises à jour ne sont pas automatiques avec cette méthode : il faut revenir sur cette page périodiquement.</p>
+</section>
+
+<footer class="site">
+  <p>Code source de chaque application sous licence libre · <a href="https://github.com/funkypitt">github.com/funkypitt</a></p>
+</footer>
+</main>
+</body>
+</html>

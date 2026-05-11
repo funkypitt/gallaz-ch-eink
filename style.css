@@ -1,0 +1,184 @@
+/* gallaz.ch/eink — austere e-ink-friendly stylesheet.
+   No JS. No images that need to load. Serif, generous line-height,
+   high contrast. Looks the same in light/dark via prefers-color-scheme. */
+
+:root {
+  --fg: #111;
+  --muted: #555;
+  --bg: #fff;
+  --rule: #ddd;
+  --code-bg: #f2f2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #eee;
+    --muted: #aaa;
+    --bg: #111;
+    --rule: #333;
+    --code-bg: #1d1d1d;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 18px; }
+
+body {
+  margin: 0;
+  padding: 2rem 1rem 4rem;
+  font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+main {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+header.site {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.6rem;
+  margin-bottom: 2rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+header.site .title { font-weight: 700; font-size: 1rem; }
+header.site nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 0.6rem;
+  font-variant: small-caps;
+}
+header.site nav a.active { color: var(--fg); font-weight: 700; }
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  line-height: 1.2;
+}
+
+p.lede {
+  color: var(--muted);
+  margin: 0 0 2.4rem;
+  font-style: italic;
+}
+
+section.repo {
+  border: 1px solid var(--rule);
+  padding: 1rem 1.2rem;
+  margin: 0 0 2.4rem;
+  background: var(--code-bg);
+}
+
+section.repo h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+section.repo p { margin: 0.4rem 0; }
+
+code {
+  font-family: "SF Mono", Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  padding: 0.05rem 0.3rem;
+  border-radius: 2px;
+  word-break: break-all;
+}
+
+pre {
+  font-family: "SF Mono", Consolas, "Liberation Mono", monospace;
+  font-size: 0.78rem;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  padding: 0.6rem 0.8rem;
+  overflow-x: auto;
+  border-radius: 2px;
+  line-height: 1.4;
+}
+
+article.app {
+  margin: 0 0 3rem;
+}
+
+article.app h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+  line-height: 1.2;
+}
+
+article.app .meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+article.app .meta::before { content: "— "; }
+
+article.app p { margin: 0 0 1rem; }
+
+article.app .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--fg);
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+a.btn:hover, a.btn:focus { background: var(--fg); color: var(--bg); }
+
+a.btn.primary { background: var(--fg); color: var(--bg); }
+a.btn.primary:hover, a.btn.primary:focus { background: var(--bg); color: var(--fg); }
+
+section.install {
+  border-top: 1px solid var(--rule);
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+section.install h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+section.install h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.6rem 0 0.6rem;
+}
+
+section.install ol { padding-left: 1.4rem; }
+section.install li { margin: 0.4rem 0; }
+
+footer.site {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+footer.site a { color: var(--muted); }
