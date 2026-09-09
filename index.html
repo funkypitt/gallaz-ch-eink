@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>E-ink &amp; détox numérique — gallaz.ch</title>
-<meta name="description" content="Outils open-source pour écrans e-ink et bien-être numérique : applications Android, extensions Chrome et utilitaires Linux. Sans pub, sans compte, sans algorithme.">
+<meta name="description" content="Outils open-source pour écrans e-ink et bien-être numérique : la série Reader's (launcher, agenda, tâches, notes, livres, flux en noir et blanc), applications Android, extensions Chrome et utilitaires Linux. Sans pub, sans compte, sans algorithme.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,13 +18,81 @@
 </header>
 
 <h1>E-ink &amp; détox numérique</h1>
-<p class="lede">Outils open-source pour la lecture longue, l'écoute et le bien-être numérique. Contraste élevé, sans pub, sans compte, sans algorithme. Conçus pour les écrans à encre électronique et un usage intentionnel.</p>
+<p class="lede">Outils open-source pour la lecture longue, l'écoute et le bien-être numérique. Contraste élevé, sans pub, sans compte, sans algorithme. Conçus pour les écrans à encre électronique et un usage intentionnel. Depuis 2026, la <a href="#readers">série Reader's</a>&nbsp;: un téléphone entier en noir et blanc, texte seul.</p>
+
+<!-- ==================== Reader's ==================== -->
+<section class="platform" id="readers">
+  <h2>La série Reader's</h2>
+  <p class="lede">Un téléphone qui se lit comme une page. Des applications en noir et blanc, texte seul&nbsp;: pas d'icônes, pas de couleurs, pas de cartes, pas de compte. Le launcher affiche des mots&nbsp;; l'agenda, les tâches, les notes, les livres et les flux se lisent comme un journal. Dans l'esprit du Light Phone, sur n'importe quel Android. Toutes sont dans le <a href="#fdroid">dépôt F-Droid</a> ci-dessous, en anglais, français, allemand, espagnol, portugais et russe.</p>
+
+  <article class="app">
+    <h2>Reader's Launcher</h2>
+    <p class="meta">v1.12.0 · MIT · <code>com.freedomfighter.readerslauncher</code></p>
+    <p>L'écran d'accueil en mots&nbsp;: applications et catégories en une ligne chacune, une grille de trois à cinq applications-clés en bas, et des tuiles maison à deux lignes — horloge, météo (MétéoSuisse en Suisse), agenda, tâches, notes, livre en cours, mot du jour du Littré. Tiroir d'applications par balayage, recherche, raccourcis d'applications au double tap. Deux emplacements de lecture d'e-books à gauche et à droite de l'accueil. Page fixe, jamais de défilement&nbsp;: quand elle est pleine, elle est pleine.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersLauncher-v1.12.0.apk">Télécharger l'APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-launcher">Code source</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>Reader's Calendar</h2>
+    <p class="meta">Android v1.7.1 · Linux v1.6.0 · MIT · <code>com.freedomfighter.readerscalendar</code></p>
+    <p>Agenda monochrome sur les calendriers du téléphone. Agenda en liste, mois, semaine et jours ouvrés en grille horaire dans les deux orientations — des blocs pleins, le blanc entre eux est le temps libre — journée en grille, page événement en deux colonnes. L'agenda d'appartenance est un mot discret, jamais une couleur. Créer un événement est à un geste partout&nbsp;: une ligne en bas de chaque vue, un créneau vide, un appui long sur un jour. La version Linux reprend la mise en page paysage sur CalDAV (Infomaniak, Nextcloud, Radicale) et lit les agendas Google par leur adresse iCal secrète.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersCalendar-v1.7.1.apk">Télécharger l'APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-calendar-desktop/releases/latest">Linux (.deb, PKGBUILD)</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-calendar">Code source</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>Reader's Tasks</h2>
+    <p class="meta">Android v1.2.1 · Linux v1.3.0 · MIT · <code>com.freedomfighter.readerstasks</code></p>
+    <p>Listes de tâches CalDAV (Infomaniak, Tasks.org Cloud, Nextcloud, Radicale). Les listes, les tâches ouvertes, une case à cocher, une ligne pour ajouter. Réordonner en glissant, l'ordre est enregistré sur le serveur. Tâches terminées masquées, réouvrables. Le launcher lit ses listes dans sa tuile. Même application sur Linux, en une fenêtre.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersTasks-v1.2.1.apk">Télécharger l'APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-tasks/releases/latest">Linux (.deb, PKGBUILD)</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-tasks-android">Code source</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>Reader's Notes</h2>
+    <p class="meta">v1.1.1 · MIT · <code>com.freedomfighter.readersnotes</code></p>
+    <p>Des notes en texte brut, une liste et une page. La première ligne d'une note est son nom. Chaque note est un fichier <code>.txt</code> dans un dossier WebDAV — kDrive, Nextcloud, n'importe quel serveur — synchronisé dans les deux sens, avec copie en cas de conflit&nbsp;: un ordinateur voit des fichiers ordinaires. Le texte partagé depuis une autre application devient une note.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersNotes-v1.1.1.apk">Télécharger l'APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-notes">Code source</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>Reader's Books</h2>
+    <p class="meta">v1.1.1 · MIT · <code>com.freedomfighter.readersbooks</code></p>
+    <p>Une étagère en liste et des pages de texte coupées à la ligne entière, jamais au milieu d'une ligne. EPUB, MOBI, FB2, texte brut, ouverts depuis l'application, un gestionnaire de fichiers ou un partage. Moitié droite pour tourner, moitié gauche pour revenir, appui long pour les chapitres et la taille du texte. Position mémorisée par livre, écran maintenu allumé pendant la lecture.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBooks-v1.1.1.apk">Télécharger l'APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-books">Code source</a>
+    </div>
+  </article>
+
+  <article class="app">
+    <h2>Reader's Feeds</h2>
+    <p class="meta">v1.1.0 · GPL-3.0 · <code>com.freedomfighter.readersfeeds</code></p>
+    <p>Lecteur RSS/Atom né de Pluralis, entièrement redessiné dans la série. Les derniers articles de vos sources en une liste, la lecture en pages extraites du web, les sources, les articles gardés pour plus tard, import et export OPML, Substack payants. Listes en pages plutôt qu'en défilement pour les écrans e-ink.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersFeeds-v1.1.0-arm64.apk">Télécharger l'APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-feeds">Code source</a>
+    </div>
+  </article>
+</section>
 
 <!-- ==================== Android ==================== -->
 <section class="platform">
   <h2>Applications Android</h2>
 
-  <section class="repo">
+  <section class="repo" id="fdroid">
     <h2>Dépôt F-Droid</h2>
     <p>Toutes les applications Android sont distribuées via un dépôt F-Droid personnel. L'ajouter une fois suffit pour les mises à jour automatiques.</p>
     <p>
@@ -46,20 +114,20 @@
 
   <article class="app">
     <h2>Pluralis</h2>
-    <p class="meta">v1.4.1 · GPL-3.0 · <code>com.pluralis.pluralis</code></p>
+    <p class="meta">v1.5.1 · GPL-3.0 · <code>com.pluralis.pluralis</code></p>
     <p>Lecteur RSS/Atom optimisé pour l'encre électronique. Lecture paginée, typographie serif, taille de police adaptative, navigation au tap. Marque-pages, import/export OPML, support Substack payant via cookie.</p>
     <div class="links">
-      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/pluralis.apk">Télécharger l'APK</a>
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/Pluralis-v1.5.1.apk">Télécharger l'APK</a>
       <a class="btn" href="https://github.com/funkypitt/pluralis">Code source</a>
     </div>
   </article>
 
   <article class="app">
     <h2>Lecteur ePub Magazine</h2>
-    <p class="meta">v0.2.6 · GPL-3.0 · <code>ua.acclorite.book_story.debug</code></p>
+    <p class="meta">v0.2.23 · GPL-3.0 · <code>ua.acclorite.book_story.debug</code></p>
     <p>Lecteur ePub pour la presse quotidienne et les magazines. Détection automatique, table des matières paginée, navigation au tap. Compatible avec les ePubs de <a href="https://calibre-ebook.com/">Calibre</a> (NZZ, The Economist, Courrier International, etc.).</p>
     <div class="links">
-      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.6-magazine-debug.apk">Télécharger l'APK</a>
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.23-magazine-debug.apk">Télécharger l'APK</a>
       <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Code source</a>
     </div>
   </article>
@@ -76,10 +144,10 @@
 
   <article class="app">
     <h2>Social Detox</h2>
-    <p class="meta">v1.0.0 · GPL-3.0 · <code>com.parentcontrol.socialblocker.detox</code></p>
+    <p class="meta">v1.4.0 · GPL-3.0 · <code>com.parentcontrol.socialblocker.detox</code></p>
     <p>VPN local bloquant les requêtes DNS de YouTube, Instagram et TikTok. Pas de proxy, pas de certificat — seul le DNS est intercepté. Toggles par plateforme, plages horaires, démarrage automatique. Friction auto-imposée, pas un contrôle parental.</p>
     <div class="links">
-      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/SocialDetox-v1.0.0-debug.apk">Télécharger l'APK</a>
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/SocialDetox-v1.4.0-detox-debug.apk">Télécharger l'APK</a>
       <a class="btn" href="https://github.com/funkypitt/SocialBlocker-Detox">Code source</a>
     </div>
   </article>
@@ -110,7 +178,7 @@
     <p class="meta">v1.0.0 · Manifest v3 + bookmarklet</p>
     <p>Convertit les pages web en lecture paginée — comme un livre. Changement de page instantané (essentiel sur e-ink). Détection automatique sur Substack, Medium, WordPress, Ghost, Dev.to, etc. Supprime pubs, sidebars, pop-ups et commentaires. Navigation clavier, swipe et tap.</p>
     <div class="links">
-      <a class="btn primary" href="https://github.com/funkypitt/pageturn/archive/refs/heads/main.zip">Télécharger (ZIP)</a>
+      <a class="btn primary" href="https://github.com/funkypitt/pageturn/archive/refs/heads/master.zip">Télécharger (ZIP)</a>
       <a class="btn" href="https://github.com/funkypitt/pageturn">Code source</a>
     </div>
   </article>
@@ -120,8 +188,7 @@
     <p class="meta">v1.0 · Chrome / Firefox (Manifest v3)</p>
     <p>Bloque les réseaux sociaux et sites de vidéo. Pour débloquer, résoudre cinq problèmes de maths de difficulté croissante — conçu pour casser le réflexe sans rendre les sites totalement inaccessibles. Aucune collecte de données.</p>
     <div class="links">
-      <a class="btn primary" href="https://github.com/funkypitt/social-blocker/raw/main/social-blocker-chrome.zip">Télécharger (Chrome)</a>
-      <a class="btn" href="https://github.com/funkypitt/social-blocker/raw/main/social-blocker-firefox.zip">Télécharger (Firefox)</a>
+      <a class="btn primary" href="https://github.com/funkypitt/social-blocker/archive/refs/heads/master.zip">Télécharger (ZIP, Chrome et Firefox)</a>
       <a class="btn" href="https://github.com/funkypitt/social-blocker">Code source</a>
     </div>
   </article>
@@ -131,7 +198,7 @@
     <ol>
       <li>Télécharger et décompresser le ZIP.</li>
       <li>Chrome&nbsp;: <code>chrome://extensions/</code> → mode développeur → Charger l'extension non empaquetée → sélectionner le dossier.</li>
-      <li>Firefox&nbsp;: <code>about:debugging#/runtime/this-firefox</code> → Charger un module temporaire → choisir <code>manifest.json</code>.</li>
+      <li>Firefox&nbsp;: <code>about:debugging#/runtime/this-firefox</code> → Charger un module temporaire → choisir <code>manifest.firefox.json</code> (Social Media Blocker) ou <code>manifest.json</code>.</li>
     </ol>
   </section>
 </section>

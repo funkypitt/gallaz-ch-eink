@@ -11,6 +11,10 @@ happens to be reading it on one.
 
 ## What's listed
 
+**Reader's family** (section `#readers`, both languages): Reader's Launcher, Calendar (Android + Linux), Tasks (Android + Linux), Notes, Books, Feeds — sources under `github.com/funkypitt/readers-*`, APKs from the F-Droid repo, Linux packages from each desktop repo's latest release.
+
+**Other apps**
+
 - **ePub Magazine reader** — `ua.acclorite.book_story.debug`,
   source: <https://github.com/funkypitt/epub-eink-newsreader>
 - **OpenLibe e-Ink Remix** — `dev.wath.openlibeextendedeinkremix`,
