@@ -13,6 +13,8 @@ happens to be reading it on one.
 
 **Reader's family** (section `#readers`, both languages): Reader's Launcher, Calendar (Android + Linux), Tasks (Android + Linux), Notes, Books, Feeds — sources under `github.com/funkypitt/readers-*`, APKs from the F-Droid repo, Linux packages from each desktop repo's latest release.
 
+**Meditation** (section `#meditation`): Retreat Timer, Retreat Player, Retreat Walk — `github.com/funkypitt/retreat-*`.
+
 **Other apps**
 
 - **ePub Magazine reader** — `ua.acclorite.book_story.debug`,
