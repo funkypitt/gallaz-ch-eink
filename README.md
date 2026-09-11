@@ -17,9 +17,9 @@ happens to be reading it on one.
 
 **Other apps**
 
-- **ePub Magazine reader** — `ua.acclorite.book_story.debug`,
+- **ePub Magazine reader** — `com.freedomfighter.magazinereader`,
   source: <https://github.com/funkypitt/epub-eink-newsreader>
-- **OpenLibe e-Ink Remix** — `dev.wath.openlibeextendedeinkremix`,
+- **OpenLibe e-Ink Remix** — `com.freedomfighter.openlibeinkremix`,
   source: <https://github.com/funkypitt/funky-openlib>
 - **Pluralis** — `com.pluralis.pluralis`,
   source: <https://github.com/funkypitt/pluralis>
