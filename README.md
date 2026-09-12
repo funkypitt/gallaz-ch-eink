@@ -2,9 +2,10 @@
 
 Static landing page for the three e-ink-focused Android apps shipped from
 `funkypitt`'s personal F-Droid repo. No JS, no build step — three files
-(`index.html`, `en.html`, `style.css`).
+(`index.html`, `fr.html`, `en.html`, `style.css`).
 
-`index.html` is French (default); `en.html` is English; both link to each
+`index.html` is English (the default); `fr.html` is French; `en.html` only redirects
+to the home page, so links shared before the switch keep working. Both pages link to each
 other via the header. Layout is serif, single-column, high-contrast, no
 hero images — designed to look right on an e-ink browser if anyone
 happens to be reading it on one.
@@ -28,7 +29,7 @@ happens to be reading it on one.
 
 Each app card hard-codes the current APK filename and version. When a new
 APK lands in `code/fdroid-repo/repo/`, update three things in **both**
-`index.html` and `en.html`:
+`index.html` and `fr.html`:
 
 1. The version in the `<p class="meta">` line.
 2. The APK filename in the `Download APK` / `Télécharger l'APK` `href`.
