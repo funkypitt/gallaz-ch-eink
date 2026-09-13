@@ -41,3 +41,11 @@ The fingerprint and repo address never change.
 The site is meant to live at `gallaz.ch/eink`. Drop these three files
 under the `eink/` directory of whatever hosts `gallaz.ch` (Apache /
 nginx static dir, GitHub Pages, etc.). No server-side logic required.
+
+## Versions automatiques
+
+`tools/update_versions.py` relit le dépôt F-Droid (`index-v1.json`) et les releases GitHub, et réécrit les
+numéros de version et les liens APK des blocs `<article class="app">` (le paquet dans `<code>` sert de clé).
+Le workflow `update-versions.yml` le lance chaque jour, à la main (`gh workflow run update-versions.yml`),
+ou sur `repository_dispatch` (`app-updated`) ; il committe sur `main`, ce qui redéploie GitHub Pages.
+`redirect-gallaz.ch/` contient la redirection à déposer une dernière fois par FTP sur gallaz.ch/eink.

@@ -1,0 +1,33 @@
+name: Mettre à jour les versions
+
+# Relit le dépôt F-Droid et les releases GitHub, réécrit les numéros de version et les liens APK
+# des pages, et committe s'il y a un changement (GitHub Pages se redéploie tout seul depuis main).
+on:
+  schedule:
+    - cron: "17 5 * * *"          # tous les jours, 05:17 UTC
+  workflow_dispatch:               # à la main, ou depuis un script : gh workflow run update-versions.yml
+  repository_dispatch:
+    types: [app-updated]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Mettre à jour index.html et fr.html
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/update_versions.py
+      - name: Committer s'il y a un changement
+        run: |
+          if git diff --quiet; then echo "rien à changer"; exit 0; fi
+          git config user.name "versions-bot"
+          git config user.email "versions-bot@users.noreply.github.com"
+          git commit -am "Versions : mise à jour automatique"
+          git push
