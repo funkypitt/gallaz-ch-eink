@@ -42,6 +42,7 @@
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersCalendar-v1.9.3.apk">Télécharger l'APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-calendar-desktop/releases/latest">Linux (.deb, PKGBUILD)</a>
+      <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-calendar">Code source</a>
     </div>
   </article>
@@ -53,6 +54,7 @@
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersTasks-v1.3.1.apk">Télécharger l'APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-tasks/releases/latest">Linux (.deb, PKGBUILD)</a>
+      <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-tasks-android">Code source</a>
     </div>
   </article>
@@ -314,6 +316,16 @@
       <a class="btn" href="https://github.com/funkypitt/eink-reader">Code source</a>
     </div>
   </article>
+
+  <section class="install">
+    <h3>Debian / Ubuntu / Pop!_OS / Mint : le dépôt apt</h3>
+    <p>Reader's Calendar et Reader's Tasks pour Linux sont aussi dans un petit dépôt apt : ils se mettent à jour avec le reste du système.</p>
+    <pre>sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/apt/keyrings/funkypitt.gpg &gt;/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
+sudo apt update &amp;&amp; sudo apt install readers-calendar readers-tasks</pre>
+    <p>Arch Linux : le dépôt de chaque application contient un PKGBUILD. Détails sur <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
+  </section>
 
   <section class="install">
     <h3>Installation</h3>
