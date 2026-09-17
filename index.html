@@ -61,10 +61,12 @@
 
   <article class="app">
     <h2>Reader's Notes</h2>
-    <p class="meta">v1.2.1 · MIT · <code>com.freedomfighter.readersnotes</code></p>
-    <p>Plain-text notes. Every note is a .txt file in a WebDAV folder (kDrive, Nextcloud, any server), synced both ways: your computer sees ordinary files. Share text from any app to make a note of it.</p>
+    <p class="meta">Android v1.2.1 · Linux v1.0.0 · MIT · <code>com.freedomfighter.readersnotes</code></p>
+    <p>Plain-text notes. Every note is a .txt file in a WebDAV folder (kDrive, Nextcloud, any server), synced both ways: your computer sees ordinary files. Share text from any app to make a note of it. On Linux, the same notes in one window, list on the left and page on the right, synced with the phone through the same folder.</p>
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersNotes-v1.2.1.apk">Download APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-notes-desktop/releases/latest">Linux (.deb, PKGBUILD)</a>
+      <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-notes">Source</a>
     </div>
   </article>
@@ -319,11 +321,11 @@
 
   <section class="install">
     <h3>Debian / Ubuntu / Pop!_OS / Mint: the apt repository</h3>
-    <p>Reader's Calendar and Reader's Tasks for Linux are also in a small apt repository, so they update with the rest of the system.</p>
+    <p>Reader's Calendar, Reader's Notes and Reader's Tasks for Linux are also in a small apt repository, so they update with the rest of the system.</p>
     <pre>sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/apt/keyrings/funkypitt.gpg &gt;/dev/null
 echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
-sudo apt update &amp;&amp; sudo apt install readers-calendar readers-tasks</pre>
+sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks</pre>
     <p>Arch Linux: each app's repository has a PKGBUILD. Details at <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
   </section>
 
