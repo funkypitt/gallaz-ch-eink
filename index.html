@@ -37,11 +37,11 @@
 
   <article class="app">
     <h2>Reader's Calendar</h2>
-    <p class="meta">Android v1.11.0 · Linux v1.10.0 · MIT · <code>com.freedomfighter.readerscalendar</code></p>
-    <p>A black-and-white calendar for the calendars already on your phone. Week and workdays as time grids where events are solid blocks and white is free time; the calendar an event belongs to is a word, not a colour. The month as a board with the events written in the days; swipe from month to month. On Linux, the same layout over CalDAV (Infomaniak, Nextcloud, Radicale) and, with your own OAuth client, your Google account.</p>
+    <p class="meta">Android v1.11.0 · Desktop v1.11.0 · MIT · <code>com.freedomfighter.readerscalendar</code></p>
+    <p>A black-and-white calendar for the calendars already on your phone. Week and workdays as time grids where events are solid blocks and white is free time; the calendar an event belongs to is a word, not a colour. The month as a board with the events written in the days; swipe from month to month. On the desktop — Windows, macOS, Linux — the same layout over CalDAV (Infomaniak, Nextcloud, Radicale) and, with your own OAuth client, your Google account.</p>
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersCalendar-v1.11.0.apk">Download APK</a>
-      <a class="btn" href="https://github.com/funkypitt/readers-calendar-desktop/releases/latest">Linux (.deb, PKGBUILD)</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-calendar-desktop/releases/latest">Windows, macOS, Linux</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-calendar">Source</a>
     </div>
@@ -49,11 +49,11 @@
 
   <article class="app">
     <h2>Reader's Tasks</h2>
-    <p class="meta">Android v1.5.0 · Linux v1.5.0 · MIT · <code>com.freedomfighter.readerstasks</code></p>
-    <p>Your CalDAV task lists (Infomaniak, Tasks.org, Nextcloud, Radicale) as plain text lists; drag to reorder, and the order is saved on the server. Also on Linux.</p>
+    <p class="meta">Android v1.5.0 · Desktop v1.6.0 · MIT · <code>com.freedomfighter.readerstasks</code></p>
+    <p>Your CalDAV task lists (Infomaniak, Tasks.org, Nextcloud, Radicale) as plain text lists; drag to reorder, and the order is saved on the server. Also on the desktop: Windows, macOS and Linux.</p>
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersTasks-v1.5.0.apk">Download APK</a>
-      <a class="btn" href="https://github.com/funkypitt/readers-tasks/releases/latest">Linux (.deb, PKGBUILD)</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-tasks/releases/latest">Windows, macOS, Linux</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-tasks-android">Source</a>
     </div>
@@ -61,11 +61,11 @@
 
   <article class="app">
     <h2>Reader's Notes</h2>
-    <p class="meta">Android v1.4.0 · Linux v1.1.1 · MIT · <code>com.freedomfighter.readersnotes</code></p>
-    <p>Plain-text notes. Every note is a .txt file in a WebDAV folder (kDrive, Nextcloud, any server), synced both ways: your computer sees ordinary files. Share text from any app to make a note of it. On Linux, the same notes in one window, list on the left and page on the right, synced with the phone through the same folder.</p>
+    <p class="meta">Android v1.4.0 · Desktop v1.2.0 · MIT · <code>com.freedomfighter.readersnotes</code></p>
+    <p>Plain-text notes. Every note is a .txt file in a WebDAV folder (kDrive, Nextcloud, any server), synced both ways: your computer sees ordinary files. Share text from any app to make a note of it. On the desktop — Windows, macOS, Linux — the same notes in one window, list on the left and page on the right, synced with the phone through the same folder.</p>
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersNotes-v1.4.0.apk">Download APK</a>
-      <a class="btn" href="https://github.com/funkypitt/readers-notes-desktop/releases/latest">Linux (.deb, PKGBUILD)</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-notes-desktop/releases/latest">Windows, macOS, Linux</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-notes">Source</a>
     </div>
@@ -328,6 +328,13 @@ curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/ap
 echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
 sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks</pre>
     <p>Arch Linux: each app's repository has a PKGBUILD. Details at <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
+  </section>
+
+  <section class="install">
+    <h3>Windows and macOS: the first opening</h3>
+    <p>Reader's Calendar, Reader's Notes and Reader's Tasks also come as an .exe for Windows and a .dmg for macOS, on each app's download page: one file, nothing to install, no Python to think about. They are small free applications without a paid certificate, so the system distrusts them once — once only.</p>
+    <p><strong>Windows</strong>: a blue "Windows protected your PC" panel appears the first time. <em>More info</em> › <em>Run anyway</em>.</p>
+    <p><strong>macOS</strong>: open the .dmg — "apple-silicon" for an M1 Mac or later, "intel" for an older one — drag the app onto <em>Applications</em>, then <strong>right click on the app › Open</strong> › <em>Open</em>. A double click at that point only says the app cannot be opened. Afterwards it opens like any other.</p>
   </section>
 
   <section class="install">

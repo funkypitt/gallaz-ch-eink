@@ -16,6 +16,7 @@ META = re.compile(r'<p class="meta">(.*?)</p>', re.S)
 PKG = re.compile(r'<code>([\w.]+)</code>')
 RELEASE_LINK = re.compile(r'github\.com/funkypitt/([\w-]+)/releases/latest')
 APK_HREF = re.compile(r'(fdroid-repo/repo/)[^"]+\.apk')
+DESKTOP_VERSION = re.compile(r'\b(Ordinateur|Desktop|Linux) v[\w.]+')
 
 
 def fetch(url, headers=None):
@@ -61,8 +62,9 @@ def update_block(block, fdroid):
         tag = latest_release(repo)
         if not tag:
             continue
-        if "Linux v" in new_meta:
-            new_meta = re.sub(r"Linux v[\w.]+", f"Linux v{tag}", new_meta, count=1)
+        desktop = DESKTOP_VERSION.search(new_meta)          # « Ordinateur v1.2.0 » (fr), « Desktop v1.2.0 » (en), « Linux v… » d'avant
+        if desktop:
+            new_meta = new_meta.replace(desktop.group(0), f"{desktop.group(1)} v{tag}", 1)
         elif not (pkg and pkg.group(1) in fdroid):        # application distribuée par release seule (Clavier Plume)
             new_meta = re.sub(r"\bv\d[\w.]*", f"v{tag}", new_meta, count=1)
     if new_meta != meta:
