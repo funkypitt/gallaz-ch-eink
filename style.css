@@ -198,3 +198,9 @@ footer.site {
 }
 
 footer.site a { color: var(--muted); }
+
+/* vignettes de captures d'écran */
+.shots { display: flex; gap: .6rem; flex-wrap: wrap; margin: .8rem 0; }
+.shots img { width: 130px; height: auto; border: 1px solid currentColor; opacity: .85; }
+.shots img:hover { opacity: 1; }
+@media (max-width: 480px) { .shots img { width: 104px; } }
