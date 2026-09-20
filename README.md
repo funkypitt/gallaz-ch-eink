@@ -19,7 +19,7 @@ happens to be reading it on one.
 **Other apps**
 
 - **ePub Magazine reader** — `com.freedomfighter.magazinereader`,
-  source: <https://github.com/funkypitt/funky-openlib>
+  source: <https://github.com/funkypitt/epub-eink-newsreader>
 - **Pluralis** — `com.pluralis.pluralis`,
   source: <https://github.com/funkypitt/pluralis>
 
