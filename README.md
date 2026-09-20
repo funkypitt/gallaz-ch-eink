@@ -19,8 +19,6 @@ happens to be reading it on one.
 **Other apps**
 
 - **ePub Magazine reader** — `com.freedomfighter.magazinereader`,
-  source: <https://github.com/funkypitt/epub-eink-newsreader>
-- **OpenLibe e-Ink Remix** — `com.freedomfighter.openlibeinkremix`,
   source: <https://github.com/funkypitt/funky-openlib>
 - **Pluralis** — `com.pluralis.pluralis`,
   source: <https://github.com/funkypitt/pluralis>
