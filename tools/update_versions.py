@@ -11,7 +11,7 @@ import json, os, re, sys, urllib.request
 
 FDROID_INDEX = "https://funkypitt.github.io/fdroid-repo/repo/index-v1.json"
 PAGES = ["index.html", "fr.html"]
-BLOCK = re.compile(r'<article class="app">.*?</article>', re.S)
+BLOCK = re.compile(r'<article class="app"[^>]*>.*?</article>', re.S)   # [^>]* : les articles portent une ancre id=… depuis le 2026-09-21
 META = re.compile(r'<p class="meta">(.*?)</p>', re.S)
 PKG = re.compile(r'<code>([\w.]+)</code>')
 RELEASE_LINK = re.compile(r'github\.com/funkypitt/([\w-]+)/releases/latest')

@@ -204,3 +204,10 @@ footer.site a { color: var(--muted); }
 .shots img { width: 130px; height: auto; border: 1px solid currentColor; opacity: .85; }
 .shots img:hover { opacity: 1; }
 @media (max-width: 480px) { .shots img { width: 104px; } }
+
+/* QR code du dépôt : toujours noir sur blanc, même en thème sombre, sinon illisible pour un scanner */
+.qr img { background: #fff; padding: 6px; border: 1px solid var(--fg); }
+
+/* « Obtenir les applications » : les trois voies, en tête de page */
+.get .way { margin: 1.2rem 0 1.6rem; }
+.get .way h3 small { font-weight: 400; opacity: .75; }
