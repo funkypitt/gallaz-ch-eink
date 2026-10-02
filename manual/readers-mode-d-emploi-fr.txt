@@ -2098,7 +2098,7 @@ Un widget montre de vieilles tâches : ouvrez l'application, qui synchronise et
 
 # Reader's Notes
 
-*Android 1.6.2 · Windows, macOS, Linux 1.3.2*
+*Android 1.6.2 · Windows, macOS, Linux 1.3.3*
 
 ## Ce que c'est
 
@@ -2327,9 +2327,7 @@ Chaque dossier est un sous-dossier du dossier des notes, sur un seul niveau. Un 
 
 ### Changer de serveur ou de dossier
 
-Sur l'ordinateur, quand vous changez le serveur ou le dossier, toutes les notes de l'ordinateur sont envoyées au nouvel endroit.
-
-Sur le téléphone, c'est pareil, que vous tapiez un autre **serveur** ou un autre **dossier sur le serveur**, ou que vous importiez un fichier d'identifiants fait pour un autre endroit : à la première synchronisation qui atteint le nouvel endroit, toutes les notes du téléphone sont gardées et envoyées là-bas, avec leurs dossiers, et les notes qui s'y trouvent déjà sont reçues. Rien n'est retiré du téléphone, et l'ancien dossier de l'ancien serveur est laissé tel quel. Une note dont le fichier se trouve déjà au nouvel endroit avec le même texte n'est pas envoyée une seconde fois ; une note de même titre mais d'un autre texte est envoyée à côté, sous le nom `Titre (2).txt`.
+Sur le téléphone comme sur l'ordinateur, que vous tapiez un autre **serveur** ou un autre **dossier sur le serveur**, ou que vous importiez un fichier d'identifiants fait pour un autre endroit : à la première synchronisation qui atteint le nouvel endroit, toutes les notes de l'appareil sont gardées et envoyées là-bas, avec leurs dossiers, et les notes qui s'y trouvent déjà sont reçues. Rien n'est retiré de l'appareil, et l'ancien dossier de l'ancien serveur est laissé tel quel. Une note dont le fichier se trouve déjà au nouvel endroit avec le même texte n'est pas envoyée une seconde fois ; une note de même titre mais d'un autre texte est envoyée à côté, sous le nom `Titre (2).txt`.
 
 ### Le fichier d'identifiants
 
