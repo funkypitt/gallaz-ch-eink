@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>E-ink &amp; digital detox projects — gallaz.ch</title>
-<meta name="description" content="Open-source tools for e-ink screens and digital wellbeing: the Reader's family (launcher, calendar, tasks, notes, books, feeds in black and white), Android apps, Chrome extensions, and Linux utilities. No ads, no accounts, no algorithm.">
+<meta name="description" content="Black-and-white, text-only Android apps for reading, listening and digital wellbeing, and the one small app that installs them all and keeps them up to date. No ads, no accounts, no algorithm.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,15 +18,38 @@
 </header>
 
 <h1>E-ink &amp; digital detox</h1>
-<p class="lede">Open-source tools for long-form reading, listening, and digital wellbeing. High contrast, no ads, no accounts, no algorithm. Designed for e-ink screens and intentional use. Since 2026, the <a href="#readers">Reader's family</a>: a whole phone in black and white, text only.</p>
+<p class="lede">Open-source tools for long-form reading, listening, and digital wellbeing. High contrast, no ads, no accounts, no algorithm. Designed for e-ink screens and intentional use. Since 2026, the <a href="#readers">Reader's family</a>: a whole phone in black and white, text only, and <a href="#get">one small app</a> that installs it all.</p>
+<p class="toc"><a href="#get">Getting the apps</a> · <a href="#readers">The Reader's family</a> · <a href="#also">Also in the installer</a> · <a href="#desktop">On the desktop</a> · <a href="#others">Other projects</a></p>
 
-<!-- ==================== Obtenir les apps ==================== -->
+<!-- ==================== Getting the apps: the installer ==================== -->
 <section class="platform get" id="get">
-  <h2>Getting the Android apps</h2>
-  <p class="lede">Three ways, in order of preference. The files are identical and carry the same signature whichever way you choose, so you can change your mind later without uninstalling anything.</p>
+  <h2>Getting the apps</h2>
+  <p class="lede">One small app installs all the others and keeps them up to date. Every app of the <a href="#readers">Reader's family</a> and the four that <a href="#also">follow it</a> are in its list.</p>
+
+  <article class="app" id="readers-installer">
+    <h2>Reader's Installer and Updater</h2>
+    <p class="meta">v1.0.2 · GPL-3.0 · <code>com.freedomfighter.readersinstaller</code></p>
+    <p>Open it once: every app is in the list, one tap from being installed. After that the updates arrive by themselves, the installer's own included. When an app also exists for the desktop, its page in the installer links to it. A modified version of <a href="https://github.com/ImranR98/Obtainium">Obtainium</a> (GPL-3.0), not affiliated with its authors; it can follow any other app the same way.</p>
+    <div class="links">
+      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersInstaller-v1.0.2.apk">Download the installer (APK)</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-installer">Source</a>
+    </div>
+  </article>
+
+  <section class="way" id="steps">
+    <h3>Three steps</h3>
+    <ol>
+      <li>On the phone, tap <strong>Download the installer</strong> above, then open the file. Android asks once to let the browser install apps: allow it.</li>
+      <li>Open Reader's Installer. The apps are in the list: tap one, then <strong>Install</strong>. Android asks once to let the installer install apps.</li>
+      <li>That is all. Updates are looked for in the background; on Android 12 and later they install silently for the apps the installer installed itself.</li>
+    </ol>
+    <p><small>For 64-bit ARM, which is nearly every phone and tablet since 2017. An app installed earlier from F-Droid or an APK asks once for confirmation, then follows.</small></p>
+  </section>
+
+  <p class="lede other">Three other ways, if you would rather not use the installer. The files are identical and carry the same signature whichever way you choose, so you can change your mind later without uninstalling anything.</p>
 
   <section class="way" id="fdroid">
-    <h3>1 — F-Droid <small>(recommended: updates arrive by themselves)</small></h3>
+    <h3>F-Droid <small>(updates arrive by themselves)</small></h3>
     <ol>
       <li>Install the <a href="https://f-droid.org/">F-Droid</a> client (Droid-ify or Neo Store work too).</li>
       <li>Add the repository: tap the button below on the phone, or scan the code from a computer.</li>
@@ -38,12 +61,12 @@
   </section>
 
   <section class="way" id="obtainium">
-    <h3>2 — Obtainium <small>(updates straight from GitHub)</small></h3>
+    <h3>Obtainium <small>(updates straight from GitHub)</small></h3>
     <p><a href="https://obtainium.imranr.dev/">Obtainium</a> installs and updates apps from their GitHub releases, with no store in between. With Obtainium on the phone, tap the <strong>Obtainium</strong> button of any app below. The link opens Obtainium directly and goes through no third-party page.</p>
   </section>
 
   <section class="way" id="apk">
-    <h3>3 — The APK file <small>(last resort: no updates)</small></h3>
+    <h3>The APK file <small>(last resort: no updates)</small></h3>
     <p>Each app also has an <strong>APK</strong> link. Installed this way, an app never updates: you would have to come back here for every new version. Use it to try an app, or on a device where neither F-Droid nor Obtainium can run.</p>
   </section>
 </section>
@@ -51,17 +74,7 @@
 <!-- ==================== Reader's ==================== -->
 <section class="platform" id="readers">
   <h2>The Reader's family</h2>
-  <p class="lede">A phone that reads like a page. Black-and-white, text-only apps: no icons, no colours, no cards, no account. The launcher shows words; the calendar, tasks, notes, books and feeds read like a newspaper; Reader's Detox keeps the social networks out. In the spirit of the Light Phone, on any Android. All of them ship from the <a href="#fdroid">F-Droid repository</a> above, in English, French, German, Spanish, Portuguese and Russian. Most also provide standard black-and-white widgets for any other launcher.</p>
-
-  <article class="app" id="readers-installer">
-    <h2>Reader's Installer and Updater</h2>
-    <p class="meta">v1.0.1 · GPL-3.0 · <code>com.freedomfighter.readersinstaller</code></p>
-    <p>Installs the whole Reader's family and keeps it up to date, itself included: open it once, every app is in the list, one tap from being installed. A modified version of <a href="https://github.com/ImranR98/Obtainium">Obtainium</a> (GPL-3.0), not affiliated with its authors; it can follow any other app the same way.</p>
-    <div class="links">
-      <a class="btn primary" href="https://github.com/funkypitt/readers-installer/releases/latest">APK</a>
-      <a class="btn" href="https://github.com/funkypitt/readers-installer">Source</a>
-    </div>
-  </article>
+  <p class="lede">A phone that reads like a page. Black-and-white, text-only apps: no icons, no colours, no cards, no account. The launcher shows words; the calendar, tasks, notes, books and feeds read like a newspaper; Reader's Detox keeps the social networks out. In the spirit of the Light Phone, on any Android. All of them are in the <a href="#get">installer</a>'s list, in English, French, German, Spanish, Portuguese and Russian. Most also provide standard black-and-white widgets for any other launcher.</p>
 
   <article class="app" id="readers-launcher">
     <h2>Reader's Launcher</h2>
@@ -261,10 +274,10 @@
 
 </section>
 
-<!-- ==================== Android ==================== -->
-<section class="platform">
-  <h2>Android apps</h2>
-
+<!-- ==================== Also in the installer ==================== -->
+<section class="platform" id="also">
+  <h2>Also in the installer</h2>
+  <p class="lede">Four apps outside the Reader's family, in the installer's list too.</p>
 
   <article class="app" id="epub-eink-newsreader">
     <h2>ePub Magazine Reader</h2>
@@ -293,7 +306,7 @@
     <h2>Clavier Plume</h2>
     <p class="meta">v2.1.2 · FUTO Source First 1.1 · <code>ch.plume.clavier</code></p>
     <p>A French and English keyboard with no Internet permission, built on FUTO Keyboard. Its French dictionary understands elisions (l'ordinateur, qu'elle), inversions (a-t-il) and typography, and recognises rare words without pushing them at you. Corrections come from the dictionary alone — no language model. Offline voice dictation.</p>
-    <p>Too large for the F-Droid repository: automatic updates go through <a href="https://obtainium.imranr.dev/">Obtainium</a>, which follows GitHub releases.</p>
+    <p>Too large for the F-Droid repository: the <a href="#get">installer</a> and <a href="https://obtainium.imranr.dev/">Obtainium</a> follow its GitHub releases instead.</p>
     <div class="links">
       <a class="btn primary" href="obtainium://app/%7B%22id%22%3A%22ch.plume.clavier%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fclavier-plume%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Clavier%20Plume%22%7D">Obtainium</a>
       <a class="btn" href="https://github.com/funkypitt/clavier-plume/releases/latest">APK</a>
@@ -301,12 +314,48 @@
     </div>
   </article>
 
+  <article class="app" id="local-2p-games">
+    <h2>Funky's 2P Games</h2>
+    <p class="meta">v1.35 · MIT · <code>com.local2p.games</code></p>
+    <p>16 touch games for two on one phone, the screen split in two halves; eight are also played online, by room code: 4 in a Row, Caro, Awalé, Memory, Duck Chess, Tank Wars, Word Clash and Reversi. On one phone only: Tennis, Pool, Carrom, Air Hockey, Mini Golf, Star Clash, Hangman, Horse Jump. Rules behind a ? in each game. No ads, no accounts, no purchases.</p>
+    <p class="shots"><img src="img/com.local2p.games-1.png" alt="" loading="lazy"><img src="img/com.local2p.games-2.png" alt="" loading="lazy"></p>
+    <div class="links">
+      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.local2p.games%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Flocal-2p-games%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Funky%27s%202P%20Games%22%7D">Obtainium</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/2P-Games-v1.35.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/local-2p-games">Source code</a>
+    </div>
+  </article>
+
 </section>
 
-<!-- ==================== Meditation ==================== -->
+<!-- ==================== Desktop ==================== -->
+<section class="platform" id="desktop">
+  <h2>On the desktop</h2>
+  <p class="lede">Reader's Calendar, Tasks, Notes and Scanner also exist for Windows, macOS and Linux, and Reader's Podcasts for Linux. The download button is on each app's card above; in the installer, the app's page links to its desktop version.</p>
+
+  <section class="install">
+    <h3>Debian / Ubuntu / Pop!_OS / Mint: the apt repository</h3>
+    <p>The five desktop apps are also in a small apt repository, so they update with the rest of the system.</p>
+    <pre>sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/apt/keyrings/funkypitt.gpg &gt;/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
+sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks readers-scanner readers-podcasts</pre>
+    <p>Arch Linux: each app's repository has a PKGBUILD. Details at <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
+  </section>
+
+  <section class="install">
+    <h3>Windows and macOS: the first opening</h3>
+    <p>Reader's Calendar, Reader's Notes and Reader's Tasks also come as an .exe for Windows and a .dmg for macOS, on each app's download page: one file, nothing to install, no Python to think about. They are small free applications without a paid certificate, so the system distrusts them once — once only.</p>
+    <p><strong>Windows</strong>: a blue "Windows protected your PC" panel appears the first time. <em>More info</em> › <em>Run anyway</em>.</p>
+    <p><strong>macOS</strong>: open the .dmg — "apple-silicon" for an M1 Mac or later, "intel" for an older one — drag the app onto <em>Applications</em>, then <strong>right click on the app › Open</strong> › <em>Open</em>. A double click at that point only says the app cannot be opened. Afterwards it opens like any other.</p>
+  </section>
+</section>
+
+<!-- ==================== Other projects: meditation ==================== -->
+<a id="others"></a>
 <section class="platform" id="meditation">
-  <h2>Meditation</h2>
-  <p class="lede">Three Android apps for a retreat: each does one thing, and nothing interrupts it — not deep sleep, not airplane mode, not another sound. In the <a href="#fdroid">F-Droid repository</a> above.</p>
+  <h2>Other projects: meditation</h2>
+  <p class="lede">Three Android apps for a retreat: each does one thing, and nothing interrupts it — not deep sleep, not airplane mode, not another sound. They are not in the installer's list: get them from the <a href="#fdroid">F-Droid repository</a>, Obtainium or the APK.</p>
 
   <article class="app" id="retreat-timer">
     <h2>Retreat Timer</h2>
@@ -344,9 +393,9 @@
   </article>
 </section>
 
-<!-- ==================== Chrome extensions ==================== -->
-<section class="platform">
-  <h2>Chrome extensions</h2>
+<!-- ==================== Other projects: Chrome extensions ==================== -->
+<section class="platform" id="extensions">
+  <h2>Other projects: Chrome extensions</h2>
 
   <article class="app">
     <h2>PageTurn</h2>
@@ -378,9 +427,9 @@
   </section>
 </section>
 
-<!-- ==================== Linux ==================== -->
-<section class="platform">
-  <h2>Linux</h2>
+<!-- ==================== Other projects: Linux ==================== -->
+<section class="platform" id="thinkbook">
+  <h2>Other projects: e-ink on the ThinkBook Plus (Linux)</h2>
 
   <article class="app">
     <h2>Tinta4PlusU</h2>
@@ -401,23 +450,6 @@
       <a class="btn" href="https://github.com/funkypitt/eink-reader">Source code</a>
     </div>
   </article>
-
-  <section class="install">
-    <h3>Debian / Ubuntu / Pop!_OS / Mint: the apt repository</h3>
-    <p>Reader's Calendar, Reader's Notes and Reader's Tasks for Linux are also in a small apt repository, so they update with the rest of the system.</p>
-    <pre>sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/apt/keyrings/funkypitt.gpg &gt;/dev/null
-echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
-sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks</pre>
-    <p>Arch Linux: each app's repository has a PKGBUILD. Details at <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
-  </section>
-
-  <section class="install">
-    <h3>Windows and macOS: the first opening</h3>
-    <p>Reader's Calendar, Reader's Notes and Reader's Tasks also come as an .exe for Windows and a .dmg for macOS, on each app's download page: one file, nothing to install, no Python to think about. They are small free applications without a paid certificate, so the system distrusts them once — once only.</p>
-    <p><strong>Windows</strong>: a blue "Windows protected your PC" panel appears the first time. <em>More info</em> › <em>Run anyway</em>.</p>
-    <p><strong>macOS</strong>: open the .dmg — "apple-silicon" for an M1 Mac or later, "intel" for an older one — drag the app onto <em>Applications</em>, then <strong>right click on the app › Open</strong> › <em>Open</em>. A double click at that point only says the app cannot be opened. Afterwards it opens like any other.</p>
-  </section>
 
   <section class="install">
     <h3>Installation</h3>

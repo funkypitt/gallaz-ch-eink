@@ -10,18 +10,21 @@ other via the header. Layout is serif, single-column, high-contrast, no
 hero images — designed to look right on an e-ink browser if anyone
 happens to be reading it on one.
 
-## What's listed
+## What's listed, in this order
 
-**Reader's family** (section `#readers`, both languages): Reader's Launcher, Calendar (Android + Linux), Tasks (Android + Linux), Notes, Books, Feeds — sources under `github.com/funkypitt/readers-*`, APKs from the F-Droid repo, Linux packages from each desktop repo's latest release.
+1. **Getting the apps** (`#get`): Reader's Installer and Updater first (card `#readers-installer`,
+   direct APK link, three steps), then the three other ways (`#fdroid`, `#obtainium`, `#apk`).
+2. **The Reader's family** (`#readers`): one card per app, in the order of the installer's list.
+   `tool/make_catalog.py` of the installer reads this section: each card's Obtainium link gives the
+   app's id and name, and a download button starting with "Windows", "macOS" or "Linux" gives its
+   desktop link.
+3. **Also in the installer** (`#also`): ePub Magazine Reader, Le dictionnaire Littré, Clavier Plume,
+   Funky's 2P Games.
+4. **On the desktop** (`#desktop`): the apt repository, and the first opening on Windows and macOS.
+5. **Other projects**, not in the installer's list: meditation (`#meditation`), Chrome extensions
+   (`#extensions`), e-ink on the ThinkBook Plus (`#thinkbook`).
 
-**Meditation** (section `#meditation`): Retreat Timer, Retreat Player, Retreat Walk — `github.com/funkypitt/retreat-*`.
-
-**Other apps**
-
-- **ePub Magazine reader** — `com.freedomfighter.magazinereader`,
-  source: <https://github.com/funkypitt/epub-eink-newsreader>
-- **Pluralis** — `com.pluralis.pluralis`,
-  source: <https://github.com/funkypitt/pluralis>
+An app added to the installer's list gets its card in section 2 or 3, in both languages.
 
 ## Updating after a new release
 

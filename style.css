@@ -211,3 +211,11 @@ footer.site a { color: var(--muted); }
 /* « Obtenir les applications » : les trois voies, en tête de page */
 .get .way { margin: 1.2rem 0 1.6rem; }
 .get .way h3 small { font-weight: 400; opacity: .75; }
+
+/* sommaire sous le chapeau */
+p.toc { margin: -1.4rem 0 0; font-size: 0.9rem; font-variant: small-caps; letter-spacing: 0.04em; }
+p.toc a { color: var(--fg); }
+
+/* « Obtenir les applications » : l'installateur d'abord, les autres voies ensuite */
+.get article.app { margin-bottom: 1.6rem; }
+.get p.lede.other { border-top: 1px solid var(--rule); padding-top: 1.4rem; margin: 2rem 0 0; }
