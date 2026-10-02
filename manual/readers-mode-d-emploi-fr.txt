@@ -7931,13 +7931,13 @@ Si des mots français sont corrigés pendant que vous écrivez en anglais (ou l'
 
 # Funky's 2P Games
 
-*Android 1.35*
+*Android 1.36*
 
 L'application n'existe qu'en anglais : les boutons et les messages sont cités ici tels qu'elle les affiche.
 
 ## Ce que c'est
 
-Funky's 2P Games réunit 16 jeux pour deux joueurs. Vous y jouez face à face sur un seul téléphone, chacun sur sa moitié de l'écran ou à tour de rôle ; 8 de ces jeux se jouent aussi en ligne, chacun sur son téléphone, avec un code de salle de quatre caractères ou une partie rapide.
+Funky's 2P Games réunit 16 jeux pour deux joueurs. Vous y jouez face à face sur un seul téléphone, chacun sur sa moitié de l'écran ou à tour de rôle.
 
 Chaque jeu porte ses règles derrière un bouton **?**. Il n'y a ni publicité, ni compte, ni achat.
 
@@ -7947,7 +7947,7 @@ L'application ne joue jamais contre vous : pas d'adversaire automatique, pas de
 
 L'application ne demande rien : aucune autorisation, aucun compte, aucun serveur à saisir. Elle s'ouvre directement sur le menu des jeux.
 
-Elle ne se sert de la connexion Internet que pour le jeu en ligne. Sans connexion, tous les jeux fonctionnent en mode local.
+Elle fonctionne sans aucune connexion.
 
 ## Les écrans
 
@@ -7956,8 +7956,6 @@ Elle ne se sert de la connexion Internet que pour le jeu en ligne. Sans connexio
 Le menu s'intitule **2 Player Games**. À côté du titre, un bouton en forme de haut-parleur allume ou coupe la musique de fond.
 
 Dessous, seize cartes colorées sur deux colonnes, une par jeu : Tennis, 4 in a Row, Pool, Memory, Word Clash, Air Hockey, Tank Wars, Carrom, Mini Golf, Star Clash, Caro, Awalé, Duck-Day Chess, Hangman, Reversi, Horse Jump. Faites défiler pour les voir toutes. Touchez une carte pour ouvrir le jeu.
-
-Un petit point vert dans le coin supérieur droit d'une carte signale un jeu qui se joue aussi en ligne. Les huit jeux à point vert sont 4 in a Row, Memory, Word Clash, Tank Wars, Caro, Awalé, Duck-Day Chess et Reversi.
 
 Au bas de la liste, une ligne de crédits : **Pierre Gallaz · developed with Claude Code**.
 
@@ -7969,47 +7967,24 @@ Tous les jeux partagent le même cadre. La barre du haut contient, de gauche à 
 - le nom du jeu ;
 - **?** : ouvre les règles du jeu ; touchez de nouveau **?**, ou **Got it**, ou **×** pour les fermer. La partie n'est pas mise en pause pendant que les règles sont affichées.
 - le bouton haut-parleur : musique allumée ou coupée, le même réglage que sur le menu ;
-- l'état de la partie : à qui le tour, le score ou le résultat. Dans les jeux à tour de rôle, on y lit par exemple **P1's turn**, **Red's turn**, **Black's Turn** ; en ligne, **Your turn** (à vous) ou **Opponent's turn** (à l'adversaire).
+- l'état de la partie : à qui le tour, le score ou le résultat. Dans les jeux à tour de rôle, on y lit par exemple **P1's turn**, **Red's turn**, **Black's Turn**.
 
 Le reste de l'écran est l'aire de jeu. **P1** désigne le joueur 1 et **P2** le joueur 2. Tant qu'un jeu est ouvert, l'écran reste allumé.
 
 Dans plusieurs jeux à tour de rôle (Memory, Word Clash, Tank Wars, Carrom, Pool, Mini Golf, Hangman), un bandeau **Player 1, your turn!** ou **Player 2, your turn!** apparaît une seconde quand le tour change.
 
-### Play Mode
-
-Quand vous ouvrez un jeu à point vert, un panneau **Play Mode** propose deux boutons :
-
-- **Local** : les deux joueurs sur ce téléphone.
-- **Online** : chacun sur son téléphone.
-
-Les huit autres jeux démarrent directement en mode local.
-
-### Online Play
-
-Après **Online**, le panneau **Online Play** propose :
-
-- **Create Room** : ouvre une salle et affiche son code.
-- **Join Room** : demande le code d'une salle créée par quelqu'un d'autre.
-- **Quick Match** : rejoint une salle en attente pour ce jeu, ou en ouvre une.
-- **Back** : revient au menu.
-
-Le panneau d'attente affiche **Room:** suivi du code, **Waiting for opponent...**, la ligne **Share the room code with your friend** et un bouton **Cancel**, qui revient au menu.
-
-Le panneau pour rejoindre s'intitule **Enter Room Code**, avec un champ (son exemple indique **ABCD**), un bouton **Join** et un bouton **Back** qui revient à **Online Play**.
-
 ### Le panneau de fin de partie
 
-Quand une partie se termine, un panneau recouvre l'aire de jeu avec le résultat (par exemple **P1 wins!**, **You win!**, **Draw!**) et souvent le score final. Dessous, un bouton lance une nouvelle partie : **Rematch** dans la plupart des jeux, **Restart** dans Caro, **New Game** dans Hangman. Le **×** en haut à droite ferme le panneau sans relancer.
+Quand une partie se termine, un panneau recouvre l'aire de jeu avec le résultat (par exemple **P1 wins!**, **Draw!**) et souvent le score final. Dessous, un bouton lance une nouvelle partie : **Rematch** dans la plupart des jeux, **Restart** dans Caro, **New Game** dans Hangman. Le **×** en haut à droite ferme le panneau sans relancer.
 
 Pool et Mini Golf affichent le résultat sans bouton : pour rejouer, revenez au menu avec **◀** et rouvrez le jeu.
 
 ## Comment faire
 
-### Lancer une partie sur un seul téléphone
+### Lancer une partie
 
-1. Sur le menu, touchez la carte du jeu.
-2. Si **Play Mode** apparaît, touchez **Local**.
-3. Posez le téléphone entre vous. Dans les jeux qui se jouent sur deux moitiés, P1 a la moitié du bas et P2 celle du haut (dans Horse Jump, P1 a la piste du haut).
+1. Sur le menu, touchez la carte du jeu. Le jeu s'ouvre aussitôt.
+2. Posez le téléphone entre vous. Dans les jeux qui se jouent sur deux moitiés, P1 a la moitié du bas et P2 celle du haut (dans Horse Jump, P1 a la piste du haut).
 
 ### Lire les règles d'un jeu
 
@@ -8017,40 +7992,15 @@ Pool et Mini Golf affichent le résultat sans bouton : pour rejouer, revenez au
 2. Touchez **?** dans la barre du haut.
 3. Touchez **Got it** pour fermer.
 
-### Jouer en ligne : créer une salle
-
-1. Les deux joueurs ouvrent l'application, chacun sur son téléphone, avec une connexion Internet.
-2. Touchez le jeu (un jeu à point vert), puis **Online**.
-3. Touchez **Create Room**.
-4. Lisez les quatre caractères qui suivent **Room:** et donnez-les à votre ami. Les caractères `\n` que l'écran affiche juste après le code n'en font pas partie.
-5. Attendez. La partie démarre toute seule dès que votre ami a rejoint la salle. Vous êtes le premier joueur.
-
-Un code se compose de lettres majuscules et de chiffres. Il ne contient jamais les lettres I, L et O ni les chiffres 0 et 1.
-
-### Jouer en ligne : rejoindre une salle
-
-1. Touchez le même jeu que votre ami, puis **Online**.
-2. Touchez **Join Room**.
-3. Saisissez les quatre caractères du code sous **Enter Room Code**. Les majuscules se mettent toutes seules.
-4. Touchez **Join**. La partie démarre aussitôt. Vous êtes le second joueur.
-
-### Jouer en ligne : partie rapide
-
-1. Touchez le jeu, puis **Online**, puis **Quick Match**. Le panneau affiche **Searching...**.
-2. Si une salle attend déjà pour ce jeu, vous la rejoignez immédiatement comme second joueur.
-3. Si aucune n'attend, l'application ouvre une salle pour vous et affiche son code. Vous attendez comme après **Create Room** : le prochain joueur qui touche **Quick Match** pour le même jeu, ou un ami qui saisit votre code, devient votre adversaire.
-
 ### Rejouer
 
 Touchez le bouton du panneau de fin de partie (**Rematch**, **Restart** ou **New Game**).
-
-En ligne, ce bouton ne remet la partie à zéro que sur votre téléphone : chaque joueur le touche sur le sien.
 
 Dans Tank Wars, **Rematch** recharge toute l'application et vous ramène au menu ; rouvrez le jeu depuis là.
 
 ### Quitter une partie
 
-Touchez **◀**. En ligne, votre adversaire voit alors **Opponent disconnected** et la partie s'arrête pour lui.
+Touchez **◀**. La partie en cours est perdue.
 
 ### Couper la musique
 
@@ -8058,7 +8008,7 @@ Touchez le bouton haut-parleur, sur le menu ou dans la barre du haut d'un jeu. T
 
 ### Tennis
 
-Un seul téléphone. P1 est la raquette rouge en bas, P2 la raquette bleue en haut.
+P1 est la raquette rouge en bas, P2 la raquette bleue en haut.
 
 - But : faire passer la balle derrière la raquette de l'adversaire.
 - Jouer : glissez le doigt sur votre moitié de l'écran (les bandes marquées **slide here**) ; votre raquette le suit de gauche à droite. La balle rebondit sur les côtés et accélère un peu à chaque coup de raquette. Après un point, la balle repart du centre vers le joueur qui a perdu le point.
@@ -8067,7 +8017,7 @@ Un seul téléphone. P1 est la raquette rouge en bas, P2 la raquette bleue en ha
 
 ### 4 in a Row
 
-Local ou en ligne. Le rouge (Red) commence ; le second joueur est le jaune (Yellow). En ligne, le créateur de la salle est le rouge.
+Le rouge (Red) commence ; le second joueur est le jaune (Yellow).
 
 - But : aligner quatre de vos jetons, en ligne, en colonne ou en diagonale.
 - Jouer : touchez n'importe quelle case d'une colonne ; votre jeton tombe dans la case libre la plus basse. Le tour passe.
@@ -8075,7 +8025,7 @@ Local ou en ligne. Le rouge (Red) commence ; le second joueur est le jaune (Yel
 
 ### Pool
 
-Un seul téléphone. P1 tire le premier.
+P1 tire le premier.
 
 - But : empocher toutes les billes de votre groupe, puis la bille 8.
 - Jouer : posez le doigt sur la table et écartez-le de la bille blanche : elle partira dans la direction opposée à votre doigt, et plus vous tirez loin, plus le coup est fort. Une ligne pointillée montre la direction ; la vue recule quand vous tirez loin. Relâchez pour tirer.
@@ -8085,17 +8035,17 @@ Un seul téléphone. P1 tire le premier.
 
 ### Memory
 
-Local ou en ligne. 32 cartes, 16 paires de fruits.
+32 cartes, 16 paires de fruits.
 
 - But : ramasser plus de paires que l'adversaire.
 - Jouer : touchez deux cartes pour les retourner. Si elles sont identiques, elles restent visibles, vous marquez 1 et vous rejouez. Sinon elles se retournent et le tour passe.
-- Fin : quand toutes les paires sont trouvées, le joueur qui en a le plus gagne ; à égalité, **Draw!**. L'état affiche **P1: 0 P2: 0** et à qui le tour (en ligne : **You:** et **Opp:**).
+- Fin : quand toutes les paires sont trouvées, le joueur qui en a le plus gagne ; à égalité, **Draw!**. L'état affiche **P1: 0 P2: 0** et à qui le tour.
 
 Un double toucher sur l'espace vide autour des cartes remplace l'un des fruits par une image surprise jusqu'à la fin de la partie.
 
 ### Word Clash
 
-Local ou en ligne. Le jeu demande d'abord **Choose Language** : **English** ou **Français**. En ligne, c'est le créateur de la salle qui choisit, et l'autre joueur voit **Waiting for host to pick language...**.
+Le jeu demande d'abord **Choose Language** : **English** ou **Français**.
 
 - But : marquer plus de points que l'adversaire sur une grille de mots croisés commune.
 - Le plateau : une petite grille de mots cachés, tous formés avec les sept lettres de la roue placée dessous. La ligne du haut affiche les scores **P1:** et **P2:** et le nombre d'essais restants (**tries**) ; sous la grille, le compte des mots trouvés (par exemple **2/6 words**).
@@ -8106,7 +8056,7 @@ Local ou en ligne. Le jeu demande d'abord **Choose Language** : **English** ou 
 
 ### Air Hockey
 
-Un seul téléphone. P1 est le maillet rouge en bas, P2 le maillet bleu en haut.
+P1 est le maillet rouge en bas, P2 le maillet bleu en haut.
 
 - But : pousser le palet dans le but adverse, la fente sombre au milieu du bord opposé.
 - Jouer : déplacez votre maillet du doigt ; il ne peut pas sortir de votre moitié. La vitesse du maillet compte : un geste rapide frappe fort (étincelles, écran qui tremble), un geste doux pousse à peine. Après un but, le palet revient au centre.
@@ -8114,7 +8064,7 @@ Un seul téléphone. P1 est le maillet rouge en bas, P2 le maillet bleu en haut.
 
 ### Tank Wars
 
-Local ou en ligne. P1 est le char rouge à gauche, P2 le char bleu à droite. Chaque char commence avec 100 HP (points de vie).
+P1 est le char rouge à gauche, P2 le char bleu à droite. Chaque char commence avec 100 HP (points de vie).
 
 - But : détruire le char adverse.
 - Jouer : à votre tour, glissez le doigt n'importe où au-dessus de la zone de commande : vers la gauche ou la droite pour changer **Angle**, vers le haut ou le bas pour changer **Power** (vers le haut pour plus de puissance). Le canon bouge en même temps. Touchez ensuite le bouton rouge **FIRE**.
@@ -8124,7 +8074,7 @@ Local ou en ligne. P1 est le char rouge à gauche, P2 le char bleu à droite. Ch
 
 ### Carrom
 
-Un seul téléphone. P1 joue les blancs (White) depuis la ligne du bas, P2 les noirs (Black) depuis celle du haut. Le plateau porte 9 pions blancs, 9 pions noirs et la Reine rouge (Queen) au centre, avec un trou à chaque coin.
+P1 joue les blancs (White) depuis la ligne du bas, P2 les noirs (Black) depuis celle du haut. Le plateau porte 9 pions blancs, 9 pions noirs et la Reine rouge (Queen) au centre, avec un trou à chaque coin.
 
 - But : empocher vos neuf pions avant l'adversaire.
 - Jouer : touchez la bande colorée le long de votre ligne (marquée **‹ ›**) pour faire glisser le palet de frappe vers la gauche ou la droite. Touchez ensuite hors de la bande, ou gardez le doigt posé et sortez-en, puis tirez en arrière comme avec un lance-pierre : le palet partira dans la direction opposée à votre doigt. Une ligne pointillée montre la direction et une barre sous le plateau la puissance. Relâchez pour tirer.
@@ -8136,7 +8086,7 @@ Un seul téléphone. P1 joue les blancs (White) depuis la ligne du bas, P2 les n
 
 ### Mini Golf
 
-Un seul téléphone. Six trous.
+Six trous.
 
 - But : finir les six trous en moins de coups que l'adversaire.
 - Jouer : P1 joue le trou jusqu'à ce que la balle soit dedans, puis P2 joue le même trou depuis le même départ, puis tous deux passent au trou suivant. Pour frapper, posez le doigt et écartez-le de la balle : elle partira dans la direction opposée à votre doigt, et plus vous tirez loin, plus le coup est fort. Des points montrent la direction et une petite barre la puissance ; la vue recule quand vous tirez loin. Relâchez pour frapper. La balle rebondit sur les murets de bois.
@@ -8145,7 +8095,7 @@ Un seul téléphone. Six trous.
 
 ### Star Clash
 
-Un seul téléphone. P1 est le vaisseau rouge en bas, P2 le vaisseau bleu en haut. Une formation d'extraterrestres se tient entre les deux.
+P1 est le vaisseau rouge en bas, P2 le vaisseau bleu en haut. Une formation d'extraterrestres se tient entre les deux.
 
 - But : être le dernier vaisseau en vie.
 - Jouer : glissez le doigt sur votre moitié (les bandes marquées **P1 — slide here** et **P2 — slide here**) ; votre vaisseau le suit de gauche à droite et tire tout seul tant que le doigt est posé.
@@ -8158,7 +8108,7 @@ Un seul téléphone. P1 est le vaisseau rouge en bas, P2 le vaisseau bleu en hau
 
 ### Caro
 
-Local ou en ligne. Un plateau de 13 sur 13. Les noirs (Black) commencent ; en ligne, le créateur de la salle a les noirs.
+Un plateau de 13 sur 13. Les noirs (Black) commencent.
 
 - But : aligner exactement cinq pierres, en ligne, en colonne ou en diagonale.
 - Jouer : touchez un point libre pour y poser une pierre. Le tour passe.
@@ -8167,7 +8117,7 @@ Local ou en ligne. Un plateau de 13 sur 13. Les noirs (Black) commencent ; en l
 
 ### Awalé
 
-Local ou en ligne. Douze cases de 4 graines chacune. P1 possède la rangée du bas, P2 celle du haut (en ligne : **You** et **Opp**) ; chaque case affiche son nombre de graines. Quand le téléphone est tenu debout, le plateau est dessiné tourné d'un quart de tour : la rangée de P1 est alors à gauche et celle de P2 à droite.
+Douze cases de 4 graines chacune. P1 possède la rangée du bas, P2 celle du haut ; chaque case affiche son nombre de graines. Quand le téléphone est tenu debout, le plateau est dessiné tourné d'un quart de tour : la rangée de P1 est alors à gauche et celle de P2 à droite.
 
 - But : capturer au moins 25 graines.
 - Jouer : touchez une de vos cases qui contient des graines. Ses graines sont semées une à une dans les cases suivantes, dans le sens inverse des aiguilles d'une montre, en sautant la case de départ.
@@ -8176,7 +8126,7 @@ Local ou en ligne. Douze cases de 4 graines chacune. P1 possède la rangée du b
 
 ### Duck-Day Chess
 
-Local ou en ligne. Une partie d'échecs complète, les blancs (White) en premier, avec deux canards en plus. En ligne, le créateur de la salle a les blancs et l'autre joueur voit l'échiquier du côté des noirs.
+Une partie d'échecs complète, les blancs (White) en premier, avec deux canards en plus.
 
 - But : mettre le Roi adverse échec et mat.
 - Un tour a deux temps. D'abord, le coup : touchez une de vos pièces (des points marquent où elle peut aller, un anneau marque une prise), puis touchez la case d'arrivée. Le roque et la prise en passant existent ; un pion qui atteint la dernière rangée ouvre **Promote:** avec la Dame, la Tour, le Fou et le Cavalier. Ensuite, l'état vous demande de poser le Canard jaune (Yellow Duck) : touchez n'importe quelle case vide.
@@ -8190,7 +8140,7 @@ Local ou en ligne. Une partie d'échecs complète, les blancs (White) en premier
 
 ### Hangman
 
-Un seul téléphone. C'est l'application qui choisit le mot : un mot français si le téléphone est réglé en français, un mot anglais sinon.
+C'est l'application qui choisit le mot : un mot français si le téléphone est réglé en français, un mot anglais sinon.
 
 - But : avoir le plus de points quand le mot est complet.
 - Jouer : à votre tour, touchez une lettre. Si elle est dans le mot, vous marquez 1 point par place qu'elle remplit et vous rejouez. Sinon, une partie du corps s'ajoute à la potence (**Wrong: 1/6**) et le tour passe. Les lettres déjà essayées sont grisées et rappelées après **Used:**.
@@ -8198,7 +8148,7 @@ Un seul téléphone. C'est l'application qui choisit le mot : un mot français 
 
 ### Reversi
 
-Local ou en ligne. Un plateau de 8 sur 8 qui commence avec deux pions noirs et deux blancs. Les noirs (Black) commencent ; en ligne, le créateur de la salle a les noirs.
+Un plateau de 8 sur 8 qui commence avec deux pions noirs et deux blancs. Les noirs (Black) commencent.
 
 - But : avoir le plus de pions de votre couleur à la fin.
 - Jouer : touchez une des cases marquées d'un petit point ; ce sont vos coups permis. Votre pion doit enfermer une ou plusieurs lignes droites de pions adverses entre lui et un autre de vos pions ; tous les pions enfermés passent à votre couleur.
@@ -8208,7 +8158,7 @@ Local ou en ligne. Un plateau de 8 sur 8 qui commence avec deux pions noirs et d
 
 ### Horse Jump
 
-Un seul téléphone. L'écran de départ s'intitule **EQUINE EDGE**. P1 monte le cheval blanc sur la piste du haut, P2 le cheval brun sur celle du bas.
+L'écran de départ s'intitule **EQUINE EDGE**. P1 monte le cheval blanc sur la piste du haut, P2 le cheval brun sur celle du bas.
 
 - But : rester en course plus longtemps que l'adversaire.
 - Jouer : touchez l'écran pour démarrer (**Tap to start!**). Touchez ensuite votre moitié de l'écran pour faire sauter votre cheval. Les deux pistes reçoivent les mêmes obstacles : des haies, puis aussi des trous dans le sol une fois quinze obstacles franchis. L'allure s'accélère à mesure que le compte des obstacles franchis monte.
@@ -8231,19 +8181,11 @@ La langue des mots de Word Clash se choisit au début de chaque partie et n'est 
 
 Sur le téléphone, l'application n'enregistre qu'une chose : si la musique est allumée ou coupée. Elle ne garde ni scores, ni historique des parties, ni noms. Désinstaller l'application efface ce réglage ; il n'y a rien d'autre à effacer.
 
-Les parties locales n'envoient rien sur le réseau.
-
-Les parties en ligne passent par une base Firebase Realtime Database, un service de Google. Pour chaque salle, l'application envoie : le jeu concerné, le code de la salle, un nombre tiré au hasard qui sert à mélanger de la même façon sur les deux téléphones, l'heure de création de la salle, la présence de chacun des deux joueurs, et les coups. Un coup est effacé du service dès que l'autre téléphone l'a reçu. Aucun nom, aucun compte, aucune adresse n'est envoyé.
-
-Une salle n'est protégée que par son code. Pendant que vous attendez dans une salle, un autre joueur qui touche **Quick Match** pour le même jeu peut la rejoindre à la place de votre ami.
-
-La partie de l'application qui gère le jeu en ligne est récupérée sur les serveurs de Google au démarrage. Si elle n'a pas pu l'être, **Play Mode** n'apparaît pas et les jeux s'ouvrent en mode local.
+L'application n'envoie rien sur le réseau : elle fonctionne sans aucune connexion.
 
 ## Limites
 
 - Deux joueurs, toujours : pas d'adversaire automatique, pas de mode solo, pas plus de deux.
-- Huit jeux seulement se jouent en ligne ; Tennis, Pool, Air Hockey, Carrom, Mini Golf, Star Clash, Hangman et Horse Jump se jouent sur un seul téléphone.
-- En ligne : pas de discussion, pas de liste d'amis, pas de reconnexion. Si un joueur quitte ou perd la connexion, la partie est finie.
 - Aucun score ni aucune statistique n'est conservé une fois le jeu quitté.
 - Une partie ne peut être ni mise en pause ni sauvegardée ; **◀** y met fin.
 - L'interface est en anglais seulement. Word Clash propose des mots anglais et français ; Hangman suit la langue du téléphone (français ou anglais). Les mots français s'écrivent sans accents.
@@ -8254,26 +8196,12 @@ La partie de l'application qui gère le jeu en ligne est récupérée sur les se
 
 | Message | Ce qu'il veut dire | Que faire |
 |---|---|---|
-| **Enter 4-char code** | Le code saisi sous **Enter Room Code** a moins de quatre caractères. | Saisissez les quatre caractères. |
-| **Joining...** | L'application cherche la salle. | Attendez. Si le message reste, vérifiez la connexion Internet. |
-| **Room not found** | Aucune salle ne porte ce code. | Vérifiez le code avec votre ami ; O, I, L, 0 et 1 ne sont jamais utilisés. |
-| **Wrong game** | La salle existe mais a été ouverte pour un autre jeu. | Revenez en arrière, ouvrez le même jeu que votre ami et rejoignez de nouveau. |
-| **Room full** | La salle a déjà ses deux joueurs, ou sa partie a commencé. | Demandez à votre ami de créer une nouvelle salle. |
-| **Searching...** | **Quick Match** cherche une salle en attente. | Attendez. Si le message reste, vérifiez la connexion Internet. |
-| **Waiting for opponent...** | Votre salle est ouverte et personne ne l'a encore rejointe. | Donnez le code à votre ami, ou attendez une partie rapide. **Cancel** revient au menu. |
-| **Waiting for host to pick language...** | Word Clash en ligne : le créateur de la salle n'a pas encore choisi la langue. | Attendez. |
-| **Opponent disconnected** | L'autre joueur a quitté la partie ou perdu la connexion. La partie est finie. | Revenez avec **◀** et lancez une nouvelle partie en ligne. |
-| **Opponent disconnected**, juste après **Quick Match** | Vous avez été envoyé dans une salle que son créateur avait déjà quittée. | Revenez avec **◀** et touchez de nouveau **Quick Match**. |
 | **White passes — no legal move** (ou **Black passes**) | Reversi : ce joueur ne peut pas jouer ; l'autre rejoue. | Continuez. |
 | **Cover Queen!** | Carrom : vous avez empoché la Reine et devez empocher un de vos pions à ce coup pour la garder. | Visez un de vos pions. |
 | **P1 pocketed 8-ball early! P2 wins!** | Pool : la bille 8 est tombée avant toutes les billes du groupe du tireur. | La partie est perdue ; rouvrez Pool pour rejouer. |
 | **Canard de Secours!** | Duck-Day Chess : les canards laissaient un joueur sans coup possible, et l'application en a déplacé ou retiré un. | Continuez. |
 | **Move 25 reached — Kings are no longer immune to the Red Duck laser!** | Duck-Day Chess : à partir de là, le laser peut retirer un Roi. | Éloignez votre Roi du Canard rouge quand la jauge est presque pleine. |
 | **Hanged!** | Hangman : six lettres fausses ; personne ne gagne. | Touchez **New Game**. |
-
-**Play Mode** n'apparaît pas sur un jeu à point vert : la partie en ligne de l'application n'a pas pu être chargée au démarrage. Fermez l'application, vérifiez la connexion Internet et rouvrez-la.
-
-Après **Rematch** dans une partie en ligne, rien ne bouge : votre adversaire n'a pas encore touché **Rematch** sur son téléphone.
 
 Après **Rematch** dans Tank Wars, vous êtes revenu au menu : c'est ainsi que ce jeu se relance ; rouvrez Tank Wars.
 

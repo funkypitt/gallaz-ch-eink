@@ -7926,11 +7926,11 @@ If French words are corrected while you write in English (or the reverse): switc
 
 # Funky's 2P Games
 
-*Android 1.35*
+*Android 1.36*
 
 ## What it is
 
-Funky's 2P Games is a collection of 16 games for two players. You play them face to face on a single phone, each player using one half of the screen or taking turns; 8 of the games can also be played online, each player on their own phone, with a four-character room code or a quick match.
+Funky's 2P Games is a collection of 16 games for two players. You play them face to face on a single phone, each player using one half of the screen or taking turns.
 
 Every game carries its own rules behind a **?** button. There are no ads, no accounts and no purchases.
 
@@ -7940,7 +7940,7 @@ The app never plays against you: there is no computer opponent and no solo mode.
 
 The app asks for nothing: no permission, no account, no server to enter. It opens straight on the menu of games.
 
-It uses the Internet connection only for online play. Without a connection, every game still works in local mode.
+It works without any connection.
 
 ## The screens
 
@@ -7949,8 +7949,6 @@ It uses the Internet connection only for online play. Without a connection, ever
 The menu is titled **2 Player Games**. Next to the title is a speaker button that switches the background music on or off.
 
 Below, sixteen coloured cards in two columns, one per game: Tennis, 4 in a Row, Pool, Memory, Word Clash, Air Hockey, Tank Wars, Carrom, Mini Golf, Star Clash, Caro, Awalé, Duck-Day Chess, Hangman, Reversi, Horse Jump. Scroll to see them all. Tap a card to open the game.
-
-A small green dot in the top right corner of a card means the game can also be played online. The eight games with the dot are 4 in a Row, Memory, Word Clash, Tank Wars, Caro, Awalé, Duck-Day Chess and Reversi.
 
 At the bottom of the list, a line of credits: **Pierre Gallaz · developed with Claude Code**.
 
@@ -7962,47 +7960,24 @@ Every game uses the same frame. The bar at the top holds, from left to right:
 - the name of the game;
 - **?**: opens the rules of the game; tap **?** again, **Got it** or **×** to close them. The game is not paused while the rules are shown.
 - the speaker button: music on or off, the same setting as on the menu;
-- the status: whose turn it is, the score, or the result. In turn-based games it reads for example **P1's turn**, **Red's turn**, **Black's Turn**; online it reads **Your turn** or **Opponent's turn**.
+- the status: whose turn it is, the score, or the result. In turn-based games it reads for example **P1's turn**, **Red's turn**, **Black's Turn**.
 
 The rest of the screen is the playing area. **P1** is player 1 and **P2** is player 2. While a game is open the screen stays lit.
 
 In several turn-based games (Memory, Word Clash, Tank Wars, Carrom, Pool, Mini Golf, Hangman) a banner **Player 1, your turn!** or **Player 2, your turn!** flashes for a second when the turn passes.
 
-### Play Mode
-
-When you open a game with the green dot, a panel **Play Mode** offers two buttons:
-
-- **Local**: both players on this phone.
-- **Online**: each player on their own phone.
-
-The other eight games start directly in local mode.
-
-### Online Play
-
-After **Online**, the panel **Online Play** offers:
-
-- **Create Room**: opens a room and shows its code.
-- **Join Room**: asks for the code of a room someone else created.
-- **Quick Match**: joins any room waiting for this game, or opens one.
-- **Back**: returns to the menu.
-
-The waiting panel shows **Room:** followed by the code, **Waiting for opponent...**, the line **Share the room code with your friend** and a **Cancel** button, which returns to the menu.
-
-The joining panel is titled **Enter Room Code**, with a field (its example reads **ABCD**), a **Join** button and a **Back** button that returns to **Online Play**.
-
 ### The end-of-game panel
 
-When a game ends, a panel covers the playing area with the result (for example **P1 wins!**, **You win!**, **Draw!**) and often the final score. Under it, a button starts a new game: **Rematch** in most games, **Restart** in Caro, **New Game** in Hangman. The **×** in the top right corner closes the panel without starting again.
+When a game ends, a panel covers the playing area with the result (for example **P1 wins!**, **Draw!**) and often the final score. Under it, a button starts a new game: **Rematch** in most games, **Restart** in Caro, **New Game** in Hangman. The **×** in the top right corner closes the panel without starting again.
 
 Pool and Mini Golf show the result without a button: to play again, go back to the menu with **◀** and reopen the game.
 
 ## How to
 
-### Start a game on one phone
+### Start a game
 
-1. On the menu, tap the card of the game.
-2. If **Play Mode** appears, tap **Local**.
-3. Put the phone between you. In games played on two halves, P1 has the bottom half and P2 the top half (in Horse Jump, P1 has the top lane).
+1. On the menu, tap the card of the game. The game opens at once.
+2. Put the phone between you. In games played on two halves, P1 has the bottom half and P2 the top half (in Horse Jump, P1 has the top lane).
 
 ### Read the rules of a game
 
@@ -8010,40 +7985,15 @@ Pool and Mini Golf show the result without a button: to play again, go back to t
 2. Tap **?** in the top bar.
 3. Tap **Got it** to close.
 
-### Play online: create a room
-
-1. Both players open the app on their own phone, with an Internet connection.
-2. Tap the game (one with the green dot), then **Online**.
-3. Tap **Create Room**.
-4. Read the four characters that follow **Room:** and give them to your friend. The characters `\n` that the screen shows right after the code are not part of it.
-5. Wait. The game starts by itself as soon as your friend joins. You are the first player.
-
-A code is made of capital letters and digits. It never contains the letters I, L and O nor the digits 0 and 1.
-
-### Play online: join a room
-
-1. Tap the same game as your friend, then **Online**.
-2. Tap **Join Room**.
-3. Type the four characters of the code under **Enter Room Code**. Capitals are set automatically.
-4. Tap **Join**. The game starts at once. You are the second player.
-
-### Play online: quick match
-
-1. Tap the game, then **Online**, then **Quick Match**. The panel shows **Searching...**.
-2. If a room is already waiting for this game, you join it immediately as the second player.
-3. If none is waiting, the app opens a room for you and shows its code. You wait as after **Create Room**: the next player who taps **Quick Match** for the same game, or a friend who types your code, becomes your opponent.
-
 ### Play again
 
 Tap the button of the end-of-game panel (**Rematch**, **Restart** or **New Game**).
-
-Online, the button resets the game on your phone only: each player taps it on their own phone.
 
 In Tank Wars, **Rematch** reloads the whole app and brings you back to the menu; reopen the game from there.
 
 ### Leave a game
 
-Tap **◀**. Online, your opponent then sees **Opponent disconnected** and the game stops for them.
+Tap **◀**. The game in progress is lost.
 
 ### Switch the music off
 
@@ -8051,7 +8001,7 @@ Tap the speaker button, on the menu or in the top bar of a game. Tap again to sw
 
 ### Tennis
 
-One phone only. P1 is the red paddle at the bottom, P2 the blue paddle at the top.
+P1 is the red paddle at the bottom, P2 the blue paddle at the top.
 
 - Aim: send the ball past your opponent's paddle.
 - Play: slide your finger on your half of the screen (the strips marked **slide here**); your paddle follows it sideways. The ball bounces off the side walls and gets a little faster at every paddle hit. After a point the ball restarts from the centre towards the player who lost the point.
@@ -8060,7 +8010,7 @@ One phone only. P1 is the red paddle at the bottom, P2 the blue paddle at the to
 
 ### 4 in a Row
 
-Local or online. Red plays first; the second player is Yellow. Online, the creator of the room is Red.
+Red plays first; the second player is Yellow.
 
 - Aim: line up four of your discs, across, down or diagonally.
 - Play: tap any cell of a column; your disc falls to the lowest free cell. The turn passes.
@@ -8068,7 +8018,7 @@ Local or online. Red plays first; the second player is Yellow. Online, the creat
 
 ### Pool
 
-One phone only. P1 shoots first.
+P1 shoots first.
 
 - Aim: pocket all the balls of your group, then the 8-ball.
 - Play: put your finger on the table and pull away from the cue ball (the white one): the ball leaves in the direction opposite to your finger, and the further you pull, the stronger the shot. A dashed line shows the direction; the view zooms out when you pull far. Release to shoot.
@@ -8078,17 +8028,17 @@ One phone only. P1 shoots first.
 
 ### Memory
 
-Local or online. 32 cards, 16 pairs of fruit.
+32 cards, 16 pairs of fruit.
 
 - Aim: collect more pairs than your opponent.
 - Play: tap two cards to turn them over. If they match, they stay face up, you score 1 and play again. If not, they turn back and the turn passes.
-- End: when all pairs are found, the player with the most pairs wins; equal scores give **Draw!**. The status shows **P1: 0 P2: 0** and whose turn it is (online: **You:** and **Opp:**).
+- End: when all pairs are found, the player with the most pairs wins; equal scores give **Draw!**. The status shows **P1: 0 P2: 0** and whose turn it is.
 
 A double tap on the empty space around the cards replaces one of the fruits with a surprise picture until the end of the game.
 
 ### Word Clash
 
-Local or online. The game first asks **Choose Language**: **English** or **Français**. Online, the creator of the room chooses and the other player sees **Waiting for host to pick language...**.
+The game first asks **Choose Language**: **English** or **Français**.
 
 - Aim: score more points than your opponent on a shared crossword.
 - The board: a small crossword of hidden words, all made from the seven letters shown on the wheel below. The top line shows **P1:** and **P2:** scores and the number of tries left; under the grid, the count of words found (for example **2/6 words**).
@@ -8099,7 +8049,7 @@ Local or online. The game first asks **Choose Language**: **English** or **Fran�
 
 ### Air Hockey
 
-One phone only. P1 is the red mallet at the bottom, P2 the blue mallet at the top.
+P1 is the red mallet at the bottom, P2 the blue mallet at the top.
 
 - Aim: push the puck into the opponent's goal, the dark slot in the middle of their end.
 - Play: drag your mallet with your finger; it cannot leave your half. The speed of your mallet matters: a fast swipe smashes the puck (sparks, screen shake), a gentle one taps it. After a goal the puck returns to the centre.
@@ -8107,7 +8057,7 @@ One phone only. P1 is the red mallet at the bottom, P2 the blue mallet at the to
 
 ### Tank Wars
 
-Local or online. P1 is the red tank on the left, P2 the blue tank on the right. Each tank starts with 100 HP.
+P1 is the red tank on the left, P2 the blue tank on the right. Each tank starts with 100 HP.
 
 - Aim: destroy the opponent's tank.
 - Play: on your turn, drag anywhere above the control area: left or right changes **Angle**, up or down changes **Power** (up for more). The barrel moves as you drag. Then tap the red **FIRE** button.
@@ -8117,7 +8067,7 @@ Local or online. P1 is the red tank on the left, P2 the blue tank on the right. 
 
 ### Carrom
 
-One phone only. P1 plays White from the bottom baseline, P2 plays Black from the top one. The board holds 9 white pieces, 9 black pieces and the red Queen in the centre, with a pocket in each corner.
+P1 plays White from the bottom baseline, P2 plays Black from the top one. The board holds 9 white pieces, 9 black pieces and the red Queen in the centre, with a pocket in each corner.
 
 - Aim: pocket all nine pieces of your colour before your opponent.
 - Play: touch the coloured strip along your baseline (marked **‹ ›**) to slide the striker left or right. Then touch outside the strip, or keep your finger down and drag off it, and pull back like a slingshot: the striker leaves in the direction opposite to your finger. A dashed line shows the direction and a bar under the board shows the power. Release to flick.
@@ -8129,7 +8079,7 @@ One phone only. P1 plays White from the bottom baseline, P2 plays Black from the
 
 ### Mini Golf
 
-One phone only. Six holes.
+Six holes.
 
 - Aim: finish the six holes in fewer strokes than your opponent.
 - Play: P1 plays the hole until the ball is in, then P2 plays the same hole from the same tee, then both move to the next hole. To putt, put your finger down and pull away from the ball: the ball leaves in the direction opposite to your finger, and the further you pull, the stronger the putt. Dots show the direction and a small bar the power; the view zooms out when you pull far. Release to putt. The ball bounces off the wooden walls.
@@ -8138,7 +8088,7 @@ One phone only. Six holes.
 
 ### Star Clash
 
-One phone only. P1 is the red ship at the bottom, P2 the blue ship at the top. A formation of aliens sits between them.
+P1 is the red ship at the bottom, P2 the blue ship at the top. A formation of aliens sits between them.
 
 - Aim: be the last ship standing.
 - Play: slide your finger on your half (the strips marked **P1 — slide here** and **P2 — slide here**); your ship follows it sideways and fires by itself as long as your finger is down.
@@ -8151,7 +8101,7 @@ One phone only. P1 is the red ship at the bottom, P2 the blue ship at the top. A
 
 ### Caro
 
-Local or online. A board of 13 by 13. Black plays first; online, the creator of the room is Black.
+A board of 13 by 13. Black plays first.
 
 - Aim: line up exactly five stones, across, down or diagonally.
 - Play: tap an empty point to place a stone. The turn passes.
@@ -8160,7 +8110,7 @@ Local or online. A board of 13 by 13. Black plays first; online, the creator of 
 
 ### Awalé
 
-Local or online. Twelve pits with 4 seeds each. P1 owns the bottom row, P2 the top row (online: **You** and **Opp**); each pit shows its number of seeds. When the phone is held upright, the board is drawn turned a quarter turn: P1's row is then on the left and P2's on the right.
+Twelve pits with 4 seeds each. P1 owns the bottom row, P2 the top row; each pit shows its number of seeds. When the phone is held upright, the board is drawn turned a quarter turn: P1's row is then on the left and P2's on the right.
 
 - Aim: capture at least 25 seeds.
 - Play: tap one of your pits that holds seeds. Its seeds are sown one by one in the following pits, counter-clockwise, skipping the pit they came from.
@@ -8169,7 +8119,7 @@ Local or online. Twelve pits with 4 seeds each. P1 owns the bottom row, P2 the t
 
 ### Duck-Day Chess
 
-Local or online. A full game of chess, White first, with two ducks added. Online, the creator of the room is White and the other player sees the board from Black's side.
+A full game of chess, White first, with two ducks added.
 
 - Aim: checkmate the opponent's King.
 - A turn has two steps. First, move: tap one of your pieces (dots mark where it can go, a ring marks a capture), then tap the destination. Castling and en passant captures are available; a pawn reaching the last row opens **Promote:** with Queen, Rook, Bishop and Knight. Second, the status asks you to place the Yellow Duck: tap any empty square.
@@ -8183,7 +8133,7 @@ Local or online. A full game of chess, White first, with two ducks added. Online
 
 ### Hangman
 
-One phone only. The app picks the word; it is a French word if the phone is set to French, an English word otherwise.
+The app picks the word; it is a French word if the phone is set to French, an English word otherwise.
 
 - Aim: have the most points when the word is complete.
 - Play: on your turn, tap a letter. If it is in the word, you score 1 point for each place it fills and you play again. If it is not, a part of the body is added to the gallows (**Wrong: 1/6**) and the turn passes. Letters already tried are greyed out and listed after **Used:**.
@@ -8191,7 +8141,7 @@ One phone only. The app picks the word; it is a French word if the phone is set 
 
 ### Reversi
 
-Local or online. A board of 8 by 8 starting with two black and two white discs. Black plays first; online, the creator of the room is Black.
+A board of 8 by 8 starting with two black and two white discs. Black plays first.
 
 - Aim: have the most discs of your colour at the end.
 - Play: tap one of the squares marked with a small dot; these are your legal moves. Your disc must trap one or more straight lines of opposing discs between itself and another of your discs; all the trapped discs flip to your colour.
@@ -8201,7 +8151,7 @@ Local or online. A board of 8 by 8 starting with two black and two white discs. 
 
 ### Horse Jump
 
-One phone only. The start screen is titled **EQUINE EDGE**. P1 rides the white horse in the top lane, P2 the brown horse in the bottom lane.
+The start screen is titled **EQUINE EDGE**. P1 rides the white horse in the top lane, P2 the brown horse in the bottom lane.
 
 - Aim: stay in the race longer than your opponent.
 - Play: tap anywhere to start (**Tap to start!**). Then tap your half of the screen to make your horse jump. Both lanes receive the same obstacles: hurdles, and holes in the ground once fifteen obstacles have been cleared. The pace quickens as the count of cleared obstacles rises.
@@ -8224,19 +8174,11 @@ The language of the words in Word Clash is chosen at the start of each game and 
 
 On the phone, the app stores one thing: whether the music is on or off. It keeps no scores, no history of games, no names. Uninstalling the app removes that setting; there is nothing else to remove.
 
-Local games send nothing over the network.
-
-Online games go through a Firebase Realtime Database, a service run by Google. For each room the app sends: which game it is, the room code, a random number used to shuffle both phones the same way, the time the room was created, the presence of each of the two players, and the moves. A move is erased from the service once the other phone has received it. No name, no account and no address is sent.
-
-A room is protected by its code only. While you wait in a room, another player who taps **Quick Match** for the same game can join it instead of your friend.
-
-The part of the app that handles online play is fetched from Google's servers when the app starts. If it could not be fetched, **Play Mode** does not appear and the games open in local mode.
+The app sends nothing over the network: it works without any connection.
 
 ## Limits
 
 - Two players, always: no computer opponent, no solo mode, no more than two.
-- Only eight games can be played online; Tennis, Pool, Air Hockey, Carrom, Mini Golf, Star Clash, Hangman and Horse Jump are for one phone only.
-- Online: no chat, no list of friends, no reconnection. If a player leaves or loses the connection, the game is over.
 - No scores or statistics are kept after you leave a game.
 - A game cannot be paused or saved; **◀** ends it.
 - The interface is in English only. Word Clash has English and French words; Hangman follows the phone's language (French or English). French words are written without accents.
@@ -8247,26 +8189,12 @@ The part of the app that handles online play is fetched from Google's servers wh
 
 | Message | Meaning | What to do |
 |---|---|---|
-| **Enter 4-char code** | The code typed under **Enter Room Code** has fewer than four characters. | Type the four characters. |
-| **Joining...** | The app is looking for the room. | Wait. If it stays, check the Internet connection. |
-| **Room not found** | No room has this code. | Check the code with your friend; O, I, L, 0 and 1 are never used. |
-| **Wrong game** | The room exists but was opened for another game. | Go back, open the same game as your friend and join again. |
-| **Room full** | The room already has its two players, or its game has started. | Ask your friend to create a new room. |
-| **Searching...** | **Quick Match** is looking for a waiting room. | Wait. If it stays, check the Internet connection. |
-| **Waiting for opponent...** | Your room is open and nobody has joined yet. | Give the code to your friend, or wait for a quick match. **Cancel** returns to the menu. |
-| **Waiting for host to pick language...** | Word Clash online: the creator of the room has not chosen the language yet. | Wait. |
-| **Opponent disconnected** | The other player left the game or lost the connection. The game is over. | Go back with **◀** and start a new online game. |
-| **Opponent disconnected**, right after **Quick Match** | You were sent to a room whose creator had already left. | Go back with **◀** and tap **Quick Match** again. |
 | **White passes — no legal move** (or **Black passes**) | Reversi: that player cannot move; the other plays again. | Keep playing. |
 | **Cover Queen!** | Carrom: you pocketed the Queen and must pocket one of your pieces with this shot to keep her. | Aim at one of your pieces. |
 | **P1 pocketed 8-ball early! P2 wins!** | Pool: the 8-ball went in before all the balls of the shooter's group. | The game is lost; reopen Pool to play again. |
 | **Canard de Secours!** | Duck-Day Chess: the ducks left a player without a move, and the app moved or removed one. | Keep playing. |
 | **Move 25 reached — Kings are no longer immune to the Red Duck laser!** | Duck-Day Chess: from this point the laser can remove a King. | Keep your King away from the Red Duck when the gauge is nearly full. |
 | **Hanged!** | Hangman: six wrong letters; nobody wins. | Tap **New Game**. |
-
-**Play Mode** does not appear on a game with the green dot: the online part of the app could not be loaded at start. Close the app, check the Internet connection and open it again.
-
-After **Rematch** in an online game, nothing moves: your opponent has not tapped **Rematch** on their phone yet.
 
 After **Rematch** in Tank Wars you are back on the menu: this is how the game restarts; open Tank Wars again.
 
