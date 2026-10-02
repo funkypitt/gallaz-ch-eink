@@ -202,8 +202,9 @@ footer.site a { color: var(--muted); }
 /* vignettes de captures d'écran */
 .shots { display: flex; gap: .6rem; flex-wrap: wrap; margin: .8rem 0; }
 .shots img { width: 130px; height: auto; border: 1px solid currentColor; opacity: .85; }
+.shots img.wide { width: 370px; max-width: 100%; }   /* une fenêtre d'ordinateur, à la hauteur des téléphones */
 .shots img:hover { opacity: 1; }
-@media (max-width: 480px) { .shots img { width: 104px; } }
+@media (max-width: 480px) { .shots img { width: 104px; } .shots img.wide { width: 296px; } }
 
 /* QR code du dépôt : toujours noir sur blanc, même en thème sombre, sinon illisible pour un scanner */
 .qr img { background: #fff; padding: 6px; border: 1px solid var(--fg); }
