@@ -1083,7 +1083,7 @@ La tuile d'une application Reader's qui n'est pas installée affiche le nom de c
 
 # Reader's Calendar
 
-*Android 1.15.1 · Windows, macOS, Linux 1.14.3*
+*Android 1.15.2 · Windows, macOS, Linux 1.14.3*
 
 ## Ce que c'est
 
@@ -1197,7 +1197,7 @@ Le lieu et la description sont du texte vivant :
 
 Un appui long n'importe où permet de sélectionner et de copier du texte. Les dates, les prix et les numéros de salle restent du texte ordinaire.
 
-En bas : **modifier** et **supprimer**.
+En bas : **modifier** et **supprimer**. Pour un événement d'un agenda dans lequel vous ne pouvez pas écrire (un agenda partagé avec vous en lecture, les jours fériés…), la ligne **cet agenda est en lecture seule : ses événements ne peuvent pas être modifiés ici** prend leur place : un tel événement ne peut être ni modifié, ni supprimé, ni déplacé depuis l'app.
 
 ### Téléphone : nouvel événement et modification
 
@@ -1211,7 +1211,7 @@ Le formulaire s'intitule **nouvel événement** ou **modifier**. **enregistrer**
 | **toute la journée : non** / **toute la journée : oui** | Touchez pour basculer. |
 | **se termine un autre jour** | Ouvre la grille du mois pour la date de fin. Une fois que la fin tombe un autre jour (ou que l'événement dure toute la journée), une ligne marquée **fin** la montre. |
 | l'agenda, marqué **agenda** et son compte | Liste les agendas dans lesquels vous pouvez écrire. |
-| **rappel** | **pas de rappel**, **à l'heure de l'événement**, **10 minutes avant**, **30 minutes avant**, **1 heures avant**, **2 heures avant**, **1 jours avant**, **2 jours avant**. |
+| **rappel** | **pas de rappel**, **à l'heure de l'événement**, **10 minutes avant**, **30 minutes avant**, **1 heure avant**, **2 heures avant**, **1 jour avant**, **2 jours avant**. |
 | **répétition** | **ne se répète pas**, **chaque jour**, **chaque semaine**, **chaque mois**, **chaque année**. |
 | **lieu** | Ouvre une invite pour taper le lieu. |
 | **description** | Ouvre une invite pour taper la description, sur une ligne. |
@@ -1441,7 +1441,7 @@ Ajoutez un widget à la manière de votre lanceur et choisissez **Reader's Calen
 | Réglage | Choix | Par défaut |
 |---|---|---|
 | **nouveaux événements dans : …** | tout agenda dans lequel vous pouvez écrire | le premier |
-| **rappel par défaut : …** | **pas de rappel**, **à l'heure de l'événement**, **10 minutes avant**, **30 minutes avant**, **1 heures avant**, **2 heures avant**, **1 jours avant** | **10 minutes avant** |
+| **rappel par défaut : …** | **pas de rappel**, **à l'heure de l'événement**, **10 minutes avant**, **30 minutes avant**, **1 heure avant**, **2 heures avant**, **1 jour avant** | **10 minutes avant** |
 | **la semaine commence le : …** | **lundi**, **dimanche** | **lundi** |
 | **s'ouvre sur : …** | **aujourd'hui (liste)**, **semaine**, **jours ouvrés**, **jour**, **mois** | **semaine** |
 | **thème : …** | **blanc sur noir**, **noir sur blanc**, **suivre le système** | **blanc sur noir** |
@@ -1457,7 +1457,7 @@ Avec **événements : couleur de leur agenda**, les blocs des grilles et les li
 
 La vue **jours ouvrés** commence toujours le lundi.
 
-Les deux dernières lignes donnent la version (**reader's calendar 1.15.1**, **noir et blanc, texte seulement. Licence MIT.**) et les crédits.
+Les deux dernières lignes donnent la version (**reader's calendar 1.15.2**, **noir et blanc, texte seulement. Licence MIT.**) et les crédits.
 
 ### Sur l'ordinateur
 
@@ -1615,6 +1615,7 @@ Ordinateur :
 | **rien de prévu** | Aucun événement dans les jours affichés, dans les agendas affichés. Vérifiez **agendas** si vous en attendiez. |
 | **la fin est avant le début** | La fin doit être après le début. Corrigez les heures ou la date de fin. |
 | **non enregistré** ou **non enregistré : …** | Le téléphone a refusé d'écrire l'événement ; les mots après les deux-points sont ceux du système. |
+| **cet agenda est en lecture seule : ses événements ne peuvent pas être modifiés ici** | Vous pouvez seulement lire l'agenda auquel cet événement appartient. L'événement ne peut être ni modifié, ni supprimé, ni déplacé depuis l'app. |
 | **aucune app pour cela sur le téléphone** | Aucune app ne peut ouvrir ce numéro, cette adresse ou ce lieu. |
 | **(hh:mm)** ajouté à une invite d'heure | Ce que vous avez tapé n'est pas une heure. Tapez les heures et les minutes. |
 | **(sans titre)** | L'événement n'a pas de titre. |
@@ -2097,7 +2098,7 @@ Un widget montre de vieilles tâches : ouvrez l'application, qui synchronise et
 
 # Reader's Notes
 
-*Android 1.6.1 · Windows, macOS, Linux 1.3.2*
+*Android 1.6.2 · Windows, macOS, Linux 1.3.2*
 
 ## Ce que c'est
 
@@ -2233,6 +2234,13 @@ Dans l'autre application, partagez du texte et choisissez Reader's Notes dans le
 
 Dès lors la synchronisation tourne toute seule : à l'ouverture de l'application (sauf si **synchroniser à l'ouverture** est sur **non**), quand vous quittez une note, quand vous quittez l'application avec quelque chose qui n'est pas encore parti, après une suppression ou un déplacement, et chaque fois que vous touchez **synchroniser** ou la ligne d'état.
 
+### Arrêter la synchronisation sur le téléphone
+
+1. Ouvrez **réglages** et touchez la ligne **serveur**.
+2. Effacez l'adresse et touchez **ok**.
+
+La ligne sous la liste indique de nouveau **sur ce téléphone seulement — toucher pour configurer un dossier WebDAV**. Toutes les notes restent sur le téléphone, et les fichiers du serveur sont laissés tels quels.
+
 ### Ranger les notes en dossiers
 
 1. Dans **réglages**, touchez **dossiers** pour le mettre sur **oui**.
@@ -2263,7 +2271,7 @@ Touchez **⋯** dans la liste ou dans une note, puis la ligne **noir sur blanc**
 
 | Réglage | Ce qu'il fait | Choix | Au départ |
 |---|---|---|---|
-| **serveur** | Adresse du serveur WebDAV | texte | vide |
+| **serveur** | Adresse du serveur WebDAV. Vidée, la synchronisation s'arrête et les notes restent sur le téléphone | texte | vide |
 | **identifiant** | Identifiant sur le serveur | texte | vide |
 | **mot de passe** | Mot de passe sur le serveur (affiché en points) | texte | vide |
 | **dossier sur le serveur** | Dossier qui contient les notes | texte | Notes |
@@ -2321,7 +2329,7 @@ Chaque dossier est un sous-dossier du dossier des notes, sur un seul niveau. Un 
 
 Sur l'ordinateur, quand vous changez le serveur ou le dossier, toutes les notes de l'ordinateur sont envoyées au nouvel endroit.
 
-Sur le téléphone, c'est différent : les notes déjà synchronisées qui ne se trouvent pas au nouvel endroit sont tenues pour supprimées sur le serveur et retirées du téléphone à la synchronisation suivante (elles restent dans l'ancien dossier de l'ancien serveur). Pour passer à un nouveau dossier depuis le téléphone, copiez d'abord les fichiers dedans, sur le serveur.
+Sur le téléphone, c'est pareil, que vous tapiez un autre **serveur** ou un autre **dossier sur le serveur**, ou que vous importiez un fichier d'identifiants fait pour un autre endroit : à la première synchronisation qui atteint le nouvel endroit, toutes les notes du téléphone sont gardées et envoyées là-bas, avec leurs dossiers, et les notes qui s'y trouvent déjà sont reçues. Rien n'est retiré du téléphone, et l'ancien dossier de l'ancien serveur est laissé tel quel. Une note dont le fichier se trouve déjà au nouvel endroit avec le même texte n'est pas envoyée une seconde fois ; une note de même titre mais d'un autre texte est envoyée à côté, sous le nom `Titre (2).txt`.
 
 ### Le fichier d'identifiants
 
@@ -2428,7 +2436,7 @@ Le fichier de réglages contient le mot de passe et n'est lisible que par votre 
 - Le titre est la première ligne non vide, jusqu'à 80 caractères.
 - Sur le téléphone, une note se déplace vers un dossier par son appui long dans la liste, pas depuis la note ouverte.
 - Sur le téléphone, l'adresse du serveur doit être en `https://`.
-- Sur le téléphone, une ligne de réglage ne peut pas être vidée : un serveur une fois saisi peut être remplacé, pas retiré.
+- Sur le téléphone, **identifiant**, **mot de passe** et **dossier sur le serveur** ne peuvent pas être vidés, seulement remplacés. La ligne **serveur** peut être vidée, ce qui arrête la synchronisation.
 - La dictée n'existe que sur le téléphone. Langues proposées : celle du téléphone, l'anglais, ou **détectée**. L'application tient le téléphone éveillé jusqu'à deux heures d'enregistrement.
 - La synchronisation ne se fait qu'avec un dossier WebDAV ; il n'y a pas d'autre service en ligne, ni de partage d'une note entre personnes autrement que par ce dossier.
 - Le tri est fixe : la note modifiée le plus récemment d'abord.
@@ -5791,7 +5799,7 @@ Autres situations :
 
 # Reader's Detox
 
-*Android 1.7.1*
+*Android 1.7.2*
 
 ## Ce que c'est
 
@@ -6022,7 +6030,7 @@ Les réglages qui décident de ce qui est bloqué sont sur l'écran principal :
 - Seules les demandes d'adresse du téléphone arrivent à l'app. Tout le reste (les pages, les vidéos, vos messages) quitte le téléphone par le chemin habituel, sans passer par l'app.
 - Une demande pour un site bloqué, hors des heures permises, reçoit sa réponse de l'app elle-même, sur le téléphone. Elle ne va nulle part.
 - Toute autre demande est transmise, sans changement, aux serveurs de noms du réseau auquel vous êtes connecté (votre Wi-Fi ou votre opérateur mobile), les mêmes que le téléphone utiliserait sans l'app.
-- Si ces serveurs ne répondent pas, l'app essaie à la place des serveurs de noms publics : ceux de Google (8.8.8.8) et de Cloudflare (1.1.1.1), et leurs équivalents IPv6. Dans ce cas, et seulement alors, ces deux sociétés reçoivent les noms demandés. L'app continue ensuite d'utiliser le serveur qui a répondu jusqu'à ce qu'il fasse défaut.
+- Si ces serveurs ne répondent pas, l'app interroge à la place Quad9, un service de noms suisse à but non lucratif (9.9.9.9), pour que le téléphone continue de fonctionner. Dans ce cas, et seulement alors, Quad9 reçoit les noms demandés. Les serveurs du réseau restent le premier choix : tant qu'ils se taisent, l'app interroge directement Quad9, les essaie de nouveau chaque minute, et revient à eux dès qu'ils répondent ou que vous changez de réseau.
 
 **Réseaux mobiles.** L'app fonctionne aussi sur les réseaux mobiles qui n'utilisent que l'IPv6.
 
@@ -6942,7 +6950,7 @@ La tuile affiche **filtre actif** ou **filtre inactif**, avec **filtre de nuit**
 
 # ePub Magazine Reader
 
-*Android 0.2.25-magazine*
+*Android 0.2.26-magazine*
 
 ## Ce que c'est
 
@@ -7226,7 +7234,7 @@ Les trois derniers sont sous le titre **WebDAV (alternative)**. Ils ne servent q
 - avec un lien de partage, au service kDrive, sans aucun compte ;
 - avec WebDAV, au serveur dont vous avez saisi l'adresse, avec votre nom d'utilisateur et votre mot de passe.
 
-Rien d'autre n'est envoyé, et rien n'est jamais déposé sur le serveur. Le mot de passe WebDAV est gardé dans les réglages de l'application sur l'appareil, sans chiffrement. Les liens d'**À propos de l'application** s'ouvrent dans votre navigateur.
+Rien d'autre n'est envoyé, et rien n'est jamais déposé sur le serveur. Le mot de passe WebDAV est gardé sur l'appareil sous forme chiffrée ; la clé qui permet de le lire est détenue par Android et ne quitte jamais l'appareil. Les liens d'**À propos de l'application** s'ouvrent dans votre navigateur.
 
 **Comment marche la synchronisation.** L'application liste les fichiers placés directement dans le dossier (pas dans ses sous-dossiers) dont le nom finit par .epub, et télécharge ceux dont le nom de fichier n'est pas déjà celui d'un numéro de la bibliothèque. Elle va dans un seul sens : elle ne supprime rien sur le serveur ni sur l'appareil. Un numéro remplacé sur le serveur sous le même nom n'est pas téléchargé de nouveau. Un fichier dont le nom contient `_blacklisted_` est ignoré. La synchronisation en arrière-plan a besoin d'une connexion au réseau et est retentée plus tard après un échec.
 
@@ -7286,7 +7294,7 @@ Rien d'autre n'est envoyé, et rien n'est jamais déposé sur le serveur. Le mot
 
 # Le dictionnaire Littré
 
-*Android 1.1.1*
+*Android 1.1.2*
 
 Sur le téléphone, l'app apparaît sous le nom **Le Littré**. Elle n'existe qu'en français : tous ses libellés sont en français, quelle que soit la langue du téléphone.
 
@@ -7323,9 +7331,9 @@ Sous le champ :
 - Quand vous tapez, les résultats apparaissent d'eux-mêmes une fraction de seconde après la dernière lettre ; il n'y a pas de bouton à presser. Chaque résultat est une carte avec le mot-vedette, sa nature grammaticale en italique (par exemple *s. f.*) et les deux premières lignes de la définition. Toucher une carte ouvre l'article.
 - Quand rien ne correspond, l'écran affiche **Aucun résultat**.
 
-La **Recherche par mot** liste les entrées dont le mot-vedette commence par ce que vous avez tapé, dans l'ordre alphabétique, vingt au plus. Les majuscules et les accents ne comptent pas : taper `etre` trouve ÊTRE.
+La **Recherche par mot** liste les entrées dont le mot-vedette commence par ce que vous avez tapé, dans l'ordre alphabétique, vingt au plus. Les majuscules et les accents ne comptent pas : taper `etre` trouve ÊTRE. Les lettres liées œ et æ se tapent liées ou en deux lettres : `coeur` et `cœur` trouvent tous deux CŒUR.
 
-La **Recherche dans les définitions** cherche ce que vous avez tapé dans le mot-vedette, dans le texte de l'article (définitions, citations, partie historique) et dans l'étymologie. Elle ne trouve que des mots entiers, et quand vous tapez plusieurs mots elle les cherche ensemble, dans cet ordre, comme une expression. Les majuscules et les accents ne comptent pas. Elle renvoie cinquante entrées au plus, les plus pertinentes d'abord. Le supplément de 1878 n'est pas fouillé.
+La **Recherche dans les définitions** cherche ce que vous avez tapé dans le mot-vedette, dans le texte de l'article (définitions, citations, partie historique) et dans l'étymologie. Elle ne trouve que des mots entiers, et quand vous tapez plusieurs mots elle les cherche ensemble, dans cet ordre, comme une expression. Les majuscules et les accents ne comptent pas, mais un mot écrit avec œ ou æ doit être tapé avec sa lettre liée : `cœur`, non `coeur`. Elle renvoie cinquante entrées au plus, les plus pertinentes d'abord. Le supplément de 1878 n'est pas fouillé.
 
 Le mode de recherche revient à **Recherche par mot** à chaque redémarrage de l'app.
 
@@ -7339,7 +7347,7 @@ L'écran de l'article montre, de haut en bas :
 - un encadré **ÉTYMOLOGIE**, quand l'entrée en a une ;
 - un encadré teinté **SUPPLÉMENT (1878)**, quand l'entrée a une addition tirée du supplément de Littré.
 
-Les mots soulignés en couleur sont des renvois : en toucher un ouvre l'article visé, par-dessus l'article en cours. La flèche de retour ramène à l'article précédent, puis à la liste d'où vous veniez.
+Les mots soulignés en couleur sont des renvois : en toucher un ouvre l'article visé, par-dessus l'article en cours. Quand plusieurs entrées ont la même orthographe, le renvoi ouvre celle qu'il désigne. La flèche de retour ramène à l'article précédent, puis à la liste d'où vous veniez.
 
 En haut à droite se trouvent deux boutons :
 
@@ -7363,7 +7371,7 @@ Une page d'information, sans rien à toucher. Elle montre le nom **Littré**, le
 - **Texte original** : Émile Littré, *Dictionnaire de la langue française*, Paris, Hachette, 1873–1874, **Domaine public** ;
 - **Application** : **78 599 entrées — consultation hors ligne**, et la mention de l'auteur.
 
-La ligne de version de cette page indique **Version 1.0.0** alors que l'app est en version 1.1.1 ; pour connaître la version installée, regardez la page de l'app dans les réglages du téléphone.
+La ligne de version indique la version installée, par exemple **Version 1.1.2**.
 
 ## Comment faire
 
@@ -7378,21 +7386,13 @@ Si le mot n'est pas parmi les vingt entrées affichées, tapez davantage de lett
 
 Quand un mot a plusieurs entrées (PRIME en a huit), chacune apparaît dans sa propre carte ; la nature grammaticale et les premières lignes de la définition les distinguent.
 
-### Trouver un mot écrit avec œ ou æ
-
-La recherche par mot ne trouve pas les mots-vedettes qui contiennent les lettres liées œ ou æ (CŒUR, ŒIL, BŒUF…), que vous tapiez `coeur` ou `cœur`. Pour les atteindre :
-
-1. Touchez le bouton du mode de recherche pour qu'il montre le livre ouvert (**Recherche dans les définitions**).
-2. Tapez le mot avec sa lettre liée, par exemple `cœur`.
-3. Cherchez l'entrée dans les résultats. Ils sont classés par pertinence, non par ordre alphabétique, et limités à cinquante : l'entrée peut donc se trouver plus bas dans la liste (CŒUR arrive quatrième pour `cœur`, ŒIL vingt-huitième pour `œil`).
-
 ### Chercher dans les définitions
 
 1. Sur **Recherche**, touchez le bouton du mode de recherche pour qu'il montre le livre ouvert.
 2. Tapez un mot, ou plusieurs mots qui se suivent dans le texte (par exemple le début d'un proverbe ou d'une citation).
 3. Touchez une entrée dans les résultats.
 
-Tapez des mots entiers : le début d'un mot ne suffit pas dans ce mode. Si vous aviez déjà tapé quelque chose avant de changer de mode, la recherche est relancée aussitôt dans le nouveau mode.
+Tapez des mots entiers : le début d'un mot ne suffit pas dans ce mode. Un mot écrit avec œ ou æ se tape avec sa lettre liée (`cœur`). Si vous aviez déjà tapé quelque chose avant de changer de mode, la recherche est relancée aussitôt dans le nouveau mode.
 
 ### Revenir à la recherche par mot
 
@@ -7410,7 +7410,7 @@ Ouvrez l'app avec le champ de recherche vide : le mot du jour est au milieu de 
 
 Dans un article, touchez un mot souligné. L'article visé s'ouvre ; la flèche de retour vous ramène.
 
-S'il ne se passe rien, voyez « Messages et problèmes ».
+Si le dictionnaire n'a pas d'article pour ce mot, l'app l'indique par **Aucun article pour « … »**, avec le mot visé.
 
 ### Mettre un article en favori
 
@@ -7497,9 +7497,9 @@ L'app n'apparaît pas dans le menu de partage des autres apps, n'apparaît pas d
 
 - Interface en français seulement.
 - Un seul dictionnaire, dans son état du XIXᵉ siècle : orthographes, sens et exemples sont ceux de 1873–1878.
-- La recherche par mot montre vingt entrées au plus, et ne trouve pas les mots-vedettes écrits avec œ ou æ (164 entrées). Pour ceux-là, passez par la recherche dans les définitions.
-- La recherche dans les définitions montre cinquante entrées au plus, ne trouve que des mots entiers, traite plusieurs mots comme une expression exacte, et ne regarde pas dans le supplément de 1878.
-- Une bonne part des renvois ne font rien quand on les touche : ceux qui visent un mot comportant une lettre accentuée, une entrée précise parmi plusieurs de même orthographe, ou une entrée dont le mot-vedette porte une terminaison (par exemple ABONDANT, ANTE). Les autres ouvrent la première entrée qui a cette orthographe.
+- La recherche par mot montre vingt entrées au plus.
+- La recherche dans les définitions montre cinquante entrées au plus, ne trouve que des mots entiers, traite plusieurs mots comme une expression exacte, ne trouve un mot écrit avec œ ou æ que s'il est tapé avec sa lettre liée, et ne regarde pas dans le supplément de 1878.
+- Quelques renvois (26 sur 14 820) visent un mot pour lequel le dictionnaire n'a pas d'article ; l'app l'indique au lieu d'ouvrir un article.
 - L'historique garde cent articles ; les plus anciens sont abandonnés.
 - Les favoris ne peuvent être ni triés, ni regroupés, ni exportés.
 - **Copier l'article** laisse de côté la prononciation et le supplément.
@@ -7510,9 +7510,10 @@ L'app n'apparaît pas dans le menu de partage des autres apps, n'apparaît pas d
 
 | Message | Ce que cela veut dire | Que faire |
 |---|---|---|
-| **Aucun résultat** | Aucune entrée ne correspond à ce que vous avez tapé dans le mode de recherche en cours. | Vérifiez l'orthographe ; tapez moins de lettres ; regardez quel mode le bouton indique. Pour un mot avec œ ou æ, utilisez la **Recherche dans les définitions**. |
+| **Aucun résultat** | Aucune entrée ne correspond à ce que vous avez tapé dans le mode de recherche en cours. | Vérifiez l'orthographe ; tapez moins de lettres ; regardez quel mode le bouton indique. Dans la **Recherche dans les définitions**, tapez œ et æ en lettres liées. |
 | **Aucun favori pour le moment** / **Appuyez sur l'étoile dans un article pour l'ajouter ici.** | Vous n'avez mis aucun article en favori. | Ouvrez un article et touchez l'étoile. |
 | **Aucun historique** / **Les articles consultés apparaîtront ici.** | Aucun article n'a encore été ouvert, ou l'historique a été effacé. | Rien ; la liste se remplit au fil de vos lectures. |
+| **Aucun article pour « … »** (avec le mot visé) | Vous avez touché un renvoi vers un mot pour lequel le dictionnaire n'a pas d'article. | Revenez à **Recherche** et tapez le mot vous-même : il peut être entré sous une autre orthographe. |
 | **Article copié dans le presse-papiers** | Le texte de l'article est dans le presse-papiers. | Collez-le où vous voulez. |
 | Le widget affiche **Le Littré** et **mot du jour** à la place d'un mot | Le widget n'a pas pu lire le dictionnaire. | Ouvrez l'app une fois, puis attendez le prochain rafraîchissement du widget. |
 
@@ -7520,22 +7521,14 @@ L'app n'apparaît pas dans le menu de partage des autres apps, n'apparaît pas d
 
 La recherche par mot montre les vingt premières entrées dans l'ordre alphabétique. Tapez davantage de lettres. Les adjectifs sont entrés avec leur terminaison féminine (ABAISSÉ, ÉE) et se trouvent en tapant le masculin.
 
-### Toucher un mot souligné ne fait rien
-
-L'app n'a pas trouvé d'entrée portant exactement ce mot-vedette (voir « Limites »). Revenez à **Recherche** et tapez le mot vous-même.
-
 ### Le mot du jour est encore celui d'hier
 
 L'app choisit le mot au moment où elle affiche l'écran de recherche vide. Si l'app est restée ouverte pendant la nuit, fermez-la et rouvrez-la, ou tapez quelque chose dans le champ de recherche puis videz-le.
 
-### La page À propos indique Version 1.0.0
-
-Cette ligne n'est pas tenue à jour. La vraie version est celle que le téléphone affiche dans la page d'informations de l'app.
-
 
 # Clavier Plume
 
-*Android 2.1.2*
+*Android 2.1.3*
 
 ## Ce que c'est
 
@@ -7689,7 +7682,7 @@ Deux entrées : **Exporter la configuration** (« Réglages, dictionnaire pers
 
 ### À propos
 
-**Version 2.1.2** avec **Toucher pour copier** (le message **Version copiée** confirme), les lignes « Clavier Plume est une version modifiée de FUTO Keyboard. » et « Pierre Gallaz · développé avec Claude Code », puis :
+**Version 2.1.3** avec **Toucher pour copier** (le message **Version copiée** confirme), les lignes « Clavier Plume est une version modifiée de FUTO Keyboard. » et « Pierre Gallaz · développé avec Claude Code », puis :
 
 - **Licences et crédits** (« Contributeurs, bibliothèques tierces ») : **Traducteurs**, **Contributeurs de layouts**, **Contributeurs du code**, **3rd-party code & assets**.
 - **Soutenir FUTO Keyboard** (« Clavier Plume repose sur FUTO Keyboard : payer la licence de FUTO ») : l'écran **Paiement**, intitulé **Payer pour le clavier FUTO**. Le bouton **Payer (~$6.99 + taxes)** ouvre la page de paiement de FUTO dans votre navigateur ; l'argent va à FUTO, les auteurs du clavier sur lequel Clavier Plume est construit. L'écran comporte aussi **Déjà payé ?** avec **J'ai déjà payé**, et **Autres options** → **Aide** (le site de FUTO). Rien n'est verrouillé dans Clavier Plume si vous ne payez pas.
@@ -7873,16 +7866,15 @@ Ce que le clavier garde :
 - **Vos réglages**, langues, dispositions et thème.
 - **Le dictionnaire personnel** : vos mots et raccourcis sont rangés dans le dictionnaire personnel d'Android lui-même, commun à tout le système.
 - **Les mots appris et le compte des mots** : le clavier compte chaque mot que vous validez, par langue (mots de 2 à 40 lettres sans chiffre, 50 000 entrées au plus), et retient quels mots se suivent, pour classer ses suggestions. Rien n'est compté dans les champs de mot de passe, d'adresse e-mail, d'adresse web et de code.
-- **Un journal des corrections** : chaque fois qu'un mot est corrigé automatiquement, choisi dans la barre de suggestions ou rétabli par ↶, le clavier écrit une ligne avec la date, le mot tapé, le mot écrit et la langue. Le fichier reste sur le téléphone, dans le dossier propre à l'app ; quand il atteint 50 Mo, il est mis de côté et un nouveau commence. Aucun réglage ne permet de le couper.
 - **L'historique du presse-papiers**, seulement si vous l'avez activé.
 - **Les fichiers importés** : modèles de dictée, modèles de langue, dictionnaires.
 - **Les noms de vos contacts**, lus dans votre carnet si vous l'avez autorisé ; ils ne sont pas copiés ailleurs.
 
-**Exporter** met tout cela (sauf les contacts) dans un seul fichier que vous enregistrez où vous voulez ; l'app ne l'envoie nulle part. Gardez ce fichier pour vous : il contient vos mots, votre presse-papiers et le journal des corrections. **Importer** remplace les données présentes par celles du fichier. Un fichier fait par une version plus récente du clavier affiche un avertissement et peut mal s'importer.
+**Exporter** met tout cela (sauf les contacts) dans un seul fichier que vous enregistrez où vous voulez ; l'app ne l'envoie nulle part. Gardez ce fichier pour vous : il contient vos mots et votre presse-papiers. **Importer** remplace les données présentes par celles du fichier. Un fichier fait par une version plus récente du clavier affiche un avertissement et peut mal s'importer.
 
 Il n'y a ni synchronisation ni gestion de conflits : un téléphone, une configuration.
 
-Désinstaller l'app retire du téléphone ses réglages, les mots appris, le journal, l'historique du presse-papiers et les fichiers importés. L'app laisse aussi la sauvegarde d'Android inclure ses données, là où le téléphone en a une.
+Désinstaller l'app retire du téléphone ses réglages, les mots appris, l'historique du presse-papiers et les fichiers importés. L'app laisse aussi la sauvegarde d'Android inclure ses données, là où le téléphone en a une.
 
 ## Avec les autres apps
 

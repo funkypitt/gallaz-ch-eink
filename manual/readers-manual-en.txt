@@ -1083,7 +1083,7 @@ A tile of a Reader's app that is not installed shows that app's name in dim text
 
 # Reader's Calendar
 
-*Android 1.15.1 · Windows, macOS, Linux 1.14.3*
+*Android 1.15.2 · Windows, macOS, Linux 1.14.3*
 
 ## What it is
 
@@ -1197,7 +1197,7 @@ The place and the description are live text:
 
 Long press anywhere to select and copy text. Dates, prices and room numbers stay plain text.
 
-At the bottom: **edit** and **delete**.
+At the bottom: **edit** and **delete**. For an event of a calendar you cannot write to (one shared with you for reading, public holidays…), the line **this calendar is read only: its events cannot be changed here** takes their place: such an event cannot be edited, deleted or moved from the app.
 
 ### Phone: new event and edit
 
@@ -1211,7 +1211,7 @@ The form is titled **new event** or **edit**. **save** is at the top right and a
 | **all day: off** / **all day: on** | Tap to switch. |
 | **ends another day** | Opens the month grid for the end date. Once the end is another day (or the event lasts all day), a row marked **ends** shows it. |
 | the calendar, marked **calendar** and its account | Lists the calendars you may write to. |
-| **reminder** | **no reminder**, **at the time of the event**, **10 minutes before**, **30 minutes before**, **1 hours before**, **2 hours before**, **1 days before**, **2 days before**. |
+| **reminder** | **no reminder**, **at the time of the event**, **10 minutes before**, **30 minutes before**, **1 hour before**, **2 hours before**, **1 day before**, **2 days before**. |
 | **repeat** | **does not repeat**, **every day**, **every week**, **every month**, **every year**. |
 | **location** | Opens a prompt to type the place. |
 | **description** | Opens a prompt to type the description, on one line. |
@@ -1441,7 +1441,7 @@ Use your launcher's way of adding a widget and choose **Reader's Calendar · nex
 | Setting | Choices | Default |
 |---|---|---|
 | **new events go to: …** | any calendar you may write to | the first one |
-| **default reminder: …** | **no reminder**, **at the time of the event**, **10 minutes before**, **30 minutes before**, **1 hours before**, **2 hours before**, **1 days before** | **10 minutes before** |
+| **default reminder: …** | **no reminder**, **at the time of the event**, **10 minutes before**, **30 minutes before**, **1 hour before**, **2 hours before**, **1 day before** | **10 minutes before** |
 | **week starts on: …** | **monday**, **sunday** | **monday** |
 | **opens on: …** | **today (list)**, **week**, **workdays**, **day**, **month** | **week** |
 | **theme: …** | **white on black**, **black on white**, **follow system** | **white on black** |
@@ -1457,7 +1457,7 @@ With **events: in their calendar's colour**, the blocks of the grids and the lin
 
 The **workdays** view always starts on Monday.
 
-The last two rows give the version (**reader's calendar 1.15.1**, **black and white, text only. MIT licence.**) and the credits.
+The last two rows give the version (**reader's calendar 1.15.2**, **black and white, text only. MIT licence.**) and the credits.
 
 ### On the computer
 
@@ -1615,6 +1615,7 @@ Computer:
 | **nothing planned** | No event in the days shown, in the calendars shown. Check **calendars** if you expected some. |
 | **the end is before the start** | The end must be after the start. Correct the hours or the end date. |
 | **not saved** or **not saved: …** | The phone refused to write the event; the words after the colon are the system's own. |
+| **this calendar is read only: its events cannot be changed here** | You may only read the calendar this event belongs to. The event cannot be edited, deleted or moved from the app. |
 | **no app for this on the phone** | No app can open this number, address or place. |
 | **(hh:mm)** added to a time prompt | What you typed is not a time. Type hours and minutes. |
 | **(untitled)** | The event has no title. |
@@ -2097,7 +2098,7 @@ A widget shows old tasks: open the app, which syncs and redraws the widgets.
 
 # Reader's Notes
 
-*Android 1.6.1 · Windows, macOS, Linux 1.3.2*
+*Android 1.6.2 · Windows, macOS, Linux 1.3.2*
 
 ## What it is
 
@@ -2233,6 +2234,13 @@ In the other app, select or share text and choose Reader's Notes in the share me
 
 From then on the sync runs by itself: when the app opens (unless **sync when the app opens** is off), when you leave a note, when you leave the app with something not yet sent, after a deletion or a move, and whenever you tap **sync now** or the status line.
 
+### Stop the sync on the phone
+
+1. Open **settings** and tap the **server** line.
+2. Erase the address and tap **ok**.
+
+The line under the list reads **on this phone only — tap to set up a WebDAV folder** again. Every note stays on the phone, and the files on the server are left as they are.
+
 ### File notes in folders
 
 1. In **settings**, tap **folders** to turn it **on**.
@@ -2263,7 +2271,7 @@ Tap **⋯** on the list or in a note, then the line **black on white** or **whit
 
 | Setting | What it does | Choices | At the start |
 |---|---|---|---|
-| **server** | Address of the WebDAV server | text | empty |
+| **server** | Address of the WebDAV server. Emptied, the sync stops and the notes stay on the phone | text | empty |
 | **username** | Login on the server | text | empty |
 | **password** | Password on the server (shown as dots) | text | empty |
 | **folder on the server** | Folder that holds the notes | text | Notes |
@@ -2321,7 +2329,7 @@ Each folder is a subfolder of the notes folder, one level deep. A folder created
 
 On the computer, when you change the server or the folder, every note on the computer is sent to the new place.
 
-On the phone it is different: notes that were already synced and are not found in the new place are taken as deleted on the server and removed from the phone at the next sync (they remain in the old folder on the old server). To move to a new folder from the phone, copy the files into it on the server first.
+On the phone it is the same, whether you type another **server** or **folder on the server** or import a credentials file made for another place: at the next sync that reaches the new place, every note on the phone is kept and sent there, with its folders, and the notes already there are received. Nothing is removed from the phone, and the old folder on the old server is left as it was. A note whose file is already in the new place with the same text is not sent a second time; one with the same title and another text is sent beside it as `Title (2).txt`.
 
 ### The credentials file
 
@@ -2428,7 +2436,7 @@ The settings file holds the password and is readable by your user account only.
 - The title is the first non-empty line, up to 80 characters.
 - On the phone, a note is moved to a folder from its long press in the list, not from the open note.
 - On the phone, the server address must be `https://`.
-- On the phone, a settings line cannot be emptied: a server once entered can be replaced, not removed.
+- On the phone, **username**, **password** and **folder on the server** cannot be emptied, only replaced. The **server** line can be emptied, which stops the sync.
 - Dictation exists on the phone only. Languages offered: the phone's language, English, or **detected**. The app keeps the phone awake for up to two hours of recording.
 - The sync is with a WebDAV folder only; there is no other cloud service and no sharing of a note between people other than through that folder.
 - Sorting is fixed: most recently changed first.
@@ -5791,7 +5799,7 @@ Other situations:
 
 # Reader's Detox
 
-*Android 1.7.1*
+*Android 1.7.2*
 
 ## What it is
 
@@ -6022,7 +6030,7 @@ The settings that decide what is blocked are on the main screen:
 - Only the phone's name lookups reach the app. Everything else (the pages, the videos, your messages) leaves the phone the usual way, without passing through the app.
 - A lookup for a blocked site, outside the allowed hours, is answered by the app itself, on the phone. It goes nowhere.
 - Every other lookup is passed on, unchanged, to the name servers of the network you are connected to (your Wi-Fi or your mobile operator), the same ones the phone would use without the app.
-- If those servers do not answer, the app tries public name servers instead: Google's (8.8.8.8) and Cloudflare's (1.1.1.1), and their IPv6 equivalents. In that case, and only then, these two companies receive the names being looked up. The app then goes on using the server that answered until it fails.
+- If those servers do not answer, the app asks Quad9 instead, a Swiss non-profit name service (9.9.9.9), so that the phone keeps working. In that case, and only then, Quad9 receives the names being looked up. The network's own servers stay the first choice: while they are silent the app asks Quad9 directly, tries them again every minute, and returns to them as soon as they answer or you change network.
 
 **Mobile networks.** The app also works on mobile networks that use IPv6 only.
 
@@ -6941,7 +6949,7 @@ The tile shows **filter on** or **filter off**, with **night filter** beneath, a
 
 # ePub Magazine Reader
 
-*Android 0.2.25-magazine*
+*Android 0.2.26-magazine*
 
 ## What it is
 
@@ -7223,7 +7231,7 @@ The last three are under the heading **WebDAV (alternative)**. They are used onl
 - with a share link, to the kDrive service, without any account;
 - with WebDAV, to the server whose address you entered, with your username and password.
 
-Nothing else is sent, and nothing is ever uploaded. The WebDAV password is kept in the app's settings on the device, without encryption. The links of **About app** open in your browser.
+Nothing else is sent, and nothing is ever uploaded. The WebDAV password is kept on the device in encrypted form; the key that reads it is held by Android and never leaves the device. The links of **About app** open in your browser.
 
 **How the sync works.** The app lists the files placed directly in the folder (not in its subfolders) whose name ends in .epub, and downloads those whose file name is not already the name of an issue in the library. It is one way: it deletes nothing on the server and nothing on the device. An issue replaced on the server under the same name is not downloaded again. A file whose name contains `_blacklisted_` is ignored. The background sync needs a network connection and is tried again later after a failure.
 
@@ -7283,7 +7291,7 @@ Nothing else is sent, and nothing is ever uploaded. The WebDAV password is kept 
 
 # Le dictionnaire Littré
 
-*Android 1.1.1*
+*Android 1.1.2*
 
 The app exists in French only: every label on screen is in French whatever the language of the phone. In this chapter the labels are quoted as the app writes them, with their meaning in brackets the first time. On the phone, the app appears under the name **Le Littré**.
 
@@ -7320,9 +7328,9 @@ Under the field:
 - When you type, the results appear by themselves a fraction of a second after you stop typing; there is no button to press. Each result is a card with the headword, its grammatical nature in italics (for example *s. f.*), and the first two lines of the definition. Tapping a card opens the article.
 - When nothing matches, the screen says **Aucun résultat** (no result).
 
-**Recherche par mot** lists the entries whose headword begins with what you typed, in alphabetical order, twenty at most. Capitals and accents do not matter: typing `etre` finds ÊTRE.
+**Recherche par mot** lists the entries whose headword begins with what you typed, in alphabetical order, twenty at most. Capitals and accents do not matter: typing `etre` finds ÊTRE. The joined letters œ and æ can be typed joined or as two letters: `coeur` and `cœur` both find CŒUR.
 
-**Recherche dans les définitions** looks for what you typed in the headword, the text of the article (definitions, quotations, the historical section) and the etymology. It finds whole words only, and when you type several words it looks for them together, in that order, as a phrase. Capitals and accents do not matter. It returns fifty entries at most, the most relevant first. The 1878 supplement is not searched.
+**Recherche dans les définitions** looks for what you typed in the headword, the text of the article (definitions, quotations, the historical section) and the etymology. It finds whole words only, and when you type several words it looks for them together, in that order, as a phrase. Capitals and accents do not matter, but a word written with œ or æ must be typed with its joined letter: `cœur`, not `coeur`. It returns fifty entries at most, the most relevant first. The 1878 supplement is not searched.
 
 The search mode goes back to **Recherche par mot** each time the app is restarted.
 
@@ -7336,7 +7344,7 @@ The article screen shows, from top to bottom:
 - a framed box **ÉTYMOLOGIE** (etymology), when the entry has one;
 - a tinted box **SUPPLÉMENT (1878)**, when the entry has an addition from Littré's supplement.
 
-Underlined words in colour are cross-references: tapping one opens the article it points to, on top of the current one. The back arrow returns to the previous article, then to the list you came from.
+Underlined words in colour are cross-references: tapping one opens the article it points to, on top of the current one. When several entries have the same spelling, the cross-reference opens the one it designates. The back arrow returns to the previous article, then to the list you came from.
 
 At the top right are two buttons:
 
@@ -7360,7 +7368,7 @@ An information page, with nothing to tap. It shows the name **Littré**, the sub
 - **Texte original** (original text): Émile Littré, *Dictionnaire de la langue française*, Paris, Hachette, 1873–1874, **Domaine public** (public domain);
 - **Application**: **78 599 entrées — consultation hors ligne** (78 599 entries, offline reading), and the author's credit.
 
-The version line on this page reads **Version 1.0.0** even though the app is version 1.1.1; to know which version is installed, look at the app's page in the phone's settings.
+The version line shows the installed version, for example **Version 1.1.2**.
 
 ## How to
 
@@ -7375,21 +7383,13 @@ If the word is not among the twenty entries shown, type more letters.
 
 When a word has several entries (PRIME has eight), each one appears as its own card; the grammatical nature and the first lines of the definition tell them apart.
 
-### Find a word written with œ or æ
-
-The search by word does not find headwords containing the joined letters œ or æ (CŒUR, ŒIL, BŒUF…), whether you type `coeur` or `cœur`. To reach them:
-
-1. Tap the search-mode button so that it shows the open book (**Recherche dans les définitions**).
-2. Type the word with its joined letter, for example `cœur`.
-3. Look for the entry in the results. They are sorted by relevance, not alphabetically, and limited to fifty, so the entry may be further down the list (CŒUR comes fourth for `cœur`, ŒIL twenty-eighth for `œil`).
-
 ### Search inside the definitions
 
 1. On **Recherche**, tap the search-mode button so that it shows the open book.
 2. Type a word, or several words that follow each other in the text (for example the start of a proverb or of a quotation).
 3. Tap an entry in the results.
 
-Type whole words: the beginning of a word is not enough in this mode. If you had already typed something before switching mode, the search is run again at once in the new mode.
+Type whole words: the beginning of a word is not enough in this mode. A word written with œ or æ is typed with its joined letter (`cœur`). If you had already typed something before switching mode, the search is run again at once in the new mode.
 
 ### Go back to the search by word
 
@@ -7407,7 +7407,7 @@ Open the app with the search field empty: the word of the day is in the middle o
 
 In an article, tap an underlined word. The article it points to opens; the back arrow brings you back.
 
-If nothing happens, see "Messages and problems".
+If the dictionary has no article for that word, the app says so with **Aucun article pour « … »** (no article for…), with the word it was looking for.
 
 ### Add an article to the favourites
 
@@ -7494,9 +7494,9 @@ The app does not appear in the share menu of other apps, does not appear in the 
 
 - French interface only.
 - One dictionary only, in its 19th-century state: spellings, meanings and examples are those of 1873–1878.
-- The search by word shows twenty entries at most, and does not find headwords written with œ or æ (164 entries). Use the search in the definitions for those.
-- The search in the definitions shows fifty entries at most, finds whole words only, treats several words as an exact phrase, and does not look into the 1878 supplement.
-- A large share of the cross-references do nothing when tapped: those that point to a word with an accented letter, to one particular entry among several with the same spelling, or to an entry whose headword carries an ending (for example ABONDANT, ANTE). The others open the first entry that has that spelling.
+- The search by word shows twenty entries at most.
+- The search in the definitions shows fifty entries at most, finds whole words only, treats several words as an exact phrase, finds a word written with œ or æ only when it is typed with its joined letter, and does not look into the 1878 supplement.
+- A few cross-references (26 of 14 820) point to a word the dictionary has no article for; the app says so instead of opening an article.
 - The history keeps one hundred articles; older ones are dropped.
 - Favourites cannot be sorted, grouped or exported.
 - **Copier l'article** leaves out the pronunciation and the supplement.
@@ -7507,9 +7507,10 @@ The app does not appear in the share menu of other apps, does not appear in the 
 
 | Message | Meaning | What to do |
 |---|---|---|
-| **Aucun résultat** | No entry matches what you typed in the current search mode. | Check the spelling; type fewer letters; check which mode the button shows. For a word with œ or æ, use **Recherche dans les définitions**. |
+| **Aucun résultat** | No entry matches what you typed in the current search mode. | Check the spelling; type fewer letters; check which mode the button shows. In **Recherche dans les définitions**, type œ and æ as joined letters. |
 | **Aucun favori pour le moment** / **Appuyez sur l'étoile dans un article pour l'ajouter ici.** | You have not starred any article. | Open an article and tap the star. |
 | **Aucun historique** / **Les articles consultés apparaîtront ici.** | No article opened yet, or the history was cleared. | Nothing; the list fills as you read. |
+| **Aucun article pour « … »** (with the word looked for) | You tapped a cross-reference to a word the dictionary has no article for. | Go back to **Recherche** and type the word yourself: it may be entered under another spelling. |
 | **Article copié dans le presse-papiers** | The article's text is on the clipboard. | Paste it where you want it. |
 | The widget shows **Le Littré** and **mot du jour** instead of a word | The widget could not read the dictionary. | Open the app once, then wait for the widget's next refresh. |
 
@@ -7517,22 +7518,14 @@ The app does not appear in the share menu of other apps, does not appear in the 
 
 The search by word shows the first twenty entries in alphabetical order. Type more letters. Adjectives are entered with their feminine ending (ABAISSÉ, ÉE) and are found by typing the masculine.
 
-### Tapping an underlined word does nothing
-
-The app did not find an entry with exactly that headword (see "Limits"). Go back to **Recherche** and type the word yourself.
-
 ### The word of the day is still yesterday's
 
 The app picks the word when it displays the empty search screen. If the app stayed open overnight, close it and open it again, or type something in the search field and empty it.
 
-### The About page says Version 1.0.0
-
-That line is not kept up to date. The real version is the one shown by the phone in the app's information page.
-
 
 # Clavier Plume
 
-*Android 2.1.2*
+*Android 2.1.3*
 
 ## What it is
 
@@ -7684,7 +7677,7 @@ Two entries: **Export configuration** ("Settings, personal dictionary and learne
 
 ### About
 
-**Version 2.1.2** with **Tap to copy** (the message **Version copied** confirms), the lines "Clavier Plume is a modified version of FUTO Keyboard." and "Pierre Gallaz · developed with Claude Code", then:
+**Version 2.1.3** with **Tap to copy** (the message **Version copied** confirms), the lines "Clavier Plume is a modified version of FUTO Keyboard." and "Pierre Gallaz · developed with Claude Code", then:
 
 - **Licences and credits** ("Contributors, third-party libraries"): **Translators**, **Layout contributors**, **Code contributors**, **3rd-party code & assets**.
 - **Support FUTO Keyboard** ("Clavier Plume is built on FUTO Keyboard: pay for FUTO's license"): the **Payment** screen, titled **Pay for FUTO Keyboard**. The button **Pay (~$6.99 + tax)** opens FUTO's payment page in your browser; the money goes to FUTO, the makers of the keyboard Clavier Plume is built on. The screen also has **Already paid?** with **I already paid**, and **Other Options** → **Help** (FUTO's website). Nothing in Clavier Plume is locked if you do not pay.
@@ -7868,16 +7861,15 @@ What the keyboard keeps:
 - **Your settings**, languages, layouts and theme.
 - **The personal dictionary**: your words and shortcuts are stored in Android's own personal dictionary, which is shared across the system.
 - **Learned words and word counts**: the keyboard counts each word you validate, per language (words of 2 to 40 letters without digits, at most 50,000 entries), and remembers which words follow which, to rank its suggestions. Nothing is counted in password, e-mail, web address and code fields.
-- **A correction journal**: each time a word is corrected automatically, picked in the suggestion bar or restored with ↶, the keyboard writes a line with the date, the word typed, the word written and the language. The file stays on the phone, in the app's own folder; when it reaches 50 MB it is set aside and a new one begins. There is no setting to turn it off.
 - **The clipboard history**, only if you turned it on.
 - **Imported files**: dictation models, language models, dictionaries.
 - **Contact names**, read from your address book if you allowed it; they are not copied elsewhere.
 
-**Export** puts all of the above (except the contacts) in one file that you save where you want; the app sends it nowhere. Keep this file private: it contains your words, your clipboard and the correction journal. **Import** replaces the current data with the file's. A file made by a newer version of the keyboard shows a warning and may not import properly.
+**Export** puts all of the above (except the contacts) in one file that you save where you want; the app sends it nowhere. Keep this file private: it contains your words and your clipboard. **Import** replaces the current data with the file's. A file made by a newer version of the keyboard shows a warning and may not import properly.
 
 There is no sync and no conflict handling: one phone, one configuration.
 
-Uninstalling the app removes its settings, learned words, journal, clipboard history and imported files from the phone. The app also lets Android's own backup include its data, where the phone has such a backup.
+Uninstalling the app removes its settings, learned words, clipboard history and imported files from the phone. The app also lets Android's own backup include its data, where the phone has such a backup.
 
 ## With the other apps
 
