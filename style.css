@@ -1,223 +1,317 @@
-/* gallaz.ch/eink — austere e-ink-friendly stylesheet.
-   No JS. No images that need to load. Serif, generous line-height,
-   high contrast. Looks the same in light/dark via prefers-color-scheme. */
+/* gallaz.ch — the apps page.
+   The apps are black-and-white screens full of words; the page is the paper around them.
+   One family of type (Atkinson Hyperlegible, drawn for low-vision readers), one accent used
+   only where something can be clicked, hairlines and space for structure. No JavaScript. */
 
 :root {
-  --fg: #111;
-  --muted: #555;
-  --bg: #fff;
-  --rule: #ddd;
-  --code-bg: #f2f2f2;
+  --paper: #EEF0EB;
+  --ink: #000;
+  --ink-2: #55595C;
+  --line: #C8CCC5;
+  --well: #E2E5DE;
+  --accent: #1E3F9A;
+  --accent-deep: #15307A;
+  --on-accent: #fff;
+  --shadow: rgba(10, 20, 15, .28);
+  --edge: rgba(0, 0, 0, .35);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --fg: #eee;
-    --muted: #aaa;
-    --bg: #111;
-    --rule: #333;
-    --code-bg: #1d1d1d;
+    --paper: #161918;
+    --ink: #ECEDE8;
+    --ink-2: #A3A7A1;
+    --line: #2C302D;
+    --well: #1A1D1B;
+    --accent: #9DB4FF;
+    --accent-deep: #B8C8FF;
+    --on-accent: #0B1230;
+    --shadow: rgba(0, 0, 0, .7);
+    --edge: rgba(255, 255, 255, .16);
   }
 }
 
 * { box-sizing: border-box; }
 
-html { font-size: 18px; }
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  padding: 2rem 1rem 4rem;
-  font-family: Georgia, "Times New Roman", "Iowan Old Style", serif;
-  line-height: 1.6;
-  color: var(--fg);
-  background: var(--bg);
+  font-family: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--paper);
 }
 
-main {
-  max-width: 38rem;
-  margin: 0 auto;
+main { max-width: 78rem; margin: 0 auto; padding: 0 1.5rem; }
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: .15em; }
+a:hover { color: var(--accent-deep); }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+code, pre {
+  font-family: "Atkinson Hyperlegible Mono", ui-monospace, "SF Mono", Consolas, "Liberation Mono", monospace;
 }
+code { font-size: .86em; word-break: break-all; }
+pre {
+  font-size: .82rem;
+  line-height: 1.55;
+  background: var(--well);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+pre code { font-size: inherit; }
+
+p { margin: 0 0 1rem; max-width: 42rem; }
+small { font-size: .88em; color: var(--ink-2); }
+strong { font-weight: 700; }
+
+/* ---- header ------------------------------------------------------------ */
 
 header.site {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 0.6rem;
-  margin-bottom: 2rem;
-  font-variant: small-caps;
-  letter-spacing: 0.04em;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 0 .6rem;
 }
-
-header.site .title { font-weight: 700; font-size: 1rem; }
+header.site .title { margin: 0; }
+header.site .title a { color: var(--ink); text-decoration: none; font-weight: 700; font-size: 1.15rem; }
+header.site nav { display: flex; gap: .2rem; }
 header.site nav a {
-  color: var(--muted);
+  color: var(--ink-2);
   text-decoration: none;
-  margin-left: 0.6rem;
-  font-variant: small-caps;
+  padding: .35rem .6rem;
+  border-radius: 6px;
+  font-weight: 500;
 }
-header.site nav a.active { color: var(--fg); font-weight: 700; }
+header.site nav a:hover { color: var(--ink); background: var(--well); }
+header.site nav a.active { color: var(--ink); font-weight: 700; }
 
-h1 {
-  font-size: 1.8rem;
+/* ---- hero: the words on the left, the phones on the right -------------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem 4rem;
+  align-items: center;
+  padding: 2.5rem 0 3.5rem;
+}
+.hero h1 {
+  font-size: clamp(2.8rem, 6.5vw, 4.6rem);
+  line-height: .98;
+  letter-spacing: -.025em;
   font-weight: 700;
-  margin: 0 0 0.4rem;
-  line-height: 1.2;
+  margin: 0 0 1.3rem;
+  max-width: 11em;
 }
-
-p.lede {
-  color: var(--muted);
-  margin: 0 0 2.4rem;
-  font-style: italic;
+.hero .lede {
+  font-size: 1.18rem;
+  line-height: 1.5;
+  max-width: 33rem;
+  margin: 0 0 1.6rem;
 }
+.hero .cta { display: flex; flex-wrap: wrap; gap: .7rem; margin: 0 0 1.4rem; }
+.hero .manual { font-size: .92rem; color: var(--ink-2); max-width: 33rem; margin: 0; }
+.hero .manual a { color: inherit; }
 
-section.repo {
-  border: 1px solid var(--rule);
-  padding: 1rem 1.2rem;
-  margin: 0 0 2.4rem;
-  background: var(--code-bg);
+.phones {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 0 4.5rem;          /* room for the last phone's step down */
 }
+.phones img {
+  width: 196px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 22px 44px -18px var(--shadow), 0 0 0 1px var(--edge);
+  background: #000;
+}
+.phones img + img { margin-left: -2.6rem; }
+.phones img:nth-child(2) { transform: translateY(1.5rem); }
+.phones img:nth-child(3) { transform: translateY(3rem); }
+.phones img:nth-child(4) { transform: translateY(4.5rem); }
 
-section.repo h2 {
-  margin: 0 0 0.4rem;
-  font-size: 1.1rem;
+/* ---- the rail of sections, and the content beside it ------------------- */
+
+.layout { display: grid; grid-template-columns: 13rem minmax(0, 1fr); gap: 0 4rem; }
+.rail {
+  position: sticky;
+  top: 1.5rem;
+  align-self: start;
+  padding-top: 3rem;
+  font-size: .95rem;
+}
+.rail ol { list-style: none; margin: 0; padding: 0; }
+.rail li { margin: 0; }
+.rail a {
+  display: block;
+  color: var(--ink-2);
+  text-decoration: none;
+  padding: .45rem 0 .45rem .9rem;
+  border-left: 2px solid var(--line);
+  font-weight: 500;
+}
+.rail a:hover { color: var(--ink); border-left-color: var(--ink); }
+
+/* ---- sections ----------------------------------------------------------- */
+
+section.platform { padding: 3rem 0 1.5rem; border-top: 1px solid var(--line); }
+section.platform > h2 {
+  font-size: 2.1rem;
+  line-height: 1.1;
+  letter-spacing: -.02em;
   font-weight: 700;
+  margin: 0 0 .7rem;
 }
+section.platform > p.lede { font-size: 1.08rem; color: var(--ink-2); max-width: 40rem; margin: 0 0 2rem; }
 
-section.repo p { margin: 0.4rem 0; }
-
-code {
-  font-family: "SF Mono", Consolas, "Liberation Mono", monospace;
-  font-size: 0.82rem;
-  background: var(--bg);
-  border: 1px solid var(--rule);
-  padding: 0.05rem 0.3rem;
-  border-radius: 2px;
-  word-break: break-all;
-}
-
-pre {
-  font-family: "SF Mono", Consolas, "Liberation Mono", monospace;
-  font-size: 0.78rem;
-  background: var(--bg);
-  border: 1px solid var(--rule);
-  padding: 0.6rem 0.8rem;
-  overflow-x: auto;
-  border-radius: 2px;
-  line-height: 1.4;
-}
+/* ---- one app: words on the left, its screens on the right -------------- */
 
 article.app {
-  margin: 0 0 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem 2.5rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-top: 1px solid var(--line);
 }
-
+article.app .text { min-width: 0; }
 article.app h2 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 1.15;
+  letter-spacing: -.01em;
   font-weight: 700;
-  margin: 0 0 0.2rem;
-  line-height: 1.2;
+  margin: 0 0 .45rem;
 }
-
 article.app .meta {
-  color: var(--muted);
-  font-size: 0.85rem;
-  margin: 0 0 1rem;
-}
-
-article.app .meta::before { content: "— "; }
-
-article.app p { margin: 0 0 1rem; }
-
-article.app .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
-  margin: 1rem 0 0;
+  gap: .3rem 1rem;
+  font-size: .86rem;
+  color: var(--ink-2);
+  margin: 0 0 1rem;
 }
+article.app .meta code { font-size: .8rem; }
+article.app .text > p { margin: 0 0 .9rem; }
+article.app .links { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.2rem 0 0; }
 
-a.btn {
-  display: inline-block;
-  padding: 0.4rem 0.9rem;
-  border: 1px solid var(--fg);
-  color: var(--fg);
+.shots { display: flex; gap: .9rem; align-items: flex-start; margin: .2rem 0 0; max-width: none; }
+.shots img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 14px 28px -16px var(--shadow), 0 0 0 1px var(--edge);
+  background: #000;
+}
+.shots img.wide { width: 430px; max-width: 100%; border-radius: 8px; background: #fff; }
+
+/* an app that also exists on the desktop shows its window: the screens go under the words, full width */
+article.app:has(img.wide) { grid-template-columns: 1fr; }
+article.app:has(img.wide) .shots { margin-top: .6rem; }
+article.app:has(img.wide) .shots img { width: 168px; }
+article.app:has(img.wide) .shots img.wide { width: 520px; }
+
+/* ---- buttons -------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem 1.05rem;
+  border: 1.5px solid var(--ink);
+  border-radius: 7px;
+  color: var(--ink);
   text-decoration: none;
-  font-size: 0.9rem;
-  font-variant: small-caps;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: .95rem;
+  line-height: 1.3;
+  background: transparent;
 }
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn.primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--on-accent); }
 
-a.btn:hover, a.btn:focus { background: var(--fg); color: var(--bg); }
+/* ---- getting the apps ----------------------------------------------------- */
 
-a.btn.primary { background: var(--fg); color: var(--bg); }
-a.btn.primary:hover, a.btn.primary:focus { background: var(--bg); color: var(--fg); }
+.get article.app { border-top: 0; padding-top: .5rem; }
+.get .way { margin: 0; }
+.get .way h3 { font-size: 1.15rem; margin: 0 0 .6rem; line-height: 1.25; }
+.get .way h3 small { display: block; font-weight: 400; font-size: .9rem; margin-top: .15rem; }
+.get .way ol, .get .way ul { padding-left: 1.3rem; margin: 0 0 .9rem; }
+.get .way li { margin: .35rem 0; }
+.get p.lede.other { border-top: 1px solid var(--line); padding-top: 2rem; margin: 2rem 0 1.4rem; font-size: 1.05rem; color: var(--ink-2); max-width: 40rem; }
+.get .ways { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
 
-section.platform {
-  border-top: 2px solid var(--fg);
-  padding-top: 1.4rem;
-  margin-top: 3rem;
-}
-
-section.platform > h2 {
-  font-size: 1rem;
+ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 0 0 1rem; max-width: 44rem; }
+ol.steps li { counter-increment: step; position: relative; padding-left: 3.2rem; margin: 0 0 1rem; min-height: 2.4rem; }
+ol.steps li::before {
+  content: counter(step);
+  position: absolute; left: 0; top: -.1rem;
+  width: 2.3rem; height: 2.3rem;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  display: flex; align-items: center; justify-content: center;
   font-weight: 700;
-  font-variant: small-caps;
-  letter-spacing: 0.08em;
-  margin: 0 0 2rem;
-  color: var(--muted);
 }
 
-section.install {
-  border-top: 1px solid var(--rule);
-  padding-top: 1.4rem;
-  margin-top: 2rem;
-}
+.qr img { background: #fff; padding: 8px; border-radius: 8px; box-shadow: 0 0 0 1px var(--line); }
 
-section.install h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0 0 0.6rem;
-}
+/* ---- the other blocks ------------------------------------------------------ */
 
-section.install h4 {
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin: 1.2rem 0 0.4rem;
-}
-
+section.install { border-top: 1px solid var(--line); padding-top: 1.6rem; margin-top: 1.6rem; }
+section.install h3 { font-size: 1.15rem; margin: 0 0 .6rem; line-height: 1.25; }
 section.install ol, section.install ul { padding-left: 1.4rem; }
-section.install li { margin: 0.4rem 0; }
-section.install p { margin: 0.6rem 0; }
+section.install li { margin: .4rem 0; }
 
 footer.site {
-  margin-top: 4rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--rule);
-  color: var(--muted);
-  font-size: 0.82rem;
-  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem 0 3.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink-2);
+  font-size: .9rem;
+}
+footer.site p { margin: 0; }
+footer.site a { color: inherit; }
+
+/* ---- narrower screens ------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .layout { display: block; }
+  .rail { position: static; padding: 0 0 .5rem; border-bottom: 1px solid var(--line); margin-bottom: 1rem; }
+  .rail ol { display: flex; flex-wrap: wrap; gap: .3rem .5rem; }
+  .rail a { border-left: 0; padding: .35rem .7rem; border-radius: 999px; background: var(--well); color: var(--ink); }
+  .rail a:hover { background: var(--ink); color: var(--paper); }
+  .get .ways { grid-template-columns: 1fr; gap: 1.4rem; }
 }
 
-footer.site a { color: var(--muted); }
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.5rem 0 2.5rem; }
+  .hero h1 { font-size: clamp(2.3rem, 11vw, 3.4rem); }
+  .phones { padding: .5rem 0 2.5rem; overflow-x: auto; scrollbar-width: none; margin: 0 -1.5rem; padding-left: 1.5rem; }
+  .phones::-webkit-scrollbar { display: none; }
+  .phones img { width: 150px; }
+  .phones img + img { margin-left: -1.6rem; }
+  .phones img:nth-child(2) { transform: translateY(.8rem); }
+  .phones img:nth-child(3) { transform: translateY(1.6rem); }
+  .phones img:nth-child(4) { transform: translateY(2.4rem); }
+}
 
-/* vignettes de captures d'écran */
-.shots { display: flex; gap: .6rem; flex-wrap: wrap; margin: .8rem 0; }
-.shots img { width: 130px; height: auto; border: 1px solid currentColor; opacity: .85; }
-.shots img.wide { width: 370px; max-width: 100%; }   /* une fenêtre d'ordinateur, à la hauteur des téléphones */
-.shots img:hover { opacity: 1; }
-@media (max-width: 480px) { .shots img { width: 104px; } .shots img.wide { width: 296px; } }
+@media (max-width: 760px) {
+  html { font-size: 16px; }
+  header.site nav a:not(.lang) { display: none; }   /* the chips under the hero list the sections */
+  main { padding: 0 1rem; }
+  article.app { grid-template-columns: 1fr; gap: .6rem; padding: 1.6rem 0; }
+  .shots { overflow-x: auto; margin: .6rem -1rem 0; padding: .3rem 1rem .8rem; scrollbar-width: none; }
+  .shots::-webkit-scrollbar { display: none; }
+  .shots img { width: 124px; flex: none; }
+  .shots img.wide { width: 320px; max-width: none; }
+  section.platform > h2 { font-size: 1.75rem; }
+  .phones { margin: 0 -1rem; padding-left: 1rem; }
+}
 
-/* QR code du dépôt : toujours noir sur blanc, même en thème sombre, sinon illisible pour un scanner */
-.qr img { background: #fff; padding: 6px; border: 1px solid var(--fg); }
-
-/* « Obtenir les applications » : les trois voies, en tête de page */
-.get .way { margin: 1.2rem 0 1.6rem; }
-.get .way h3 small { font-weight: 400; opacity: .75; }
-
-/* sommaire sous le chapeau */
-p.toc { margin: -1.4rem 0 0; font-size: 0.9rem; font-variant: small-caps; letter-spacing: 0.04em; }
-p.toc a { color: var(--fg); }
-p.toc + p.toc { margin-top: .5rem; }   /* la ligne du mode d'emploi, sous le sommaire */
-
-/* « Obtenir les applications » : l'installateur d'abord, les autres voies ensuite */
-.get article.app { margin-bottom: 1.6rem; }
-.get p.lede.other { border-top: 1px solid var(--rule); padding-top: 1.4rem; margin: 2rem 0 0; }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

@@ -5,22 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Digital detox apps — gallaz.ch</title>
 <meta name="description" content="Black-and-white, text-only Android apps for reading, listening and digital wellbeing, and the one small app that installs them all and keeps them up to date. No ads, no accounts, no algorithm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Atkinson+Hyperlegible+Mono&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
 <header class="site">
-  <div class="title">gallaz.ch / e-ink</div>
+  <p class="title"><a href="index.html">gallaz.ch</a></p>
   <nav>
-    <a href="fr.html">FR</a>
-    <a href="index.html" class="active">EN</a>
+    <a href="#get">Get the apps</a>
+    <a href="#readers">Reader's</a>
+    <a href="#desktop">Desktop</a>
+    <a href="#others">Other projects</a>
+    <a href="fr.html" class="lang">FR</a>
+    <a href="index.html" class="lang active">EN</a>
   </nav>
 </header>
 
-<h1>Digital detox</h1>
-<p class="lede">Free, open-source apps for a quieter phone: black and white, text only, no ads, no accounts, no algorithm, nothing that asks for your attention. The <a href="#readers">Reader's family</a> replaces the home screen, the calendar, tasks, notes, books, podcasts and more; <a href="#socialblocker-detox">Reader's Detox</a> keeps the social networks out; <a href="#get">one small app</a> installs it all. It began with tools for e-ink screens, hence the address, and everything here still suits them.</p>
-<p class="toc"><a href="#get">Getting the apps</a> · <a href="#readers">The Reader's family</a> · <a href="#also">Also in the installer</a> · <a href="#desktop">On the desktop</a> · <a href="#others">Other projects</a></p>
-<p class="toc">User manual, every function of every app: <a href="manual/readers-manual-en.pdf">PDF</a> · <a href="manual/readers-manual-en.txt">plain text, to hand to an AI assistant</a> · <a href="manual/readers-mode-d-emploi-fr.pdf">en français</a></p>
+<section class="hero">
+  <div>
+    <h1>Digital detox</h1>
+    <p class="lede">Free, open-source apps for a quieter phone: black and white, text only, no ads, no accounts, no algorithm, nothing that asks for your attention. The <a href="#readers">Reader's family</a> replaces the home screen, the calendar, tasks, notes, books, podcasts and more; <a href="#socialblocker-detox">Reader's Detox</a> keeps the social networks out; <a href="#get">one small app</a> installs it all. It began with tools for e-ink screens, hence the address, and everything here still suits them.</p>
+    <p class="cta"><a class="btn primary" href="#get">Get the installer</a> <a class="btn" href="#readers">See the apps</a></p>
+    <p class="manual">User manual, every function of every app: <a href="manual/readers-manual-en.pdf">PDF</a> · <a href="manual/readers-manual-en.txt">plain text, to hand to an AI assistant</a> · <a href="manual/readers-mode-d-emploi-fr.pdf">en français</a></p>
+  </div>
+  <p class="phones"><img src="img/com.freedomfighter.readerslauncher-1.png" alt="" width="260" height="462"><img src="img/com.freedomfighter.readersnotes-1.png" alt="" width="260" height="462"><img src="img/com.freedomfighter.readerscalendar-1.png" alt="" width="260" height="462"><img src="img/com.freedomfighter.readerstasks-1.png" alt="" width="260" height="462"></p>
+</section>
+
+<div class="layout">
+<nav class="rail" aria-label="On this page">
+  <ol>
+    <li><a href="#get">Getting the apps</a></li>
+    <li><a href="#readers">The Reader's family</a></li>
+    <li><a href="#also">Also in the installer</a></li>
+    <li><a href="#desktop">On the desktop</a></li>
+    <li><a href="#others">Other projects</a></li>
+  </ol>
+</nav>
+<div class="content">
 
 <!-- ==================== Getting the apps: the installer ==================== -->
 <section class="platform get" id="get">
@@ -28,18 +52,20 @@
   <p class="lede">One small app installs all the others and keeps them up to date. Every app of the <a href="#readers">Reader's family</a> and the four that <a href="#also">follow it</a> are in its list.</p>
 
   <article class="app" id="readers-installer">
+    <div class="text">
     <h2>Reader's Installer and Updater</h2>
-    <p class="meta">v1.0.2 · GPL-3.0 · <code>com.freedomfighter.readersinstaller</code></p>
+    <p class="meta"><span>v1.0.2</span><span>GPL-3.0</span><code>com.freedomfighter.readersinstaller</code></p>
     <p>Open it once: every app is in the list, one tap from being installed. After that the updates arrive by themselves, the installer's own included. When an app also exists for the desktop, its page in the installer links to it. A modified version of <a href="https://github.com/ImranR98/Obtainium">Obtainium</a> (GPL-3.0), not affiliated with its authors; it can follow any other app the same way.</p>
     <div class="links">
       <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersInstaller-v1.0.2.apk">Download the installer (APK)</a>
       <a class="btn" href="https://github.com/funkypitt/readers-installer">Source</a>
     </div>
+    </div>
   </article>
 
   <section class="way" id="steps">
     <h3>Three steps</h3>
-    <ol>
+    <ol class="steps">
       <li>On the phone, tap <strong>Download the installer</strong> above, then open the file. Android asks once to let the browser install apps: allow it.</li>
       <li>Open Reader's Installer. The apps are in the list: tap one, then <strong>Install</strong>. Android asks once to let the installer install apps.</li>
       <li>That is all. Updates are looked for in the background; on Android 12 and later they install silently for the apps the installer installed itself.</li>
@@ -49,7 +75,8 @@
 
   <p class="lede other">Three other ways, if you would rather not use the installer. The files are identical and carry the same signature whichever way you choose, so you can change your mind later without uninstalling anything.</p>
 
-  <section class="way" id="fdroid">
+  <div class="ways">
+<section class="way" id="fdroid">
     <h3>F-Droid <small>(updates arrive by themselves)</small></h3>
     <ol>
       <li>Install the <a href="https://f-droid.org/">F-Droid</a> client (Droid-ify or Neo Store work too).</li>
@@ -70,6 +97,7 @@
     <h3>The APK file <small>(last resort: no updates)</small></h3>
     <p>Each app also has an <strong>APK</strong> link. Installed this way, an app never updates: you would have to come back here for every new version. Use it to try an app, or on a device where neither F-Droid nor Obtainium can run.</p>
   </section>
+  </div>
 </section>
 
 <!-- ==================== Reader's ==================== -->
@@ -78,22 +106,24 @@
   <p class="lede">A phone that reads like a page. Black-and-white, text-only apps: no icons, no colours, no cards, no account. The launcher shows words; the calendar, tasks, notes, books and feeds read like a newspaper; Reader's Detox keeps the social networks out. In the spirit of the Light Phone, on any Android. All of them are in the <a href="#get">installer</a>'s list, in English, French, German, Spanish, Portuguese and Russian. Most also provide standard black-and-white widgets for any other launcher.</p>
 
   <article class="app" id="readers-launcher">
+    <div class="text">
     <h2>Reader's Launcher</h2>
-    <p class="meta">v1.21.0 · MIT · <code>com.freedomfighter.readerslauncher</code></p>
+    <p class="meta"><span>v1.21.0</span><span>MIT</span><code>com.freedomfighter.readerslauncher</code></p>
     <p>Your home screen as words: apps and categories one per line, a small grid for the apps you use most, and two-line tiles for the time, the weather, your next event, your tasks, a note, your book or the word of the day. Fixed pages, no scrolling; a swipe opens a book.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readerslauncher-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readerslauncher-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readerslauncher%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-launcher%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Launcher%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersLauncher-v1.21.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-launcher">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readerslauncher-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readerslauncher-2.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-calendar">
+    <div class="text">
     <h2>Reader's Calendar</h2>
-    <p class="meta">Android v1.16.0 · Desktop v1.14.3 · MIT · <code>com.freedomfighter.readerscalendar</code></p>
+    <p class="meta"><span>Android v1.16.0</span><span>Desktop v1.14.3</span><span>MIT</span><code>com.freedomfighter.readerscalendar</code></p>
     <p>A black-and-white calendar for the calendars already on your phone. Events are solid blocks on a time grid, white is free time; an event's calendar is a word, not a colour. On the desktop — Windows, macOS, Linux — the same layout over CalDAV, or Google with your own OAuth client.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readerscalendar-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readerscalendar-2.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.readerscalendar-desktop.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readerscalendar%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-calendar%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Calendar%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersCalendar-v1.16.0.apk">APK</a>
@@ -101,13 +131,15 @@
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-calendar">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readerscalendar-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readerscalendar-2.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.readerscalendar-desktop.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-tasks-android">
+    <div class="text">
     <h2>Reader's Tasks</h2>
-    <p class="meta">Android v1.5.3 · Desktop v1.6.2 · MIT · <code>com.freedomfighter.readerstasks</code></p>
+    <p class="meta"><span>Android v1.5.3</span><span>Desktop v1.6.2</span><span>MIT</span><code>com.freedomfighter.readerstasks</code></p>
     <p>Your CalDAV task lists (Infomaniak, Tasks.org, Nextcloud, Radicale) as plain text lists; drag to reorder, and the order is saved on the server. Also on the desktop: Windows, macOS and Linux.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readerstasks-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readerstasks-2.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.readerstasks-desktop.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readerstasks%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-tasks-android%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Tasks%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersTasks-v1.5.3.apk">APK</a>
@@ -115,13 +147,15 @@
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-tasks-android">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readerstasks-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readerstasks-2.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.readerstasks-desktop.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-notes">
+    <div class="text">
     <h2>Reader's Notes</h2>
-    <p class="meta">Android v1.6.2 · Desktop v1.3.3 · MIT · <code>com.freedomfighter.readersnotes</code></p>
+    <p class="meta"><span>Android v1.6.2</span><span>Desktop v1.3.3</span><span>MIT</span><code>com.freedomfighter.readersnotes</code></p>
     <p>Plain-text notes, typed or dictated — speech is written on the phone, nothing is uploaded. Each note is a .txt file, optionally synced both ways with your own WebDAV folder (kDrive, Nextcloud…): your computer sees ordinary files. On the desktop — Windows, macOS, Linux — the same notes through the same folder.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readersnotes-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersnotes-2.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.readersnotes-desktop.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersnotes%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-notes%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Notes%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersNotes-v1.6.2.apk">APK</a>
@@ -129,48 +163,56 @@
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-notes">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readersnotes-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersnotes-2.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.readersnotes-desktop.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-books">
+    <div class="text">
     <h2>Reader's Books</h2>
-    <p class="meta">v1.4.0 · MIT · <code>com.freedomfighter.readersbooks</code></p>
+    <p class="meta"><span>v1.4.0</span><span>MIT</span><code>com.freedomfighter.readersbooks</code></p>
     <p>A reader for e-ink: the shelf as a list, pages that turn with a tap, no scrolling, nothing else on the screen. EPUB, MOBI, FB2 and text files, opened from the app, a file manager or a share.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readersbooks-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersbooks-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersbooks%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-books%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Books%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBooks-v1.4.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-books">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readersbooks-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersbooks-2.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-bookshop">
+    <div class="text">
     <h2>Reader's Bookshop</h2>
-    <p class="meta">v1.2.1 · MIT · <code>com.freedomfighter.readersbookshop</code></p>
+    <p class="meta"><span>v1.2.1</span><span>MIT</span><code>com.freedomfighter.readersbookshop</code></p>
     <p>Finds free e-books and downloads them for Reader's Books or any reader. One search asks Project Gutenberg, Standard Ebooks, Wikisource, the Bibliothèque numérique romande, Ebooks libres et gratuits, textos.info and the Internet Archive. Says whether the work is in the public domain when the author's dates are known. Anna's Archive stays off unless you switch it on.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readersbookshop-1.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersbookshop%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-bookshop%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Bookshop%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBookshop-v1.2.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-bookshop">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readersbookshop-1.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-recorder">
+    <div class="text">
     <h2>Reader's Recorder</h2>
-    <p class="meta">v1.10.1 · MIT · <code>com.freedomfighter.readersrecorder</code></p>
+    <p class="meta"><span>v1.10.1</span><span>MIT</span><code>com.freedomfighter.readersrecorder</code></p>
     <p>One tap records a memo, a lecture or a conversation. The phone transcribes by itself (whisper.cpp), evens out the volume of a listening copy and can write the main points (beta): nothing leaves it. Optional export to your own WebDAV folder.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersrecorder%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-recorder%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Recorder%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersRecorder-v1.10.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-recorder">Source</a>
     </div>
+    </div>
   </article>
 
   <article class="app" id="readers-podcasts">
+    <div class="text">
     <h2>Reader's Podcasts</h2>
-    <p class="meta">Android v1.1.2 · Desktop v1.1.2 · MIT · <code>com.freedomfighter.readerspodcasts</code></p>
+    <p class="meta"><span>Android v1.1.2</span><span>Desktop v1.1.2</span><span>MIT</span><code>com.freedomfighter.readerspodcasts</code></p>
     <p>A text-only podcast player: channels, episodes, favourites, downloads — no artwork, no store, no recommendations. OPML in and out; a desktop twin reads the same lists. An episode can be transcribed and translated on the phone, and read while it plays: a tap on a line sends the sound there.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readerspodcasts-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readerspodcasts-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readerspodcasts%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-podcasts%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Podcasts%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersPodcasts-v1.1.2.apk">APK</a>
@@ -178,48 +220,56 @@
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-podcasts">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readerspodcasts-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readerspodcasts-2.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-audio">
+    <div class="text">
     <h2>Reader's Audio Player</h2>
-    <p class="meta">v1.6.1 · MIT · <code>com.freedomfighter.readersaudio</code></p>
+    <p class="meta"><span>v1.6.1</span><span>MIT</span><code>com.freedomfighter.readersaudio</code></p>
     <p>A black-and-white audio player whose one addition is transcription on the phone: language and quality chosen each time, the text saved as a .txt file any reader opens and, on request, the main points (beta) written at the top. The transcript can be translated on the phone too. Share the audio or the transcript.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readersaudio-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersaudio-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersaudio%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-audio%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Audio%20Player%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersAudio-v1.6.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-audio">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readersaudio-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersaudio-2.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-mindful">
+    <div class="text">
     <h2>Reader's Mindful Tool</h2>
-    <p class="meta">v1.0.2 · MIT · <code>com.freedomfighter.readersmindful</code></p>
+    <p class="meta"><span>v1.0.2</span><span>MIT</span><code>com.freedomfighter.readersmindful</code></p>
     <p>A bowl that rings when you need it: one strike every few minutes until you stop it, a sitting of a set length closed by three bowls, or one or three bowls at fixed times every day. Five bowls or your own recording. It rings on time, even from deep sleep.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readersmindful-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersmindful-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersmindful%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-mindful%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Mindful%20Tool%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersMindful-v1.0.2.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-mindful">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readersmindful-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersmindful-2.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-foodlog">
+    <div class="text">
     <h2>Reader's Food Log</h2>
-    <p class="meta">v1.3.0 · MIT · <code>com.freedomfighter.readersfoodlog</code></p>
+    <p class="meta"><span>v1.3.0</span><span>MIT</span><code>com.freedomfighter.readersfoodlog</code></p>
     <p>A food journal made of photos only. One touch — widget, quick-settings tile or the big button — takes the photo, labelled breakfast, lunch, dinner or snack from the time. One folder per day, activity in one tap, your weight with its curve. No calories, no typing, no network permission.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersfoodlog%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-foodlog%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Food%20Log%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersFoodLog-v1.3.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-foodlog">Source</a>
     </div>
+    </div>
   </article>
 
   <article class="app" id="readers-scanner">
+    <div class="text">
     <h2>Reader's Scanner</h2>
-    <p class="meta">Android v1.1.2 · Desktop v1.0.2 · MIT · <code>com.freedomfighter.readersscanner</code></p>
+    <p class="meta"><span>Android v1.1.2</span><span>Desktop v1.0.2</span><span>MIT</span><code>com.freedomfighter.readersscanner</code></p>
     <p>A document scanner: the page is found, straightened and cleaned, a blurred shot is flagged at once, and the text is read on the phone in seven languages. Each document becomes a searchable PDF, dated and named by you, in big plain folders, shared as PDF, pictures or text, copied to your WebDAV folder if you like. At first start you choose the engine: Google ML Kit (most reliable; closed code, needs Google Play services, sends usage statistics to Google, never your documents) or the free ones (its own page finder and Tesseract). On the desktop — Windows, macOS, Linux — one button for a real scanner: found by itself, feeder or glass, both sides, the same folders as the phone. Older scanners need <a href="https://www.naps2.com/download">NAPS2</a>.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readersscanner-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersscanner-2.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.readersscanner-desktop.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersscanner%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-scanner%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Scanner%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersScanner-v1.1.2.apk">APK</a>
@@ -227,51 +277,61 @@
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-scanner">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readersscanner-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersscanner-2.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.readersscanner-desktop.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-feeds">
+    <div class="text">
     <h2>Reader's Feeds</h2>
-    <p class="meta">v1.2.1 · GPL-3.0 · <code>com.freedomfighter.readersfeeds</code></p>
+    <p class="meta"><span>v1.2.1</span><span>GPL-3.0</span><code>com.freedomfighter.readersfeeds</code></p>
     <p>An RSS and Atom reader for e-ink: articles read as clean pages taken from the web, not scrolled. OPML import and export, paid Substacks.</p>
-    <p class="shots"><img src="img/com.freedomfighter.readersfeeds-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersfeeds-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersfeeds%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-feeds%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Feeds%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersFeeds-v1.2.1-arm64.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-feeds">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.readersfeeds-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.readersfeeds-2.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="socialblocker-detox">
+    <div class="text">
     <h2>Reader's Detox</h2>
-    <p class="meta">v1.7.2 · GPL-3.0 · <code>com.parentcontrol.socialblocker.detox</code></p>
+    <p class="meta"><span>v1.7.2</span><span>GPL-3.0</span><code>com.parentcontrol.socialblocker.detox</code></p>
     <p>Formerly Social Detox. Blocks YouTube, Instagram, TikTok, Reddit, X and Substack with a local VPN that refuses their DNS requests: no proxy, no certificate, nothing leaves the phone. Open during the hours you allow; while it blocks, sites and hours are locked, and five maths problems can stand between you and stopping it. Friction you choose, not parental control.</p>
-    <p class="shots"><img src="img/com.parentcontrol.socialblocker.detox-1.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.parentcontrol.socialblocker.detox%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2FSocialBlocker-Detox%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Detox%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/SocialDetox-v1.7.2-detox.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/SocialBlocker-Detox">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.parentcontrol.socialblocker.detox-1.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="readers-files">
+    <div class="text">
     <h2>Reader's Files</h2>
-    <p class="meta">v1.0.0 · GPL-3.0 · <code>com.freedomfighter.readersfiles</code></p>
+    <p class="meta"><span>v1.0.0</span><span>GPL-3.0</span><code>com.freedomfighter.readersfiles</code></p>
     <p>A file manager that opens on a page of plain words: Downloads, Videos, Images, Audio, Documents, Apps, Archives, then the phone's storage and its root, with the space left. ZIP files are browsed in place; 7z, rar, tar and their compressed forms are unpacked beside the archive. Built-in viewers for pictures, video, audio, PDF and text. A modified version of <a href="https://github.com/Raival-e/Prism-File-Explorer">Prism File Explorer</a> (GPL-3.0). No network permission.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersfiles%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-files%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Files%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersFiles-v1.0.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-files">Source</a>
     </div>
+    </div>
   </article>
 
   <article class="app" id="readers-night">
+    <div class="text">
     <h2>Reader's Night Filter</h2>
-    <p class="meta">v1.2.0 · MIT · <code>com.freedomfighter.readersnight</code></p>
+    <p class="meta"><span>v1.2.0</span><span>MIT</span><code>com.freedomfighter.readersnight</code></p>
     <p>One switch turns the screen gray, as warm as the phone allows, and dim, then puts everything back as it was. It sits in the quick settings, in a widget and in the app. It asks for a permission given once from a computer, with one command shown in the app; no root. Android does not let an app remove blue entirely: the tint stops at the phone's warmest setting.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersnight%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-night%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Night%20Filter%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersNight-v1.2.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-night">Source</a>
+    </div>
     </div>
   </article>
 
@@ -283,31 +343,36 @@
   <p class="lede">Four apps outside the Reader's family, in the installer's list too.</p>
 
   <article class="app" id="epub-eink-newsreader">
+    <div class="text">
     <h2>ePub Magazine Reader</h2>
-    <p class="meta">v0.2.26 · GPL-3.0 · <code>com.freedomfighter.magazinereader</code></p>
+    <p class="meta"><span>v0.2.26</span><span>GPL-3.0</span><code>com.freedomfighter.magazinereader</code></p>
     <p>Reads the daily newspapers and magazines that Calibre's news recipes deliver as ePub (NZZ, The Economist, Courrier International…): the contents paginated, each article a page.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.magazinereader%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fepub-eink-newsreader%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22ePub%20Magazine%20reader%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.26-magazine.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Source code</a>
     </div>
+    </div>
   </article>
 
   <article class="app" id="littre-app">
+    <div class="text">
     <h2>Le dictionnaire Littré</h2>
-    <p class="meta">v1.1.2 · GPL-3.0 · <code>ch.littre.littre_app</code></p>
+    <p class="meta"><span>v1.1.2</span><span>GPL-3.0</span><code>ch.littre.littre_app</code></p>
     <p>The complete Littré offline: 78,599 entries with etymology, quotations and pronunciation. A word of the day in a widget. No connection, no account.</p>
-    <p class="shots"><img src="img/ch.littre.littre_app-1.png" alt="" loading="lazy"><img src="img/ch.littre.littre_app-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22ch.littre.littre_app%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Flittre-app%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22%5C%22Le%20dictionnaire%20Littr%5C%5CxE9%5C%22%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/Littre-v1.1.2-arm64.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/littre-app">Source code</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/ch.littre.littre_app-1.png" alt="" loading="lazy"><img src="img/ch.littre.littre_app-2.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="clavier-plume">
+    <div class="text">
     <h2>Clavier Plume</h2>
-    <p class="meta">v2.1.3 · FUTO Source First 1.1 · <code>ch.plume.clavier</code></p>
+    <p class="meta"><span>v2.1.3</span><span>FUTO Source First 1.1</span><code>ch.plume.clavier</code></p>
     <p>A French and English keyboard with no Internet permission, built on FUTO Keyboard. Its French dictionary understands elisions (l'ordinateur, qu'elle), inversions (a-t-il) and typography, and recognises rare words without pushing them at you. Corrections come from the dictionary alone — no language model. Offline voice dictation.</p>
     <p>Too large for the F-Droid repository: the <a href="#get">installer</a> and <a href="https://obtainium.imranr.dev/">Obtainium</a> follow its GitHub releases instead.</p>
     <div class="links">
@@ -315,18 +380,21 @@
       <a class="btn" href="https://github.com/funkypitt/clavier-plume/releases/latest">APK</a>
       <a class="btn" href="https://github.com/funkypitt/clavier-plume">Source code</a>
     </div>
+    </div>
   </article>
 
   <article class="app" id="local-2p-games">
+    <div class="text">
     <h2>Funky's 2P Games</h2>
-    <p class="meta">v1.36 · MIT · <code>com.local2p.games</code></p>
+    <p class="meta"><span>v1.36</span><span>MIT</span><code>com.local2p.games</code></p>
     <p>16 touch games for two on one phone, the screen split in two halves: 4 in a Row, Caro, Awalé, Memory, Duck Chess, Tank Wars, Word Clash, Reversi, Tennis, Pool, Carrom, Air Hockey, Mini Golf, Star Clash, Hangman, Horse Jump. Rules behind a ? in each game. No connection needed, no permission asked. No ads, no accounts, no purchases.</p>
-    <p class="shots"><img src="img/com.local2p.games-1.png" alt="" loading="lazy"><img src="img/com.local2p.games-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.local2p.games%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Flocal-2p-games%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Funky%27s%202P%20Games%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/2P-Games-v1.36.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/local-2p-games">Source code</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.local2p.games-1.png" alt="" loading="lazy"><img src="img/com.local2p.games-2.png" alt="" loading="lazy"></p>
   </article>
 
 </section>
@@ -361,38 +429,44 @@ sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes reade
   <p class="lede">Three Android apps for a retreat: each does one thing, and nothing interrupts it — not deep sleep, not airplane mode, not another sound. They are not in the installer's list: get them from the <a href="#fdroid">F-Droid repository</a>, Obtainium or the APK.</p>
 
   <article class="app" id="retreat-timer">
+    <div class="text">
     <h2>Retreat Timer</h2>
-    <p class="meta">v1.13.1 · MIT · <code>com.freedomfighter.retreattimer</code></p>
+    <p class="meta"><span>v1.13.1</span><span>MIT</span><code>com.freedomfighter.retreattimer</code></p>
     <p>Singing bowls at the times you choose — the signal to begin or end a sitting — so a retreat keeps its schedule with nobody watching the clock. They ring no matter what, even from deep sleep. Five bowls or your own recording.</p>
-    <p class="shots"><img src="img/com.freedomfighter.retreattimer-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.retreattimer-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.retreattimer%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fretreat-timer%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Retreat%20Timer%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/RetreatTimer-v1.13.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/retreat-timer">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.retreattimer-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.retreattimer-2.png" alt="" loading="lazy"></p>
   </article>
 
   <article class="app" id="retreat-player">
+    <div class="text">
     <h2>Retreat Player</h2>
-    <p class="meta">v1.5.1 · MIT · <code>com.freedomfighter.retreatplayer</code></p>
+    <p class="meta"><span>v1.5.1</span><span>MIT</span><code>com.freedomfighter.retreatplayer</code></p>
     <p>Plays dhamma talks, bells and chanting during a retreat, and nothing interrupts it once it has started — not deep sleep, not airplane mode.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.retreatplayer%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fretreat-player%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Retreat%20Player%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/RetreatPlayer-v1.5.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/retreat-player">Source</a>
     </div>
+    </div>
   </article>
 
   <article class="app" id="retreat-walk">
+    <div class="text">
     <h2>Retreat Walk</h2>
-    <p class="meta">v1.1.0 · MIT · <code>com.freedomfighter.retreatwalk</code></p>
+    <p class="meta"><span>v1.1.0</span><span>MIT</span><code>com.freedomfighter.retreatwalk</code></p>
     <p>A bowl every ten minutes — or any interval — until you stop it. For switching partners in a paired exercise, or as a reminder to stay awake. One number, one button.</p>
-    <p class="shots"><img src="img/com.freedomfighter.retreatwalk-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.retreatwalk-2.png" alt="" loading="lazy"></p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.retreatwalk%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fretreat-walk%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Retreat%20Walk%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/RetreatWalk-v1.1.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/retreat-walk">Source</a>
     </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.retreatwalk-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.retreatwalk-2.png" alt="" loading="lazy"></p>
   </article>
 </section>
 
@@ -401,22 +475,26 @@ sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes reade
   <h2>Other projects: Chrome extensions</h2>
 
   <article class="app">
+    <div class="text">
     <h2>PageTurn</h2>
-    <p class="meta">v1.0.0 · Manifest v3 + bookmarklet</p>
+    <p class="meta"><span>v1.0.0</span><span>Manifest v3 + bookmarklet</span></p>
     <p>Reads web pages as a book: pages instead of scrolling, turned with no animation — what e-ink needs. Recognises articles on Substack, Medium, WordPress, Ghost, Dev.to and more, and removes ads, sidebars, pop-ups and comments.</p>
     <div class="links">
       <a class="btn primary" href="https://github.com/funkypitt/pageturn/archive/refs/heads/master.zip">Download (ZIP)</a>
       <a class="btn" href="https://github.com/funkypitt/pageturn">Source code</a>
     </div>
+    </div>
   </article>
 
   <article class="app">
+    <div class="text">
     <h2>Social Media Blocker</h2>
-    <p class="meta">v1.0 · Chrome / Firefox (Manifest v3)</p>
+    <p class="meta"><span>v1.0</span><span>Chrome / Firefox (Manifest v3)</span></p>
     <p>Blocks social media and video sites. To get through, solve five maths problems of rising difficulty: enough to break the reflex, not enough to lock you out. Collects nothing.</p>
     <div class="links">
       <a class="btn primary" href="https://github.com/funkypitt/social-blocker/archive/refs/heads/master.zip">Download (ZIP, Chrome and Firefox)</a>
       <a class="btn" href="https://github.com/funkypitt/social-blocker">Source code</a>
+    </div>
     </div>
   </article>
 
@@ -435,22 +513,26 @@ sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes reade
   <h2>Other projects: e-ink on the ThinkBook Plus (Linux)</h2>
 
   <article class="app">
+    <div class="text">
     <h2>Tinta4PlusU</h2>
-    <p class="meta">ThinkBook Plus Gen 4 IRU · Python</p>
+    <p class="meta"><span>ThinkBook Plus Gen 4 IRU</span><span>Python</span></p>
     <p>Controls the colour e-ink display of the Lenovo ThinkBook Plus Gen 4 IRU on Linux: switch between the OLED and e-ink panels, set the frontlight and brightness. GNOME, KDE Plasma, Cinnamon, XFCE, X11 and Wayland.</p>
     <div class="links">
       <a class="btn primary" href="https://github.com/funkypitt/Tinta4Plus-Universal/archive/refs/heads/main.zip">Download (ZIP)</a>
       <a class="btn" href="https://github.com/funkypitt/Tinta4Plus-Universal">Source code</a>
     </div>
+    </div>
   </article>
 
   <article class="app">
+    <div class="text">
     <h2>eInk Reader</h2>
-    <p class="meta">GPL-3.0 · Python / PyQt5</p>
+    <p class="meta"><span>GPL-3.0</span><span>Python / PyQt5</span></p>
     <p>An e-book reader for the ThinkBook's e-ink panel: pages only, and a ghost-clearing command after every turn through Tinta4PlusU. EPUB, MOBI, PDF, DJVU, FB2, CBR/CBZ, Markdown, plain text.</p>
     <div class="links">
       <a class="btn primary" href="https://github.com/funkypitt/eink-reader/archive/refs/heads/main.zip">Download (ZIP)</a>
       <a class="btn" href="https://github.com/funkypitt/eink-reader">Source code</a>
+    </div>
     </div>
   </article>
 
@@ -463,6 +545,9 @@ sudo bash installer.sh</pre>
     <p>eInk Reader installs similarly — see its <a href="https://github.com/funkypitt/eink-reader">README</a>.</p>
   </section>
 </section>
+
+</div>
+</div>
 
 <footer class="site">
   <p>All projects released under free licenses · <a href="https://github.com/funkypitt">github.com/funkypitt</a></p>

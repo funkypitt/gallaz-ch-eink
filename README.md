@@ -1,14 +1,15 @@
 # gallaz.ch/eink
 
-Static landing page for the three e-ink-focused Android apps shipped from
-`funkypitt`'s personal F-Droid repo. No JS, no build step — three files
-(`index.html`, `fr.html`, `en.html`, `style.css`).
+Static page for the apps, two languages, no build step: `index.html` (English, the default),
+`fr.html` (French), `en.html` (a redirect kept for old links), `style.css`, `img/`, `manual/`.
 
-`index.html` is English (the default); `fr.html` is French; `en.html` only redirects
-to the home page, so links shared before the switch keep working. Both pages link to each
-other via the header. Layout is serif, single-column, high-contrast, no
-hero images — designed to look right on an e-ink browser if anyone
-happens to be reading it on one.
+The look (since 2026-10-04): the apps are black-and-white screens full of words, so the page is
+the pale paper around them — a hero with four real phone screenshots stepped down the right, a
+sticky rail of sections on the left, each app a row of words with its screens beside them (under
+them when a desktop window is shown), one accent colour for what can be clicked, light and dark
+themes. One typeface, Atkinson Hyperlegible (Google Fonts), chosen because it was drawn for
+low-vision readers. No JavaScript. `tools/restyle.py` is the one-off script that produced the
+markup from the previous single-column version, kept for the record.
 
 ## What's listed, in this order
 
