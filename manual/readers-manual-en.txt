@@ -1,6 +1,6 @@
 # User manual — The Reader's apps and the other apps of gallaz.ch/eink
 
-Edition of 2 October 2026 · gallaz.ch/eink
+Edition of 6 October 2026 · gallaz.ch/eink
 
 
 <!-- Before you start -->
@@ -2098,7 +2098,7 @@ A widget shows old tasks: open the app, which syncs and redraws the widgets.
 
 # Reader's Notes
 
-*Android 1.6.2 · Windows, macOS, Linux 1.3.3*
+*Android 1.7.0 · Windows, macOS, Linux 1.3.3*
 
 ## What it is
 
@@ -2345,10 +2345,11 @@ The phone app lets Android's own backup include its data, if you use it. Uninsta
 
 ### Home-screen widgets
 
-Two widgets work with any launcher, in the app's two colours:
+Three widgets work with any launcher, in the app's two colours:
 
 - **Reader's Notes · latest note** (one line): the title of the most recent note, with when it changed and its next line. Tap it to open that note; tap **+** for a new note. Without notes it reads **no note yet**.
 - **Reader's Notes · latest notes** (a list, resizable): the word **notes** (tap to open the app), **+** for a new note, and the notes, most recent first. Tap one to open it.
+- **Reader's Notes · one note** (about half a screen): when you place it, a page titled **note to show** lists your notes; tap one, or **+ new note** to start a fresh one and write it at once. The widget then shows that note's title and text, like a post-it, and follows every change. Tap it to write. If the note is deleted, the widget reads **this note was deleted**. From the widget's own menu (in Reader's Launcher: **configure**), you can choose another note; the current one is marked ●.
 
 ### Reader's Launcher
 
