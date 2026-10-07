@@ -1,6 +1,6 @@
-# Mode d'emploi — Les applications Reader's et les autres applications de gallaz.ch/eink
+# Mode d'emploi — Les applications Reader's et les autres applications de gallaz.ch/apps
 
-Édition du 6 octobre 2026 · gallaz.ch/eink
+Édition du 7 octobre 2026 · gallaz.ch/apps
 
 
 <!-- Avant de commencer -->
@@ -12,7 +12,7 @@
 
 ## Ce qu'il couvre
 
-Ce mode d'emploi décrit les applications publiées sur gallaz.ch/eink : la série Reader's (tout un téléphone en noir et blanc, en texte seul), les quatre autres applications proposées par son installateur, les trois applications de méditation, et quelques extensions de navigateur et outils Linux. Plusieurs applications Reader's existent aussi pour Windows, macOS et Linux ; la version pour ordinateur est décrite dans le même chapitre que celle du téléphone.
+Ce mode d'emploi décrit les applications publiées sur gallaz.ch/apps : la série Reader's (tout un téléphone en noir et blanc, en texte seul), les quatre autres applications proposées par son installateur, les trois applications de méditation, et quelques extensions de navigateur et outils Linux. Plusieurs applications Reader's existent aussi pour Windows, macOS et Linux ; la version pour ordinateur est décrite dans le même chapitre que celle du téléphone.
 
 Chaque chapitre a été écrit d'après l'application elle-même : ses écrans, ses réglages et les mots exacts qu'elle affiche. Un libellé imprimé en **gras** est un libellé que vous trouverez, écrit ainsi, dans l'application. La version décrite figure sous le titre de chaque chapitre ; une version plus récente peut avoir déplacé ou ajouté quelque chose.
 
@@ -43,7 +43,7 @@ Une consigne utile à ajouter : « Réponds uniquement d'après le mode d'empl
 
 ## Où trouver de l'aide
 
-Les applications sont libres et gratuites. La page de chaque application sur gallaz.ch/eink a un lien **Code source** vers son dépôt, où l'on peut signaler un problème.
+Les applications sont libres et gratuites. La page de chaque application sur gallaz.ch/apps a un lien **Code source** vers son dépôt, où l'on peut signaler un problème.
 
 
 # Obtenir les applications
@@ -54,7 +54,7 @@ Les applications sont libres et gratuites. La page de chaque application sur gal
 
 Une petite application, Reader's Installer and Updater, installe toutes les autres et les tient à jour. Toutes les applications de la série Reader's sont dans sa liste, avec ePub Magazine Reader, Le dictionnaire Littré, Clavier Plume et Funky's 2P Games.
 
-1. Sur le téléphone, ouvrez gallaz.ch/eink et touchez **Télécharger l'installateur (APK)**, puis ouvrez le fichier téléchargé. Android demande une fois d'autoriser le navigateur à installer des applications : acceptez.
+1. Sur le téléphone, ouvrez gallaz.ch/apps et touchez **Télécharger l'installateur (APK)**, puis ouvrez le fichier téléchargé. Android demande une fois d'autoriser le navigateur à installer des applications : acceptez.
 2. Ouvrez Reader's Installer. Les applications sont dans la liste : touchez-en une, puis **Installer**. Android demande une fois d'autoriser l'installateur à installer des applications.
 3. C'est tout. Les mises à jour sont cherchées en arrière-plan ; sur Android 12 et suivants, elles s'installent sans rien demander pour les applications que l'installateur a installées lui-même.
 
@@ -67,20 +67,20 @@ Les fichiers sont identiques et portent la même signature quelle que soit la vo
 ### F-Droid (les mises à jour arrivent toutes seules)
 
 1. Installez le client F-Droid (Droid-ify ou Neo Store conviennent aussi).
-2. Ajoutez le dépôt : sur gallaz.ch/eink, touchez **Ajouter dans F-Droid** depuis le téléphone, ou scannez depuis un ordinateur le code qui y est affiché. L'adresse du dépôt est `https://funkypitt.github.io/fdroid-repo/repo` et son empreinte `64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C`.
+2. Ajoutez le dépôt : sur gallaz.ch/apps, touchez **Ajouter dans F-Droid** depuis le téléphone, ou scannez depuis un ordinateur le code qui y est affiché. L'adresse du dépôt est `https://funkypitt.github.io/fdroid-repo/repo` et son empreinte `64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C`.
 3. Actualisez, cherchez l'application, installez. F-Droid tient ensuite toutes les applications à jour.
 
 ### Obtainium (mises à jour directement depuis GitHub)
 
-Obtainium installe et met à jour les applications depuis leurs versions publiées sur GitHub, sans magasin intermédiaire. Avec Obtainium sur le téléphone, touchez le bouton **Obtainium** de n'importe quelle application sur gallaz.ch/eink. Le lien ouvre Obtainium directement et ne passe par aucune page tierce.
+Obtainium installe et met à jour les applications depuis leurs versions publiées sur GitHub, sans magasin intermédiaire. Avec Obtainium sur le téléphone, touchez le bouton **Obtainium** de n'importe quelle application sur gallaz.ch/apps. Le lien ouvre Obtainium directement et ne passe par aucune page tierce.
 
 ### Le fichier APK (dernier recours : pas de mises à jour)
 
-Chaque application de gallaz.ch/eink a aussi un lien **APK**. Installée ainsi, une application ne se met jamais à jour : il faudrait revenir à chaque nouvelle version. À réserver à un essai, ou à un appareil où ni F-Droid ni Obtainium ne peuvent tourner.
+Chaque application de gallaz.ch/apps a aussi un lien **APK**. Installée ainsi, une application ne se met jamais à jour : il faudrait revenir à chaque nouvelle version. À réserver à un essai, ou à un appareil où ni F-Droid ni Obtainium ne peuvent tourner.
 
 ## Sur l'ordinateur
 
-Reader's Calendar, Reader's Tasks, Reader's Notes et Reader's Scanner existent aussi pour Windows, macOS et Linux, et Reader's Podcasts pour Linux. Le bouton de téléchargement est sur la fiche de chaque application sur gallaz.ch/eink ; dans l'installateur, la page de l'application mène à sa version pour ordinateur.
+Reader's Calendar, Reader's Tasks, Reader's Notes et Reader's Scanner existent aussi pour Windows, macOS et Linux, et Reader's Podcasts pour Linux. Le bouton de téléchargement est sur la fiche de chaque application sur gallaz.ch/apps ; dans l'installateur, la page de l'application mène à sa version pour ordinateur.
 
 ### Debian, Ubuntu, Pop!_OS, Mint : le dépôt apt
 
@@ -9069,7 +9069,7 @@ L'interface n'existe qu'en anglais : les libellés cités ci-dessous sont ceux 
 
 ### L'extension Chrome
 
-1. Téléchargez le ZIP depuis gallaz.ch/eink et décompressez-le.
+1. Téléchargez le ZIP depuis gallaz.ch/apps et décompressez-le.
 2. Dans Chrome, ouvrez `chrome://extensions/`.
 3. Activez le **mode développeur**.
 4. Choisissez **Charger l'extension non empaquetée** et sélectionnez le dossier décompressé.
@@ -9197,7 +9197,7 @@ L'interface n'existe qu'en anglais : les libellés cités ci-dessous sont ceux 
 
 ### Installer dans Chrome
 
-1. Téléchargez le ZIP depuis gallaz.ch/eink et décompressez-le.
+1. Téléchargez le ZIP depuis gallaz.ch/apps et décompressez-le.
 2. Ouvrez `chrome://extensions/`.
 3. Activez le **mode développeur**.
 4. Choisissez **Charger l'extension non empaquetée** et sélectionnez le dossier décompressé.
@@ -9372,7 +9372,7 @@ L'interface n'est traduite en français qu'en partie : beaucoup de libellés re
 
 L'installateur est écrit pour Ubuntu et les systèmes qui en dérivent.
 
-1. Téléchargez le ZIP depuis gallaz.ch/eink et décompressez-le.
+1. Téléchargez le ZIP depuis gallaz.ch/apps et décompressez-le.
 2. Ouvrez un terminal dans le dossier décompressé et lancez `sudo bash installer.sh`.
 
 L'installateur ajoute les composants dont la liseuse a besoin, copie le programme dans `/opt/eink-reader`, crée la commande `eink-reader` et ajoute **eInk Reader** au menu des applications. Il note ce qu'il fait dans `/tmp/eink-reader-install.log`.
@@ -9769,7 +9769,7 @@ Désactiver le Secure Boot diminue la protection de l'ordinateur au démarrage 
 
 ### Installer
 
-1. Téléchargez le ZIP depuis gallaz.ch/eink et décompressez-le.
+1. Téléchargez le ZIP depuis gallaz.ch/apps et décompressez-le.
 2. Ouvrez un terminal dans le dossier décompressé et lancez `sudo bash installer.sh`.
 3. À **Choose installation mode [1/2]:** répondez **2** (Python scripts). Le choix 1 (compiled binary) n'est disponible qu'après avoir construit vous-même le programme avec `bash build.sh`.
 4. À **Install PolicyKit policy? [y/N]** répondez **y** pour éviter, selon les termes de l'installateur, de retaper votre mot de passe à chaque démarrage de l'assistant (« re-entering your password every time the helper daemon starts ») ; le premier lancement le demande tout de même. La réponse par défaut est non.

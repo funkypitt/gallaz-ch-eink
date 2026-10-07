@@ -1,0 +1,2 @@
+# gallaz.ch/apps → GitHub Pages (un seul envoi FTP ; ensuite la page GitHub se met à jour seule)
+RedirectPermanent /apps https://funkypitt.github.io/gallaz-ch-eink/

@@ -1,7 +1,14 @@
-# gallaz.ch/eink
+# gallaz.ch/apps
 
-Static page for the apps, two languages, no build step: `index.html` (English, the default),
-`fr.html` (French), `en.html` (a redirect kept for old links), `style.css`, `img/`, `manual/`.
+The page of the apps written with Claude Code, for Android, the desktop and the browser. Two
+languages, no build step: `index.html` (English, the default), `fr.html` (French), `en.html`
+(a redirect kept for old links), `style.css`, `img/`, `manual/`.
+
+The public address is `gallaz.ch/apps`, a 301 to this repository's GitHub Pages site
+(https://funkypitt.github.io/gallaz-ch-eink/). `gallaz.ch/eink`, the address until October 2026,
+redirects to the same place and keeps the old links alive (the app READMEs and the F-Droid
+metadata still point at it). `redirect-gallaz.ch/` holds the two redirections (`eink/` and
+`apps/`), dropped once by FTP on gallaz.ch; nothing else ever goes through FTP.
 
 The look (since 2026-10-04): the apps are black-and-white screens full of words, so the page is
 the pale paper around them — a hero with four real phone screenshots stepped down the right, a
@@ -13,6 +20,10 @@ markup from the previous single-column version, kept for the record.
 
 ## What's listed, in this order
 
+Everything public and of use beyond the author's circle, in both languages, each project linked
+to its GitHub repository and to wherever else it is distributed (the F-Droid repository, GitHub
+releases, the apt repository, PyPI).
+
 1. **Getting the apps** (`#get`): Reader's Installer and Updater first (card `#readers-installer`,
    direct APK link, three steps), then the three other ways (`#fdroid`, `#obtainium`, `#apk`).
 2. **The Reader's family** (`#readers`): one card per app, in the order of the installer's list.
@@ -21,33 +32,24 @@ markup from the previous single-column version, kept for the record.
    desktop link.
 3. **Also in the installer** (`#also`): ePub Magazine Reader, Le dictionnaire Littré, Clavier Plume,
    Funky's 2P Games.
-4. **On the desktop** (`#desktop`): the apt repository, and the first opening on Windows and macOS.
-5. **Other projects**, not in the installer's list: meditation (`#meditation`), Chrome extensions
-   (`#extensions`), e-ink on the ThinkBook Plus (`#thinkbook`).
+4. **Meditation and breathing** (`#meditation`): Retreat Timer, Player, Walk, 4 Minutes Breathing.
+5. **More Android apps** (`#android`): MP4 Remixer, MP4 to MP3, Timer for 9Barista, Tank Wars Mobile.
+6. **On the desktop** (`#desktop`): Reader's Night Filter for the desktop and the browser, the apt
+   repository, the first opening on Windows and macOS.
+7. **Tools for the computer** (`#tools`): the traduction toolkit, Quai, epub2md.
+8. **Browser extensions** (`#extensions`): PageTurn, Social Media Blocker.
+9. **E-ink on the ThinkBook Plus** (`#thinkbook`): Tinta4PlusU, eInk Reader.
+10. **More on GitHub** (`#more`): one line each for the smaller public projects.
 
-An app added to the installer's list gets its card in section 2 or 3, in both languages.
+E-ink is no longer the frame of the page; it is mentioned on the cards where it matters (Books,
+Feeds, PageTurn, the ThinkBook tools). An app added to the installer's list gets its card in
+section 2 or 3, in both languages; any other public project gets a card in the section of its
+platform, or a line in section 10.
 
-## Updating after a new release
+## Versions
 
-Each app card hard-codes the current APK filename and version. When a new
-APK lands in `code/fdroid-repo/repo/`, update three things in **both**
-`index.html` and `fr.html`:
-
-1. The version in the `<p class="meta">` line.
-2. The APK filename in the `Download APK` / `Télécharger l'APK` `href`.
-
-The fingerprint and repo address never change.
-
-## Deployment
-
-The site is meant to live at `gallaz.ch/eink`. Drop these three files
-under the `eink/` directory of whatever hosts `gallaz.ch` (Apache /
-nginx static dir, GitHub Pages, etc.). No server-side logic required.
-
-## Versions automatiques
-
-`tools/update_versions.py` relit le dépôt F-Droid (`index-v1.json`) et les releases GitHub, et réécrit les
-numéros de version et les liens APK des blocs `<article class="app">` (le paquet dans `<code>` sert de clé).
-Le workflow `update-versions.yml` le lance chaque jour, à la main (`gh workflow run update-versions.yml`),
-ou sur `repository_dispatch` (`app-updated`) ; il committe sur `main`, ce qui redéploie GitHub Pages.
-`redirect-gallaz.ch/` contient la redirection à déposer une dernière fois par FTP sur gallaz.ch/eink.
+`tools/update_versions.py` reads the F-Droid repository (`index-v1.json`) and the GitHub releases
+and rewrites the version numbers and APK links of the `<article class="app">` blocks (the package
+in `<code>` is the key; a `releases/latest` link gives the desktop or release-only version). The
+`update-versions.yml` workflow runs it every day, by hand (`gh workflow run update-versions.yml`)
+or on `repository_dispatch` (`app-updated`); it commits on `main`, which redeploys GitHub Pages.

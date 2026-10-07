@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Applications de détox numérique — gallaz.ch</title>
-<meta name="description" content="Des applications Android en noir et blanc, texte seul, pour la lecture, l'écoute et le bien-être numérique, et la petite application qui les installe toutes et les tient à jour. Sans pub, sans compte, sans algorithme.">
+<title>Applications écrites avec Claude Code — gallaz.ch</title>
+<meta name="description" content="Des applications libres et gratuites pour Android, l'ordinateur et le navigateur, écrites avec Claude Code : la série Reader's pour un téléphone plus calme, en noir et blanc, des bols de méditation, de petits utilitaires et des outils Linux. Sans pub, sans compte, sans algorithme.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;700&family=Atkinson+Hyperlegible+Mono&display=swap">
@@ -13,7 +13,7 @@
 <body>
 <main>
 <header class="site">
-  <p class="title"><a href="fr.html">gallaz.ch</a></p>
+  <p class="title"><a href="fr.html">gallaz.ch/apps</a></p>
   <nav>
     <a href="#get">Obtenir les apps</a>
     <a href="#readers">Reader's</a>
@@ -26,8 +26,8 @@
 
 <section class="hero">
   <div>
-    <h1>Détox numérique</h1>
-    <p class="lede">Des applications libres et gratuites pour un téléphone plus calme&nbsp;: noir et blanc, texte seul, sans pub, sans compte, sans algorithme, rien qui réclame votre attention. La <a href="#readers">série Reader's</a> remplace l'écran d'accueil, l'agenda, les tâches, les notes, les livres, les podcasts et le reste&nbsp;; <a href="#socialblocker-detox">Reader's Detox</a> tient les réseaux sociaux à distance&nbsp;; <a href="#get">une petite application</a> installe le tout. Tout a commencé par des outils pour écrans à encre électronique, d'où l'adresse, et tout ici leur convient encore.</p>
+    <h1>Des applications libres, écrites avec Claude Code</h1>
+    <p class="lede">Des applications libres et gratuites pour Android, l'ordinateur et le navigateur, développées avec <a href="https://claude.com/claude-code">Claude Code</a> et offertes&nbsp;: sans pub, sans compte, sans algorithme, rien qui réclame votre attention. En premier lieu, la <a href="#readers">série Reader's</a>&nbsp;: un téléphone plus calme, en noir et blanc, texte seul, et <a href="#get">une petite application</a> qui installe le tout. Puis des bols pour la méditation, quelques petits utilitaires, des outils pour Linux et deux extensions de navigateur. Tout ce qui est public est ici, en anglais et en français, avec son code source sur GitHub.</p>
     <p class="cta"><a class="btn primary" href="#get">Obtenir l’installateur</a> <a class="btn" href="#readers">Voir les applications</a></p>
     <p class="manual">Mode d'emploi, toutes les fonctions de toutes les applications&nbsp;: <a href="manual/readers-mode-d-emploi-fr.pdf">PDF</a> · <a href="manual/readers-mode-d-emploi-fr.txt">texte brut, à confier à un assistant IA</a> · <a href="manual/readers-manual-en.pdf">in English</a></p>
   </div>
@@ -40,8 +40,13 @@
     <li><a href="#get">Obtenir les applications</a></li>
     <li><a href="#readers">La série Reader's</a></li>
     <li><a href="#also">Aussi dans l'installateur</a></li>
+    <li><a href="#meditation">Méditation et respiration</a></li>
+    <li><a href="#android">D'autres applications Android</a></li>
     <li><a href="#desktop">Sur l'ordinateur</a></li>
-    <li><a href="#others">Autres projets</a></li>
+    <li><a href="#tools">Outils pour l'ordinateur</a></li>
+    <li><a href="#extensions">Extensions de navigateur</a></li>
+    <li><a href="#thinkbook">L'encre électronique du ThinkBook</a></li>
+    <li><a href="#more">Plus sur GitHub</a></li>
   </ol>
 </nav>
 <div class="content">
@@ -103,7 +108,7 @@
 <!-- ==================== Reader's ==================== -->
 <section class="platform" id="readers">
   <h2>La série Reader's</h2>
-  <p class="lede">Un téléphone qui se lit comme une page. Des applications en noir et blanc, texte seul&nbsp;: pas d'icônes, pas de couleurs, pas de cartes, pas de compte. Le launcher affiche des mots&nbsp;; l'agenda, les tâches, les notes, les livres et les flux se lisent comme un journal&nbsp;; Reader's Detox tient les réseaux sociaux à distance. Dans l'esprit du Light Phone, sur n'importe quel Android. Toutes sont dans la liste de l'<a href="#get">installateur</a>, en anglais, français, allemand, espagnol, portugais et russe. La plupart fournissent aussi des widgets standard, noir et blanc, pour n'importe quel autre launcher.</p>
+  <p class="lede">Un téléphone qui se lit comme une page. Des applications en noir et blanc, texte seul&nbsp;: pas d'icônes, pas de couleurs, pas de cartes, pas de compte. Le launcher affiche des mots&nbsp;; l'agenda, les tâches, les notes, les livres et les flux se lisent comme un journal&nbsp;; Reader's Detox tient les réseaux sociaux à distance. Dans l'esprit du Light Phone, sur n'importe quel Android. Toutes sont dans la liste de l'<a href="#get">installateur</a>, en anglais, français, allemand, espagnol, portugais et russe. La plupart fournissent aussi des widgets standard, noir et blanc, pour n'importe quel autre launcher. Le noir et blanc convient à un téléphone ou une tablette à encre électronique autant qu'à tout écran&nbsp;: c'est là que ces applications sont nées.</p>
 
   <article class="app" id="readers-launcher">
     <div class="text">
@@ -170,11 +175,11 @@
   <article class="app" id="readers-books">
     <div class="text">
     <h2>Reader's Books</h2>
-    <p class="meta"><span>v1.4.0</span><span>MIT</span><code>com.freedomfighter.readersbooks</code></p>
+    <p class="meta"><span>v1.5.1</span><span>MIT</span><code>com.freedomfighter.readersbooks</code></p>
     <p>Une liseuse pour l'encre électronique : l'étagère en liste, des pages qui se tournent d'un toucher, pas de défilement, rien d'autre à l'écran. EPUB, MOBI, FB2 et texte, ouverts depuis l'app, un gestionnaire de fichiers ou un partage.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersbooks%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-books%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Books%22%7D">Obtainium</a>
-      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBooks-v1.4.0.apk">APK</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBooks-v1.5.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-books">Code source</a>
     </div>
     </div>
@@ -337,11 +342,13 @@
   <article class="app" id="readers-night">
     <div class="text">
     <h2>Reader's Night Filter</h2>
-    <p class="meta"><span>v1.2.0</span><span>MIT</span><code>com.freedomfighter.readersnight</code></p>
+    <p class="meta"><span>Android v1.2.0</span><span>Desktop v1.0.1</span><span>MIT</span><code>com.freedomfighter.readersnight</code></p>
     <p>Un seul interrupteur rend l'écran gris, aussi chaud que le téléphone le permet, et sombre, puis remet tout comme avant. Il se trouve dans les réglages rapides, dans un widget et dans l'application. Il demande une autorisation donnée une seule fois depuis un ordinateur, par une commande affichée dans l'application ; pas de root. Android ne laisse pas une application retirer tout le bleu : la teinte s'arrête au réglage le plus chaud du téléphone.</p>
+    <p>Sur l'ordinateur et dans le navigateur, où une application peut retirer tout le bleu&nbsp;: gris et ambre à la luminosité choisie, sur GNOME, KDE Plasma, Windows, macOS (ces deux-là en avant-première) et dans Chrome et Brave. Détails sous <a href="#desktop">Sur l'ordinateur</a>.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersnight%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-night%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Night%20Filter%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersNight-v1.2.0.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-night-desktop/releases/latest">Linux, navigateur (Windows et macOS en avant-première)</a>
       <a class="btn" href="https://github.com/funkypitt/readers-night">Code source</a>
     </div>
     </div>
@@ -357,11 +364,11 @@
   <article class="app" id="epub-eink-newsreader">
     <div class="text">
     <h2>Lecteur ePub Magazine</h2>
-    <p class="meta"><span>v0.2.26</span><span>GPL-3.0</span><code>com.freedomfighter.magazinereader</code></p>
+    <p class="meta"><span>v0.2.27</span><span>GPL-3.0</span><code>com.freedomfighter.magazinereader</code></p>
     <p>Lit les quotidiens et les magazines que les recettes de Calibre livrent en ePub (NZZ, The Economist, Courrier International…) : le sommaire paginé, chaque article sur une page.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.magazinereader%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fepub-eink-newsreader%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22ePub%20Magazine%20reader%22%7D">Obtainium</a>
-      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.26-magazine.apk">APK</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.2.27-magazine.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Code source</a>
     </div>
     </div>
@@ -411,34 +418,11 @@
 
 </section>
 
-<!-- ==================== Desktop ==================== -->
-<section class="platform" id="desktop">
-  <h2>Sur l'ordinateur</h2>
-  <p class="lede">Reader's Calendar, Tasks, Notes et Scanner existent aussi pour Windows, macOS et Linux, et Reader's Podcasts pour Linux. Le bouton de téléchargement est sur la fiche de chaque application, plus haut&nbsp;; dans l'installateur, la page de l'application mène à sa version pour l'ordinateur.</p>
-
-  <section class="install">
-    <h3>Debian / Ubuntu / Pop!_OS / Mint : le dépôt apt</h3>
-    <p>Les cinq applications pour l'ordinateur sont aussi dans un petit dépôt apt&nbsp;: elles se mettent à jour avec le reste du système.</p>
-    <pre>sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/apt/keyrings/funkypitt.gpg &gt;/dev/null
-echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
-sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks readers-scanner readers-podcasts</pre>
-    <p>Arch Linux : le dépôt de chaque application contient un PKGBUILD. Détails sur <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
-  </section>
-
-  <section class="install">
-    <h3>Windows et macOS : la première ouverture</h3>
-    <p>Reader's Calendar, Reader's Notes et Reader's Tasks existent aussi en .exe pour Windows et en .dmg pour macOS, dans la page de téléchargement de chaque application : un seul fichier, rien à installer, pas de Python à prévoir. Ce sont de petites applications libres sans certificat payant, alors le système s'en méfie une fois — une seule.</p>
-    <p><strong>Windows</strong> : un panneau bleu « Windows a protégé votre ordinateur » apparaît à la première ouverture. <em>Informations complémentaires</em> › <em>Exécuter quand même</em>.</p>
-    <p><strong>macOS</strong> : ouvrez le .dmg — « apple-silicon » pour un Mac M1 ou plus récent, « intel » pour un Mac plus ancien —, glissez l'application dans <em>Applications</em>, puis <strong>clic droit sur l'application › Ouvrir</strong> › <em>Ouvrir</em>. Un double-clic, à ce moment-là, dit seulement que l'application ne peut pas être ouverte. Ensuite elle s'ouvre comme les autres.</p>
-  </section>
-</section>
-
 <!-- ==================== Other projects: meditation ==================== -->
 <a id="others"></a>
 <section class="platform" id="meditation">
-  <h2>Autres projets&nbsp;: méditation</h2>
-  <p class="lede">Trois applications Android pour une retraite&nbsp;: elles font une seule chose, et rien ne les interrompt — ni la veille profonde, ni le mode avion, ni un autre son. Elles ne sont pas dans la liste de l'installateur&nbsp;: prenez-les dans le <a href="#fdroid">dépôt F-Droid</a>, par Obtainium ou par l'APK.</p>
+  <h2>Méditation et respiration</h2>
+  <p class="lede">Quatre applications Android qui font chacune une seule chose. Les trois Retreat tiennent l'horaire d'une retraite et rien ne les interrompt&nbsp;: ni la veille profonde, ni le mode avion, ni un autre son. Elles ne sont pas dans la liste de l'installateur&nbsp;: prenez-les dans le <a href="#fdroid">dépôt F-Droid</a>, par Obtainium ou par l'APK.</p>
 
   <article class="app" id="retreat-timer">
     <div class="text">
@@ -480,11 +464,164 @@ sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes reade
     </div>
     <p class="shots"><img src="img/com.freedomfighter.retreatwalk-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.retreatwalk-2.png" alt="" loading="lazy"></p>
   </article>
+
+  <article class="app" id="box-breathing">
+    <div class="text">
+    <h2>4 Minutes Breathing</h2>
+    <p class="meta"><span>v2.0.0</span><span>GPL-3.0</span><code>com.freedomfighter.boxbreathing</code></p>
+    <p>Choisissez une forme et suivez le point autour d'elle pendant quatre minutes&nbsp;: carré (4-4-4-4), triangle (4-4-4), 4-7-8, pétale (3-3-6) ou cercle (cohérence cardiaque, 5-5). Aucun réglage, aucune série à tenir, aucun compte, aucun pistage&nbsp;; la séance se termine sur une respiration complète. Consignes en français et en anglais ensemble. Anciennement Box Breathing 4min.</p>
+    <div class="links">
+      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.boxbreathing%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fbox-breathing%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%224%20Minutes%20Breathing%22%7D">Obtainium</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/box-breathing-v2.0.0.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/box-breathing">Code source</a>
+    </div>
+    </div>
+  </article>
 </section>
 
-<!-- ==================== Other projects: Chrome extensions ==================== -->
+<!-- ==================== More Android apps ==================== -->
+<section class="platform" id="android">
+  <h2>D'autres applications Android</h2>
+  <p class="lede">De petits utilitaires et un jeu, hors de la liste de l'installateur&nbsp;: par le <a href="#fdroid">dépôt F-Droid</a>, Obtainium ou l'APK.</p>
+
+  <article class="app" id="mp4-remixer">
+    <div class="text">
+    <h2>MP4 Remixer</h2>
+    <p class="meta"><span>v1.0.0</span><span>GPL-3.0</span><code>com.freedomfighter.mp4remixer</code></p>
+    <p>Rend des vidéos carrées, ou les ramène en 1080p ou 720p, ou les deux. Choisissez-les dans la galerie ou partagez-les vers l'application&nbsp;; pour le carré, glissez un cadre sur chaque vidéo pour choisir ce qu'elle garde. Les nouveaux fichiers vont dans Movies/MP4 Remixer, les originaux restent intacts&nbsp;; un lot continue quand on quitte l'application. Aucune permission réseau. Android 10 ou plus récent.</p>
+    <div class="links">
+      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.mp4remixer%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fmp4-remixer%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22MP4%20Remixer%22%7D">Obtainium</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/MP4-Remixer-v1.0.0.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/mp4-remixer">Code source</a>
+    </div>
+    </div>
+  </article>
+
+  <article class="app" id="mp4-to-mp3">
+    <div class="text">
+    <h2>MP4 to MP3</h2>
+    <p class="meta"><span>v1.0.2</span><span>GPL-3.0</span><code>app.mp4tomp3</code></p>
+    <p>Choisissez des vidéos, ou partagez-les vers l'application&nbsp;: chacune devient un MP3 à 320 kbit/s dans Téléchargements, prêt à partager. Un seul écran, des lots entiers, et ça continue en arrière-plan. Tous les formats que le téléphone sait lire. Aucune permission réseau.</p>
+    <div class="links">
+      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22app.mp4tomp3%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fmp4-to-mp3%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22MP4%20to%20MP3%22%7D">Obtainium</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/MP4-to-MP3-v1.0.2.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/mp4-to-mp3">Code source</a>
+    </div>
+    </div>
+    <p class="shots"><img src="img/app.mp4tomp3-1.png" alt="" loading="lazy"></p>
+  </article>
+
+  <article class="app" id="9barista-timer">
+    <div class="text">
+    <h2>Timer for 9Barista</h2>
+    <p class="meta"><span>v1.1.2</span><span>MIT</span><code>com.freedomfighter.baristatimer</code></p>
+    <p>Un minuteur d'espresso pour la machine 9Barista, trois touchers par café&nbsp;: quand elle va sur le feu, quand le café apparaît, quand c'est fini. Le temps de chauffe, puis l'extraction avec la zone 25–30 s marquée, puis le conseil de mouture. Rien n'est enregistré&nbsp;; la seule permission est la vibration.</p>
+    <div class="links">
+      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.baristatimer%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2F9barista-timer%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Timer%20for%209Barista%22%7D">Obtainium</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/TimerFor9Barista-v1.1.2.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/9barista-timer">Code source</a>
+    </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.baristatimer-1.png" alt="" loading="lazy"></p>
+  </article>
+
+  <article class="app" id="tankwars-mobile">
+    <div class="text">
+    <h2>Tank Wars Mobile</h2>
+    <p class="meta"><span>v1.1.1</span><span>MIT</span><code>com.freedomfighter.tankwars</code></p>
+    <p>Le jeu d'artillerie DOS Tank Wars 3.2 (1992) de Kenneth Morse, refait pour l'écran tactile&nbsp;: angle, puissance, vent, aucun aperçu de trajectoire&nbsp;; 16 armes, 3 défenses, terrain destructible. À deux sur un téléphone, ou en ligne avec un code de salle. Sans pub, sans achat. Aussi l'un des 16 jeux de <a href="#local-2p-games">Funky's 2P Games</a>.</p>
+    <div class="links">
+      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.tankwars%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Ftankwars-mobile%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Tank%20Wars%20Mobile%22%7D">Obtainium</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/TankWars-v1.1.1.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/tankwars-mobile">Code source</a>
+    </div>
+    </div>
+    <p class="shots"><img class="wide" src="img/com.freedomfighter.tankwars-1.png" alt="" loading="lazy"><img class="wide" src="img/com.freedomfighter.tankwars-2.png" alt="" loading="lazy"></p>
+  </article>
+</section>
+
+<!-- ==================== Desktop ==================== -->
+<section class="platform" id="desktop">
+  <h2>Sur l'ordinateur</h2>
+  <p class="lede">Reader's Calendar, Tasks, Notes et Scanner existent aussi pour Windows, macOS et Linux, Reader's Podcasts pour Linux, et Reader's Night Filter pour l'ordinateur et le navigateur. Le bouton de téléchargement est sur la fiche de chaque application, plus haut&nbsp;; dans l'installateur, la page de l'application mène à sa version pour l'ordinateur.</p>
+
+  <article class="app" id="readers-night-desktop">
+    <div class="text">
+    <h2>Reader's Night Filter pour l'ordinateur et le navigateur</h2>
+    <p class="meta"><span>v1.0.1</span><span>MIT</span></p>
+    <p>Rend l'écran gris et ambré, sans aucun bleu, à la luminosité de votre choix, puis remet tout en place. Un seul interrupteur&nbsp;: dans les réglages rapides de GNOME, le menu des applications de KDE Plasma 6, la zone de notification de Windows, la barre de menus de macOS, la barre d'outils de Chrome et Brave&nbsp;; un raccourci clavier&nbsp;; un horaire si vous le voulez. Installé pour un seul utilisateur, sans droits d'administrateur, sans accès réseau. Les versions Windows 10/11 et macOS 13+ sont en avant-première et n'ont pas encore été vues sur un vrai écran.</p>
+    <div class="links">
+      <a class="btn primary" href="https://github.com/funkypitt/readers-night-desktop/releases/latest">Télécharger (Linux, navigateur)</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-night-desktop/releases">Windows, macOS (avant-première)</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-night-desktop">Code source</a>
+    </div>
+    </div>
+  </article>
+
+  <section class="install">
+    <h3>Debian / Ubuntu / Pop!_OS / Mint : le dépôt apt</h3>
+    <p>Les cinq applications pour l'ordinateur sont aussi dans un petit dépôt apt&nbsp;: elles se mettent à jour avec le reste du système.</p>
+    <pre>sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/apt/keyrings/funkypitt.gpg &gt;/dev/null
+echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
+sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks readers-scanner readers-podcasts</pre>
+    <p>Arch Linux : le dépôt de chaque application contient un PKGBUILD. Détails sur <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
+  </section>
+
+  <section class="install">
+    <h3>Windows et macOS : la première ouverture</h3>
+    <p>Reader's Calendar, Reader's Notes et Reader's Tasks existent aussi en .exe pour Windows et en .dmg pour macOS, dans la page de téléchargement de chaque application : un seul fichier, rien à installer, pas de Python à prévoir. Ce sont de petites applications libres sans certificat payant, alors le système s'en méfie une fois — une seule.</p>
+    <p><strong>Windows</strong> : un panneau bleu « Windows a protégé votre ordinateur » apparaît à la première ouverture. <em>Informations complémentaires</em> › <em>Exécuter quand même</em>.</p>
+    <p><strong>macOS</strong> : ouvrez le .dmg — « apple-silicon » pour un Mac M1 ou plus récent, « intel » pour un Mac plus ancien —, glissez l'application dans <em>Applications</em>, puis <strong>clic droit sur l'application › Ouvrir</strong> › <em>Ouvrir</em>. Un double-clic, à ce moment-là, dit seulement que l'application ne peut pas être ouverte. Ensuite elle s'ouvre comme les autres.</p>
+  </section>
+</section>
+
+<!-- ==================== Tools for the computer ==================== -->
+<section class="platform" id="tools">
+  <h2>Outils pour l'ordinateur</h2>
+  <p class="lede">Trois projets pour Linux, pour qui ouvre un terminal de temps en temps.</p>
+
+  <article class="app" id="traduction-toolkit">
+    <div class="text">
+    <h2>Traduction toolkit&nbsp;: traduire, sous-titrer et doubler des vidéos par IA</h2>
+    <p class="meta"><span>Python</span><span>Linux, GPU NVIDIA</span></p>
+    <p>Des scripts Python indépendants qui traduisent, sous-titrent, doublent, résument et découpent des clips d'une vidéo dans n'importe quelle langue&nbsp;: WhisperX pour les mots, un modèle de langue local (Ollama, par défaut, sans clé API) ou Claude pour la traduction, Qwen3-TTS pour les voix, la voix d'origine clonée si vous le voulez. Une interface graphique, un paquet .deb et une extension de navigateur pilotent le tout sans ligne de commande. Il faut un GPU NVIDIA d'environ 12 Go (24 Go pour le tout local)&nbsp;; un <a href="https://github.com/funkypitt/traduction-toolkit-AMD">fork AMD/ROCm</a> existe pour le Ryzen AI Max (Strix Halo).</p>
+    <div class="links">
+      <a class="btn primary" href="https://github.com/funkypitt/traduction-toolkit">Code source et installateur</a>
+      <a class="btn" href="https://github.com/funkypitt/traduction-toolkit-AMD">Fork AMD</a>
+    </div>
+    </div>
+  </article>
+
+  <article class="app" id="quai">
+    <div class="text">
+    <h2>Quai</h2>
+    <p class="meta"><span>GPL-3.0</span><span>Rust</span><span>COSMIC</span></p>
+    <p>Un dock latéral à deux colonnes pour le bureau COSMIC, dans le style du lanceur Unity d'Ubuntu&nbsp;: les applications épinglées à gauche, les ouvertes à droite, chaque tuile éclairée de la couleur de son icône. Clic, clic du milieu, clic droit et glisser font ce qu'on attend&nbsp;; 130 px de large, les proportions de deux lanceurs Unity.</p>
+    <div class="links">
+      <a class="btn primary" href="https://github.com/funkypitt/quai">Code source</a>
+    </div>
+    </div>
+    <p class="shots"><img class="wide" src="img/quai.png" alt="" loading="lazy"></p>
+  </article>
+
+  <article class="app" id="epub2md">
+    <div class="text">
+    <h2>epub2md</h2>
+    <p class="meta"><span>MIT</span><span>Python</span><code>pip install epub2md-ai</code></p>
+    <p>Convertit des livres EPUB en Markdown propre pour les outils d'IA (NotebookLM, Claude, ChatGPT)&nbsp;: les métadonnées en en-tête, les images extraites et reliées, pas de retour à la ligne forcé, des dossiers entiers d'un coup, Python pur.</p>
+    <div class="links">
+      <a class="btn primary" href="https://pypi.org/project/epub2md-ai/">PyPI</a>
+      <a class="btn" href="https://github.com/funkypitt/epub2md">Code source</a>
+    </div>
+    </div>
+  </article>
+</section>
+
+<!-- ==================== Browser extensions ==================== -->
 <section class="platform" id="extensions">
-  <h2>Autres projets&nbsp;: extensions Chrome</h2>
+  <h2>Extensions de navigateur</h2>
+  <p class="lede">Deux extensions pour Chrome et Firefox, chargées depuis un dossier. La version pour navigateur de <a href="#readers-night-desktop">Reader's Night Filter</a> vient avec son paquet pour l'ordinateur.</p>
 
   <article class="app">
     <div class="text">
@@ -520,9 +657,10 @@ sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes reade
   </section>
 </section>
 
-<!-- ==================== Other projects: Linux ==================== -->
+<!-- ==================== E-ink on the ThinkBook ==================== -->
 <section class="platform" id="thinkbook">
-  <h2>Autres projets&nbsp;: l'encre électronique du ThinkBook Plus (Linux)</h2>
+  <h2>L'encre électronique du ThinkBook Plus (Linux)</h2>
+  <p class="lede">Là où tout a commencé&nbsp;: deux outils pour l'écran à encre électronique du Lenovo ThinkBook Plus Gen 4.</p>
 
   <article class="app">
     <div class="text">
@@ -558,11 +696,25 @@ sudo bash installer.sh</pre>
   </section>
 </section>
 
+<!-- ==================== More on GitHub ==================== -->
+<section class="platform" id="more">
+  <h2>Plus sur GitHub</h2>
+  <p class="lede">Des projets publics plus petits ou plus particuliers, code source seulement.</p>
+  <ul class="more">
+    <li><strong><a href="https://github.com/funkypitt/readers-speech">readers-speech</a></strong> La parole sur le téléphone pour les applications Reader's&nbsp;: whisper.cpp et llama.cpp compilés une fois, les modèles téléchargés une fois et partagés entre les applications. Une bibliothèque Android utilisée en sous-module par Recorder, Audio Player, Podcasts et Notes.</li>
+    <li><strong><a href="https://github.com/funkypitt/stardust">We Are Stardust</a></strong> La production Commodore 64 en application Android autonome&nbsp;: un émulateur C64 embarqué (Frodo) lance la disquette tout seul.</li>
+    <li><strong><a href="https://github.com/funkypitt/les-meditations-app">les méditations</a></strong> Les méditations guidées d'enpleineconscience.ch en application Flutter pour Android et iOS, fork d'Anytime Podcast Player.</li>
+    <li><strong><a href="https://github.com/funkypitt/bsr-app">Bibliothèque Sonore</a></strong> Une application pour la bibliothèque de livres audio d'e-bibliomedia Lausanne&nbsp;: chercher, emprunter, écouter (React Native).</li>
+    <li><strong><a href="https://github.com/funkypitt/satipanya-dharma-library">Satipanya Dharma Library</a></strong> Flux de podcast, transcriptions et site cherchable pour 442 causeries du Satipanya Buddhist Retreat.</li>
+    <li><strong><a href="https://github.com/funkypitt/threadforge">ThreadForge</a></strong> Un composeur local de fils X avec l'aide d'une IA (Electron).</li>
+  </ul>
+</section>
+
 </div>
 </div>
 
 <footer class="site">
-  <p>Tous les projets sous licence libre · <a href="https://github.com/funkypitt">github.com/funkypitt</a></p>
+  <p>Tous les projets sous licence libre · écrits avec <a href="https://claude.com/claude-code">Claude Code</a> · <a href="https://github.com/funkypitt">github.com/funkypitt</a></p>
 </footer>
 </main>
 </body>

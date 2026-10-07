@@ -105,7 +105,7 @@ header.site nav a.active { color: var(--ink); font-weight: 700; }
   letter-spacing: -.025em;
   font-weight: 700;
   margin: 0 0 1.3rem;
-  max-width: 11em;
+  max-width: 12em;
 }
 .hero .lede {
   font-size: 1.18rem;
@@ -265,6 +265,14 @@ section.install { border-top: 1px solid var(--line); padding-top: 1.6rem; margin
 section.install h3 { font-size: 1.15rem; margin: 0 0 .6rem; line-height: 1.25; }
 section.install ol, section.install ul { padding-left: 1.4rem; }
 section.install li { margin: .4rem 0; }
+
+/* ---- the smaller projects: one line each --------------------------------- */
+
+ul.more { list-style: none; padding: 0; margin: 0; max-width: 46rem; }
+ul.more li { padding: .9rem 0; border-top: 1px solid var(--line); margin: 0; }
+ul.more li strong { font-weight: 700; }
+ul.more li strong a { text-decoration: none; }
+ul.more li strong a:hover { text-decoration: underline; }
 
 footer.site {
   margin-top: 3rem;

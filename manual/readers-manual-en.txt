@@ -1,6 +1,6 @@
-# User manual — The Reader's apps and the other apps of gallaz.ch/eink
+# User manual — The Reader's apps and the other apps of gallaz.ch/apps
 
-Edition of 6 October 2026 · gallaz.ch/eink
+Edition of 7 October 2026 · gallaz.ch/apps
 
 
 <!-- Before you start -->
@@ -12,7 +12,7 @@ Edition of 6 October 2026 · gallaz.ch/eink
 
 ## What it covers
 
-This manual describes the apps published at gallaz.ch/eink: the Reader's family (a whole phone in black and white, text only), the four other apps offered by its installer, the three meditation apps, and a few browser extensions and Linux tools. Several Reader's apps also exist for Windows, macOS and Linux; the computer version is described in the same chapter as the phone version.
+This manual describes the apps published at gallaz.ch/apps: the Reader's family (a whole phone in black and white, text only), the four other apps offered by its installer, the three meditation apps, and a few browser extensions and Linux tools. Several Reader's apps also exist for Windows, macOS and Linux; the computer version is described in the same chapter as the phone version.
 
 Each chapter was written from the app itself: its screens, its settings and the exact words it displays. A label printed in **bold** is a label you will find, spelled that way, in the app. The version described is given under each chapter's title; a newer version may have moved or added something.
 
@@ -43,7 +43,7 @@ A useful instruction to add: "Answer only from the manual. Quote the labels as t
 
 ## Where to get help
 
-The apps are free and open source. Each app's page on gallaz.ch/eink has a **Source** link to its repository, where problems can be reported.
+The apps are free and open source. Each app's page on gallaz.ch/apps has a **Source** link to its repository, where problems can be reported.
 
 
 # Getting the apps
@@ -54,7 +54,7 @@ The apps are free and open source. Each app's page on gallaz.ch/eink has a **Sou
 
 One small app, Reader's Installer and Updater, installs all the others and keeps them up to date. Every app of the Reader's family is in its list, with ePub Magazine Reader, Le dictionnaire Littré, Clavier Plume and Funky's 2P Games.
 
-1. On the phone, open gallaz.ch/eink and tap **Download the installer (APK)**, then open the downloaded file. Android asks once to let the browser install apps: allow it.
+1. On the phone, open gallaz.ch/apps and tap **Download the installer (APK)**, then open the downloaded file. Android asks once to let the browser install apps: allow it.
 2. Open Reader's Installer. The apps are in the list: tap one, then **Install**. Android asks once to let the installer install apps.
 3. That is all. Updates are looked for in the background; on Android 12 and later they install silently for the apps the installer installed itself.
 
@@ -67,20 +67,20 @@ The files are identical and carry the same signature whichever way you choose, s
 ### F-Droid (updates arrive by themselves)
 
 1. Install the F-Droid client (Droid-ify or Neo Store work too).
-2. Add the repository: on gallaz.ch/eink tap **Add to F-Droid** on the phone, or scan the code shown there from a computer. The repository's address is `https://funkypitt.github.io/fdroid-repo/repo` and its fingerprint is `64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C`.
+2. Add the repository: on gallaz.ch/apps tap **Add to F-Droid** on the phone, or scan the code shown there from a computer. The repository's address is `https://funkypitt.github.io/fdroid-repo/repo` and its fingerprint is `64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C`.
 3. Refresh, search for the app, install. F-Droid then keeps every app up to date.
 
 ### Obtainium (updates straight from GitHub)
 
-Obtainium installs and updates apps from their GitHub releases, with no store in between. With Obtainium on the phone, tap the **Obtainium** button of any app on gallaz.ch/eink. The link opens Obtainium directly and goes through no third-party page.
+Obtainium installs and updates apps from their GitHub releases, with no store in between. With Obtainium on the phone, tap the **Obtainium** button of any app on gallaz.ch/apps. The link opens Obtainium directly and goes through no third-party page.
 
 ### The APK file (last resort: no updates)
 
-Each app on gallaz.ch/eink also has an **APK** link. Installed this way, an app never updates: you would have to come back for every new version. Use it to try an app, or on a device where neither F-Droid nor Obtainium can run.
+Each app on gallaz.ch/apps also has an **APK** link. Installed this way, an app never updates: you would have to come back for every new version. Use it to try an app, or on a device where neither F-Droid nor Obtainium can run.
 
 ## On the computer
 
-Reader's Calendar, Reader's Tasks, Reader's Notes and Reader's Scanner also exist for Windows, macOS and Linux, and Reader's Podcasts for Linux. The download button is on each app's card on gallaz.ch/eink; in the installer, the app's page links to its desktop version.
+Reader's Calendar, Reader's Tasks, Reader's Notes and Reader's Scanner also exist for Windows, macOS and Linux, and Reader's Podcasts for Linux. The download button is on each app's card on gallaz.ch/apps; in the installer, the app's page links to its desktop version.
 
 ### Debian, Ubuntu, Pop!_OS, Mint: the apt repository
 
@@ -9062,7 +9062,7 @@ The interface is in English only.
 
 ### The Chrome extension
 
-1. Download the ZIP from gallaz.ch/eink and extract it.
+1. Download the ZIP from gallaz.ch/apps and extract it.
 2. In Chrome, open `chrome://extensions/`.
 3. Turn on **Developer mode**.
 4. Choose **Load unpacked** and select the extracted folder.
@@ -9190,7 +9190,7 @@ The interface is in English only.
 
 ### Installing in Chrome
 
-1. Download the ZIP from gallaz.ch/eink and extract it.
+1. Download the ZIP from gallaz.ch/apps and extract it.
 2. Open `chrome://extensions/`.
 3. Turn on **Developer mode**.
 4. Choose **Load unpacked** and select the extracted folder.
@@ -9363,7 +9363,7 @@ It does not synchronise anything between computers and has no account. Its inter
 
 The installer is written for Ubuntu and systems derived from it.
 
-1. Download the ZIP from gallaz.ch/eink and extract it.
+1. Download the ZIP from gallaz.ch/apps and extract it.
 2. Open a terminal in the extracted folder and run `sudo bash installer.sh`.
 
 The installer adds the components the reader needs, copies the program to `/opt/eink-reader`, creates the command `eink-reader` and adds **eInk Reader** to the applications menu. It writes what it does to `/tmp/eink-reader-install.log`.
@@ -9760,7 +9760,7 @@ Turning Secure Boot off lowers the protection of the computer at start-up; the l
 
 ### Installing
 
-1. Download the ZIP from gallaz.ch/eink and extract it.
+1. Download the ZIP from gallaz.ch/apps and extract it.
 2. Open a terminal in the extracted folder and run `sudo bash installer.sh`.
 3. At **Choose installation mode [1/2]:** answer **2** (Python scripts). Choice 1 (compiled binary) is only available after building the program yourself with `bash build.sh`.
 4. At **Install PolicyKit policy? [y/N]** answer **y** to avoid, in the installer's words, "re-entering your password every time the helper daemon starts"; the first start still asks for it. The default answer is no.
