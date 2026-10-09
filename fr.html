@@ -175,11 +175,13 @@
   <article class="app" id="readers-books">
     <div class="text">
     <h2>Reader's Books</h2>
-    <p class="meta"><span>v1.6.1</span><span>MIT</span><code>com.freedomfighter.readersbooks</code></p>
-    <p>Une liseuse pour l'encre électronique : l'étagère en liste, des pages qui se tournent d'un toucher, pas de défilement, rien d'autre à l'écran. EPUB, MOBI, FB2 et texte, ouverts depuis l'app, un gestionnaire de fichiers ou un partage.</p>
+    <p class="meta"><span>Android v1.6.1</span><span>Ordinateur v1.0.0</span><span>MIT</span><code>com.freedomfighter.readersbooks</code></p>
+    <p>Une liseuse pour l'encre électronique : l'étagère en liste, des pages qui se tournent d'un toucher, pas de défilement, rien d'autre à l'écran. EPUB, MOBI, FB2 et texte, ouverts depuis l'app, un gestionnaire de fichiers ou un partage. La même étagère et les mêmes pages sur l'ordinateur.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersbooks%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-books%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Books%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBooks-v1.6.1.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-books-desktop/releases/latest">Windows, macOS, Linux</a>
+      <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-books">Code source</a>
     </div>
     </div>
@@ -560,17 +562,17 @@
 
   <section class="install">
     <h3>Debian / Ubuntu / Pop!_OS / Mint : le dépôt apt</h3>
-    <p>Les cinq applications pour l'ordinateur sont aussi dans un petit dépôt apt&nbsp;: elles se mettent à jour avec le reste du système.</p>
+    <p>Les six applications pour l'ordinateur sont aussi dans un petit dépôt apt&nbsp;: elles se mettent à jour avec le reste du système.</p>
     <pre>sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/apt/keyrings/funkypitt.gpg &gt;/dev/null
 echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
-sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks readers-scanner readers-podcasts</pre>
+sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks readers-scanner readers-podcasts readers-books</pre>
     <p>Arch Linux : le dépôt de chaque application contient un PKGBUILD. Détails sur <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
   </section>
 
   <section class="install">
     <h3>Windows et macOS : la première ouverture</h3>
-    <p>Reader's Calendar, Reader's Notes et Reader's Tasks existent aussi en .exe pour Windows et en .dmg pour macOS, dans la page de téléchargement de chaque application : un seul fichier, rien à installer, pas de Python à prévoir. Ce sont de petites applications libres sans certificat payant, alors le système s'en méfie une fois — une seule.</p>
+    <p>Reader's Books, Reader's Calendar, Reader's Notes et Reader's Tasks existent aussi en .exe pour Windows et en .dmg pour macOS, dans la page de téléchargement de chaque application : un seul fichier, rien à installer, pas de Python à prévoir. Ce sont de petites applications libres sans certificat payant, alors le système s'en méfie une fois — une seule.</p>
     <p><strong>Windows</strong> : un panneau bleu « Windows a protégé votre ordinateur » apparaît à la première ouverture. <em>Informations complémentaires</em> › <em>Exécuter quand même</em>.</p>
     <p><strong>macOS</strong> : ouvrez le .dmg — « apple-silicon » pour un Mac M1 ou plus récent, « intel » pour un Mac plus ancien —, glissez l'application dans <em>Applications</em>, puis <strong>clic droit sur l'application › Ouvrir</strong> › <em>Ouvrir</em>. Un double-clic, à ce moment-là, dit seulement que l'application ne peut pas être ouverte. Ensuite elle s'ouvre comme les autres.</p>
   </section>

@@ -175,11 +175,13 @@
   <article class="app" id="readers-books">
     <div class="text">
     <h2>Reader's Books</h2>
-    <p class="meta"><span>v1.6.1</span><span>MIT</span><code>com.freedomfighter.readersbooks</code></p>
-    <p>A reader for e-ink: the shelf as a list, pages that turn with a tap, no scrolling, nothing else on the screen. EPUB, MOBI, FB2 and text files, opened from the app, a file manager or a share.</p>
+    <p class="meta"><span>Android v1.6.1</span><span>Desktop v1.0.0</span><span>MIT</span><code>com.freedomfighter.readersbooks</code></p>
+    <p>A reader for e-ink: the shelf as a list, pages that turn with a tap, no scrolling, nothing else on the screen. EPUB, MOBI, FB2 and text files, opened from the app, a file manager or a share. The same shelf and the same pages on the computer.</p>
     <div class="links">
       <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersbooks%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-books%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Books%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBooks-v1.6.1.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/readers-books-desktop/releases/latest">Windows, macOS, Linux</a>
+      <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
       <a class="btn" href="https://github.com/funkypitt/readers-books">Source</a>
     </div>
     </div>
@@ -560,17 +562,17 @@
 
   <section class="install">
     <h3>Debian / Ubuntu / Pop!_OS / Mint: the apt repository</h3>
-    <p>The five desktop apps are also in a small apt repository, so they update with the rest of the system.</p>
+    <p>The six desktop apps are also in a small apt repository, so they update with the rest of the system.</p>
     <pre>sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://funkypitt.github.io/apt-repo/funkypitt.gpg | sudo tee /etc/apt/keyrings/funkypitt.gpg &gt;/dev/null
 echo "deb [signed-by=/etc/apt/keyrings/funkypitt.gpg] https://funkypitt.github.io/apt-repo stable main" | sudo tee /etc/apt/sources.list.d/funkypitt.list
-sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks readers-scanner readers-podcasts</pre>
+sudo apt update &amp;&amp; sudo apt install readers-calendar readers-notes readers-tasks readers-scanner readers-podcasts readers-books</pre>
     <p>Arch Linux: each app's repository has a PKGBUILD. Details at <a href="https://funkypitt.github.io/apt-repo/">funkypitt.github.io/apt-repo</a>.</p>
   </section>
 
   <section class="install">
     <h3>Windows and macOS: the first opening</h3>
-    <p>Reader's Calendar, Reader's Notes and Reader's Tasks also come as an .exe for Windows and a .dmg for macOS, on each app's download page: one file, nothing to install, no Python to think about. They are small free applications without a paid certificate, so the system distrusts them once — once only.</p>
+    <p>Reader's Books, Reader's Calendar, Reader's Notes and Reader's Tasks also come as an .exe for Windows and a .dmg for macOS, on each app's download page: one file, nothing to install, no Python to think about. They are small free applications without a paid certificate, so the system distrusts them once — once only.</p>
     <p><strong>Windows</strong>: a blue "Windows protected your PC" panel appears the first time. <em>More info</em> › <em>Run anyway</em>.</p>
     <p><strong>macOS</strong>: open the .dmg — "apple-silicon" for an M1 Mac or later, "intel" for an older one — drag the app onto <em>Applications</em>, then <strong>right click on the app › Open</strong> › <em>Open</em>. A double click at that point only says the app cannot be opened. Afterwards it opens like any other.</p>
   </section>
