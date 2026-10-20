@@ -1,6 +1,6 @@
 # User manual — The Reader's apps and the other apps of gallaz.ch/apps
 
-Edition of 7 October 2026 · gallaz.ch/apps
+Edition of 20 October 2026 · gallaz.ch/apps
 
 
 <!-- Before you start -->
@@ -6939,6 +6939,331 @@ The tile shows **filter on** or **filter off**, with **night filter** beneath, a
 **There is no "add to quick settings" row.** The phone runs Android 12 or earlier; follow the text shown in its place.
 
 **The screen still looks a little blue.** That is the limit Android sets, recalled by the note on the main screen.
+
+
+# Reader's Motivation
+
+*Android 1.0.1*
+
+## What it is
+
+Reader's Motivation counts the days you hold a habit and the urges you beat along the way. A habit is either something to stop (sugar, cigarettes, alcohol, screens in the evening) or something to do every day. Each habit has one page: the day in big letters, the urges beaten, what you avoided in units and money if you gave a count, the next step, your own reason, and the last five weeks as a row of squares. What sets it apart is the rule on a bad day: a slip costs one day and nothing else. The totals and the urges beaten never go down, the headline that day is what stays earned, and the app hands your own plan back. The choices behind the app come from published research, summed up in its settings under **why it is built this way**.
+
+The app is black and white and made of text only, like the other Reader's apps. It has no points, no badges, no account, and it cannot use the network at all: nothing leaves the phone.
+
+The app exists in English, French, German, Spanish, Portuguese and Russian. It follows the language of the phone; there is no language setting inside the app.
+
+## First start
+
+The app asks for nothing at first launch. It asks for permission to show notifications only when you turn on the daily reminder (Android 13 and later); if you refuse, the reminder is set but never shown. The app may vibrate briefly when you tap a line (see **vibration on tap** in the settings), and it may start after a restart of the phone to set the reminder again. It has no permission to use the network.
+
+There is no account, no server and nothing to fill in. The first screen, titled **motivation**, shows **Count the days, and the urges you beat.** over a few lines of explanation (**Something to stop, or something to do every day. The app counts the days held and every urge you beat. A slip costs one day and nothing else: what you earned stays earned. Nothing leaves the phone.**), and the line **a new habit**. Tap it to create your first habit (see "Create a habit to stop" below).
+
+The app starts white on black.
+
+## The screens
+
+### Home (motivation)
+
+The home screen lists your habits, one line each: the name, and under it a summary such as **day 12 · 9 urges beaten** for something to stop, **day 12** or **day 12 · done today ✓** for something to do, or **starts on 1 November 2026** for a habit whose start date is still ahead. Tap a line to open the habit's page. The last line, **a new habit**, opens the form of a new habit.
+
+When you have exactly one habit, the app opens directly on its page; the list is one tap back (**←**).
+
+**⋯** at the top right opens the menu with **light** or **dark** (switches to the other colours; the entry names the colours you will get) and **settings**. Tap outside the menu, or press the phone's back button, to close it without choosing.
+
+### A habit's page
+
+The title is the habit's name, with **←** to go back and **⋯** for the menu. From top to bottom:
+
+**The first line** says what the habit is: **without sugar since 8 October 2026** for something to stop, **walk, every day since 8 October 2026** for something to do, or **starts on 1 November 2026** while the start date is still ahead.
+
+**The big line** is the day of the current run: **day 12**. For something to stop, day 1 is the start date and the count continues as long as no slip is noted; the day after a slip is day 1 again. For something to do, the run is the number of days in a row marked done, up to today or yesterday: a day you have not marked yet does not break the run until the next day.
+
+On a day with no run the big line is never "day 0". For something to stop, on the day of a slip, it shows what stays earned: **19 days held**, that is, every day held since the start, however many slips there were. For something to do whose chain is broken, it shows **19 days done**; while no day has ever been marked done, it reads **day 1**, the day today becomes once it is done.
+
+**Under the big line**, once a day has ever been lost: **13 days held out of 14** (or **13 days done out of 14**), followed by **· best run 11 days** when an earlier run was longer than the current one. On the day of a slip the line reads **out of 20 · best run 19 days**, and a further line says **starting again now · tomorrow is day 1**. For something to do whose chain is broken, the lines read **out of 20 · best run 19 days** and **starting again · today is day 1 once it is done**. When no day was ever lost, or no day was ever marked done, nothing is shown here.
+
+**The urges**, for something to stop: **9 urges beaten**, or **no urge beaten yet**. This number only ever goes up.
+
+**Units and money**, when you gave a count per day in the habit's form: **492 cigarettes avoided**, followed by **· 246 CHF not spent** when you also gave a price. They are the days held multiplied by the number per day, and by the price. Whole numbers are shown without decimals; others with one.
+
+**The step**: the steps are one day, three days, one week, two weeks, three weeks, one month, 66 days, 100 days, six months, one year, then every year. In the first half of the way to the next step the line says what is done, **day 2 of one week**; in the second half what remains, **5 days to go before 66 days**. On the day a step is reached: **one week, reached today**. From day 30 to day 66 a note is added: **66 days: the median time a daily habit took to become automatic, in the one study that measured it.** The step line counts the current run, not the total.
+
+**Your reason**, in your own words, if you gave one.
+
+**The two gestures**, for something to stop:
+
+- **an urge, right now**, shown in inverted colours: opens the urge screen (three minutes with the breathing ring).
+- **I held out**, with **one urge beaten, counted** under it: one tap counts one urge beaten, at once; the line flashes in inverted colours to confirm.
+
+For something to do: **done today** marks the day done; the line then reads **done today ✓** in inverted colours and no longer reacts until tomorrow.
+
+**the last weeks**: five rows of seven squares, one row per week, Monday first, the last row being the current week. **■** is a day held (or done), **□** a slip (or a missed day), **·** a day before the start or after today, and **◦** today while not yet marked done. The legend reads **■ held · □ slip** or **■ done · □ missed · ◦ today**.
+
+**tell someone where I am**, with **Said to someone, it holds better.** under it: opens the phone's share sheet with a short text (see "Tell someone where you are").
+
+**I slipped**, shown once the habit has started: opens the slip screen.
+
+### The ⋯ menu of a habit
+
+The menu is titled with the habit's name:
+
+| Entry | What it does |
+|---|---|
+| **the record** | Opens the list of every entry noted for this habit. |
+| **change** | Opens the habit's form to change any field. |
+| **delete this habit** | Asks **delete “sugar” and everything counted?** with **delete** and **cancel**. **delete** removes the habit and all its entries at once and returns to the list. |
+| **light** / **dark** | Switches to the other colours. |
+| **settings** | Opens the settings. |
+
+### an urge
+
+The screen opens on **It rises, peaks and passes, whether you feed it or not. Three minutes of breathing with the ring, and see.** Under it, a ring: a thin faint circle, and inside it a thicker circle that grows while you breathe in (3 seconds, the word **breathe in**), stays (3 seconds, **hold**) and shrinks while you breathe out (6 seconds, **breathe out**). The word of the current phase is in the middle of the ring, with the time left under it, from **3:00** down to **0:00**. The ring makes no sound.
+
+After three minutes the ring disappears and the text becomes **Three minutes. Did it pass?**
+
+Below the ring: your reason, then **your plan: …** with the plan you wrote when creating the habit, each shown only if you gave one. Then two lines:
+
+- **it passed**, with **counted as an urge beaten** under it, in inverted colours: counts one urge beaten and returns to the habit's page.
+- **I slipped**: opens the slip screen.
+
+Both lines work at any moment; you do not have to wait for the three minutes. **←** or the phone's back button leaves the screen without counting anything.
+
+### a slip
+
+For something to stop, the screen says **A slip, not a relapse. 19 days held stay held, 41 urges beaten stay beaten. The next hour counts more than the last one.** The days are counted without today, so the number is the one the page will show once the slip is noted. For something to do: **A day missed, not a habit lost. 19 days done stay done. Tomorrow is one more.** Then **your plan: …** if you wrote one.
+
+- **what happened…**, for something to stop only: opens a prompt titled **what happened? (optional)**; what you type replaces the words of this line.
+- **noted, I start again now**, in inverted colours: for something to stop, writes a slip at the current time, with your note, and returns to the habit's page. For something to do, nothing is written: a day you did not mark done is a missed day by itself.
+- **cancel**: goes back without noting anything.
+
+Several slips noted on the same day cost that one day only.
+
+### the record
+
+Every entry of the habit, newest first: **urge beaten**, **slip** or **day done**, with the date and time under it; a slip with a note reads **slip · what you wrote**. When there is none: **nothing noted yet**.
+
+Tap an entry: a menu titled with its date and time offers **remove this entry**. The entry is removed at once, without further confirmation, and the counts are recomputed: removing a slip gives the day back, removing a day done unmarks that day, removing an urge beaten lowers the count by one. This is how a wrong tap is undone.
+
+### a new habit, and change
+
+The form of a habit, titled **a new habit** or, for an existing one, with its name. Each line shows the current value above the name of the field; tap it to change it.
+
+- **stop doing it** or **do it every day**, under **stop, or do**: tap to switch from one to the other.
+- The name, under **what**. For a new habit to stop, a menu titled **what do you stop? (one or two words)** opens by itself when the form appears, with **sugar**, **cigarettes**, **alcohol**, **screens in the evening** and **something else…**, which opens the text prompt. Otherwise the line opens the prompt **what do you stop? (one or two words)** or **what do you do every day? (one or two words)**.
+- The start date, under **start**: opens a menu titled **start** with **today**, **next Monday** and **the first of next month**, each with its date under it, and **another date…**, which opens the prompt **a date (year-month-day)**, for example 2026-11-01. A date the app does not understand leaves the previous one. The line under the field says **A fresh start carries further from a date that marks one: a Monday, the first of the month. Today is one too.**
+- Your reason, under **why**: the prompt **why this, in your own words**. Under it, **Shown when an urge comes.**
+- Your plan, under **when the urge comes, I…**: the prompt **when the urge comes, I… (a glass of water, go outside, call someone)**. Under it, **Decided in advance, the plan is there before the urge is.**
+- For something to stop only, the count of what you avoid: **per day, before** (**not counted** until you give a number; the prompt is **how many a day, before?**). Once a number is given, **unit** appears (prompt **the unit (cigarettes, drinks, pieces…)**) and **price of one** (**not counted**, prompt **price of one unit**); once a price is given, **currency** appears (prompt **currency (CHF, €, $…)**). Under them: **Optional: what you avoid adds up in units and in money.** Numbers accept a comma or a point as decimal separator.
+- **save**: shown in inverted colours once a name is given; without a name it does nothing. Saving a new habit opens its page.
+
+A line whose value is empty shows **…**.
+
+Every prompt has **cancel** and **ok**; **ok** is highlighted once the field is not empty, and an empty field cannot be confirmed. The keyboard's confirm key does the same as **ok**.
+
+### settings
+
+From top to bottom:
+
+- **a daily reminder**: **off** or the time, for example **20:00**. Under it: **One line at the hour you choose: the day, the count, and the question. Off unless you turn it on.** Tap to open a menu titled **a daily reminder** with **off**, **08:00**, **12:00**, **20:00**, **21:00** and **time (HH:MM)**, which opens a prompt of the same name. Type the time on the 24-hour clock: **7:30**, **07:30**, **7h30**, **7.30**, **730**, **0730**, or just **7** for 07:00. A time the app does not understand changes nothing.
+- **on the widget and in the reminder**, shown only when you have more than one habit: the name of the habit the widget and the reminder speak of. Tap to choose another in a menu of your habits.
+- **save a backup…** and **restore a backup…** (see "Your data").
+- **colours** (**dark** or **light**), **text size** (**small**, **medium**, **large**), **font** (**sans serif**, **serif**, **monospace**), **vibration on tap** (**on** or **off**): each line shows the current choice above the name of the setting; tap to move to the next choice.
+- **why it is built this way**: tap to show or hide a paragraph that sums up the research behind the app's choices.
+- **Reader's Motivation**, with **about** under it, and the line **written with Claude Code · nothing leaves the phone**: information only.
+
+### The reminder notification
+
+Once a day, at the time you chose, the phone shows one notification in the category **reminder**. Its title is the question **all held today?** for something to stop or **done today?** for something to do, and its text is the summary of the habit, for example **day 12 · 9 urges beaten**. It speaks of one habit only: the one chosen under **on the widget and in the reminder**, otherwise the first of the list. Tapping it opens the app and dismisses it. No reminder is shown while you have no habit.
+
+## How to
+
+### Create a habit to stop
+
+1. On the home screen, tap **a new habit**. The menu **what do you stop? (one or two words)** opens.
+2. Tap **sugar**, **cigarettes**, **alcohol** or **screens in the evening**, or **something else…** and type one or two words, then **ok**.
+3. Tap the date under **start** and choose **today**, **next Monday**, **the first of next month** or **another date…**.
+4. Tap the line under **why** and write your reason; tap the line under **when the urge comes, I…** and write what you will do instead.
+5. If you want to see what you avoid: tap **per day, before** and type the number per day, then **unit**, and if you want the money too, **price of one** and **currency**.
+6. Tap **save**. The habit's page opens.
+
+### Create a habit to do every day
+
+1. Tap **a new habit**, then close the suggestions menu (tap outside it or press back).
+2. Tap **stop doing it**: it becomes **do it every day**.
+3. Tap the line under **what** and type what you do, then **ok**.
+4. Choose the start date, write your reason and your plan if you wish, and tap **save**.
+
+A habit to do has no count of units and money, no urges and no **I held out**: its page counts the days marked **done today**.
+
+### Choose the start date
+
+In the habit's form, tap the date under **start**. **today**, **next Monday** and **the first of next month** show their date; **another date…** takes a date typed as year-month-day, in the past or in the future. Before the start date, the page says **starts on …** and counts nothing; days, slips and days done before the start date are not counted. You can change the date later with **change**; the counts are recomputed from the new date.
+
+### Count an urge beaten
+
+On the habit's page, tap **I held out**. The line flashes and the count under the big line goes up by one. From the home screen of the phone, the widget's **✓** does the same without opening the app.
+
+### Get through an urge
+
+1. On the habit's page, tap **an urge, right now**.
+2. Breathe with the ring: in while it grows (**breathe in**), hold while it stays (**hold**), out while it shrinks (**breathe out**). Read your reason and your plan under it.
+3. When the urge has passed, tap **it passed**: it is counted as an urge beaten and the page comes back. If you gave in, tap **I slipped**.
+
+### Note a slip
+
+1. On the habit's page, tap **I slipped** (or **I slipped** on the urge screen).
+2. If you want, tap **what happened…** and write a word about it.
+3. Tap **noted, I start again now**.
+
+The slip is written at the current time. That day shows **□** in the squares, the big line that day reads **19 days held** instead of a day number, and tomorrow is **day 1**. The days held, the best run, the urges beaten and the units avoided keep their values. To note a slip that happened on an earlier day, there is no way to choose the date: the slip is always noted today.
+
+### Mark the day done
+
+On the page of a habit to do, tap **done today**. The line becomes **done today ✓** and the square of today turns **■**. On the widget, **✓** does the same and then disappears until tomorrow. A day not marked by midnight is a missed day; the chain breaks only when two days in a row are not marked, since the page still counts a run whose last day is yesterday.
+
+### See what you avoided in units and money
+
+Open **⋯**, **change**, and give **per day, before**, **unit**, and if you wish **price of one** and **currency**. The page then shows, for example, **20 cigarettes avoided · 10 CHF not spent**, counted on the days held.
+
+### Tell someone where you are
+
+On the habit's page, tap **tell someone where I am** and choose the app or the person in the phone's share sheet. The text sent is a few lines: the first line of the page (**without sugar since 8 October 2026**), the big line (**day 12**), the held line if any, the urges beaten, and the units and money if counted.
+
+### Remove a wrong tap
+
+1. On the habit's page, tap **⋯**, then **the record**.
+2. Tap the entry (**urge beaten**, **slip** or **day done**) with the wrong date and time.
+3. Tap **remove this entry**.
+
+### Change or delete a habit
+
+Tap **⋯** on its page, then **change** to open the form, or **delete this habit** and confirm with **delete**. Deleting removes every entry of the habit; there is no undo apart from a backup saved before.
+
+### Turn on the daily reminder
+
+1. Open **settings** (from **⋯** on any page).
+2. Tap the line under **a daily reminder** and choose **08:00**, **12:00**, **20:00**, **21:00**, or **time (HH:MM)** and type the time.
+3. On Android 13 and later, allow notifications when the phone asks.
+
+To stop it, choose **off** in the same menu.
+
+### Choose the habit on the widget and in the reminder
+
+With two habits or more, open **settings** and tap the line under **on the widget and in the reminder**, then the habit. With one habit, that habit is used.
+
+### Save a backup
+
+1. Open **settings** and tap **save a backup…**.
+2. The phone's save dialog opens with the name **readers-motivation-backup.json**; choose the folder and confirm.
+3. The app shows **saved as readers-motivation-backup.json** with the entry **share this file…**: tap it to send the file to another app (a drive, a messenger, e-mail), or tap outside to close.
+
+### Restore a backup
+
+1. Open **settings** and tap **restore a backup…**.
+2. Choose the backup file in the phone's file picker.
+3. The app asks **replace everything by this backup?**: tap **replace**, or **cancel**.
+
+**backup restored** confirms it. All the habits and their entries are replaced by those of the file; the settings are not in the backup and stay as they are.
+
+### Put the widget on a home screen
+
+1. Add a widget the way your launcher does it and choose **Reader's Motivation** (described as **the day and the count; ✓ counts an urge beaten**).
+2. The widget takes three cells by one and can be resized.
+
+### Switch colours, text size and font
+
+Tap **⋯** then **light** or **dark**; or open **settings** and tap the lines under **colours**, **text size** and **font**.
+
+## Settings
+
+| Setting | What it changes | Choices | Default |
+|---|---|---|---|
+| **a daily reminder** | A notification once a day with the day, the count and a question | **off**, **08:00**, **12:00**, **20:00**, **21:00**, or any time typed under **time (HH:MM)** | **off** |
+| **on the widget and in the reminder** | The habit the widget and the reminder speak of (shown with two habits or more) | one of your habits | the first of the list |
+| **colours** | The two colours of the app and of its widget | **dark** (white on black), **light** (black on white) | **dark** |
+| **text size** | The size of all text in the app | **small**, **medium**, **large** | **medium** |
+| **font** | The typeface of the app | **sans serif**, **serif**, **monospace** | **sans serif** |
+| **vibration on tap** | A short vibration when you tap a line that counts or opens something | **on**, **off** | **on** |
+
+## Your data
+
+Everything stays on the phone: the habits with their reason, plan, counts and every entry, and the settings. The app has no permission to use the network: it sends nothing to anyone and receives nothing. There is no sync and no account.
+
+**Backup.** **save a backup…** writes one file, **readers-motivation-backup.json**, where you choose, then offers **share this file…**. The file contains every habit and every entry, in plain text; it does not contain the settings. The app keeps a copy of the last backup for the share menu, and removes that copy the next time it starts or saves. **restore a backup…** replaces every habit by those of the file after you confirm **replace**; a file that is not a backup of this app is refused with **this file is not a backup of this app**. Restoring is the way to move the app to another phone.
+
+**Sharing.** **tell someone where I am** hands a few lines of text to the app you choose; nothing else is sent, and the app does not know to whom.
+
+The app does not opt out of Android's own device backup: if you have switched that on in the phone's settings, Android may include the app's data in it.
+
+The reminder is set again by itself after a restart of the phone or a change of time or time zone.
+
+Uninstalling the app removes all of this. A backup file you saved elsewhere stays.
+
+## With the other apps
+
+### Home-screen widget
+
+The widget **Reader's Motivation** works in any launcher, in the app's colours. It shows one habit, the one chosen under **on the widget and in the reminder** (else the first of the list):
+
+- the big line of the page: **day 12**, or **19 days held** on a day with no run, or **starts on …** before the start;
+- under it, for something to stop, **sugar · 9 urges beaten**; for something to do, the name, or **walk · done today ✓** once the day is marked;
+- at the right, **✓**: for something to stop it counts one urge beaten; for something to do it marks the day done and then disappears until tomorrow.
+
+Tapping the text opens the app. Without any habit, the widget reads **motivation** over **a new habit**, without **✓**.
+
+The widget is redrawn after every change, when you leave the app, one minute after midnight, and at least every half hour.
+
+### Nothing else
+
+The app has no tile in Reader's Launcher, does not receive shared content and opens no file apart from a backup chosen with **restore a backup…**.
+
+## Limits
+
+- There is no Reader's Motivation for the computer.
+- A slip is always noted at the current time; you cannot note one for a past day. Several slips on the same day cost one day.
+- The day is counted on the phone's clock: an urge beaten or a slip noted just after midnight belongs to the new day.
+- Units and money are counted for something to stop only, on the days held; one unit and one price per habit.
+- The urge screen lasts three minutes with a fixed breath of 3 seconds in, 3 seconds hold, 6 seconds out; neither can be changed. It makes no sound and does not keep the screen on.
+- One reminder a day, at one time, for one habit; it only shows after notifications are allowed.
+- The widget shows one habit; to show two, there is no way other than changing the chosen habit.
+- A field of the form, once filled, cannot be emptied: the prompt refuses an empty value. Replace it with a word instead.
+- A missed day of a habit to do cannot be marked done afterwards; **done today** marks today only.
+- Deleting a habit or removing an entry asks no second confirmation beyond **delete**, and cannot be undone except from a backup.
+- No statistics beyond the page, no graph beyond the five weeks of squares, no export other than the backup file.
+
+## Messages and problems
+
+| What you see | What it means, what to do |
+|---|---|
+| **Count the days, and the urges you beat.** | You have no habit yet. Tap **a new habit**. |
+| **starts on 1 November 2026** | The start date is still ahead; nothing is counted until then. Change the date with **⋯**, **change** if you meant today. |
+| **19 days held** or **19 days done** instead of **day 12** | A slip was noted today, or the chain of a habit to do is broken: the big line shows what stays earned. |
+| **starting again now · tomorrow is day 1** | A slip was noted today. Nothing to do; the count resumes tomorrow. |
+| **starting again · today is day 1 once it is done** | The chain of a habit to do is broken. Tap **done today** and today is day 1. |
+| **no urge beaten yet** | Nothing counted yet. Tap **I held out** or **it passed** when you beat one. |
+| **not counted** | No number was given for **per day, before** or **price of one**; the page shows no units or money. |
+| **nothing noted yet** | The record is empty: no urge, slip or day done has been noted. |
+| **Three minutes. Did it pass?** | The urge screen has run its three minutes. Tap **it passed** or **I slipped**. |
+| **saved as readers-motivation-backup.json** | The backup was written. **share this file…** sends it elsewhere. |
+| **this file is not a backup of this app** | The file chosen could not be read as a backup. Choose the file saved with **save a backup…**. |
+| **replace everything by this backup?** | Restoring replaces every habit on the phone. **replace** to go on, **cancel** to keep what you have. |
+| **backup restored** | The habits of the file are now the app's. |
+| Notification **all held today?** / **done today?** | The daily reminder; tap it to open the app. Set the time or turn it off under **a daily reminder**. |
+
+**The reminder never shows.** Allow notifications for the app in the phone's settings; the app only asks when you turn the reminder on. The reminder may also arrive a few minutes late when the phone is in deep sleep.
+
+**save does nothing.** The habit has no name yet: give one under **what**.
+
+**ok in a prompt does nothing.** The field is empty; type something or tap **cancel**.
+
+**The time I typed for the reminder was not kept.** Type hours from 0 to 23 and minutes from 00 to 59, for example **7:30** or **0730**.
+
+**The date I typed for the start was not kept.** Type it as year-month-day, for example **2026-11-01**.
+
+**The widget still shows yesterday's day.** The widget is redrawn one minute after midnight; otherwise it catches up at the next change, when you leave the app, or within half an hour.
+
+**A habit disappeared from the widget.** The widget shows the habit chosen under **on the widget and in the reminder**, or the first of the list; after deleting that habit, choose another in the settings.
 
 
 

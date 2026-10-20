@@ -1,6 +1,6 @@
 # Mode d'emploi — Les applications Reader's et les autres applications de gallaz.ch/apps
 
-Édition du 7 octobre 2026 · gallaz.ch/apps
+Édition du 20 octobre 2026 · gallaz.ch/apps
 
 
 <!-- Avant de commencer -->
@@ -6940,6 +6940,331 @@ La tuile affiche **filtre actif** ou **filtre inactif**, avec **filtre de nuit**
 **Il n’y a pas de ligne « ajouter aux réglages rapides ».** Le téléphone est sous Android 12 ou antérieur ; suivez le texte affiché à sa place.
 
 **L’écran paraît encore un peu bleu.** C’est la limite fixée par Android, rappelée par la note de l’écran principal.
+
+
+# Reader's Motivation
+
+*Android 1.0.1*
+
+## Ce que c'est
+
+Reader's Motivation compte les jours où vous tenez une habitude et les envies surmontées en chemin. Une habitude est soit quelque chose à arrêter (le sucre, la cigarette, l'alcool, les écrans le soir), soit quelque chose à faire chaque jour. Chaque habitude a une page : le jour en grand, les envies surmontées, ce que vous avez évité en unités et en argent si vous avez donné un compte, la prochaine étape, votre propre raison, et les cinq dernières semaines en rangées de carrés. Ce qui la distingue, c'est la règle des mauvais jours : un écart coûte un jour et rien d'autre. Les totaux et les envies surmontées ne baissent jamais, le titre ce jour-là est ce qui reste acquis, et l'app vous redonne votre propre plan. Les choix de l'app viennent de travaux de recherche publiés, résumés dans ses réglages sous **pourquoi elle est faite ainsi**.
+
+L'app est en noir et blanc et faite uniquement de texte, comme les autres apps Reader's. Elle n'a ni points, ni badges, ni compte, et elle ne peut pas du tout utiliser le réseau : rien ne quitte le téléphone.
+
+L'app existe en anglais, français, allemand, espagnol, portugais et russe. Elle suit la langue du téléphone ; il n'y a pas de réglage de langue dans l'app.
+
+## Premier lancement
+
+L'app ne demande rien au premier lancement. Elle demande l'autorisation d'afficher des notifications seulement quand vous allumez le rappel quotidien (Android 13 et suivants) ; si vous refusez, le rappel est réglé mais jamais affiché. L'app peut vibrer brièvement quand vous touchez une ligne (voir **vibration au toucher** dans les réglages), et elle peut démarrer après un redémarrage du téléphone pour régler le rappel de nouveau. Elle n'a aucune autorisation d'utiliser le réseau.
+
+Il n'y a ni compte, ni serveur, ni rien à remplir. Le premier écran, intitulé **motivation**, affiche **Compter les jours, et les envies surmontées.** au-dessus de quelques lignes d'explication (**Quelque chose à arrêter, ou à faire chaque jour. L'app compte les jours tenus et chaque envie surmontée. Un écart coûte un jour, rien d'autre : ce qui est acquis reste acquis. Rien ne quitte le téléphone.**), et la ligne **une nouvelle habitude**. Touchez-la pour créer votre première habitude (voir « Créer une habitude à arrêter » plus bas).
+
+L'app s'ouvre en blanc sur noir.
+
+## Les écrans
+
+### Accueil (motivation)
+
+L'écran d'accueil énumère vos habitudes, une ligne chacune : le nom, et dessous un résumé comme **jour 12 · 9 envies surmontées** pour quelque chose à arrêter, **jour 12** ou **jour 12 · fait aujourd'hui ✓** pour quelque chose à faire, ou **commence le 1 novembre 2026** pour une habitude dont la date de début est encore à venir. Touchez une ligne pour ouvrir la page de l'habitude. La dernière ligne, **une nouvelle habitude**, ouvre le formulaire d'une nouvelle habitude.
+
+Quand vous avez exactement une habitude, l'app s'ouvre directement sur sa page ; la liste est à un toucher en arrière (**←**).
+
+**⋯**, en haut à droite, ouvre le menu avec **clair** ou **sombre** (passe aux autres couleurs ; l'entrée nomme les couleurs que vous obtiendrez) et **réglages**. Touchez hors du menu, ou appuyez sur le bouton retour du téléphone, pour le fermer sans rien choisir.
+
+### La page d'une habitude
+
+Le titre est le nom de l'habitude, avec **←** pour revenir et **⋯** pour le menu. De haut en bas :
+
+**La première ligne** dit ce qu'est l'habitude : **sans le sucre depuis le 8 octobre 2026** pour quelque chose à arrêter, **marche, chaque jour depuis le 8 octobre 2026** pour quelque chose à faire, ou **commence le 1 novembre 2026** tant que la date de début est à venir.
+
+**La grande ligne** est le jour de la série en cours : **jour 12**. Pour quelque chose à arrêter, le jour 1 est la date de début et le compte continue tant qu'aucun écart n'est noté ; le lendemain d'un écart est de nouveau le jour 1. Pour quelque chose à faire, la série est le nombre de jours d'affilée marqués faits, jusqu'à aujourd'hui ou hier : un jour que vous n'avez pas encore marqué ne casse la série que le lendemain.
+
+Un jour sans série, la grande ligne n'est jamais « jour 0 ». Pour quelque chose à arrêter, le jour d'un écart, elle montre ce qui reste acquis : **19 jours tenus**, c'est-à-dire tous les jours tenus depuis le début, quel que soit le nombre d'écarts. Pour quelque chose à faire dont la chaîne est rompue, elle montre **19 jours faits** ; tant qu'aucun jour n'a jamais été marqué fait, elle dit **jour 1**, le jour qu'aujourd'hui devient une fois fait.
+
+**Sous la grande ligne**, dès qu'un jour a été perdu une fois : **13 jours tenus sur 14** (ou **13 jours faits sur 14**), suivi de **· meilleure série 11 jours** quand une série passée a été plus longue que celle en cours. Le jour d'un écart, la ligne dit **sur 20 · meilleure série 19 jours**, et une ligne de plus dit **on repart maintenant · demain, jour 1**. Pour quelque chose à faire dont la chaîne est rompue, les lignes disent **sur 20 · meilleure série 19 jours** et **on repart · aujourd'hui sera le jour 1 une fois fait**. Quand aucun jour n'a jamais été perdu, ou qu'aucun jour n'a jamais été marqué fait, rien n'apparaît ici.
+
+**Les envies**, pour quelque chose à arrêter : **9 envies surmontées**, ou **pas encore d'envie surmontée**. Ce nombre ne fait que monter.
+
+**Unités et argent**, quand vous avez donné un compte par jour dans le formulaire de l'habitude : **492 cigarettes évités**, suivi de **· 246 CHF non dépensés** quand vous avez aussi donné un prix. Ce sont les jours tenus multipliés par le nombre par jour, puis par le prix. Les nombres entiers s'affichent sans décimale ; les autres avec une.
+
+**L'étape** : les étapes sont un jour, trois jours, une semaine, deux semaines, trois semaines, un mois, 66 jours, 100 jours, six mois, un an, puis chaque année. Dans la première moitié du chemin vers la prochaine étape, la ligne dit ce qui est fait, **jour 2 sur une semaine** ; dans la seconde, ce qui reste, **encore 5 jours avant 66 jours**. Le jour où une étape est atteinte : **une semaine, atteint aujourd'hui**. Du jour 30 au jour 66, une note s'ajoute : **66 jours : le temps médian qu'une habitude quotidienne a mis à devenir automatique, dans la seule étude qui l'a mesuré.** La ligne d'étape compte la série en cours, pas le total.
+
+**Votre raison**, dans vos mots, si vous en avez donné une.
+
+**Les deux gestes**, pour quelque chose à arrêter :
+
+- **une envie, maintenant**, en couleurs inversées : ouvre l'écran de l'envie (trois minutes avec l'anneau de respiration).
+- **j'ai tenu bon**, avec **une envie surmontée, comptée** dessous : un toucher compte une envie surmontée, aussitôt ; la ligne s'inverse un instant pour confirmer.
+
+Pour quelque chose à faire : **fait aujourd'hui** marque le jour fait ; la ligne dit alors **fait aujourd'hui ✓** en couleurs inversées et ne réagit plus jusqu'au lendemain.
+
+**les dernières semaines** : cinq rangées de sept carrés, une rangée par semaine, lundi en premier, la dernière rangée étant la semaine en cours. **■** est un jour tenu (ou fait), **□** un écart (ou un jour manqué), **·** un jour avant le début ou après aujourd'hui, et **◦** aujourd'hui tant qu'il n'est pas marqué fait. La légende dit **■ tenu · □ écart** ou **■ fait · □ manqué · ◦ aujourd'hui**.
+
+**dire à quelqu'un où j'en suis**, avec **Dit à quelqu'un, ça tient mieux.** dessous : ouvre le menu de partage du téléphone avec un court texte (voir « Dire à quelqu'un où vous en êtes »).
+
+**j'ai craqué**, affiché dès que l'habitude a commencé : ouvre l'écran de l'écart.
+
+### Le menu ⋯ d'une habitude
+
+Le menu porte le nom de l'habitude en titre :
+
+| Entrée | Ce qu'elle fait |
+|---|---|
+| **le relevé** | Ouvre la liste de tout ce qui a été noté pour cette habitude. |
+| **modifier** | Ouvre le formulaire de l'habitude pour changer n'importe quel champ. |
+| **supprimer cette habitude** | Demande **supprimer « le sucre » et tout ce qui est compté ?** avec **supprimer** et **annuler**. **supprimer** retire aussitôt l'habitude et tout son relevé et revient à la liste. |
+| **clair** / **sombre** | Passe aux autres couleurs. |
+| **réglages** | Ouvre les réglages. |
+
+### une envie
+
+L'écran s'ouvre sur **Elle monte, culmine et passe, qu'on la nourrisse ou non. Trois minutes de respiration avec l'anneau, et on voit.** Dessous, un anneau : un cercle fin et pâle, et à l'intérieur un cercle plus épais qui grandit pendant que vous inspirez (3 secondes, le mot **inspirez**), reste (3 secondes, **gardez**) et rétrécit pendant que vous soufflez (6 secondes, **soufflez**). Le mot de la phase en cours est au milieu de l'anneau, avec le temps restant dessous, de **3:00** à **0:00**. L'anneau ne fait aucun son.
+
+Au bout de trois minutes, l'anneau disparaît et le texte devient **Trois minutes. Elle a passé ?**
+
+Sous l'anneau : votre raison, puis **votre plan : …** avec le plan écrit à la création de l'habitude, chacun affiché seulement si vous l'avez donné. Puis deux lignes :
+
+- **elle a passé**, avec **comptée comme envie surmontée** dessous, en couleurs inversées : compte une envie surmontée et revient à la page de l'habitude.
+- **j'ai craqué** : ouvre l'écran de l'écart.
+
+Les deux lignes fonctionnent à tout moment ; vous n'avez pas à attendre les trois minutes. **←** ou le bouton retour du téléphone quitte l'écran sans rien compter.
+
+### un écart
+
+Pour quelque chose à arrêter, l'écran dit **Un écart, pas une rechute. 19 jours tenus restent tenus, 41 envies surmontées restent surmontées. L'heure qui vient compte plus que celle qui passe.** Les jours sont comptés sans aujourd'hui : le nombre est celui que la page montrera une fois l'écart noté. Pour quelque chose à faire : **Un jour manqué, pas une habitude perdue. 19 jours faits restent faits. Demain en fait un de plus.** Puis **votre plan : …** si vous en avez écrit un.
+
+- **ce qui s'est passé…**, pour quelque chose à arrêter seulement : ouvre une saisie intitulée **que s'est-il passé ? (facultatif)** ; ce que vous tapez remplace les mots de cette ligne.
+- **c'est noté, je repars maintenant**, en couleurs inversées : pour quelque chose à arrêter, note un écart à l'heure actuelle, avec votre mot, et revient à la page de l'habitude. Pour quelque chose à faire, rien n'est noté : un jour que vous n'avez pas marqué fait est un jour manqué par lui-même.
+- **annuler** : revient en arrière sans rien noter.
+
+Plusieurs écarts notés le même jour ne coûtent que ce jour-là.
+
+### le relevé
+
+Tout ce qui a été noté pour l'habitude, du plus récent au plus ancien : **envie surmontée**, **écart** ou **jour fait**, avec la date et l'heure dessous ; un écart avec un mot se lit **écart · ce que vous avez écrit**. Quand il n'y a rien : **rien de noté encore**.
+
+Touchez une ligne : un menu, qui porte sa date et son heure en titre, propose **retirer cette ligne**. La ligne est retirée aussitôt, sans autre confirmation, et les comptes sont refaits : retirer un écart rend le jour, retirer un jour fait démarque ce jour, retirer une envie surmontée baisse le compte d'un. C'est ainsi qu'un toucher malheureux s'annule.
+
+### une nouvelle habitude, et modifier
+
+Le formulaire d'une habitude, intitulé **une nouvelle habitude** ou, pour une habitude existante, de son nom. Chaque ligne montre la valeur actuelle au-dessus du nom du champ ; touchez-la pour la changer.
+
+- **arrêter** ou **le faire chaque jour**, sous **arrêter, ou faire** : touchez pour passer de l'un à l'autre.
+- Le nom, sous **quoi**. Pour une nouvelle habitude à arrêter, un menu intitulé **qu'arrêtez-vous ? (un ou deux mots)** s'ouvre de lui-même quand le formulaire apparaît, avec **le sucre**, **la cigarette**, **l'alcool**, **les écrans le soir** et **autre chose…**, qui ouvre la saisie de texte. Sinon, la ligne ouvre la saisie **qu'arrêtez-vous ? (un ou deux mots)** ou **que faites-vous chaque jour ? (un ou deux mots)**.
+- La date de début, sous **début** : ouvre un menu intitulé **début** avec **aujourd'hui**, **lundi prochain** et **le premier du mois prochain**, chacun avec sa date dessous, et **une autre date…**, qui ouvre la saisie **une date (année-mois-jour)**, par exemple 2026-11-01. Une date que l'app ne comprend pas laisse la précédente. La ligne sous le champ dit **Un nouveau départ porte plus loin depuis une date qui en marque un : un lundi, le premier du mois. Aujourd'hui en est une aussi.**
+- Votre raison, sous **pourquoi** : la saisie **pourquoi, dans vos mots**. Dessous, **Affiché quand une envie vient.**
+- Votre plan, sous **quand l'envie vient, je…** : la saisie **quand l'envie vient, je… (un verre d'eau, sortir, appeler quelqu'un)**. Dessous, **Décidé à l'avance, le plan est là avant l'envie.**
+- Pour quelque chose à arrêter seulement, le compte de ce que vous évitez : **par jour, avant** (**pas compté** tant que vous ne donnez pas de nombre ; la saisie est **combien par jour, avant ?**). Une fois un nombre donné apparaissent **unité** (saisie **l'unité (cigarettes, verres, morceaux…)**) et **prix d'une unité** (**pas compté**, saisie **prix d'une unité**) ; une fois un prix donné apparaît **monnaie** (saisie **monnaie (CHF, €, $…)**). Dessous : **Facultatif : ce que vous évitez s'additionne en unités et en argent.** Les nombres acceptent la virgule ou le point comme séparateur décimal.
+- **enregistrer** : en couleurs inversées dès qu'un nom est donné ; sans nom, ne fait rien. Enregistrer une nouvelle habitude ouvre sa page.
+
+Une ligne dont la valeur est vide affiche **…**.
+
+Chaque saisie a **annuler** et **ok** ; **ok** est mis en évidence dès que le champ n'est pas vide, et un champ vide ne peut pas être validé. La touche de validation du clavier fait la même chose que **ok**.
+
+### réglages
+
+De haut en bas :
+
+- **un rappel quotidien** : **désactivé** ou l'heure, par exemple **20:00**. Dessous : **Une ligne à l'heure choisie : le jour, le compte, et la question. Éteint tant que vous ne l'allumez pas.** Touchez pour ouvrir un menu intitulé **un rappel quotidien** avec **désactivé**, **08:00**, **12:00**, **20:00**, **21:00** et **heure (HH:MM)**, qui ouvre une saisie du même nom. Tapez l'heure sur 24 heures : **7:30**, **07:30**, **7h30**, **7.30**, **730**, **0730**, ou simplement **7** pour 07:00. Une heure que l'app ne comprend pas ne change rien.
+- **sur le widget et dans le rappel**, affiché seulement quand vous avez plus d'une habitude : le nom de l'habitude dont parlent le widget et le rappel. Touchez pour en choisir une autre dans un menu de vos habitudes.
+- **enregistrer une sauvegarde…** et **restaurer une sauvegarde…** (voir « Vos données »).
+- **couleurs** (**sombre** ou **clair**), **taille du texte** (**petite**, **moyenne**, **grande**), **police** (**sans empattement**, **avec empattement**, **à chasse fixe**), **vibration au toucher** (**activé** ou **désactivé**) : chaque ligne montre le choix actuel au-dessus du nom du réglage ; touchez pour passer au choix suivant.
+- **pourquoi elle est faite ainsi** : touchez pour afficher ou masquer un paragraphe qui résume les recherches derrière les choix de l'app.
+- **Reader's Motivation**, avec **à propos** dessous, et la ligne **écrit avec Claude Code · rien ne quitte le téléphone** : simple information.
+
+### La notification du rappel
+
+Une fois par jour, à l'heure choisie, le téléphone affiche une notification dans la catégorie **rappel**. Son titre est la question **tout tenu aujourd'hui ?** pour quelque chose à arrêter ou **fait aujourd'hui ?** pour quelque chose à faire, et son texte est le résumé de l'habitude, par exemple **jour 12 · 9 envies surmontées**. Elle ne parle que d'une habitude : celle choisie sous **sur le widget et dans le rappel**, sinon la première de la liste. La toucher ouvre l'app et la fait disparaître. Aucun rappel n'est affiché tant que vous n'avez pas d'habitude.
+
+## Comment faire
+
+### Créer une habitude à arrêter
+
+1. Sur l'accueil, touchez **une nouvelle habitude**. Le menu **qu'arrêtez-vous ? (un ou deux mots)** s'ouvre.
+2. Touchez **le sucre**, **la cigarette**, **l'alcool** ou **les écrans le soir**, ou **autre chose…** et tapez un ou deux mots, puis **ok**.
+3. Touchez la date sous **début** et choisissez **aujourd'hui**, **lundi prochain**, **le premier du mois prochain** ou **une autre date…**.
+4. Touchez la ligne sous **pourquoi** et écrivez votre raison ; touchez la ligne sous **quand l'envie vient, je…** et écrivez ce que vous ferez à la place.
+5. Si vous voulez voir ce que vous évitez : touchez **par jour, avant** et tapez le nombre par jour, puis **unité**, et si vous voulez aussi l'argent, **prix d'une unité** et **monnaie**.
+6. Touchez **enregistrer**. La page de l'habitude s'ouvre.
+
+### Créer une habitude à faire chaque jour
+
+1. Touchez **une nouvelle habitude**, puis fermez le menu des suggestions (touchez à côté ou appuyez sur retour).
+2. Touchez **arrêter** : la ligne devient **le faire chaque jour**.
+3. Touchez la ligne sous **quoi** et tapez ce que vous faites, puis **ok**.
+4. Choisissez la date de début, écrivez votre raison et votre plan si vous le souhaitez, et touchez **enregistrer**.
+
+Une habitude à faire n'a ni compte d'unités et d'argent, ni envies, ni **j'ai tenu bon** : sa page compte les jours marqués **fait aujourd'hui**.
+
+### Choisir la date de début
+
+Dans le formulaire de l'habitude, touchez la date sous **début**. **aujourd'hui**, **lundi prochain** et **le premier du mois prochain** montrent leur date ; **une autre date…** prend une date tapée en année-mois-jour, passée ou à venir. Avant la date de début, la page dit **commence le …** et ne compte rien ; les jours, les écarts et les jours faits antérieurs à la date de début ne sont pas comptés. Vous pouvez changer la date plus tard avec **modifier** ; les comptes sont refaits depuis la nouvelle date.
+
+### Compter une envie surmontée
+
+Sur la page de l'habitude, touchez **j'ai tenu bon**. La ligne s'inverse un instant et le compte sous la grande ligne monte d'un. Depuis l'écran d'accueil du téléphone, le **✓** du widget fait la même chose sans ouvrir l'app.
+
+### Traverser une envie
+
+1. Sur la page de l'habitude, touchez **une envie, maintenant**.
+2. Respirez avec l'anneau : inspirez pendant qu'il grandit (**inspirez**), gardez pendant qu'il reste (**gardez**), soufflez pendant qu'il rétrécit (**soufflez**). Lisez votre raison et votre plan dessous.
+3. Quand l'envie est passée, touchez **elle a passé** : elle est comptée comme envie surmontée et la page revient. Si vous avez cédé, touchez **j'ai craqué**.
+
+### Noter un écart
+
+1. Sur la page de l'habitude, touchez **j'ai craqué** (ou **j'ai craqué** sur l'écran de l'envie).
+2. Si vous le souhaitez, touchez **ce qui s'est passé…** et écrivez un mot.
+3. Touchez **c'est noté, je repars maintenant**.
+
+L'écart est noté à l'heure actuelle. Ce jour montre **□** dans les carrés, la grande ligne dit ce jour-là **19 jours tenus** au lieu d'un numéro de jour, et demain est le **jour 1**. Les jours tenus, la meilleure série, les envies surmontées et les unités évitées gardent leur valeur. Pour noter un écart survenu un jour précédent, il n'y a pas moyen de choisir la date : l'écart est toujours noté aujourd'hui.
+
+### Marquer le jour fait
+
+Sur la page d'une habitude à faire, touchez **fait aujourd'hui**. La ligne devient **fait aujourd'hui ✓** et le carré du jour passe à **■**. Sur le widget, **✓** fait la même chose puis disparaît jusqu'au lendemain. Un jour non marqué avant minuit est un jour manqué ; la chaîne ne se rompt que lorsque deux jours de suite ne sont pas marqués, puisque la page compte encore une série dont le dernier jour est hier.
+
+### Voir ce que vous avez évité en unités et en argent
+
+Ouvrez **⋯**, **modifier**, et donnez **par jour, avant**, **unité**, et si vous le souhaitez **prix d'une unité** et **monnaie**. La page montre alors, par exemple, **20 cigarettes évités · 10 CHF non dépensés**, comptés sur les jours tenus.
+
+### Dire à quelqu'un où vous en êtes
+
+Sur la page de l'habitude, touchez **dire à quelqu'un où j'en suis** et choisissez l'app ou la personne dans le menu de partage du téléphone. Le texte envoyé tient en quelques lignes : la première ligne de la page (**sans le sucre depuis le 8 octobre 2026**), la grande ligne (**jour 12**), la ligne des jours tenus s'il y en a une, les envies surmontées, et les unités et l'argent s'ils sont comptés.
+
+### Retirer un toucher malheureux
+
+1. Sur la page de l'habitude, touchez **⋯**, puis **le relevé**.
+2. Touchez la ligne (**envie surmontée**, **écart** ou **jour fait**) qui porte la mauvaise date et heure.
+3. Touchez **retirer cette ligne**.
+
+### Modifier ou supprimer une habitude
+
+Touchez **⋯** sur sa page, puis **modifier** pour ouvrir le formulaire, ou **supprimer cette habitude** et confirmez avec **supprimer**. Supprimer retire tout le relevé de l'habitude ; il n'y a pas de retour en arrière, sinon une sauvegarde faite avant.
+
+### Allumer le rappel quotidien
+
+1. Ouvrez les **réglages** (depuis **⋯** sur n'importe quelle page).
+2. Touchez la ligne sous **un rappel quotidien** et choisissez **08:00**, **12:00**, **20:00**, **21:00**, ou **heure (HH:MM)** et tapez l'heure.
+3. Sur Android 13 et suivants, autorisez les notifications quand le téléphone le demande.
+
+Pour l'arrêter, choisissez **désactivé** dans le même menu.
+
+### Choisir l'habitude du widget et du rappel
+
+Avec deux habitudes ou plus, ouvrez les **réglages** et touchez la ligne sous **sur le widget et dans le rappel**, puis l'habitude. Avec une seule habitude, c'est elle.
+
+### Enregistrer une sauvegarde
+
+1. Ouvrez les **réglages** et touchez **enregistrer une sauvegarde…**.
+2. Le dialogue d'enregistrement du téléphone s'ouvre avec le nom **readers-motivation-backup.json** ; choisissez le dossier et confirmez.
+3. L'app affiche **enregistré sous readers-motivation-backup.json** avec l'entrée **partager ce fichier…** : touchez-la pour envoyer le fichier à une autre app (un drive, une messagerie, le courriel), ou touchez à côté pour fermer.
+
+### Restaurer une sauvegarde
+
+1. Ouvrez les **réglages** et touchez **restaurer une sauvegarde…**.
+2. Choisissez le fichier de sauvegarde dans le sélecteur de fichiers du téléphone.
+3. L'app demande **tout remplacer par cette sauvegarde ?** : touchez **remplacer**, ou **annuler**.
+
+**sauvegarde restaurée** le confirme. Toutes les habitudes et leur relevé sont remplacés par ceux du fichier ; les réglages ne sont pas dans la sauvegarde et restent tels quels.
+
+### Poser le widget sur un écran d'accueil
+
+1. Ajoutez un widget à la manière de votre lanceur et choisissez **Reader's Motivation** (décrit par **le jour et le compte ; ✓ compte une envie surmontée**).
+2. Le widget prend trois cases sur une et se redimensionne.
+
+### Changer les couleurs, la taille du texte et la police
+
+Touchez **⋯** puis **clair** ou **sombre** ; ou ouvrez les **réglages** et touchez les lignes sous **couleurs**, **taille du texte** et **police**.
+
+## Réglages
+
+| Réglage | Ce qu'il change | Choix | Par défaut |
+|---|---|---|---|
+| **un rappel quotidien** | Une notification par jour avec le jour, le compte et une question | **désactivé**, **08:00**, **12:00**, **20:00**, **21:00**, ou toute heure tapée sous **heure (HH:MM)** | **désactivé** |
+| **sur le widget et dans le rappel** | L'habitude dont parlent le widget et le rappel (affiché avec deux habitudes ou plus) | l'une de vos habitudes | la première de la liste |
+| **couleurs** | Les deux couleurs de l'app et de son widget | **sombre** (blanc sur noir), **clair** (noir sur blanc) | **sombre** |
+| **taille du texte** | La taille de tout le texte de l'app | **petite**, **moyenne**, **grande** | **moyenne** |
+| **police** | Le caractère de l'app | **sans empattement**, **avec empattement**, **à chasse fixe** | **sans empattement** |
+| **vibration au toucher** | Une courte vibration quand vous touchez une ligne qui compte ou ouvre quelque chose | **activé**, **désactivé** | **activé** |
+
+## Vos données
+
+Tout reste sur le téléphone : les habitudes avec leur raison, leur plan, leurs comptes et tout leur relevé, et les réglages. L'app n'a pas l'autorisation d'utiliser le réseau : elle n'envoie rien à personne et ne reçoit rien. Il n'y a ni synchronisation ni compte.
+
+**Sauvegarde.** **enregistrer une sauvegarde…** écrit un fichier, **readers-motivation-backup.json**, là où vous le choisissez, puis propose **partager ce fichier…**. Le fichier contient toutes les habitudes et tout le relevé, en texte lisible ; il ne contient pas les réglages. L'app garde une copie de la dernière sauvegarde pour le menu de partage, et retire cette copie au prochain lancement ou à la prochaine sauvegarde. **restaurer une sauvegarde…** remplace toutes les habitudes par celles du fichier après que vous avez confirmé **remplacer** ; un fichier qui n'est pas une sauvegarde de cette app est refusé avec **ce fichier n'est pas une sauvegarde de cette app**. Restaurer est le moyen de passer l'app sur un autre téléphone.
+
+**Partage.** **dire à quelqu'un où j'en suis** remet quelques lignes de texte à l'app que vous choisissez ; rien d'autre n'est envoyé, et l'app ne sait pas à qui.
+
+L'app ne s'exclut pas de la sauvegarde d'appareil d'Android : si vous l'avez activée dans les réglages du téléphone, Android peut y inclure les données de l'app.
+
+Le rappel se règle de nouveau de lui-même après un redémarrage du téléphone ou un changement d'heure ou de fuseau horaire.
+
+Désinstaller l'app efface tout cela. Un fichier de sauvegarde enregistré ailleurs reste.
+
+## Avec les autres apps
+
+### Widget d'écran d'accueil
+
+Le widget **Reader's Motivation** fonctionne dans n'importe quel lanceur, aux couleurs de l'app. Il montre une habitude, celle choisie sous **sur le widget et dans le rappel** (sinon la première de la liste) :
+
+- la grande ligne de la page : **jour 12**, ou **19 jours tenus** un jour sans série, ou **commence le …** avant le début ;
+- dessous, pour quelque chose à arrêter, **le sucre · 9 envies surmontées** ; pour quelque chose à faire, le nom, ou **marche · fait aujourd'hui ✓** une fois le jour marqué ;
+- à droite, **✓** : pour quelque chose à arrêter, il compte une envie surmontée ; pour quelque chose à faire, il marque le jour fait puis disparaît jusqu'au lendemain.
+
+Toucher le texte ouvre l'app. Sans aucune habitude, le widget dit **motivation** au-dessus de **une nouvelle habitude**, sans **✓**.
+
+Le widget est redessiné après chaque changement, quand vous quittez l'app, une minute après minuit, et au moins toutes les demi-heures.
+
+### Rien d'autre
+
+L'app n'a pas de tuile dans Reader's Launcher, ne reçoit pas de contenu partagé et n'ouvre aucun fichier hormis une sauvegarde choisie avec **restaurer une sauvegarde…**.
+
+## Limites
+
+- Il n'existe pas de Reader's Motivation pour l'ordinateur.
+- Un écart est toujours noté à l'heure actuelle ; on ne peut pas en noter un pour un jour passé. Plusieurs écarts le même jour coûtent un jour.
+- Le jour est compté sur l'horloge du téléphone : une envie surmontée ou un écart noté juste après minuit appartient au nouveau jour.
+- Les unités et l'argent ne sont comptés que pour quelque chose à arrêter, sur les jours tenus ; une unité et un prix par habitude.
+- L'écran de l'envie dure trois minutes avec une respiration fixe de 3 secondes d'inspiration, 3 secondes de pause, 6 secondes d'expiration ; ni l'un ni l'autre ne se règlent. Il ne fait aucun son et ne garde pas l'écran allumé.
+- Un rappel par jour, à une heure, pour une habitude ; il n'apparaît qu'une fois les notifications autorisées.
+- Le widget montre une habitude ; pour en montrer deux, il n'y a pas d'autre moyen que de changer l'habitude choisie.
+- Un champ du formulaire, une fois rempli, ne peut pas être vidé : la saisie refuse une valeur vide. Remplacez-la par un mot.
+- Un jour manqué d'une habitude à faire ne peut pas être marqué fait après coup ; **fait aujourd'hui** ne marque qu'aujourd'hui.
+- Supprimer une habitude ou retirer une ligne ne demande pas de seconde confirmation au-delà de **supprimer**, et ne se défait pas, sinon depuis une sauvegarde.
+- Pas de statistiques au-delà de la page, pas de graphique au-delà des cinq semaines de carrés, pas d'export autre que le fichier de sauvegarde.
+
+## Messages et problèmes
+
+| Ce que vous voyez | Ce que cela veut dire, que faire |
+|---|---|
+| **Compter les jours, et les envies surmontées.** | Vous n'avez pas encore d'habitude. Touchez **une nouvelle habitude**. |
+| **commence le 1 novembre 2026** | La date de début est encore à venir ; rien n'est compté d'ici là. Changez la date par **⋯**, **modifier** si vous vouliez dire aujourd'hui. |
+| **19 jours tenus** ou **19 jours faits** au lieu de **jour 12** | Un écart a été noté aujourd'hui, ou la chaîne d'une habitude à faire est rompue : la grande ligne montre ce qui reste acquis. |
+| **on repart maintenant · demain, jour 1** | Un écart a été noté aujourd'hui. Rien à faire ; le compte reprend demain. |
+| **on repart · aujourd'hui sera le jour 1 une fois fait** | La chaîne d'une habitude à faire est rompue. Touchez **fait aujourd'hui** et aujourd'hui est le jour 1. |
+| **pas encore d'envie surmontée** | Rien de compté encore. Touchez **j'ai tenu bon** ou **elle a passé** quand vous en surmontez une. |
+| **pas compté** | Aucun nombre n'a été donné pour **par jour, avant** ou **prix d'une unité** ; la page ne montre ni unités ni argent. |
+| **rien de noté encore** | Le relevé est vide : aucune envie, aucun écart, aucun jour fait n'a été noté. |
+| **Trois minutes. Elle a passé ?** | L'écran de l'envie a fait ses trois minutes. Touchez **elle a passé** ou **j'ai craqué**. |
+| **enregistré sous readers-motivation-backup.json** | La sauvegarde est écrite. **partager ce fichier…** l'envoie ailleurs. |
+| **ce fichier n'est pas une sauvegarde de cette app** | Le fichier choisi n'a pas pu être lu comme une sauvegarde. Choisissez le fichier enregistré par **enregistrer une sauvegarde…**. |
+| **tout remplacer par cette sauvegarde ?** | Restaurer remplace toutes les habitudes du téléphone. **remplacer** pour continuer, **annuler** pour garder ce que vous avez. |
+| **sauvegarde restaurée** | Les habitudes du fichier sont maintenant celles de l'app. |
+| Notification **tout tenu aujourd'hui ?** / **fait aujourd'hui ?** | Le rappel quotidien ; touchez-le pour ouvrir l'app. Réglez l'heure ou éteignez-le sous **un rappel quotidien**. |
+
+**Le rappel n'apparaît jamais.** Autorisez les notifications de l'app dans les réglages du téléphone ; l'app ne le demande qu'au moment où vous allumez le rappel. Le rappel peut aussi arriver avec quelques minutes de retard quand le téléphone est en veille profonde.
+
+**enregistrer ne fait rien.** L'habitude n'a pas encore de nom : donnez-en un sous **quoi**.
+
+**ok dans une saisie ne fait rien.** Le champ est vide ; tapez quelque chose ou touchez **annuler**.
+
+**L'heure tapée pour le rappel n'a pas été gardée.** Tapez des heures de 0 à 23 et des minutes de 00 à 59, par exemple **7:30** ou **0730**.
+
+**La date tapée pour le début n'a pas été gardée.** Tapez-la en année-mois-jour, par exemple **2026-11-01**.
+
+**Le widget montre encore le jour d'hier.** Le widget est redessiné une minute après minuit ; sinon, il se met à jour au prochain changement, quand vous quittez l'app, ou dans la demi-heure.
+
+**Une habitude a disparu du widget.** Le widget montre l'habitude choisie sous **sur le widget et dans le rappel**, ou la première de la liste ; après avoir supprimé cette habitude, choisissez-en une autre dans les réglages.
 
 
 
