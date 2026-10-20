@@ -650,7 +650,7 @@ Les gestes sur l'écran d'accueil :
 | double toucher sur un nom d'application ou une case de la grille | affiche les raccourcis de l'application |
 | appui long sur une tuile | le menu de la tuile |
 | appui long sur l'espace vide | le menu de l'accueil |
-| double toucher sur l'espace vide | passe de blanc sur noir à noir sur blanc et inversement |
+| double toucher sur l'espace vide | passe au thème de couleurs suivant |
 | glisser vers le haut | la liste de toutes les applications |
 | glisser vers le haut et maintenir | **apps ouvertes**, les applications utilisées récemment |
 | glisser vers le bas | le volet de notifications |
@@ -669,7 +669,7 @@ Un appui long sur l'espace vide propose :
 - **ajouter un widget** : ouvre la liste des widgets.
 - **ajouter une page d'accueil** : ajoute une page vide après la dernière et s'y rend.
 - **retirer cette page** : proposé sur une page vide autre que la première.
-- **noir sur blanc** ou **blanc sur noir** : passe à l'autre thème.
+- le nom du thème de couleurs suivant (**noir sur blanc**, **lavande**, …) : y passe. Les thèmes tournent en rond : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, puis de nouveau blanc sur noir.
 - **réglages**.
 
 Quand la page n'a plus la place d'une ligne de texte, **l'écran d'accueil est plein** remplace **ajouter app / catégorie** et **ajouter un widget**.
@@ -918,9 +918,9 @@ Pour la changer ensuite : appui long sur la catégorie, **modifier** (ajouter, 
 - Masquer : glissez vers le haut, appui long sur l'application, **masquer**. Pour la faire revenir : réglages, **apps masquées**, touchez l'application.
 - Désinstaller : appui long sur l'application (tuile ou liste), **désinstaller** ; Android demande confirmation.
 
-### Passer de blanc sur noir à noir sur blanc
+### Changer les couleurs
 
-Double toucher sur l'espace vide ; ou appui long puis **noir sur blanc** / **blanc sur noir** ; ou la tuile de réglages rapides **Thème Reader's** (ajoutez-la au volet des réglages rapides d'Android en modifiant ce volet) ; ou la ligne **thème** des réglages.
+Double toucher sur l'espace vide ; ou appui long puis le nom du thème suivant ; ou la tuile de réglages rapides **Thème Reader's** (ajoutez-la au volet des réglages rapides d'Android en modifiant ce volet) ; ou la ligne **couleurs** des réglages. Chacun passe au thème suivant du cycle : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant, et après **nature** revient **blanc sur noir**. Dans les deux encres, les lignes sélectionnées sont remplies de la couleur du texte ; dans les autres thèmes, elles prennent la couleur d'accent du thème.
 
 ### Régler la météo
 
@@ -975,11 +975,11 @@ Chaque ligne affiche sa valeur actuelle ; un toucher passe à la suivante.
 
 | Réglage | Choix | Par défaut |
 |---|---|---|
-| **thème** | **blanc sur noir**, **noir sur blanc**, **suivre le système** | blanc sur noir |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** (chaque toucher passe au suivant) | blanc sur noir |
 | **police** | **serif**, **sans**, **mono** | sans |
 | **taille du texte** | **petit**, **moyen**, **grand** | moyen |
 | **alignement** | **gauche**, **centré** | gauche |
-| **double toucher inverse le thème** | **oui**, **non** | oui |
+| **double toucher change les couleurs** | **oui**, **non** | oui |
 | **glisser vers le bas ouvre les notifications** | **oui**, **non** | oui |
 | **barre d'état** (affichée ou masquée sur les écrans du launcher) | **oui**, **non** | oui |
 | **retour haptique** (une légère vibration aux appuis longs et aux glissements) | **oui**, **non** | oui |
@@ -1013,7 +1013,7 @@ Désinstaller Reader's Launcher supprime la disposition de l'écran d'accueil, l
 
 ## Avec les autres apps
 
-- **Tuile de réglages rapides** : **Thème Reader's** fait passer le launcher d'un thème à l'autre depuis le volet des réglages rapides d'Android.
+- **Tuile de réglages rapides** : **Thème Reader's** fait passer le launcher au thème de couleurs suivant depuis le volet des réglages rapides d'Android.
 - **Reader's Tasks** ou **Tasks.org** : la tuile tâches. Avec Tasks.org 15.11 ou plus récent, on coche et on ajoute sur la tuile ; avec une version plus ancienne, la case ouvre la tâche dans Tasks.org et **+** ouvre Tasks.org avec le titre déjà saisi.
 - **Reader's Calendar** (ou toute application d'agenda) : la tuile agenda lit les agendas du téléphone et ouvre les événements dans l'application choisie.
 - **Reader's Books** : la tuile livre.
@@ -1140,7 +1140,7 @@ Chaque vue porte un signe **⋯** en haut à droite. Il ouvre partout le même m
 - **jours ouvrés** ;
 - **mois** ;
 - **agendas** ;
-- **noir sur blanc** ou **blanc sur noir** : change les couleurs sur-le-champ ;
+- le nom du prochain thème de couleurs (**noir sur blanc** quand l'app est en blanc sur noir, et ainsi de suite) : change les couleurs sur-le-champ. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant ;
 - **réglages**.
 
 Touchez en dehors du menu pour le fermer. Sur tous les écrans sauf l'agenda, le titre en haut à gauche commence par **←** : touchez-le, ou faites le geste de retour du téléphone, pour revenir en arrière.
@@ -1234,7 +1234,7 @@ Une fenêtre en deux parties.
 
 La colonne de gauche contient :
 
-- un petit mois, avec **‹** et **›** pour changer de mois. Un point marque les jours qui contiennent quelque chose ; aujourd'hui est inversé. Cliquez sur un jour : l'agenda à partir de ce jour. Cliquez sur le nom du mois : retour à l'agenda d'aujourd'hui ;
+- un petit mois, avec **‹** et **›** pour changer de mois. Un point marque les jours qui contiennent quelque chose ; aujourd'hui est rempli de la couleur d'accent du thème. Cliquez sur un jour : l'agenda à partir de ce jour. Cliquez sur le nom du mois : retour à l'agenda d'aujourd'hui ;
 - les vues : **agenda**, **jour**, **semaine**, **jours ouvrés**, **mois** ;
 - **chercher** ;
 - **+ nouvel événement** ;
@@ -1429,8 +1429,8 @@ Ajoutez un widget à la manière de votre lanceur et choisissez **Reader's Calen
 
 ### Changer l'apparence rapidement
 
-- Téléphone : **⋯** › **noir sur blanc** ou **blanc sur noir**.
-- Ordinateur : Ctrl+T pour les couleurs, Ctrl+= et Ctrl+- pour la taille du texte.
+- Téléphone : **⋯** › le nom du prochain thème de couleurs (**blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant).
+- Ordinateur : Ctrl+T passe au thème de couleurs suivant (**blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et on recommence), Ctrl+= et Ctrl+- changent la taille du texte.
 
 ## Réglages
 
@@ -1444,7 +1444,7 @@ Ajoutez un widget à la manière de votre lanceur et choisissez **Reader's Calen
 | **rappel par défaut : …** | **pas de rappel**, **à l'heure de l'événement**, **10 minutes avant**, **30 minutes avant**, **1 heure avant**, **2 heures avant**, **1 jour avant** | **10 minutes avant** |
 | **la semaine commence le : …** | **lundi**, **dimanche** | **lundi** |
 | **s'ouvre sur : …** | **aujourd'hui (liste)**, **semaine**, **jours ouvrés**, **jour**, **mois** | **semaine** |
-| **thème : …** | **blanc sur noir**, **noir sur blanc**, **suivre le système** | **blanc sur noir** |
+| **thème : …** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **blanc sur noir** |
 | **police : …** | **à empattements**, **sans empattements**, **chasse fixe** | **sans empattements** |
 | **taille du texte : …** | **petit**, **moyen**, **grand** | **moyen** |
 | **alignement : …** | **gauche**, **centré** | **gauche** |
@@ -1465,7 +1465,7 @@ Les deux dernières lignes donnent la version (**reader's calendar 1.15.2**, **n
 
 | Réglage | Choix | Par défaut |
 |---|---|---|
-| **couleurs** | **noir sur blanc**, **blanc sur noir** | **noir sur blanc** |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque clic passe au suivant, et après **nature** revient **blanc sur noir** | **noir sur blanc** |
 | **événements** | **sobres, avec une pastille**, **dans la couleur de leur agenda** | **sobres, avec une pastille** |
 | **taille du texte** | de 9 à 24 pt, avec **−** et **+** | **13 pt** |
 | la police (le nom du caractère utilisé est indiqué sous le choix) | **sans-serif**, **serif**, **mono** | **sans-serif** |
@@ -1564,7 +1564,7 @@ Les deux programmes ne se parlent pas. Ils montrent les mêmes événements quan
 | Ctrl+M | ce mois |
 | Échap | retour (vide d'abord le champ de recherche) |
 | F5, Ctrl+R | synchroniser |
-| Ctrl+T | blanc sur noir / noir sur blanc |
+| Ctrl+T | thème de couleurs suivant |
 | Ctrl+= , Ctrl++ / Ctrl+- | texte plus grand / plus petit |
 | Ctrl+, | réglages |
 | Ctrl+Q | quitter |
@@ -1722,7 +1722,7 @@ Le menu **⋯** a quatre entrées :
 |---|---|
 | **listes** | ouvre l'écran **listes** |
 | **synchroniser** | recharge toutes les listes et toutes les tâches depuis le serveur |
-| **noir sur blanc** ou **blanc sur noir** | passe à l'autre apparence ; l'entrée nomme celle que vous allez obtenir |
+| **noir sur blanc**, **lavande**, … | passe au thème de couleurs suivant ; l'entrée nomme celui que vous allez obtenir |
 | **réglages** | ouvre l'écran **réglages** |
 
 ### Le menu d'une tâche
@@ -1839,9 +1839,9 @@ Dans **listes**, faites un appui long sur une liste et choisissez **monter** ou 
 
 Touchez **⋯** puis **synchroniser**. L'application synchronise aussi toute seule : quand elle revient à l'écran et que la dernière synchronisation a plus de deux minutes, et après chacune de vos actions (pour la liste concernée).
 
-### Passer de blanc sur noir à noir sur blanc
+### Changer les couleurs
 
-Touchez **⋯** puis **noir sur blanc** (ou **blanc sur noir**). C'est le même réglage que **thème** dans **réglages**.
+Touchez **⋯** puis l'entrée qui nomme le thème suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant, et après **nature** revient **blanc sur noir**. C'est le même réglage que **thème** dans **réglages**. Les widgets prennent aussi les couleurs du thème.
 
 ### Changer de compte ou de mot de passe
 
@@ -1869,13 +1869,13 @@ Tous dans **réglages**. Chaque toucher sur une ligne passe au choix suivant.
 
 | Réglage | Ce qu'il change | Choix | Par défaut |
 |---|---|---|---|
-| **thème** | les couleurs de l'application et de ses widgets | **blanc sur noir**, **noir sur blanc**, **suivre le système** | **blanc sur noir** |
+| **thème** | les couleurs de l'application et de ses widgets | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **blanc sur noir** |
 | **police** | le caractère de tout le texte | **à empattements**, **sans empattements**, **chasse fixe** | **sans empattements** |
 | **taille du texte** | la taille de tout le texte | **petit**, **moyen**, **grand** | **moyen** |
 | **alignement** | texte aligné à gauche ou centré | **gauche**, **centré** | **gauche** |
 | **retour haptique** | une brève vibration quand vous cochez une case ou faites un appui long | **oui**, **non** | **oui** |
 
-**suivre le système** prend le mode sombre ou clair d'Android.
+Dans les deux encres, la liste choisie et l'action principale sont remplies de la couleur du texte ; dans les autres thèmes, elles prennent la couleur d'accent du thème.
 
 ## Vos données
 
@@ -1966,7 +1966,7 @@ La boîte contient aussi **importer les identifiants…** et **exporter les iden
 | double clic sur le texte d'une tâche | la renomme : une boîte **renommer** avec le champ **tâche** et les boutons **renommer** et **annuler** |
 | glisser une tâche ouverte vers le haut ou le bas | la met à sa place ; l'ordre est enregistré sur le serveur (**enregistrement de l'ordre…**) |
 | clic droit sur une tâche | **terminer** (ou **rouvrir**), **renommer**, **supprimer** |
-| clic droit sur une liste | **monter**, **descendre**, **masquer cette liste**, **afficher une liste masquée** |
+| clic droit sur une liste | **monter**, **descendre**, **masquer cette liste**, **afficher une liste masquée**, puis **couleurs : …**, qui nomme le thème de couleurs suivant |
 
 **supprimer** retire la tâche du serveur tout de suite, sans rien demander. **afficher une liste masquée** ouvre un second menu avec les noms des listes masquées ; cliquez sur l'une d'elles pour la faire revenir. Le programme refuse, sans message, de masquer la dernière liste restante. L'ordre des listes et les listes masquées ne sont gardés que sur cet ordinateur ; ils sont indépendants de ceux du téléphone.
 
@@ -1978,7 +1978,7 @@ La boîte contient aussi **importer les identifiants…** et **exporter les iden
 | Ctrl+N | place le curseur dans la ligne **+ nouvelle tâche** |
 | Ctrl+D | affiche ou masque les tâches terminées |
 | F5 ou Ctrl+R | synchronise tout de suite |
-| Ctrl+T | passe de noir sur blanc à blanc sur noir et inversement |
+| Ctrl+T | thème de couleurs suivant : **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, **blanc sur noir**, puis on recommence |
 | Ctrl+= ou Ctrl++ | texte plus grand |
 | Ctrl+- | texte plus petit |
 | Ctrl+, | ouvre la boîte de configuration (serveur, identifiant, mot de passe d'application) |
@@ -1987,7 +1987,7 @@ La boîte contient aussi **importer les identifiants…** et **exporter les iden
 ### Ce qui diffère du téléphone
 
 - Les listes sont toujours visibles à gauche ; il n'y a pas d'écran des listes à part.
-- Il démarre en noir sur blanc. Il n'y a pas d'écran de réglages : l'apparence se change par Ctrl+T et par Ctrl+= / Ctrl+- (taille du texte de 9 à 30 points, 15 au départ). Il n'y a ni choix de police, ni choix d'alignement, ni **suivre le système**.
+- Il démarre en noir sur blanc. Il n'y a pas d'écran de réglages : les couleurs se changent par Ctrl+T, ou par la dernière entrée du menu du clic droit sur les listes, **couleurs : …**, qui nomme le thème suivant ; chaque pression passe au suivant : **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, **blanc sur noir**, puis on recommence (les mêmes dix thèmes que sur le téléphone). La taille du texte se change par Ctrl+= / Ctrl+- (de 9 à 30 points, 15 au départ). Il n'y a ni choix de police, ni choix d'alignement, ni **suivre le système**.
 - Il ne sait ni fixer ni retirer une échéance ; il affiche celles qui existent. Son menu de tâche n'a pas d'entrées **appeler**, **écrire à** ni **ouvrir**.
 - Les sous-tâches faites dans une autre application sont affichées comme des tâches ordinaires ; l'application du téléphone masque les sous-tâches ouvertes.
 - Il synchronise la liste courante toutes les 5 minutes, à chaque changement de liste, après chaque action, et sur F5 ou Ctrl+R. Les listes elles-mêmes sont lues quand le programme se connecte : une liste créée sur le serveur apparaît au lancement suivant, ou après Ctrl+, et **se connecter**.
@@ -2144,7 +2144,7 @@ La ligne de titre dit **notes**, avec **⋯** à droite. Chaque note occupe deux
 - **● dicter** crée une note et l'ouvre, micro ouvert.
 - **La petite ligne du bas** donne l'état de la synchronisation (**synchronisation…**, **synchronisé à 21:03 2↑ 1↓ 1−**, ou l'erreur). Touchez-la pour synchroniser tout de suite. Sans serveur, elle dit **sur ce téléphone seulement — toucher pour configurer un dossier WebDAV** et un toucher ouvre les réglages. Les chiffres comptent les notes envoyées (↑), reçues (↓) et supprimées (−).
 
-Le menu **⋯** contient **+ nouvelle note**, **chercher**, **synchroniser** (seulement quand un serveur est réglé), puis sous un trait **noir sur blanc** ou **blanc sur noir** (celui des deux que l'application ne montre pas en ce moment) et **réglages**.
+Le menu **⋯** contient **+ nouvelle note**, **chercher**, **synchroniser** (seulement quand un serveur est réglé), puis sous un trait le nom du prochain thème de couleurs (**noir sur blanc** quand l'application est en blanc sur noir, et ainsi de suite tout le tour) et **réglages**.
 
 Quand une recherche est en cours, la ligne de titre montre les mots cherchés entre guillemets, précédés de **←** ; touchez-la pour revenir à la liste entière. Si rien ne correspond, la liste dit **rien trouvé**.
 
@@ -2167,7 +2167,7 @@ Tout est enregistré à mesure que vous tapez ; il n'y a pas de bouton pour en
 
 En bas, **● dicter** parle dans cette note. Tant que le micro est ouvert, la ligne devient **■** suivi du temps écoulé, sous un trait qui bouge avec votre voix ; touchez-la pour arrêter.
 
-Le menu **⋯** contient les lignes **appeler …**, **écrire à …** et **ouvrir …** pour ce que la note contient, puis **partager** et **supprimer**, et sous un trait **noir sur blanc** ou **blanc sur noir**.
+Le menu **⋯** contient les lignes **appeler …**, **écrire à …** et **ouvrir …** pour ce que la note contient, puis **partager** et **supprimer**, et sous un trait le nom du prochain thème de couleurs.
 
 ### Les réglages (téléphone)
 
@@ -2261,9 +2261,9 @@ Supprimer un dossier ne supprime jamais ses notes : elles restent dans **toutes
 
 L'application de bureau lit le même fichier (voir « Sur l'ordinateur »).
 
-### Passer de blanc sur noir à noir sur blanc
+### Changer les couleurs
 
-Touchez **⋯** dans la liste ou dans une note, puis la ligne **noir sur blanc** ou **blanc sur noir**.
+Touchez **⋯** dans la liste ou dans une note, puis l'avant-dernière ligne : elle nomme le thème suivant et y passe. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant. Les deux encres gardent l'application en noir et blanc purs ; les huit palettes sont celles du clavier Plume, avec une teinte pour le fond, le texte et les lignes inversées. La ligne **couleurs** des réglages fait la même chose.
 
 ## Réglages
 
@@ -2282,7 +2282,7 @@ Touchez **⋯** dans la liste ou dans une note, puis la ligne **noir sur blanc**
 | **importer les identifiants** | Lit un tel fichier | – | – |
 | **soignée** / **ordinaire** | Le modèle de reconnaissance utilisé pour la dictée ; celui qui est choisi est affiché en inversé | **soignée** (574 Mo, **recommandé**, **4 fois plus lente**) / **ordinaire** (190 Mo) | **soignée** |
 | **langue parlée** | La langue dans laquelle vous dictez | la langue du téléphone / anglais / **détectée** | la langue du téléphone |
-| **couleurs** | Les deux couleurs de l'application | **blanc sur noir** / **noir sur blanc** | **blanc sur noir** |
+| **couleurs** | Le thème de couleurs ; montre celui en cours, un toucher passe au suivant | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | Taille de tout le texte | S / M / L | M |
 | **police** | Caractères de tout le texte | sans-serif / serif / mono | sans-serif |
 | **vibration légère** | Une courte vibration quand vous lancez ou arrêtez une dictée | **oui** / **non** | **oui** |
@@ -2345,7 +2345,7 @@ L'application du téléphone laisse la sauvegarde d'Android inclure ses données
 
 ### Widgets d'écran d'accueil
 
-Trois widgets fonctionnent avec n'importe quel lanceur, dans les deux couleurs de l'application :
+Trois widgets fonctionnent avec n'importe quel lanceur, dans les couleurs de l'application (le fond et le texte du thème choisi) :
 
 - **Reader's Notes · dernière note** (une ligne) : le titre de la note la plus récente, avec le moment de sa modification et sa ligne suivante. Touchez-le pour ouvrir cette note ; touchez **+** pour une nouvelle note. Sans notes, il dit **aucune note**.
 - **Reader's Notes · dernières notes** (une liste, redimensionnable) : le mot **notes** (un toucher ouvre l'application), **+** pour une nouvelle note, et les notes, la plus récente d'abord. Touchez-en une pour l'ouvrir.
@@ -2365,7 +2365,7 @@ Reader's Launcher montre les dernières notes sur sa tuile notes et peut ouvrir 
 
 ### Ce qui diffère du téléphone
 
-La liste et la page sont côte à côte dans une seule fenêtre. Il n'y a ni dictée, ni **partager**, ni lignes **appeler … / écrire à … / ouvrir …**, ni widget. La synchronisation n'a pas d'interrupteur : avec un serveur, elle tourne à l'ouverture de la fenêtre, toutes les deux minutes, 20 secondes après votre dernière frappe, quand vous passez à une autre note ou à une autre fenêtre, quand vous quittez, et à la demande. L'application démarre en **noir sur blanc**.
+La liste et la page sont côte à côte dans une seule fenêtre. Il n'y a ni dictée, ni **partager**, ni lignes **appeler … / écrire à … / ouvrir …**, ni widget. La synchronisation n'a pas d'interrupteur : avec un serveur, elle tourne à l'ouverture de la fenêtre, toutes les deux minutes, 20 secondes après votre dernière frappe, quand vous passez à une autre note ou à une autre fenêtre, quand vous quittez, et à la demande. L'application démarre en **noir sur blanc** ; les couleurs se changent par le menu **⋯** ou avec Ctrl+T (voir plus bas).
 
 ### La fenêtre
 
@@ -2373,7 +2373,7 @@ La liste et la page sont côte à côte dans une seule fenêtre. Il n'y a ni dic
 - **La liste** : cliquez sur une note pour l'ouvrir. L'application rouvre la note où vous étiez en dernier.
 - **+ nouvelle note** sous la liste. Vous pouvez aussi simplement taper sur la page vide : cela commence une note.
 - **Ligne d'état** : **synchronisation…**, **synchronisé 09:33 1↑ 2↓**, ou l'erreur ; cliquez dessus pour synchroniser (ou pour ouvrir les réglages quand aucun serveur n'est réglé). **⚙** ouvre les réglages.
-- **⋯** au-dessus de la page : **+ nouvelle note**, **chercher**, **synchroniser** (avec un serveur), **supprimer cette note**, **blanc sur noir** ou **noir sur blanc**, **réglages**.
+- **⋯** au-dessus de la page : **+ nouvelle note**, **chercher**, **synchroniser** (avec un serveur), **supprimer cette note**, puis le nom du prochain thème de couleurs (**noir sur blanc** quand l'application est en blanc sur noir, et ainsi de suite tout le tour), **réglages**. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque clic passe au suivant. Les deux encres gardent l'application en noir et blanc purs ; les huit palettes sont celles du clavier Plume, avec une teinte pour le fond, le texte et la ligne choisie.
 - **Clic droit sur une note** : **déplacer vers** (avec les dossiers activés ; l'endroit actuel est marqué **●**, **aucun dossier** en premier) et **supprimer**. Clic droit sur la partie vide de la liste : **+ nouvelle note**. Clic droit sur **toutes les notes** ou **+ nouveau dossier** : **+ nouveau dossier**.
 
 Une note est enregistrée un instant après que vous avez cessé de taper. Une note vide est abandonnée quand vous la quittez. La suppression se fait sans confirmation. Une page ouverte à l'écran suit le serveur quand vous n'y tapez pas ; si la version du serveur arrive pendant que vous tapez, elle est gardée comme seconde note terminée par **(copie du serveur)**.
@@ -2406,7 +2406,7 @@ Ouverte par **Ctrl+,**, par **⚙**, ou par **⋯** puis **réglages**.
 | Ctrl+N | nouvelle note |
 | Ctrl+F | aller au champ de recherche |
 | Alt+Haut / Alt+Bas | note précédente / suivante |
-| Ctrl+T | passer de blanc sur noir à noir sur blanc |
+| Ctrl+T | thème de couleurs suivant (blanc sur noir, noir sur blanc, lavande, sauge, nordique, terracotta, coquette, militante, torride, nature, puis de nouveau le tour) |
 | Ctrl+= ou Ctrl++ / Ctrl+- | texte plus grand / plus petit (de 9 à 24 points, 13 au départ) |
 | F5 ou Ctrl+R | synchroniser |
 | Ctrl+, | réglages |
@@ -2481,7 +2481,7 @@ Le fichier de réglages contient le mot de passe et n'est lisible que par votre 
 
 Reader's Books est une étagère de livres numériques et une liseuse, pensées pour les téléphones à encre électronique. L'étagère est une simple liste ; un livre s'affiche en pages de texte coupées à la ligne entière, qu'on tourne d'un toucher, sans défilement ni animation. L'app lit les fichiers EPUB, MOBI, FB2 et texte brut, montre les images des livres EPUB dans la page et retient où vous en êtes dans chaque livre.
 
-L'app est en noir et blanc seulement, sans icônes. Elle n'a ni boutique, ni compte, ni aucun accès au réseau : vous apportez vos propres fichiers. Elle ne garde volontairement que le texte et les images d'un livre : les polices, les couleurs, la mise en page et les liens du livre sont abandonnés. Elle ne lit pas les PDF.
+L'app est faite de texte seul, sans icônes, blanc sur noir à moins de choisir un autre de ses thèmes de couleurs. Elle n'a ni boutique, ni compte, ni aucun accès au réseau : vous apportez vos propres fichiers. Elle ne garde volontairement que le texte et les images d'un livre : les polices, les couleurs, la mise en page et les liens du livre sont abandonnés. Elle ne lit pas les PDF.
 
 L'app existe en anglais, français, allemand, espagnol, portugais et russe ; elle suit la langue du téléphone.
 
@@ -2507,7 +2507,7 @@ Les commandes :
 - **Toucher un livre** : l'ouvre à la page où vous l'avez laissé. Un numéro de magazine s'ouvre sur son sommaire (voir « Le sommaire d'un magazine »).
 - **Appui long sur un livre** : ouvre un menu coiffé du titre du livre, avec **lire** (ouvrir à la page courante), **chapitres** (la liste des chapitres ; pour un magazine cette entrée s'appelle **sommaire**) et **retirer de l'étagère**.
 - **+ ouvrir un livre**, en bas : ouvre le sélecteur de fichiers du téléphone pour ajouter un livre.
-- **⋯**, en haut à droite : ouvre le menu de l'étagère, avec **+ ouvrir un livre**, puis le changement de couleurs (la ligne dit **noir sur blanc** quand l'app est en blanc sur noir, et **blanc sur noir** quand l'app est en noir sur blanc ; la toucher bascule), puis **réglages**.
+- **⋯**, en haut à droite : ouvre le menu de l'étagère, avec **+ ouvrir un livre**, puis les couleurs (la ligne nomme le thème suivant : **noir sur blanc** quand l'app est en blanc sur noir, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et de nouveau **blanc sur noir** ; la toucher passe à ce thème), puis **réglages**.
 
 On ferme un menu en touchant en dehors ou avec le bouton retour du téléphone.
 
@@ -2540,7 +2540,7 @@ Le menu du livre est coiffé du titre du livre et comporte ces entrées :
 | **texte plus petit** | Diminue la taille de lecture de 2. La ligne du dessous montre le changement, par exemple **20 → 18**. La plus petite taille est 12. |
 | **retirer de l'étagère** | Retire le livre et revient à l'étagère. Il n'y a pas de confirmation. |
 | **livres** | Quitte le livre, comme le bouton retour. |
-| **noir sur blanc** / **blanc sur noir** | Change les couleurs de toute l'app. |
+| **noir sur blanc**, **lavande** … **blanc sur noir** | Passe toute l'app au thème de couleurs suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant. |
 
 La mise en page du texte : les paragraphes sont alignés à gauche, sans césure ; un paragraphe qui en suit un autre commence en retrait. Les titres sont plus grands et en gras. Dans les livres et magazines qui les signalent, le chapeau est en gras, et la rubrique, l'auteur, les légendes et les crédits sont plus petits et gris. Une page ne s'arrête jamais au milieu d'une ligne.
 
@@ -2627,9 +2627,9 @@ Pour revenir au sommaire depuis un article, vous pouvez aussi faire un appui lon
 
 Votre place dans le livre est gardée quand la taille change. Le même réglage se trouve dans **réglages**, où **taille automatique** revient à la taille choisie d'après la largeur de l'écran.
 
-### Passer de blanc sur noir à noir sur blanc
+### Changer les couleurs
 
-Sur l'étagère, touchez **⋯** puis **noir sur blanc** ou **blanc sur noir**. Dans un livre, faites un appui long sur la page et touchez la même entrée. Dans **réglages**, touchez la ligne **couleurs**.
+Sur l'étagère, touchez **⋯** puis la ligne qui nomme le thème suivant (**noir sur blanc**, **lavande**, …). Dans un livre, faites un appui long sur la page et touchez la même entrée. Dans **réglages**, touchez la ligne **couleurs** : elle montre le thème en cours et chaque toucher passe au suivant. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et de nouveau **blanc sur noir**. La page d'un livre, ses surlignages et le widget prennent les couleurs du thème.
 
 ### Changer de police
 
@@ -2661,7 +2661,7 @@ Tous les réglages sont sur l'écran **réglages** (étagère, **⋯**, **régla
 
 | Réglage | Ce qu'il change | Choix | Par défaut |
 |---|---|---|---|
-| **couleurs** | Les couleurs de toute l'app et du widget. Toucher pour basculer. | **blanc sur noir**, **noir sur blanc** | **blanc sur noir** |
+| **couleurs** | Les couleurs de toute l'app et du widget. Chaque toucher passe au thème suivant. | **blanc sur noir**, **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille de lecture — toucher pour agrandir** | La taille du texte dans la page. Chaque toucher ajoute 2, jusqu'à 40. La ligne montre la taille, suivie de **· auto** tant que la taille automatique est en service. | 12 à 40 | automatique |
 | **texte plus petit** | Diminue la taille de lecture de 2, jusqu'à 12. La ligne du dessous montre le changement, par exemple **20 → 18**. | — | — |
 | **taille automatique** (**d'après la largeur de l'écran**) | Ramène la taille de lecture à la taille automatique, calculée d'après la largeur de l'écran : entre 17 et 24. | — | en service |
@@ -2787,7 +2787,7 @@ Le menu **⋯** :
 | **ouvrir le dossier** (dessous : **fichiers dans Download/Reader's Bookshop**) | Ouvre le dossier des fichiers téléchargés dans le gestionnaire de fichiers du téléphone, ou l'écran des téléchargements du téléphone si le dossier ne peut pas être ouvert directement. |
 | **tout supprimer** | Présente seulement quand la liste n'est pas vide. Demande **supprimer les N fichiers du téléphone ?**, puis **tout supprimer** ou **annuler**. Toutes les lignes partent, terminées ou non. |
 | **sources** | Ouvre l'écran des sources. |
-| **noir sur blanc** / **blanc sur noir** | Change les couleurs sur-le-champ ; l'entrée nomme les couleurs que vous obtiendrez. |
+| **noir sur blanc**, **lavande**, … | Passe sur-le-champ au thème de couleurs suivant ; l'entrée nomme le thème que vous obtiendrez. Le cycle : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour à **blanc sur noir**. |
 | **réglages** | Ouvre l'écran des réglages. |
 
 ### chercher
@@ -2977,7 +2977,7 @@ Ouvrez **⋯** → **réglages**. Chaque ligne montre la valeur en cours ; chaq
 | Réglage | Choix | Au départ |
 |---|---|---|
 | **langue de la recherche** | English, français, Deutsch, español, português, русский | la langue du téléphone si elle fait partie des six, sinon l'anglais |
-| **couleurs** | **blanc sur noir**, **noir sur blanc**, **comme le téléphone** (suit le mode sombre du téléphone) | **blanc sur noir** |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **blanc sur noir** |
 | **police** | **à empattements**, **sans empattements**, **chasse fixe** | **sans empattements** |
 | **taille** | **petite**, **moyenne**, **grande** | **moyenne** |
 | **vibration** | **oui**, **non** | **oui** |
@@ -3148,7 +3148,7 @@ Le menu **⋯** contient :
 
 - **synchroniser maintenant** (seulement si un dossier cloud est configuré) ;
 - le type du prochain enregistrement (**mémo**, **conférence** ou **conversation**, avec **type du prochain enregistrement** dessous) : chaque toucher passe au type suivant ;
-- **noir sur blanc** ou **blanc sur noir** : inverse les couleurs ;
+- le thème de couleurs suivant (**noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour à **blanc sur noir**) : chaque toucher y passe ;
 - **réglages**.
 
 ### Le mode sélection
@@ -3300,7 +3300,7 @@ L'app répond **identifiants importés**, puis synchronise. Un fichier d'identif
 
 ### Changer l'apparence
 
-Dans les réglages : **couleurs**, **taille du texte**, **police**. Les couleurs s'inversent aussi depuis le menu **⋯** de la liste.
+Dans les réglages : **couleurs**, **taille du texte**, **police**. **couleurs** affiche le thème actuel et chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**. Le menu **⋯** de la liste nomme le thème suivant et y passe aussi.
 
 ## Réglages
 
@@ -3332,7 +3332,7 @@ Apparence :
 
 | Réglage | Choix | Par défaut |
 |---|---|---|
-| **couleurs** | **blanc sur noir**, **noir sur blanc** | **blanc sur noir** |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | S, M, L | M |
 | **police** | sans-serif, serif, mono | sans-serif |
 | **retour haptique** | **actif**, **inactif** | **actif** |
@@ -3538,7 +3538,7 @@ En bas de l'accueil, l'épisode chargé dans le lecteur est affiché sur une lig
 - **+ un flux** : ouvre **ajouter un podcast**
 - **importer des abonnements**
 - **exporter les abonnements** (abonnements.opml)
-- **noir sur blanc** ou **blanc sur noir** : change les couleurs tout de suite
+- le thème de couleurs suivant (**noir sur blanc**, **blanc sur noir**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**) : l'entrée nomme le thème qui vient et y passe tout de suite
 - **réglages**
 
 ### ajouter un podcast
@@ -3716,7 +3716,7 @@ Ouvrez **⋯**, puis **réglages**. Chaque appui sur une ligne passe à sa valeu
 | **télécharger en wifi seulement** | **actif**, **inactif** | **actif** |
 | **actualiser à l'ouverture** | **actif**, **inactif** | **actif** |
 | **effacer une fois écouté** (« sauf favoris et épisodes transcrits ») | **actif**, **inactif** | **inactif** |
-| **couleurs** | **blanc sur noir**, **noir sur blanc** | **blanc sur noir** |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **blanc sur noir** |
 | **taille du texte** | S, M, L | M |
 | **police** | sans-serif, serif, mono | sans-serif |
 | **retour haptique** | **actif**, **inactif** | **actif** |
@@ -3762,7 +3762,7 @@ Désinstaller l'app supprime tout ce qu'elle gardait, y compris les épisodes t�
 
 ## Sur l'ordinateur
 
-Le programme pour ordinateur est une seule fenêtre, dans les deux mêmes couleurs. Il n'a ni mise par écrit, ni traduction, ni widget. Il ajoute YouTube.
+Le programme pour ordinateur est une seule fenêtre, dans les mêmes couleurs : les deux encres, puis les palettes Plume. Il n'a ni mise par écrit, ni traduction, ni widget. Il ajoute YouTube.
 
 ### La fenêtre
 
@@ -3775,7 +3775,7 @@ Les messages s'affichent quelques secondes dans la barre tout en bas de la fenê
 
 ### Les menus
 
-**⋯** : **recherche**, **actualiser**, **+ un flux**, **importer des abonnements**, **exporter les abonnements**, **importer des réglages**, **exporter les réglages**, **noir sur blanc** ou **blanc sur noir**, **réglages**.
+**⋯** : **recherche**, **actualiser**, **+ un flux**, **importer des abonnements**, **exporter les abonnements**, **importer des réglages**, **exporter les réglages**, le thème de couleurs suivant (après **blanc sur noir** : **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, puis de nouveau **blanc sur noir** ; l'entrée nomme le thème qui vient et y passe tout de suite), **réglages**.
 
 Clic droit sur un épisode : **lire**, **télécharger** / **arrêter le téléchargement** / **retirer de cet ordinateur**, **garder en favori** / **retirer des favoris**, **marquer écouté** / **marquer non écouté**, **copier le lien**, **aller à la chaîne**.
 
@@ -3800,7 +3800,7 @@ Clic droit sur une chaîne : **actualiser**, **téléchargement automatique** (
 
 | Réglage | Choix | Par défaut |
 |---|---|---|
-| **couleurs** | **blanc sur noir**, **noir sur blanc** | **blanc sur noir** |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **police** | **sans empattement**, **avec empattement**, **chasse fixe** | **sans empattement** |
 | **taille du texte** | de 9 à 24 | 12 |
 | **s'ouvre sur** | **épisodes**, **favoris**, **téléchargés** | **épisodes** |
@@ -3931,9 +3931,9 @@ Ce que vous pouvez faire :
 
 - **Toucher une ligne** : le fichier reprend là où il avait été laissé et le lecteur s'ouvre. Si le fichier est déjà celui chargé dans le lecteur, le lecteur s'ouvre simplement.
 - **Appui long sur une ligne** : ouvre le menu du fichier (voir ci-dessous).
-- **La ligne inversée en bas** (le blanc sur noir devient noir sur blanc) : le fichier actuellement chargé, précédé de **▶** quand il est en pause ou de **❚❚** quand il joue. Touchez-la pour revenir au lecteur.
+- **La ligne inversée en bas** (remplie de la couleur d'accent du thème : noir sur blanc dans le thème par défaut) : le fichier actuellement chargé, précédé de **▶** quand il est en pause ou de **❚❚** quand il joue. Touchez-la pour revenir au lecteur.
 - **+ ouvrir des fichiers audio** : ouvre le sélecteur de fichiers du téléphone, limité aux fichiers audio. Vous pouvez en choisir plusieurs à la fois.
-- **⋯** en haut à droite : un petit menu avec **+ ouvrir des fichiers audio**, puis **noir sur blanc** ou **blanc sur noir** (change les couleurs aussitôt) et **réglages**.
+- **⋯** en haut à droite : un petit menu avec **+ ouvrir des fichiers audio**, puis le nom du prochain thème de couleurs (**noir sur blanc**, **lavande**, … — le toucher change les couleurs aussitôt) et **réglages**.
 
 ### Le menu du fichier
 
@@ -4111,9 +4111,9 @@ Dans le menu du fichier, touchez **partager le son…** et choisissez l'app à l
 
 Faites un appui long sur le fichier dans la liste, puis touchez **retirer de la liste**. S'il était en cours de lecture, la lecture s'arrête. Le fichier audio d'origine n'est pas supprimé, ni les fichiers texte de Documents/Transcriptions. La copie du fichier que l'app avait éventuellement faite est supprimée, avec ce que l'app gardait au sujet du fichier.
 
-### Passer du blanc sur noir au noir sur blanc
+### Changer les couleurs
 
-Dans la liste, touchez **⋯**, puis **noir sur blanc** ou **blanc sur noir**. Le même choix se trouve dans **réglages**, à la ligne **couleurs**.
+Dans la liste, touchez **⋯**, puis l'entrée qui nomme le thème suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant, et après **nature** revient **blanc sur noir**. Dans les deux premiers, la ligne du fichier en cours et le bouton de lecture sont inversés ; dans les autres, ils sont remplis de la couleur d'accent du thème. Le même choix se trouve dans **réglages**, à la ligne **couleurs**, qui affiche le thème actuel et passe au suivant d'un toucher.
 
 ### Mettre le widget de reprise sur l'écran d'accueil
 
@@ -4125,7 +4125,7 @@ L'écran s'ouvre sur un rappel : *les transcriptions sont de simples fichiers .
 
 | Réglage | Ce qu'il change | Choix | Par défaut |
 |---|---|---|---|
-| **couleurs** | Les couleurs de l'app et de son widget. | **blanc sur noir**, **noir sur blanc** | **blanc sur noir** |
+| **couleurs** | Les couleurs de l'app et de son widget ; chaque toucher passe au suivant. | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | La taille du texte dans toute l'app. | S, M, L | M |
 | **police** | La police de caractères. | sans-serif, serif, mono | sans-serif |
 | **retour haptique** | Une courte vibration quand vous touchez **−5 s**, **▶** / **❚❚** ou **+10 s** dans le lecteur. | **actif**, **inactif** | **actif** |
@@ -4234,7 +4234,7 @@ Si les points principaux ont été demandés avec une transcription et n'apparai
 
 ## Ce que c'est
 
-Reader's Mindful Tool est un bol de méditation à trois usages : un coup toutes les X minutes jusqu'à ce que vous l'arrêtiez, une assise de X minutes close par trois bols, et des bols à heures fixes chaque jour. L'app est en noir et blanc et faite uniquement de texte, comme les autres apps Reader's. Chaque bol est réglé comme une alarme de réveil et joué sur le canal d'alarme du téléphone : il sonne donc à l'heure, à travers le mode silencieux, le mode Ne pas déranger et des heures de veille écran éteint. L'app ne propose ni guidage, ni statistiques, ni séries de jours, ni compte, et elle ne peut pas du tout utiliser le réseau.
+Reader's Mindful Tool est un bol de méditation à trois usages : un coup toutes les X minutes jusqu'à ce que vous l'arrêtiez, une assise de X minutes close par trois bols, et des bols à heures fixes chaque jour. L'app est faite uniquement de texte, blanc sur noir à moins de choisir un autre de ses thèmes de couleurs, comme les autres apps Reader's. Chaque bol est réglé comme une alarme de réveil et joué sur le canal d'alarme du téléphone : il sonne donc à l'heure, à travers le mode silencieux, le mode Ne pas déranger et des heures de veille écran éteint. L'app ne propose ni guidage, ni statistiques, ni séries de jours, ni compte, et elle ne peut pas du tout utiliser le réseau.
 
 L'app existe en anglais, français, allemand, espagnol, portugais et russe. Elle suit la langue du téléphone ; il n'y a pas de réglage de langue dans l'app.
 
@@ -4277,7 +4277,7 @@ Les deux fonctions sont indépendantes : vous pouvez les faire tourner en même
 |---|---|
 | **bols à heures fixes** | Ouvre l'écran des heures quotidiennes. |
 | **écouter le bol** | Joue un coup du bol en service. |
-| **noir sur blanc** / **blanc sur noir** | Passe aux autres couleurs ; l'entrée nomme les couleurs que vous obtiendrez. |
+| **noir sur blanc**, **lavande**, … | Passe aux couleurs suivantes ; l'entrée nomme les couleurs que vous obtiendrez : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**. |
 | **réglages** | Ouvre les réglages. |
 
 Touchez hors du menu, ou appuyez sur le bouton retour du téléphone, pour le fermer sans rien choisir.
@@ -4396,9 +4396,9 @@ Le bol est joué sur le canal d'alarme du téléphone. Son volume est celui des 
 
 La ligne indique alors **fonctionnement en arrière-plan : autorisé**.
 
-### Passer du blanc sur noir au noir sur blanc
+### Changer les couleurs
 
-Touchez **⋯** sur l'accueil, puis **noir sur blanc** ou **blanc sur noir** ; ou bien, dans les **réglages**, touchez la ligne au-dessus de **couleurs**.
+Touchez **⋯** sur l'accueil, puis l'entrée qui nomme les couleurs suivantes (**noir sur blanc**, **lavande**, …) ; ou bien, dans les **réglages**, touchez la ligne au-dessus de **couleurs**. Chaque toucher passe au thème suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour au **blanc sur noir**. Le widget suit.
 
 ### Poser le widget sur un écran d'accueil
 
@@ -4413,7 +4413,7 @@ Touchez **⋯** sur l'accueil, puis **noir sur blanc** ou **blanc sur noir** ; 
 | Bol (premier bloc des réglages) | Le son de tous les bols de l'app | **bol tibétain (mi♭)**, **bol chantant**, **bol gong**, **Satipanya**, **enpleineconscience.ch**, ou votre propre fichier | **bol tibétain (mi♭)** |
 | **votre propre son…** | Prend un fichier audio du téléphone comme bol | tout fichier que le téléphone sait lire (mp3, wav) | aucun |
 | **autoriser le fonctionnement en arrière-plan** | Dispense l'app de l'optimisation de batterie du téléphone | autorisé ou non | non autorisé |
-| **couleurs** | Les deux couleurs de l'app et de son widget | **blanc sur noir**, **noir sur blanc** | **blanc sur noir** |
+| **couleurs** | Les couleurs de l'app et de son widget ; chaque toucher passe au suivant | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | La taille de tout le texte de l'app | **petit**, **moyen**, **grand** | **moyen** |
 | **police** | Le caractère de l'app | **sans**, **serif**, **mono** | **sans** |
 | **retour haptique** | Une courte vibration quand vous touchez **▶** ou **■** dans l'app | **actif**, **inactif** | **actif** |
@@ -4503,7 +4503,7 @@ L'app ne reçoit pas de contenu partagé et n'ouvre pas de fichiers, hormis le f
 
 Reader's Food Log est un journal alimentaire fait uniquement de photos. Un toucher ouvre le viseur, un second prend la photo, et l'écran se referme tout seul ; l'app donne à la photo l'étiquette **petit-déjeuner**, **déjeuner**, **dîner** ou **collation** d'après l'heure et la range dans son jour. Vous pouvez aussi noter une activité physique en un toucher et votre poids une fois par jour, avec la courbe de son évolution.
 
-L'app n'a volontairement ni calories, ni base d'aliments, ni rien à écrire sur ce que vous mangez, ni compte, ni accès au réseau : tout reste sur le téléphone. Elle est en noir et blanc, tout en texte, et suit la langue du téléphone (anglais, français, allemand, espagnol, portugais, russe).
+L'app n'a volontairement ni calories, ni base d'aliments, ni rien à écrire sur ce que vous mangez, ni compte, ni accès au réseau : tout reste sur le téléphone. Elle est tout en texte, blanc sur noir à moins de choisir un autre de ses thèmes de couleurs, et suit la langue du téléphone (anglais, français, allemand, espagnol, portugais, russe).
 
 ## Premier lancement
 
@@ -4708,7 +4708,7 @@ Faites l'étape 1 ci-dessus de temps en temps et gardez le fichier zip ailleurs 
 
 ### Changer l'apparence
 
-Dans **réglages**, touchez **couleurs**, **taille du texte** ou **police** ; chaque toucher passe au choix suivant.
+Dans **réglages**, touchez **couleurs**, **taille du texte** ou **police** ; chaque toucher passe au choix suivant. **couleurs** fait le tour de **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; dans les thèmes colorés, la bande et les lignes en évidence sont remplies de la couleur d'accent du thème.
 
 ## Réglages
 
@@ -4725,7 +4725,7 @@ Viennent ensuite les réglages proprement dits. Chaque ligne montre la valeur ac
 
 | Réglage | Choix | Par défaut |
 | --- | --- | --- |
-| **couleurs** | **sombre** (blanc sur noir), **clair** (noir sur blanc) | **sombre** |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **blanc sur noir** |
 | **taille du texte** | **S**, **M**, **L** | **M** |
 | **police** | **sans-serif**, **serif**, **mono** | **sans-serif** |
 | **unité de poids** | **kg**, **lb** | **kg** ; **lb** quand la région du téléphone est les États-Unis, le Liberia ou le Myanmar |
@@ -4765,7 +4765,7 @@ Vous pouvez donc importer deux fois le même fichier, ou importer sur un télép
 
 ### Widgets d'écran d'accueil
 
-L'app propose deux widgets pour n'importe quel écran d'accueil Android. Tous deux prennent les couleurs choisies dans l'app (**sombre** ou **clair**).
+L'app propose deux widgets pour n'importe quel écran d'accueil Android. Tous deux prennent les couleurs de fond et de texte du thème choisi dans l'app sous **couleurs**.
 
 - **Photo du repas** (une case) : un seul ◉. Un toucher ouvre le viseur.
 - **Journal alimentaire** (quatre cases de large, une de haut) : le titre **journal alimentaire** et, dessous, **aujourd'hui** suivi du décompte du jour, par exemple « aujourd'hui · 2 photos · 1 activité », ou « aujourd'hui · rien pour l'instant ». Touchez le texte pour ouvrir l'app. Touchez **✎** pour ouvrir l'app sur le volet **activité physique, maintenant**. Touchez **◉** pour ouvrir le viseur. Le décompte est mis à jour après chaque photo ou activité.
@@ -5128,7 +5128,7 @@ Les réglages du téléphone, dans l'ordre de l'écran. Toucher une ligne dont l
 | lignes du modèle « meilleur » | Télécharge ou retire le modèle Tesseract plus exact d'une langue | par langue | modèle rapide |
 | **trouver la page** | Qui trouve et redresse la page | **intégré (logiciel libre)**, **ML Kit (Google)** | votre choix du premier lancement |
 | **lire le texte** | Qui lit le texte | **Tesseract (logiciel libre)**, **ML Kit (Google)** | votre choix du premier lancement |
-| **couleurs** | Blanc sur noir ou noir sur blanc | **sombre**, **clair** | **sombre** |
+| **couleurs** | Thème de couleurs de l'app : les deux encres, puis les palettes du clavier Plume ; chaque toucher passe au suivant | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | Taille du texte de l'app | S, M, L | M |
 | **police** | Police de l'app | sans-serif, serif, mono | sans-serif |
 | **vibration au toucher** | Une courte vibration sur les boutons | **oui**, **non** | **oui** |
@@ -5287,7 +5287,7 @@ Sous **lecture**, une ligne donne l'état pour la langue en cours : **français
 
 Le bas de la fenêtre montre la version.
 
-Deux réglages ne sont pas dans cette fenêtre : les couleurs (Ctrl+T, ou **blanc sur noir** / **noir sur blanc** dans le menu **⋯** ; noir sur blanc au départ) et la taille du texte (Ctrl+= et Ctrl+-).
+Deux réglages ne sont pas dans cette fenêtre : les couleurs et la taille du texte (Ctrl+= et Ctrl+-). Les couleurs forment un cycle de dix thèmes : **noir sur blanc** (au départ), **blanc sur noir**, puis les palettes du clavier Plume, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour au premier. Ctrl+T passe au suivant ; dans le menu **⋯**, l'entrée porte le nom du thème suivant (**blanc sur noir** au départ, puis **lavande**, et ainsi de suite) et y passe.
 
 Pour utiliser les dossiers du téléphone, saisissez le même serveur, le même dossier et les mêmes identifiants que sur le téléphone, ou importez le fichier d'identifiants exporté par le téléphone. Si la section de l'app manque dans le fichier, le serveur et les identifiants de Reader's Notes ou de Reader's Recorder sont repris : **serveur et identifiants repris de Reader's Notes**. **exporter les identifiants…** écrit `readers-credentials.json` dans votre dossier personnel, sauf si vous choisissez un autre endroit ; si ce fichier existe déjà et qu'il est un fichier d'identifiants Reader's, la section de l'app y est ajoutée et celles des autres apps sont gardées. L'app indique alors **identifiants exportés dans … — le fichier contient vos mots de passe : gardez-le privé**.
 
@@ -5302,7 +5302,7 @@ Pour utiliser les dossiers du téléphone, saisissez le même serveur, le même 
 | F2 | renommer le document ouvert |
 | Suppr | supprimer le document ouvert ou les documents sélectionnés |
 | F5 ou Ctrl+R | synchroniser |
-| Ctrl+T | blanc sur noir / noir sur blanc |
+| Ctrl+T | thème de couleurs suivant (noir sur blanc, blanc sur noir, lavande, sauge, nordique, terracotta, coquette, militante, torride, nature) |
 | Ctrl+= ou Ctrl++, Ctrl+- | texte plus grand, plus petit |
 | Ctrl+, | réglages |
 | Échap | annuler le scan ; sinon vider la recherche ; sinon abandonner les pages en révision ; sinon revenir aux dossiers |
@@ -5451,7 +5451,7 @@ Le menu **⋯** contient :
 - **gardés pour plus tard** : ouvre les articles gardés.
 - **actualiser** : recharge toutes les sources activées.
 - **ordre : les plus récents d’abord** ou **ordre : un par source** : l'entrée affiche l'ordre en cours ; touchez-la pour passer à l'autre.
-- **blanc sur noir** ou **noir sur blanc** : fait passer toute l'app aux couleurs nommées.
+- le nom du thème de couleurs suivant (**blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**) : y fait passer toute l'app ; chaque toucher passe au suivant.
 - **réglages** : ouvre les réglages.
 
 Les deux ordres :
@@ -5483,7 +5483,7 @@ Le menu **⋯**, coiffé du titre de l'article, contient :
 - **partager** : remet le titre et l'adresse de l'article à une autre app ;
 - **texte plus grand** et **texte plus petit** : un cran à la fois ; les pages sont redécoupées et vous restez à peu près au même endroit ;
 - **serif** ou **sans-serif** : passe à la police nommée ;
-- **blanc sur noir** ou **noir sur blanc** : passe aux couleurs nommées.
+- le nom du thème de couleurs suivant (**blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**) : y passe ; chaque toucher passe au suivant.
 
 ### Gardés pour plus tard
 
@@ -5667,9 +5667,9 @@ Les deux fichiers contiennent vos connexions : quiconque détient le fichier pe
 
 Pendant la lecture : **⋯** › **serif** ou **sans-serif**. Ou, dans **réglages**, touchez la rangée **police de lecture**.
 
-### Passer en blanc sur noir
+### Changer les couleurs
 
-Sur la liste d'accueil ou pendant la lecture : **⋯** › **blanc sur noir**. Pour revenir : **⋯** › **noir sur blanc**. Ou, dans **réglages**, touchez la rangée **couleurs**.
+Sur la liste d'accueil ou pendant la lecture : **⋯** › l'entrée qui porte le nom du thème suivant, **blanc sur noir** par exemple. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, puis retour à **blanc sur noir** ; chaque toucher passe au suivant. Ou, dans **réglages**, touchez la rangée **couleurs** : elle affiche le thème en cours et passe au suivant. Le widget de l'écran d'accueil prend les mêmes couleurs.
 
 ### Faire tourner les listes en pages au lieu de défiler
 
@@ -5686,7 +5686,7 @@ Chaque rangée affiche la valeur en cours, avec son nom en gris dessous. Touchez
 
 | Rangée (ligne grise dessous) | Ce qu'elle change | Choix | Par défaut |
 |---|---|---|---|
-| **couleurs** | Les couleurs de toute l'app | **noir sur blanc**, **blanc sur noir** | **noir sur blanc** |
+| **couleurs** | Les couleurs de toute l'app ; la rangée affiche le thème en cours, un toucher passe au suivant | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **noir sur blanc** |
 | **taille du texte — toucher pour agrandir, appui long pour réduire** | La taille du texte de lecture ; les titres, les menus et les petites lignes la suivent. Toucher agrandit d'un cran, un appui long réduit d'un cran | de 13 à 30 | automatique, affichée par la taille suivie de **· auto** |
 | **revenir à la taille automatique** (**d’après la taille de l’écran**) | Abandonne votre taille et revient à la taille automatique | — | — |
 | **police de lecture** | La police du texte, dans la lecture et dans le reste de l'app | **sans-serif**, **serif** | **sans-serif** |
@@ -5738,7 +5738,7 @@ L'app propose un widget, **Les derniers articles de vos flux RSS**. Il se redime
 - Touchez un titre pour ouvrir l'article dans votre navigateur.
 - Quand il n'y a rien à montrer, il affiche **rien pour l’instant**.
 
-Le widget montre ce que l'app a chargé en dernier, dans l'ordre des plus récents d'abord : il est mis à jour chaque fois que l'app actualise sa liste, et ne charge rien de lui-même. Il est toujours en noir sur blanc, quelles que soient les couleurs choisies dans l'app.
+Le widget montre ce que l'app a chargé en dernier, dans l'ordre des plus récents d'abord : il est mis à jour chaque fois que l'app actualise sa liste, et ne charge rien de lui-même. Il prend les couleurs choisies dans l'app (**réglages** › **couleurs**).
 
 ### Partage
 
@@ -5855,7 +5855,7 @@ Le titre **détox** est en haut à gauche, le menu **⋯** en haut à droite.
 
 - la même action que la ligne du bas (**démarrer le blocage**, **arrêter le blocage** ou **arrêter le blocage — 5 problèmes d'abord**) ;
 - **heures permises** (seulement quand le blocage est inactif) : ouvre l'écran *heures permises* ;
-- **noir sur blanc** ou **blanc sur noir** : passe aux couleurs nommées ;
+- le nom du thème de couleurs suivant (**noir sur blanc**, **lavande**…) : y passe. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ;
 - **réglages** : ouvre l'écran des réglages.
 
 ### Heures permises
@@ -5991,9 +5991,9 @@ L'app relance d'elle-même le blocage après un redémarrage du téléphone et a
 2. Touchez **VPN permanent** : les paramètres VPN d'Android s'ouvrent. Choisissez-y Reader's Detox et activez l'option de VPN permanent d'Android.
 3. De retour dans **réglages**, touchez **autoriser le fonctionnement en arrière-plan** et acceptez. La ligne indique alors **fonctionnement en arrière-plan : autorisé**.
 
-### Passer du noir sur blanc au blanc sur noir
+### Changer les couleurs
 
-Ouvrez **⋯** et touchez **noir sur blanc** ou **blanc sur noir** (le menu nomme les couleurs que vous allez obtenir). Le même réglage se trouve dans **réglages**, à la ligne **couleurs**.
+Ouvrez **⋯** et touchez l'entrée qui nomme le thème de couleurs suivant (le menu nomme les couleurs que vous allez obtenir). Chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour à **blanc sur noir**. Le même cycle se trouve dans **réglages**, à la ligne **couleurs**, qui affiche le thème en cours. Le widget suit.
 
 ### Démarrer ou arrêter depuis l'écran d'accueil
 
@@ -6007,7 +6007,7 @@ Ouvrez **⋯**, puis **réglages**.
 |---|---|---|---|
 | **VPN permanent** (**pour que le blocage survive aux redémarrages**) | Ouvre les paramètres VPN d'Android, où vous pouvez faire de Reader's Detox le VPN permanent. | — | — |
 | **autoriser le fonctionnement en arrière-plan** (**pour qu'Android n'arrête jamais le blocage**) | Demande à Android d'exempter l'app de l'optimisation de la batterie. Une fois accordé, la ligne indique **fonctionnement en arrière-plan : autorisé**. | — | non autorisé |
-| **couleurs** | Les couleurs de l'app et de son widget. | **blanc sur noir**, **noir sur blanc** | **blanc sur noir** |
+| **couleurs** | Les couleurs de l'app et de son widget ; chaque toucher passe au thème suivant. | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | La taille du texte dans l'app. Chaque toucher passe à la taille suivante. | **petit**, **moyen**, **grand** | **moyen** |
 | **police** | Le caractère de l'app. Chaque toucher passe au suivant. | **sans empattement**, **avec empattement**, **mono** | **sans empattement** |
 | **retour haptique** | Une courte vibration quand vous faites basculer un site, les problèmes de maths, ou quand vous démarrez et arrêtez. | **actif**, **inactif** | **actif** |
@@ -6769,7 +6769,7 @@ Tout en bas, une ligne indique **activer le filtre** ou **désactiver le filtre*
 ### Le menu (⋯)
 
 - **activer le filtre** / **désactiver le filtre** : le même interrupteur. Cette entrée est absente tant que l’autorisation n’a pas été donnée.
-- **noir sur blanc** ou **blanc sur noir** : passe les couleurs de l’application à celles qui sont nommées.
+- le nom du thème de couleurs suivant (**noir sur blanc**, **lavande**, **sauge**…) : y passe les couleurs de l’application. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**.
 - **réglages** : ouvre l’écran des réglages.
 
 Touchez en dehors du menu, ou faites retour, pour le fermer.
@@ -6847,7 +6847,7 @@ Appuyez longuement sur la tuile **Filtre de nuit**.
 
 ### Changer les couleurs de l’application
 
-Ouvrez le menu **⋯** et touchez **noir sur blanc** (ou **blanc sur noir**). Le même changement se trouve dans **réglages**, ligne **couleurs**.
+Ouvrez le menu **⋯** et touchez l’entrée qui nomme le thème suivant (**noir sur blanc** quand l’application est en blanc sur noir). Chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour à **blanc sur noir**. Le même changement se trouve dans **réglages**, ligne **couleurs**, qui montre le thème actuel et passe au suivant quand on la touche. Le filtre de nuit lui-même garde ses propres couleurs quel que soit le thème.
 
 ## Réglages
 
@@ -6863,7 +6863,7 @@ L’apparence de l’application se choisit dans **réglages**. Touchez une lign
 
 | Réglage | Choix | Par défaut | Ce que cela change |
 |---|---|---|---|
-| **couleurs** | **blanc sur noir**, **noir sur blanc** | **blanc sur noir** | Les couleurs de l’application et de son widget. |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **blanc sur noir** | Les couleurs de l’application et de son widget. |
 | **taille du texte** | **petit**, **moyen**, **grand** | **moyen** | La taille de tout le texte de l’application. |
 | **police** | **sans empattement**, **avec empattement**, **mono** | **sans empattement** | Le caractère de l’application. |
 | **retour haptique** | **actif**, **inactif** | **actif** | Une courte vibration quand vous actionnez le filtre ou changez l’une de ses parties dans l’application. |
@@ -6944,7 +6944,7 @@ La tuile affiche **filtre actif** ou **filtre inactif**, avec **filtre de nuit**
 
 # Reader's Motivation
 
-*Android 1.0.1*
+*Android 1.1.0*
 
 ## Ce que c'est
 
@@ -6970,7 +6970,7 @@ L'écran d'accueil énumère vos habitudes, une ligne chacune : le nom, et dess
 
 Quand vous avez exactement une habitude, l'app s'ouvre directement sur sa page ; la liste est à un toucher en arrière (**←**).
 
-**⋯**, en haut à droite, ouvre le menu avec **clair** ou **sombre** (passe aux autres couleurs ; l'entrée nomme les couleurs que vous obtiendrez) et **réglages**. Touchez hors du menu, ou appuyez sur le bouton retour du téléphone, pour le fermer sans rien choisir.
+**⋯**, en haut à droite, ouvre le menu avec le nom du thème de couleurs suivant (**noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, puis **blanc sur noir** ; l'entrée nomme les couleurs que vous obtiendrez, et chaque toucher passe au thème suivant) et **réglages**. Touchez hors du menu, ou appuyez sur le bouton retour du téléphone, pour le fermer sans rien choisir.
 
 ### La page d'une habitude
 
@@ -7014,7 +7014,7 @@ Le menu porte le nom de l'habitude en titre :
 | **le relevé** | Ouvre la liste de tout ce qui a été noté pour cette habitude. |
 | **modifier** | Ouvre le formulaire de l'habitude pour changer n'importe quel champ. |
 | **supprimer cette habitude** | Demande **supprimer « le sucre » et tout ce qui est compté ?** avec **supprimer** et **annuler**. **supprimer** retire aussitôt l'habitude et tout son relevé et revient à la liste. |
-| **clair** / **sombre** | Passe aux autres couleurs. |
+| **noir sur blanc**, **lavande**, … | Passe au thème de couleurs suivant ; l'entrée nomme celui que vous obtiendrez. |
 | **réglages** | Ouvre les réglages. |
 
 ### une envie
@@ -7069,7 +7069,7 @@ De haut en bas :
 - **un rappel quotidien** : **désactivé** ou l'heure, par exemple **20:00**. Dessous : **Une ligne à l'heure choisie : le jour, le compte, et la question. Éteint tant que vous ne l'allumez pas.** Touchez pour ouvrir un menu intitulé **un rappel quotidien** avec **désactivé**, **08:00**, **12:00**, **20:00**, **21:00** et **heure (HH:MM)**, qui ouvre une saisie du même nom. Tapez l'heure sur 24 heures : **7:30**, **07:30**, **7h30**, **7.30**, **730**, **0730**, ou simplement **7** pour 07:00. Une heure que l'app ne comprend pas ne change rien.
 - **sur le widget et dans le rappel**, affiché seulement quand vous avez plus d'une habitude : le nom de l'habitude dont parlent le widget et le rappel. Touchez pour en choisir une autre dans un menu de vos habitudes.
 - **enregistrer une sauvegarde…** et **restaurer une sauvegarde…** (voir « Vos données »).
-- **couleurs** (**sombre** ou **clair**), **taille du texte** (**petite**, **moyenne**, **grande**), **police** (**sans empattement**, **avec empattement**, **à chasse fixe**), **vibration au toucher** (**activé** ou **désactivé**) : chaque ligne montre le choix actuel au-dessus du nom du réglage ; touchez pour passer au choix suivant.
+- **couleurs** (**blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**), **taille du texte** (**petite**, **moyenne**, **grande**), **police** (**sans empattement**, **avec empattement**, **à chasse fixe**), **vibration au toucher** (**activé** ou **désactivé**) : chaque ligne montre le choix actuel au-dessus du nom du réglage ; touchez pour passer au choix suivant.
 - **pourquoi elle est faite ainsi** : touchez pour afficher ou masquer un paragraphe qui résume les recherches derrière les choix de l'app.
 - **Reader's Motivation**, avec **à propos** dessous, et la ligne **écrit avec Claude Code · rien ne quitte le téléphone** : simple information.
 
@@ -7174,7 +7174,7 @@ Avec deux habitudes ou plus, ouvrez les **réglages** et touchez la ligne sous *
 
 ### Changer les couleurs, la taille du texte et la police
 
-Touchez **⋯** puis **clair** ou **sombre** ; ou ouvrez les **réglages** et touchez les lignes sous **couleurs**, **taille du texte** et **police**.
+Touchez **⋯** puis le nom du thème suivant ; ou ouvrez les **réglages** et touchez les lignes sous **couleurs**, **taille du texte** et **police**.
 
 ## Réglages
 
@@ -7182,7 +7182,7 @@ Touchez **⋯** puis **clair** ou **sombre** ; ou ouvrez les **réglages** et t
 |---|---|---|---|
 | **un rappel quotidien** | Une notification par jour avec le jour, le compte et une question | **désactivé**, **08:00**, **12:00**, **20:00**, **21:00**, ou toute heure tapée sous **heure (HH:MM)** | **désactivé** |
 | **sur le widget et dans le rappel** | L'habitude dont parlent le widget et le rappel (affiché avec deux habitudes ou plus) | l'une de vos habitudes | la première de la liste |
-| **couleurs** | Les deux couleurs de l'app et de son widget | **sombre** (blanc sur noir), **clair** (noir sur blanc) | **sombre** |
+| **couleurs** | Le thème de l'app et de son widget : un fond, une couleur de texte et une couleur d'accent qui remplit la ligne principale | **blanc sur noir**, **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | La taille de tout le texte de l'app | **petite**, **moyenne**, **grande** | **moyenne** |
 | **police** | Le caractère de l'app | **sans empattement**, **avec empattement**, **à chasse fixe** | **sans empattement** |
 | **vibration au toucher** | Une courte vibration quand vous touchez une ligne qui compte ou ouvre quelque chose | **activé**, **désactivé** | **activé** |

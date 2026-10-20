@@ -650,7 +650,7 @@ Gestures on the home screen:
 | double tap an app name or a grid square | lists the app's shortcuts |
 | long press a tile | the tile's menu |
 | long press on empty space | the home menu |
-| double tap on empty space | flips between white on black and black on white |
+| double tap on empty space | moves to the next colour theme |
 | swipe up | the list of all apps |
 | swipe up and hold | **open apps**, the recently used apps |
 | swipe down | the notification shade |
@@ -669,7 +669,7 @@ A long press on empty space shows:
 - **add widget**: opens the widget list.
 - **add a home page**: adds an empty page after the last one and goes to it.
 - **remove this page**: shown on an empty page other than the first.
-- **black on white** or **white on black**: switches to the other theme.
+- the name of the next colour theme (**black on white**, **lavender**, …): moves to it. The themes come in a circle: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, then white on black again.
 - **settings**.
 
 When the page has no room left for a line of text, **the home screen is full** replaces **add app / category** and **add widget**.
@@ -918,9 +918,9 @@ To change it later: long press the category, **edit** (add, remove, reorder apps
 - Hide: swipe up, long press the app, **hide**. To bring it back: settings, **hidden apps**, tap the app.
 - Uninstall: long press the app (tile or list), **uninstall**; Android asks for confirmation.
 
-### Switch between white on black and black on white
+### Change the colours
 
-Double tap on empty space; or long press and tap **black on white** / **white on black**; or use the quick-settings tile **Reader's theme** (add it to Android's quick-settings panel by editing the panel); or the **theme** line in the settings.
+Double tap on empty space; or long press and tap the name of the next theme; or use the quick-settings tile **Reader's theme** (add it to Android's quick-settings panel by editing the panel); or the **colours** line in the settings. Each of them moves to the next theme of the circle: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap goes one step further, and after **nature** comes **white on black** again. In the two inks the selected lines are filled with the text colour; in the other themes they take the theme's accent colour.
 
 ### Set up the weather
 
@@ -975,11 +975,11 @@ Each line shows its current value; a tap moves to the next one.
 
 | Setting | Choices | Default |
 |---|---|---|
-| **theme** | **white on black**, **black on white**, **follow system** | white on black |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** (each tap moves to the next) | white on black |
 | **font** | **serif**, **sans**, **mono** | sans |
 | **text size** | **small**, **medium**, **large** | medium |
 | **alignment** | **left**, **center** | left |
-| **double tap flips theme** | **on**, **off** | on |
+| **double tap changes the colours** | **on**, **off** | on |
 | **swipe down opens notifications** | **on**, **off** | on |
 | **status bar** (shown or hidden on the launcher's screens) | **on**, **off** | on |
 | **haptic feedback** (a light vibration on long presses and swipes) | **on**, **off** | on |
@@ -1013,7 +1013,7 @@ Uninstalling Reader's Launcher removes the home screen layout, the settings and 
 
 ## With the other apps
 
-- **Quick-settings tile**: **Reader's theme** flips the launcher between its two themes from Android's quick-settings panel.
+- **Quick-settings tile**: **Reader's theme** moves the launcher to its next colour theme from Android's quick-settings panel.
 - **Reader's Tasks** or **Tasks.org**: the tasks tile. With Tasks.org 15.11 or later, tasks are ticked and added on the tile; with an older version the box opens the task in Tasks.org and **+** opens Tasks.org with the title filled in.
 - **Reader's Calendar** (or any calendar app): the agenda tile reads the phone's calendars and opens events in the chosen app.
 - **Reader's Books**: the book tile.
@@ -1140,7 +1140,7 @@ Every view has a **⋯** sign at the top right. It opens the same menu everywher
 - **workdays**;
 - **month**;
 - **calendars**;
-- **black on white** or **white on black**: switches the colours at once;
+- the name of the next colour theme (**black on white** when the app is white on black, and so on): switches the colours at once. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next;
 - **settings**.
 
 Tap outside the menu to close it. On every screen except the agenda, the title at the top left starts with **←**: tap it, or use the phone's back gesture, to go back.
@@ -1234,7 +1234,7 @@ One window in two parts.
 
 The left column holds:
 
-- a small month, with **‹** and **›** to change month. A dot marks the days that hold something; today is inverted. Click a day: the agenda from that day. Click the month's name: back to today's agenda;
+- a small month, with **‹** and **›** to change month. A dot marks the days that hold something; today is filled with the theme's accent colour. Click a day: the agenda from that day. Click the month's name: back to today's agenda;
 - the views: **agenda**, **day**, **week**, **workdays**, **month**;
 - **search**;
 - **+ new event**;
@@ -1429,8 +1429,8 @@ Use your launcher's way of adding a widget and choose **Reader's Calendar · nex
 
 ### Change the look quickly
 
-- Phone: **⋯** › **black on white** or **white on black**.
-- Computer: Ctrl+T for the colours, Ctrl+= and Ctrl+- for the text size.
+- Phone: **⋯** › the name of the next colour theme (**white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next).
+- Computer: Ctrl+T moves to the next colour theme (**white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and round again), Ctrl+= and Ctrl+- change the text size.
 
 ## Settings
 
@@ -1444,7 +1444,7 @@ Use your launcher's way of adding a widget and choose **Reader's Calendar · nex
 | **default reminder: …** | **no reminder**, **at the time of the event**, **10 minutes before**, **30 minutes before**, **1 hour before**, **2 hours before**, **1 day before** | **10 minutes before** |
 | **week starts on: …** | **monday**, **sunday** | **monday** |
 | **opens on: …** | **today (list)**, **week**, **workdays**, **day**, **month** | **week** |
-| **theme: …** | **white on black**, **black on white**, **follow system** | **white on black** |
+| **theme: …** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next | **white on black** |
 | **font: …** | **serif**, **sans**, **mono** | **sans** |
 | **text size: …** | **small**, **medium**, **large** | **medium** |
 | **alignment: …** | **left**, **center** | **left** |
@@ -1465,7 +1465,7 @@ The last two rows give the version (**reader's calendar 1.15.2**, **black and wh
 
 | Setting | Choices | Default |
 |---|---|---|
-| **colours** | **black on white**, **white on black** | **black on white** |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each click moves to the next, and after **nature** comes **white on black** again | **black on white** |
 | **events** | **plain, with a colour dot**, **in their calendar's colour** | **plain, with a colour dot** |
 | **text size** | 9 to 24 pt, with **−** and **+** | **13 pt** |
 | the font (the name of the typeface used is shown under the choice) | **sans-serif**, **serif**, **mono** | **sans-serif** |
@@ -1564,7 +1564,7 @@ The two programs do not talk to each other. They show the same events when the p
 | Ctrl+M | this month |
 | Escape | back (empties the search field first) |
 | F5, Ctrl+R | sync now |
-| Ctrl+T | white on black / black on white |
+| Ctrl+T | the next colour theme |
 | Ctrl+= , Ctrl++ / Ctrl+- | larger / smaller text |
 | Ctrl+, | settings |
 | Ctrl+Q | quit |
@@ -1722,7 +1722,7 @@ The menu **⋯** has four entries:
 |---|---|
 | **lists** | opens the **lists** screen |
 | **sync now** | reloads all lists and all tasks from the server |
-| **black on white** or **white on black** | switches to the other look; the entry names the look you will get |
+| **black on white**, **lavender**, … | moves to the next colour theme; the entry names the theme you will get |
 | **settings** | opens the **settings** screen |
 
 ### The menu of a task
@@ -1839,9 +1839,9 @@ On **lists**, long press a list and choose **move up** or **move down**, as many
 
 Tap **⋯** then **sync now**. The app also syncs by itself: when it comes to the screen and the last sync is more than two minutes old, and after each of your actions (for the list concerned).
 
-### Switch between white on black and black on white
+### Change the colours
 
-Tap **⋯** then **black on white** (or **white on black**). This is the same setting as **theme** in **settings**.
+Tap **⋯** then the entry that names the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next, and after **nature** comes **white on black** again. This is the same setting as **theme** in **settings**. The widgets take the colours of the theme too.
 
 ### Change the account or the password
 
@@ -1869,13 +1869,13 @@ All in **settings**. Each tap on a line moves to the next choice.
 
 | Setting | What it changes | Choices | Default |
 |---|---|---|---|
-| **theme** | the colours of the app and of its widgets | **white on black**, **black on white**, **follow system** | **white on black** |
+| **theme** | the colours of the app and of its widgets | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next | **white on black** |
 | **font** | the typeface of all text | **serif**, **sans**, **mono** | **sans** |
 | **text size** | the size of all text | **small**, **medium**, **large** | **medium** |
 | **alignment** | text aligned on the left or centred | **left**, **center** | **left** |
 | **haptic feedback** | a short vibration when you tick a box or long press | **on**, **off** | **on** |
 
-**follow system** takes the dark or light mode of Android.
+In the two inks the chosen list and the main action are filled with the text colour; in the other themes they take the theme's accent colour.
 
 ## Your data
 
@@ -1966,7 +1966,7 @@ The dialog also has **import credentials…** and **export credentials…**, and
 | double click on the text of a task | renames it: a dialog **rename** with the field **task** and the buttons **rename** and **cancel** |
 | drag an open task up or down | puts it at its place; the order is saved on the server (**saving order…**) |
 | right click on a task | **complete** (or **reopen**), **rename**, **delete** |
-| right click on a list | **move up**, **move down**, **hide this list**, **show a hidden list** |
+| right click on a list | **move up**, **move down**, **hide this list**, **show a hidden list**, then **colours: …**, which names the next colour theme |
 
 **delete** removes the task from the server at once, without asking. **show a hidden list** opens a second menu with the names of the hidden lists; click one to bring it back. The program refuses, without a message, to hide the last list left. The order of the lists and the hidden lists are kept on this computer only; they are independent from the phone's.
 
@@ -1978,7 +1978,7 @@ The dialog also has **import credentials…** and **export credentials…**, and
 | Ctrl+N | puts the cursor in the line **+ new task** |
 | Ctrl+D | shows or hides the completed tasks |
 | F5 or Ctrl+R | syncs now |
-| Ctrl+T | switches between black on white and white on black |
+| Ctrl+T | next colour theme: **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, **white on black**, then round again |
 | Ctrl+= or Ctrl++ | larger text |
 | Ctrl+- | smaller text |
 | Ctrl+, | opens the setup dialog (server, username, app password) |
@@ -1987,7 +1987,7 @@ The dialog also has **import credentials…** and **export credentials…**, and
 ### How it differs from the phone
 
 - The lists are always visible on the left; there is no separate lists screen.
-- It starts black on white. There is no settings screen: the look is changed by Ctrl+T and by Ctrl+= / Ctrl+- (text size from 9 to 30 points, 15 at the start). There is no choice of font or alignment, and no **follow system**.
+- It starts black on white. There is no settings screen: the colours are changed by Ctrl+T, or by the last entry of the lists' right-click menu, **colours: …**, which names the next theme; each press moves to the next one: **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, **white on black**, then round again (the same ten themes as on the phone). The text size is changed by Ctrl+= / Ctrl+- (from 9 to 30 points, 15 at the start). There is no choice of font or alignment, and no **follow system**.
 - It cannot set or remove a due date; it displays the ones that exist. Its task menu has no **call**, **write to** or **open** entries.
 - Subtasks made in another app are displayed as ordinary tasks; the phone app hides open subtasks.
 - It syncs the current list every 5 minutes, at each change of list, after each action, and on F5 or Ctrl+R. The lists themselves are read when the program connects: a list created on the server appears at the next start, or after Ctrl+, and **connect**.
@@ -2144,7 +2144,7 @@ The title line reads **notes**, with **⋯** on the right. Each note takes two l
 - **● dictate** creates a note and opens it with the microphone on.
 - **The small line at the bottom** shows the state of the sync (**syncing…**, **synced 21:03 2↑ 1↓ 1−**, or the error). Tap it to sync now. Without a server it reads **on this phone only — tap to set up a WebDAV folder** and a tap opens the settings. The figures count the notes sent (↑), received (↓) and deleted (−).
 
-The **⋯** menu holds **+ new note**, **find**, **sync now** (only when a server is set), then under a line **black on white** or **white on black** (whichever the app is not showing at present) and **settings**.
+The **⋯** menu holds **+ new note**, **find**, **sync now** (only when a server is set), then under a line the name of the next colour theme (**black on white** when the app is white on black, and so on round the cycle) and **settings**.
 
 When a search is active, the title line shows the searched words in quotation marks with **←** before them; tap it to return to the full list. If nothing matches, the list reads **nothing found**.
 
@@ -2167,7 +2167,7 @@ Everything is saved as you type; there is no save button. When you leave the not
 
 At the bottom, **● dictate** speaks into this note. While the microphone is open the row turns to **■** followed by the running time, under a line that moves with your voice; tap it to stop.
 
-The **⋯** menu holds the **call …**, **write to …** and **open …** lines for what the note contains, then **share** and **delete**, and under a line **black on white** or **white on black**.
+The **⋯** menu holds the **call …**, **write to …** and **open …** lines for what the note contains, then **share** and **delete**, and under a line the name of the next colour theme.
 
 ### Settings (phone)
 
@@ -2261,9 +2261,9 @@ Deleting a folder never deletes its notes: they stay in **all notes**, without a
 
 The desktop app reads the same file (see "On the computer").
 
-### Switch between white on black and black on white
+### Change the colours
 
-Tap **⋯** on the list or in a note, then the line **black on white** or **white on black**.
+Tap **⋯** on the list or in a note, then the last line but one: it names the next theme and moves to it. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next. The two inks keep the app in pure black and white; the eight palettes are those of the Plume keyboard, with a tint for the background, the text and the inverted rows. The settings row **colours** does the same.
 
 ## Settings
 
@@ -2282,7 +2282,7 @@ Tap **⋯** on the list or in a note, then the line **black on white** or **whit
 | **import credentials** | Reads such a file | – | – |
 | **careful** / **ordinary** | The speech model used for dictation; the chosen one is shown inverted | **careful** (574 MB, **recommended**, **four times slower**) / **ordinary** (190 MB) | **careful** |
 | **language spoken** | The language you dictate in | the phone's language / english / **detected** | the phone's language |
-| **colours** | The two colours of the app | **white on black** / **black on white** | **white on black** |
+| **colours** | The colour theme; shows the current one, a tap moves to the next | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | Size of all text | S / M / L | M |
 | **font** | Typeface of all text | sans-serif / serif / mono | sans-serif |
 | **haptic tick** | A short vibration when you start or stop a dictation | **on** / **off** | **on** |
@@ -2345,7 +2345,7 @@ The phone app lets Android's own backup include its data, if you use it. Uninsta
 
 ### Home-screen widgets
 
-Three widgets work with any launcher, in the app's two colours:
+Three widgets work with any launcher, in the app's colours (the background and the text of the chosen theme):
 
 - **Reader's Notes · latest note** (one line): the title of the most recent note, with when it changed and its next line. Tap it to open that note; tap **+** for a new note. Without notes it reads **no note yet**.
 - **Reader's Notes · latest notes** (a list, resizable): the word **notes** (tap to open the app), **+** for a new note, and the notes, most recent first. Tap one to open it.
@@ -2365,7 +2365,7 @@ Reader's Launcher shows the latest notes on its notes tile and can open a note, 
 
 ### How it differs from the phone
 
-The list and the page sit side by side in one window. There is no dictation, no **share**, no **call … / write to … / open …** lines and no widget. The sync has no on/off switch: with a server set it runs when the window opens, every two minutes, 20 seconds after you stop typing, when you move to another note or another window, when you quit, and on demand. The app starts **black on white**.
+The list and the page sit side by side in one window. There is no dictation, no **share**, no **call … / write to … / open …** lines and no widget. The sync has no on/off switch: with a server set it runs when the window opens, every two minutes, 20 seconds after you stop typing, when you move to another note or another window, when you quit, and on demand. The app starts **black on white**; the colours are changed from the **⋯** menu or with Ctrl+T (see below).
 
 ### The window
 
@@ -2373,7 +2373,7 @@ The list and the page sit side by side in one window. There is no dictation, no 
 - **The list**: click a note to open it. The app reopens the note you were last in.
 - **+ new note** under the list. You can also just type on the empty page: that starts a note.
 - **Status line**: **syncing…**, **synced 09:33 1↑ 2↓**, or the error; click it to sync (or to open the settings when no server is set). **⚙** opens the settings.
-- **⋯** above the page: **+ new note**, **find**, **sync now** (with a server), **delete this note**, **white on black** or **black on white**, **settings**.
+- **⋯** above the page: **+ new note**, **find**, **sync now** (with a server), **delete this note**, then the name of the next colour theme (**black on white** when the app is white on black, and so on round the cycle), **settings**. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each click moves to the next. The two inks keep the app in pure black and white; the eight palettes are those of the Plume keyboard, with a tint for the background, the text and the chosen row.
 - **Right click on a note**: **move to** (with folders on; the current place is marked **●**, **no folder** first) and **delete**. Right click on the empty part of the list: **+ new note**. Right click on **all notes** or **+ new folder**: **+ new folder**.
 
 A note is saved a moment after you stop typing. An empty note is dropped when you leave it. Deleting has no confirmation. A page open on screen follows the server when you are not typing in it; if the server's version arrives while you are typing, it is kept as a second note ending in **(server copy)**.
@@ -2406,7 +2406,7 @@ Opened with **Ctrl+,**, **⚙**, or **⋯** then **settings**.
 | Ctrl+N | new note |
 | Ctrl+F | go to the find field |
 | Alt+Up / Alt+Down | previous / next note |
-| Ctrl+T | switch between white on black and black on white |
+| Ctrl+T | next colour theme (white on black, black on white, lavender, sage, nordic, terracotta, coquette, activist, sultry, nature, then round again) |
 | Ctrl+= or Ctrl++ / Ctrl+- | larger / smaller text (9 to 24 points, 13 at the start) |
 | F5 or Ctrl+R | sync now |
 | Ctrl+, | settings |
@@ -2481,7 +2481,7 @@ The settings file holds the password and is readable by your user account only.
 
 Reader's Books is a shelf of e-books and a reader for them, made for e-ink phones. The shelf is a plain list; a book is shown as pages of text cut at whole lines, turned by a tap, with no scrolling and no animation. It reads EPUB, MOBI, FB2 and plain-text files, shows the pictures of EPUB books inside the page, and remembers your place in every book.
 
-The app is black and white only, with no icons. It has no store, no account and no network access at all: you bring your own files. It deliberately keeps only the text and the pictures of a book: the book's own fonts, colours, layout and links are dropped. It does not read PDF.
+The app is text only, with no icons, white on black unless you choose another of its colour themes. It has no store, no account and no network access at all: you bring your own files. It deliberately keeps only the text and the pictures of a book: the book's own fonts, colours, layout and links are dropped. It does not read PDF.
 
 The app is available in English, French, German, Spanish, Portuguese and Russian; it follows the language of the phone.
 
@@ -2507,7 +2507,7 @@ Controls:
 - **Tap a book**: opens it at the page where you left it. A magazine issue opens on its contents instead (see "The contents of a magazine").
 - **Long press a book**: opens a menu headed by the book's title, with **read** (open at the current page), **chapters** (the list of chapters; for a magazine this entry is called **contents**) and **remove from the shelf**.
 - **+ open a book**, at the bottom: opens the phone's file chooser to add a book.
-- **⋯**, at the top right: opens the shelf menu, with **+ open a book**, then the colour switch (it reads **black on white** when the app is white on black, and **white on black** when the app is black on white; tapping it switches), then **settings**.
+- **⋯**, at the top right: opens the shelf menu, with **+ open a book**, then the colour themes (the line names the next theme: **black on white** when the app is white on black, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and **white on black** again; tapping it moves to that theme), then **settings**.
 
 A menu is closed by tapping outside it or with the phone's back button.
 
@@ -2540,7 +2540,7 @@ The book's menu is headed by the book's title and has these entries:
 | **smaller text** | Lowers the reading size by 2. The line beneath shows the change, for example **20 → 18**. The smallest size is 12. |
 | **remove from the shelf** | Removes the book and returns to the shelf. There is no confirmation. |
 | **books** | Leaves the book, like the back button. |
-| **black on white** / **white on black** | Switches the colours of the whole app. |
+| **black on white**, **lavender** … **white on black** | Moves the whole app to the next colour theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap goes to the next. |
 
 How the text is laid out: paragraphs are aligned on the left, without hyphenation; a paragraph that follows another is indented. Headings are larger and bold. In books and magazines that mark them, the lead paragraph is bold, and the section name, the author, captions and credits are smaller and grey. A page never ends in the middle of a line.
 
@@ -2627,9 +2627,9 @@ To return to the contents from an article you can also long press the page and t
 
 Your place in the book is kept when the size changes. The same adjustment is in **settings**, where **automatic size** returns to the size chosen from the width of the screen.
 
-### Switch between white on black and black on white
+### Change the colours
 
-On the shelf, tap **⋯** then **black on white** or **white on black**. In a book, long press the page and tap the same entry. In **settings**, tap the **colours** line.
+On the shelf, tap **⋯** then the line that names the next theme (**black on white**, **lavender**, …). In a book, long press the page and tap the same entry. In **settings**, tap the **colours** line: it shows the current theme and each tap moves to the next. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and **white on black** again. The page of a book, its highlights and the widget take the theme's colours.
 
 ### Change the font
 
@@ -2661,7 +2661,7 @@ All settings are on the **settings** screen (shelf, **⋯**, **settings**).
 
 | Setting | What it changes | Choices | Default |
 |---|---|---|---|
-| **colours** | The colours of the whole app and of the widget. Tap to switch. | **white on black**, **black on white** | **white on black** |
+| **colours** | The colours of the whole app and of the widget. Each tap moves to the next theme. | **white on black**, **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **reading size — tap for larger** | The size of the text in the page. Each tap adds 2, up to 40. The line shows the size, followed by **· auto** while the automatic size is in use. | 12 to 40 | automatic |
 | **smaller text** | Lowers the reading size by 2, down to 12. The line beneath shows the change, for example **20 → 18**. | — | — |
 | **automatic size** (**from the screen width**) | Returns the reading size to the automatic one, worked out from the width of the screen: between 17 and 24. | — | in use |
@@ -2787,7 +2787,7 @@ The **⋯** menu:
 | **open the folder** (under it: **files in Download/Reader's Bookshop**) | Opens the folder of the downloaded files in the phone's file manager, or the phone's downloads screen if the folder cannot be opened directly. |
 | **delete all files** | Shown only when the list is not empty. Asks **delete all N files from the phone?**, then **delete all files** or **cancel**. Every line goes, finished or not. |
 | **sources** | Opens the sources screen. |
-| **black on white** / **white on black** | Switches the colours at once; the entry names the colours you would get. |
+| **black on white**, **lavender**, … | Moves to the next colour theme at once; the entry names the theme you would get. The cycle: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. |
 | **settings** | Opens the settings screen. |
 
 ### search
@@ -2977,7 +2977,7 @@ Open **⋯** → **settings**. Each line shows the current value; each tap moves
 | Setting | Choices | At first |
 |---|---|---|
 | **language of the search** | English, français, Deutsch, español, português, русский | the phone's language if it is one of the six, else English |
-| **colours** | **white on black**, **black on white**, **as the phone** (follows the phone's dark mode) | **white on black** |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next | **white on black** |
 | **font** | **serif**, **sans serif**, **monospace** | **sans serif** |
 | **size** | **small**, **medium**, **large** | **medium** |
 | **haptic tick** | **on**, **off** | **on** |
@@ -3148,7 +3148,7 @@ The **⋯** menu contains:
 
 - **sync now** (only when a cloud folder is set up);
 - the kind of the next recording (**memo**, **lecture** or **conversation**, with **kind of the next recording** under it): each tap moves to the next kind;
-- **black on white** or **white on black**: switches the colours;
+- the next colour theme (**black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**): each tap moves to it;
 - **settings**.
 
 ### Selection mode
@@ -3300,7 +3300,7 @@ The app answers **credentials imported**, then syncs. A credentials file exporte
 
 ### Change the look
 
-In the settings: **colours**, **text size**, **font**. The colours can also be switched from the list's **⋯** menu.
+In the settings: **colours**, **text size**, **font**. **colours** shows the current theme and each tap moves to the next: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**. The list's **⋯** menu names the next theme and moves to it too.
 
 ## Settings
 
@@ -3332,7 +3332,7 @@ Look:
 
 | Setting | Choices | Default |
 |---|---|---|
-| **colours** | **white on black**, **black on white** | **white on black** |
+| **colours** | **white on black**, **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | S, M, L | M |
 | **font** | sans-serif, serif, mono | sans-serif |
 | **haptic tick** | **on**, **off** | **on** |
@@ -3538,7 +3538,7 @@ At the bottom of the home screen, the episode loaded in the player is shown as a
 - **+ a feed**: opens **add a podcast**
 - **import subscriptions**
 - **export the subscriptions** (abonnements.opml)
-- **black on white** or **white on black**: switches the colours at once
+- the next colour theme (**black on white**, **white on black**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**): the entry names the theme that comes next and switches to it at once
 - **settings**
 
 ### add a podcast
@@ -3716,7 +3716,7 @@ Open **⋯**, then **settings**. Each tap on a row moves to its next value.
 | **download on wifi only** | **on**, **off** | **on** |
 | **refresh on opening** | **on**, **off** | **on** |
 | **delete when played** ("except favourites and transcribed episodes") | **on**, **off** | **off** |
-| **colours** | **white on black**, **black on white** | **white on black** |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next | **white on black** |
 | **text size** | S, M, L | M |
 | **font** | sans-serif, serif, mono | sans-serif |
 | **haptic tick** | **on**, **off** | **on** |
@@ -3762,7 +3762,7 @@ Uninstalling the app removes everything it kept, including downloaded episodes a
 
 ## On the computer
 
-The computer program is one window in the same two colours. It has no transcription, no translation and no widget. It adds YouTube.
+The computer program is one window in the same colours: the two inks, then the Plume palettes. It has no transcription, no translation and no widget. It adds YouTube.
 
 ### The window
 
@@ -3775,7 +3775,7 @@ Messages appear for a few seconds in the bar at the very bottom of the window.
 
 ### Menus
 
-**⋯**: **search**, **refresh**, **+ a feed**, **import subscriptions**, **export the subscriptions**, **import settings**, **export the settings**, **black on white** or **white on black**, **settings**.
+**⋯**: **search**, **refresh**, **+ a feed**, **import subscriptions**, **export the subscriptions**, **import settings**, **export the settings**, the next colour theme (after **white on black**: **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, then **white on black** again; the entry names the theme that comes next and switches to it at once), **settings**.
 
 Right click on an episode: **play**, **download** / **stop the download** / **remove from this computer**, **keep as a favourite** / **remove from favourites**, **mark as heard** / **mark as unheard**, **copy the link**, **open the channel**.
 
@@ -3800,7 +3800,7 @@ Right click on a channel: **refresh**, **automatic download** (ticked when on), 
 
 | Setting | Choices | Default |
 |---|---|---|
-| **colours** | **white on black**, **black on white** | **white on black** |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **font** | **sans-serif**, **serif**, **mono** | **sans-serif** |
 | **text size** | 9 to 24 | 12 |
 | **opens on** | **episodes**, **favourites**, **downloaded** | **episodes** |
@@ -3931,9 +3931,9 @@ What you can do:
 
 - **Tap a line**: the file starts playing where it was left and the player opens. If the file is already the one loaded in the player, the player simply opens.
 - **Long press on a line**: opens the file's menu (see below).
-- **The inverted line at the bottom** (white on black becomes black on white): the file currently loaded, preceded by **▶** when paused or **❚❚** when playing. Tap it to return to the player.
+- **The inverted line at the bottom** (filled with the theme's accent: black on white in the default theme): the file currently loaded, preceded by **▶** when paused or **❚❚** when playing. Tap it to return to the player.
 - **+ open audio files**: opens the phone's file picker, limited to audio files. You can pick several at once.
-- **⋯** at the top right: a small menu with **+ open audio files**, then **black on white** or **white on black** (switches the colours at once) and **settings**.
+- **⋯** at the top right: a small menu with **+ open audio files**, then the name of the next colour theme (**black on white**, **lavender**, … — tapping it switches the colours at once) and **settings**.
 
 ### The file's menu
 
@@ -4111,9 +4111,9 @@ In the file's menu, tap **share the audio…** and pick the app to send it to.
 
 Long press the file in the list, then tap **remove from the list**. If it was playing, playback stops. The original audio file is not deleted, and neither are the text files in Documents/Transcriptions. The app's own copy of the file, if it had made one, is deleted, together with what the app kept about the file.
 
-### Switch between white on black and black on white
+### Change the colours
 
-In the list, tap **⋯**, then **black on white** or **white on black**. The same choice is in **settings**, on the **colours** line.
+In the list, tap **⋯**, then the entry that names the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next, and after **nature** comes **white on black** again. In the first two, the current file's line and the play button are inverted; in the others they are filled with the theme's accent colour. The same choice is in **settings**, on the **colours** line, which shows the current theme and moves to the next on tap.
 
 ### Put the resume widget on the home screen
 
@@ -4125,7 +4125,7 @@ The screen opens with a reminder: *transcripts are plain .txt files in Documents
 
 | Setting | What it changes | Choices | Default |
 |---|---|---|---|
-| **colours** | The colours of the app and of its widget. | **white on black**, **black on white** | **white on black** |
+| **colours** | The colours of the app and of its widget; each tap moves to the next. | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | The size of the text in the whole app. | S, M, L | M |
 | **font** | The typeface. | sans-serif, serif, mono | sans-serif |
 | **haptic tick** | A short vibration when you tap **−5 s**, **▶** / **❚❚** or **+10 s** in the player. | **on**, **off** | **on** |
@@ -4234,7 +4234,7 @@ If main points were asked together with a transcription and do not appear, the t
 
 ## What it is
 
-Reader's Mindful Tool is a meditation bowl with three uses: one strike every X minutes until you stop it, a sitting of X minutes closed by three bowls, and bowls at set times every day. It is black and white and made of text only, like the other Reader's apps. Every bowl is set as an alarm-clock alarm and played on the phone's alarm channel, so it sounds on time through silent mode, Do Not Disturb and hours of sleep with the screen off. It has no guidance, no statistics, no streaks and no account, and it cannot use the network at all.
+Reader's Mindful Tool is a meditation bowl with three uses: one strike every X minutes until you stop it, a sitting of X minutes closed by three bowls, and bowls at set times every day. It is made of text only, white on black unless you choose another of its colour themes, like the other Reader's apps. Every bowl is set as an alarm-clock alarm and played on the phone's alarm channel, so it sounds on time through silent mode, Do Not Disturb and hours of sleep with the screen off. It has no guidance, no statistics, no streaks and no account, and it cannot use the network at all.
 
 The app exists in English, French, German, Spanish, Portuguese and Russian. It follows the language of the phone; there is no language setting inside the app.
 
@@ -4277,7 +4277,7 @@ The two functions are independent: you can run both at the same time.
 |---|---|
 | **bowls at set times** | Opens the screen of the daily times. |
 | **hear the bowl** | Plays one strike of the bowl in use. |
-| **black on white** / **white on black** | Switches to the other colours; the entry names the colours you will get. |
+| **black on white**, **lavender**, … | Moves to the next colours; the entry names the colours you will get: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**. |
 | **settings** | Opens the settings. |
 
 Tap outside the menu, or press the phone's back button, to close it without choosing.
@@ -4396,9 +4396,9 @@ The bowl plays on the phone's alarm channel. Its loudness is the phone's alarm v
 
 The line then reads **runs in the background: allowed**.
 
-### Switch between white on black and black on white
+### Change the colours
 
-Tap **⋯** on the home screen and then **black on white** or **white on black**; or, in **settings**, tap the line above **colours**.
+Tap **⋯** on the home screen and then the entry that names the next colours (**black on white**, **lavender**, …); or, in **settings**, tap the line above **colours**. Each tap moves to the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The widget follows.
 
 ### Put the widget on a home screen
 
@@ -4413,7 +4413,7 @@ Tap **⋯** on the home screen and then **black on white** or **white on black**
 | Bowl (first block of the settings) | The sound used for every bowl in the app | **Tibetan bowl (E♭)**, **singing bowl**, **gong bowl**, **Satipanya**, **enpleineconscience.ch**, or your own file | **Tibetan bowl (E♭)** |
 | **your own sound…** | Uses an audio file from the phone as the bowl | any file the phone can play (mp3, wav) | none |
 | **allow running in the background** | Exempts the app from the phone's battery optimisation | allowed or not | not allowed |
-| **colours** | The two colours of the app and of its widget | **white on black**, **black on white** | **white on black** |
+| **colours** | The colours of the app and of its widget; each tap moves to the next | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | The size of all text in the app | **small**, **medium**, **large** | **medium** |
 | **font** | The typeface of the app | **sans**, **serif**, **mono** | **sans** |
 | **haptic tick** | A short vibration when you tap **▶** or **■** in the app | **on**, **off** | **on** |
@@ -4503,7 +4503,7 @@ The app does not receive shared content and does not open files, apart from the 
 
 Reader's Food Log is a food diary made only of photos. One touch opens the viewfinder, a second touch takes the photo, and the screen closes by itself; the app labels the photo **breakfast**, **lunch**, **dinner** or **snack** from the time of day and files it under its day. You can also note a physical activity in one tap and your weight once a day, with a curve of how it moves.
 
-It deliberately has no calories, no food database, nothing to type about what you eat, no account and no network access: everything stays on the phone. The app is black and white, text only, and follows the phone's language (English, French, German, Spanish, Portuguese, Russian).
+It deliberately has no calories, no food database, nothing to type about what you eat, no account and no network access: everything stays on the phone. The app is text only, white on black unless you choose another of its colour themes, and follows the phone's language (English, French, German, Spanish, Portuguese, Russian).
 
 ## First start
 
@@ -4708,7 +4708,7 @@ Do step 1 above from time to time and keep the zip file somewhere other than the
 
 ### Change the look
 
-In **settings**, touch **colours**, **text size** or **font**; each touch moves to the next choice.
+In **settings**, touch **colours**, **text size** or **font**; each touch moves to the next choice. **colours** goes round **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; in the coloured themes the band and the highlighted lines are filled with the theme's accent colour.
 
 ## Settings
 
@@ -4725,7 +4725,7 @@ Then the settings themselves. Each line shows the current value in large letters
 
 | Setting | Choices | Default |
 | --- | --- | --- |
-| **colours** | **dark** (white on black), **light** (black on white) | **dark** |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each touch moves to the next | **white on black** |
 | **text size** | **S**, **M**, **L** | **M** |
 | **font** | **sans-serif**, **serif**, **mono** | **sans-serif** |
 | **weight unit** | **kg**, **lb** | **kg**; **lb** when the phone's region is the United States, Liberia or Myanmar |
@@ -4765,7 +4765,7 @@ You can therefore import the same file twice, or import onto a phone that alread
 
 ### Home-screen widgets
 
-The app offers two widgets for any Android home screen. Both take the colours chosen in the app (**dark** or **light**).
+The app offers two widgets for any Android home screen. Both take the background and text colours of the theme chosen in the app under **colours**.
 
 - **Food photo** (one cell): a single ◉. One touch opens the viewfinder.
 - **Food log** (four cells wide, one high): the title **food log**, and under it **today** followed by the day's count, for example "today · 2 photos · 1 activity", or "today · nothing yet". Touch the text to open the app. Touch **✎** to open the app on the sheet **physical activity, now**. Touch **◉** to open the viewfinder. The count is brought up to date after each photo or activity.
@@ -5128,7 +5128,7 @@ The settings of the phone, in the order of the screen. Touching a line with a fi
 | "best" model lines | Download or remove the more accurate Tesseract model of a language | per language | fast model |
 | **finding the page** | Who finds and straightens the page | **built-in (free software)**, **ML Kit (Google)** | your first-start choice |
 | **reading the text** | Who reads the text | **Tesseract (free software)**, **ML Kit (Google)** | your first-start choice |
-| **colours** | White on black or black on white | **dark**, **light** | **dark** |
+| **colours** | Colour theme of the app: the two inks, then the palettes of the Plume keyboard; each touch moves to the next | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | Size of the app's text | S, M, L | M |
 | **font** | Typeface of the app | sans-serif, serif, mono | sans-serif |
 | **vibration on touch** | A short vibration on buttons | **on**, **off** | **on** |
@@ -5287,7 +5287,7 @@ Under **reading**, a line gives the state for the current language: **English: t
 
 The bottom of the window shows the version.
 
-Two settings are not in that window: the colours (Ctrl+T, or **white on black** / **black on white** in the **⋯** menu; black on white at first) and the text size (Ctrl+= and Ctrl+-).
+Two settings are not in that window: the colours and the text size (Ctrl+= and Ctrl+-). The colours are a cycle of ten themes: **black on white** (at first), **white on black**, then the palettes of the Plume keyboard, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to the first. Ctrl+T moves to the next one; in the **⋯** menu the entry is named after the next theme (**white on black** at first, then **lavender**, and so on) and moves to it.
 
 To use the phone's folders, enter the same server, folder and login as on the phone, or import the credentials file exported by the phone. If the app's own section is missing from the file, the server and login of Reader's Notes or Reader's Recorder are used: **server and login taken from Reader's Notes**. **export credentials…** writes `readers-credentials.json` in your home folder unless you choose another place; if that file already exists and is a Reader's credentials file, the app's section is added to it and the other apps' sections are kept. The app then says **credentials exported to … — the file holds your passwords: keep it private**.
 
@@ -5302,7 +5302,7 @@ To use the phone's folders, enter the same server, folder and login as on the ph
 | F2 | rename the open document |
 | Delete | delete the open or selected documents |
 | F5 or Ctrl+R | sync now |
-| Ctrl+T | white on black / black on white |
+| Ctrl+T | next colour theme (black on white, white on black, lavender, sage, nordic, terracotta, coquette, activist, sultry, nature) |
 | Ctrl+= or Ctrl++, Ctrl+- | larger, smaller text |
 | Ctrl+, | settings |
 | Escape | cancel the scan; else empty the search; else discard the pages in review; else go back to the folders |
@@ -5451,7 +5451,7 @@ The **⋯** menu holds:
 - **saved for later**: opens the saved articles.
 - **refresh**: fetches all enabled sources again.
 - **order: latest first** or **order: one per source**: the entry shows the order in use; tap it to switch to the other one.
-- **white on black** or **black on white**: switches the colours of the whole app to the one named.
+- the name of the next colour theme (**white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**): switches the colours of the whole app to it; each tap moves to the next one.
 - **settings**: opens the settings.
 
 The two orders:
@@ -5483,7 +5483,7 @@ The **⋯** menu, headed by the title of the article, holds:
 - **share**: hands the title and the address of the article to another app;
 - **larger text** and **smaller text**: one step at a time; the pages are cut again and you stay at about the same place;
 - **serif** or **sans-serif**: switches to the font named;
-- **white on black** or **black on white**: switches to the colours named.
+- the name of the next colour theme (**white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**): switches to it; each tap moves to the next one.
 
 ### Saved for later
 
@@ -5667,9 +5667,9 @@ Both files contain your sign-ins: anyone who has the file can read your paid pub
 
 While reading: **⋯** › **serif** or **sans-serif**. Or in **settings**, tap the row **reading font**.
 
-### Switch to white on black
+### Change the colours
 
-On the home list or while reading: **⋯** › **white on black**. To come back: **⋯** › **black on white**. Or in **settings**, tap the row **colours**.
+On the home list or while reading: **⋯** › the entry named after the next theme, **white on black** for instance. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, then back to **white on black**; each tap moves to the next one. Or in **settings**, tap the row **colours**: it shows the theme in use and moves to the next. The home-screen widget takes the same colours.
 
 ### Make the lists turn pages instead of scrolling
 
@@ -5686,7 +5686,7 @@ Each row shows the value in use, with its name in grey under it. Tap a row to ch
 
 | Row (grey line under it) | What it changes | Choices | Default |
 |---|---|---|---|
-| **colours** | The colours of the whole app | **black on white**, **white on black** | **black on white** |
+| **colours** | The colours of the whole app; the row shows the theme in use, a tap moves to the next | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap passes to the next | **black on white** |
 | **text size — tap for larger, long-press for smaller** | The size of the reading text; titles, menus and small lines follow it. Tap for one step larger, long-press for one step smaller | 13 to 30 | automatic, shown as the size followed by **· auto** |
 | **back to the automatic size** (**from the screen size**) | Drops your own size and returns to the automatic one | — | — |
 | **reading font** | The font of the text, in the reader and in the rest of the app | **sans-serif**, **serif** | **sans-serif** |
@@ -5738,7 +5738,7 @@ The app offers one widget, **Latest articles from your RSS feeds**. It can be re
 - Tap a title to open the article in your browser.
 - When there is nothing to show, it reads **nothing yet**.
 
-The widget shows what the app last fetched, in the **latest first** order: it is updated each time the app refreshes its list, and does not fetch anything by itself. It is always black on white, whatever the colours chosen in the app.
+The widget shows what the app last fetched, in the **latest first** order: it is updated each time the app refreshes its list, and does not fetch anything by itself. It takes the colours chosen in the app (**settings** › **colours**).
 
 ### Sharing
 
@@ -5855,7 +5855,7 @@ The title **detox** is at the top left, the **⋯** menu at the top right.
 
 - the same action as the bottom line (**start blocking**, **stop blocking** or **stop blocking — 5 problems first**);
 - **allowed hours** (only when blocking is off): opens the *allowed hours* screen;
-- **black on white** or **white on black**: switches to the colours named;
+- the name of the next colour theme (**black on white**, **lavender**…): moves to it. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**;
 - **settings**: opens the settings screen.
 
 ### Allowed hours
@@ -5991,9 +5991,9 @@ The app starts the blocking again by itself after the phone restarts and after a
 2. Tap **always-on VPN**: Android's VPN settings open. Choose Reader's Detox there and turn on Android's always-on VPN option.
 3. Back in **settings**, tap **allow running in the background** and accept. The line then reads **runs in the background: allowed**.
 
-### Switch between black on white and white on black
+### Change the colours
 
-Open **⋯** and tap **black on white** or **white on black** (the menu names the colours you will get). The same switch is in **settings**, on the **colours** line.
+Open **⋯** and tap the entry that names the next colour theme (the menu names the colours you will get). Each tap moves to the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The same cycle is in **settings**, on the **colours** line, which shows the current theme. The widget follows.
 
 ### Start or stop from the home screen
 
@@ -6007,7 +6007,7 @@ Open **⋯**, then **settings**.
 |---|---|---|---|
 | **always-on VPN** (**so the blocking survives reboots**) | Opens Android's VPN settings, where you can make Reader's Detox the always-on VPN. | — | — |
 | **allow running in the background** (**so Android never stops the blocking**) | Asks Android to exempt the app from battery optimisation. Once granted, the line reads **runs in the background: allowed**. | — | not allowed |
-| **colours** | The colours of the app and of its widget. | **white on black**, **black on white** | **white on black** |
+| **colours** | The colours of the app and of its widget; each tap moves to the next theme. | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | The size of the text in the app. Each tap moves to the next size. | **small**, **medium**, **large** | **medium** |
 | **font** | The typeface of the app. Each tap moves to the next one. | **sans-serif**, **serif**, **mono** | **sans-serif** |
 | **haptic tick** | A short vibration when you switch a site, the maths problems, or start and stop. | **on**, **off** | **on** |
@@ -6768,7 +6768,7 @@ At the very bottom, a row reads **turn the filter on** or **turn the filter off*
 ### The menu (⋯)
 
 - **turn the filter on** / **turn the filter off**: the same switch. This entry is absent as long as the permission has not been given.
-- **black on white** or **white on black**: switches the app's colours to the ones named.
+- the name of the next colour theme (**black on white**, **lavender**, **sage**…): moves the app's colours to it. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**.
 - **settings**: opens the settings screen.
 
 Tap outside the menu, or press back, to close it.
@@ -6846,7 +6846,7 @@ Press the **Night filter** tile for a long time.
 
 ### Change the app's colours
 
-Open the menu **⋯** and tap **black on white** (or **white on black**). The same change is in **settings**, row **colours**.
+Open the menu **⋯** and tap the entry that names the next theme (**black on white** when the app is white on black). Each tap moves to the next one: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The same change is in **settings**, row **colours**, which shows the current theme and moves to the next on tap. The night filter itself keeps its own colours whatever the theme.
 
 ## Settings
 
@@ -6862,7 +6862,7 @@ The app's look is chosen in **settings**. Tap a row to move to the next choice.
 
 | Setting | Choices | Default | What it changes |
 |---|---|---|---|
-| **colours** | **white on black**, **black on white** | **white on black** | The colours of the app and of its widget. |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next | **white on black** | The colours of the app and of its widget. |
 | **text size** | **small**, **medium**, **large** | **medium** | The size of all text in the app. |
 | **font** | **sans-serif**, **serif**, **mono** | **sans-serif** | The typeface of the app. |
 | **haptic tick** | **on**, **off** | **on** | A short vibration when you switch the filter or change one of its parts in the app. |
@@ -6943,7 +6943,7 @@ The tile shows **filter on** or **filter off**, with **night filter** beneath, a
 
 # Reader's Motivation
 
-*Android 1.0.1*
+*Android 1.1.0*
 
 ## What it is
 
@@ -6969,7 +6969,7 @@ The home screen lists your habits, one line each: the name, and under it a summa
 
 When you have exactly one habit, the app opens directly on its page; the list is one tap back (**←**).
 
-**⋯** at the top right opens the menu with **light** or **dark** (switches to the other colours; the entry names the colours you will get) and **settings**. Tap outside the menu, or press the phone's back button, to close it without choosing.
+**⋯** at the top right opens the menu with the name of the next colour theme (**black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, then **white on black**; the entry names the colours you will get, and each tap moves to the next theme) and **settings**. Tap outside the menu, or press the phone's back button, to close it without choosing.
 
 ### A habit's page
 
@@ -7013,7 +7013,7 @@ The menu is titled with the habit's name:
 | **the record** | Opens the list of every entry noted for this habit. |
 | **change** | Opens the habit's form to change any field. |
 | **delete this habit** | Asks **delete “sugar” and everything counted?** with **delete** and **cancel**. **delete** removes the habit and all its entries at once and returns to the list. |
-| **light** / **dark** | Switches to the other colours. |
+| **black on white**, **lavender**, … | Moves to the next colour theme; the entry names the one you will get. |
 | **settings** | Opens the settings. |
 
 ### an urge
@@ -7068,7 +7068,7 @@ From top to bottom:
 - **a daily reminder**: **off** or the time, for example **20:00**. Under it: **One line at the hour you choose: the day, the count, and the question. Off unless you turn it on.** Tap to open a menu titled **a daily reminder** with **off**, **08:00**, **12:00**, **20:00**, **21:00** and **time (HH:MM)**, which opens a prompt of the same name. Type the time on the 24-hour clock: **7:30**, **07:30**, **7h30**, **7.30**, **730**, **0730**, or just **7** for 07:00. A time the app does not understand changes nothing.
 - **on the widget and in the reminder**, shown only when you have more than one habit: the name of the habit the widget and the reminder speak of. Tap to choose another in a menu of your habits.
 - **save a backup…** and **restore a backup…** (see "Your data").
-- **colours** (**dark** or **light**), **text size** (**small**, **medium**, **large**), **font** (**sans serif**, **serif**, **monospace**), **vibration on tap** (**on** or **off**): each line shows the current choice above the name of the setting; tap to move to the next choice.
+- **colours** (**white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**), **text size** (**small**, **medium**, **large**), **font** (**sans serif**, **serif**, **monospace**), **vibration on tap** (**on** or **off**): each line shows the current choice above the name of the setting; tap to move to the next choice.
 - **why it is built this way**: tap to show or hide a paragraph that sums up the research behind the app's choices.
 - **Reader's Motivation**, with **about** under it, and the line **written with Claude Code · nothing leaves the phone**: information only.
 
@@ -7173,7 +7173,7 @@ With two habits or more, open **settings** and tap the line under **on the widge
 
 ### Switch colours, text size and font
 
-Tap **⋯** then **light** or **dark**; or open **settings** and tap the lines under **colours**, **text size** and **font**.
+Tap **⋯** then the name of the next theme; or open **settings** and tap the lines under **colours**, **text size** and **font**.
 
 ## Settings
 
@@ -7181,7 +7181,7 @@ Tap **⋯** then **light** or **dark**; or open **settings** and tap the lines u
 |---|---|---|---|
 | **a daily reminder** | A notification once a day with the day, the count and a question | **off**, **08:00**, **12:00**, **20:00**, **21:00**, or any time typed under **time (HH:MM)** | **off** |
 | **on the widget and in the reminder** | The habit the widget and the reminder speak of (shown with two habits or more) | one of your habits | the first of the list |
-| **colours** | The two colours of the app and of its widget | **dark** (white on black), **light** (black on white) | **dark** |
+| **colours** | The theme of the app and of its widget: a background, a text colour and an accent colour that fills the main row | **white on black**, **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | The size of all text in the app | **small**, **medium**, **large** | **medium** |
 | **font** | The typeface of the app | **sans serif**, **serif**, **monospace** | **sans serif** |
 | **vibration on tap** | A short vibration when you tap a line that counts or opens something | **on**, **off** | **on** |
