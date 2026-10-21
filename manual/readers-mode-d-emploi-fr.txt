@@ -975,7 +975,7 @@ Chaque ligne affiche sa valeur actuelle ; un toucher passe à la suivante.
 
 | Réglage | Choix | Par défaut |
 |---|---|---|
-| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** (chaque toucher passe au suivant) | blanc sur noir |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** (chaque toucher passe au suivant). Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page. | blanc sur noir |
 | **police** | **serif**, **sans**, **mono** | sans |
 | **taille du texte** | **petit**, **moyen**, **grand** | moyen |
 | **alignement** | **gauche**, **centré** | gauche |
@@ -1140,7 +1140,7 @@ Chaque vue porte un signe **⋯** en haut à droite. Il ouvre partout le même m
 - **jours ouvrés** ;
 - **mois** ;
 - **agendas** ;
-- le nom du prochain thème de couleurs (**noir sur blanc** quand l'app est en blanc sur noir, et ainsi de suite) : change les couleurs sur-le-champ. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant ;
+- le nom du prochain thème de couleurs (**noir sur blanc** quand l'app est en blanc sur noir, et ainsi de suite) : change les couleurs sur-le-champ. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page ;
 - **réglages**.
 
 Touchez en dehors du menu pour le fermer. Sur tous les écrans sauf l'agenda, le titre en haut à gauche commence par **←** : touchez-le, ou faites le geste de retour du téléphone, pour revenir en arrière.
@@ -1430,7 +1430,7 @@ Ajoutez un widget à la manière de votre lanceur et choisissez **Reader's Calen
 ### Changer l'apparence rapidement
 
 - Téléphone : **⋯** › le nom du prochain thème de couleurs (**blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant).
-- Ordinateur : Ctrl+T passe au thème de couleurs suivant (**blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et on recommence), Ctrl+= et Ctrl+- changent la taille du texte.
+- Ordinateur : Ctrl+T passe au thème de couleurs suivant (**blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et on recommence), Ctrl+= et Ctrl+- changent la taille du texte. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ## Réglages
 
@@ -1875,7 +1875,7 @@ Tous dans **réglages**. Chaque toucher sur une ligne passe au choix suivant.
 | **alignement** | texte aligné à gauche ou centré | **gauche**, **centré** | **gauche** |
 | **retour haptique** | une brève vibration quand vous cochez une case ou faites un appui long | **oui**, **non** | **oui** |
 
-Dans les deux encres, la liste choisie et l'action principale sont remplies de la couleur du texte ; dans les autres thèmes, elles prennent la couleur d'accent du thème.
+Dans les deux encres, la liste choisie et l'action principale sont remplies de la couleur du texte ; dans les autres thèmes, elles prennent la couleur d'accent du thème. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ## Vos données
 
@@ -1987,7 +1987,7 @@ La boîte contient aussi **importer les identifiants…** et **exporter les iden
 ### Ce qui diffère du téléphone
 
 - Les listes sont toujours visibles à gauche ; il n'y a pas d'écran des listes à part.
-- Il démarre en noir sur blanc. Il n'y a pas d'écran de réglages : les couleurs se changent par Ctrl+T, ou par la dernière entrée du menu du clic droit sur les listes, **couleurs : …**, qui nomme le thème suivant ; chaque pression passe au suivant : **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, **blanc sur noir**, puis on recommence (les mêmes dix thèmes que sur le téléphone). La taille du texte se change par Ctrl+= / Ctrl+- (de 9 à 30 points, 15 au départ). Il n'y a ni choix de police, ni choix d'alignement, ni **suivre le système**.
+- Il démarre en noir sur blanc. Il n'y a pas d'écran de réglages : les couleurs se changent par Ctrl+T, ou par la dernière entrée du menu du clic droit sur les listes, **couleurs : …**, qui nomme le thème suivant ; chaque pression passe au suivant : **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, **blanc sur noir**, puis on recommence (les mêmes dix thèmes que sur le téléphone). Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page. La taille du texte se change par Ctrl+= / Ctrl+- (de 9 à 30 points, 15 au départ). Il n'y a ni choix de police, ni choix d'alignement, ni **suivre le système**.
 - Il ne sait ni fixer ni retirer une échéance ; il affiche celles qui existent. Son menu de tâche n'a pas d'entrées **appeler**, **écrire à** ni **ouvrir**.
 - Les sous-tâches faites dans une autre application sont affichées comme des tâches ordinaires ; l'application du téléphone masque les sous-tâches ouvertes.
 - Il synchronise la liste courante toutes les 5 minutes, à chaque changement de liste, après chaque action, et sur F5 ou Ctrl+R. Les listes elles-mêmes sont lues quand le programme se connecte : une liste créée sur le serveur apparaît au lancement suivant, ou après Ctrl+, et **se connecter**.
@@ -2283,7 +2283,7 @@ L'application de bureau lit le même fichier (voir « Sur l'ordinateur »).
 
 ### Changer les couleurs
 
-Touchez **⋯** dans la liste ou dans une note, puis l'avant-dernière ligne : elle nomme le thème suivant et y passe. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant. Les deux encres gardent l'application en noir et blanc purs ; les huit palettes sont celles du clavier Plume, avec une teinte pour le fond, le texte et les lignes inversées. La ligne **couleurs** des réglages fait la même chose.
+Touchez **⋯** dans la liste ou dans une note, puis l'avant-dernière ligne : elle nomme le thème suivant et y passe. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant. Les deux encres gardent l'application en noir et blanc purs ; les huit palettes sont celles du clavier Plume, avec une teinte pour le fond, le texte et les lignes inversées. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page. La ligne **couleurs** des réglages fait la même chose.
 
 ## Réglages
 
@@ -2393,7 +2393,7 @@ La liste et la page sont côte à côte dans une seule fenêtre. Il n'y a ni dic
 - **La liste** : cliquez sur une note pour l'ouvrir. L'application rouvre la note où vous étiez en dernier.
 - **+ nouvelle note** sous la liste. Vous pouvez aussi simplement taper sur la page vide : cela commence une note.
 - **Ligne d'état** : **synchronisation…**, **synchronisé 09:33 1↑ 2↓**, ou l'erreur ; cliquez dessus pour synchroniser (ou pour ouvrir les réglages quand aucun serveur n'est réglé). **⚙** ouvre les réglages.
-- **⋯** au-dessus de la page : **+ nouvelle note**, **chercher**, **synchroniser** (avec un serveur), **supprimer cette note**, puis le nom du prochain thème de couleurs (**noir sur blanc** quand l'application est en blanc sur noir, et ainsi de suite tout le tour), **réglages**. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque clic passe au suivant. Les deux encres gardent l'application en noir et blanc purs ; les huit palettes sont celles du clavier Plume, avec une teinte pour le fond, le texte et la ligne choisie.
+- **⋯** au-dessus de la page : **+ nouvelle note**, **chercher**, **synchroniser** (avec un serveur), **supprimer cette note**, puis le nom du prochain thème de couleurs (**noir sur blanc** quand l'application est en blanc sur noir, et ainsi de suite tout le tour), **réglages**. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque clic passe au suivant. Les deux encres gardent l'application en noir et blanc purs ; les huit palettes sont celles du clavier Plume, avec une teinte pour le fond, le texte et la ligne choisie. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 - **Clic droit sur une note** : **tags…** (un sous-menu : chaque tag connu, **●** quand la note le porte, **○** sinon, chaque clic ajoute ou retire ce tag ; puis **+ nouveau tag…**), **déplacer vers** (avec les dossiers activés ; l'endroit actuel est marqué **●**, **aucun dossier** en premier) et **supprimer**. Clic droit sur la partie vide de la liste : **+ nouvelle note**, **tags** et, dans une liste réduite à un tag, **aussi avec un tag…**. Clic droit sur **toutes les notes** ou **+ nouveau dossier** : **+ nouveau dossier**.
 - **Les tags dans la liste** : la seconde ligne d'une note montre ses tags après l'heure, sous la forme **#travail #idée**.
 
@@ -2657,7 +2657,7 @@ Votre place dans le livre est gardée quand la taille change. Le même réglage 
 
 ### Changer les couleurs
 
-Sur l'étagère, touchez **⋯** puis la ligne qui nomme le thème suivant (**noir sur blanc**, **lavande**, …). Dans un livre, faites un appui long sur la page et touchez la même entrée. Dans **réglages**, touchez la ligne **couleurs** : elle montre le thème en cours et chaque toucher passe au suivant. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et de nouveau **blanc sur noir**. La page d'un livre, ses surlignages et le widget prennent les couleurs du thème.
+Sur l'étagère, touchez **⋯** puis la ligne qui nomme le thème suivant (**noir sur blanc**, **lavande**, …). Dans un livre, faites un appui long sur la page et touchez la même entrée. Dans **réglages**, touchez la ligne **couleurs** : elle montre le thème en cours et chaque toucher passe au suivant. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et de nouveau **blanc sur noir**. La page d'un livre, ses surlignages et le widget prennent les couleurs du thème. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ### Changer de police
 
@@ -3005,7 +3005,7 @@ Ouvrez **⋯** → **réglages**. Chaque ligne montre la valeur en cours ; chaq
 | Réglage | Choix | Au départ |
 |---|---|---|
 | **langue de la recherche** | English, français, Deutsch, español, português, русский | la langue du téléphone si elle fait partie des six, sinon l'anglais |
-| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **blanc sur noir** |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant ; avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page | **blanc sur noir** |
 | **police** | **à empattements**, **sans empattements**, **chasse fixe** | **sans empattements** |
 | **taille** | **petite**, **moyenne**, **grande** | **moyenne** |
 | **vibration** | **oui**, **non** | **oui** |
@@ -3328,7 +3328,7 @@ L'app répond **identifiants importés**, puis synchronise. Un fichier d'identif
 
 ### Changer l'apparence
 
-Dans les réglages : **couleurs**, **taille du texte**, **police**. **couleurs** affiche le thème actuel et chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**. Le menu **⋯** de la liste nomme le thème suivant et y passe aussi.
+Dans les réglages : **couleurs**, **taille du texte**, **police**. **couleurs** affiche le thème actuel et chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**. Le menu **⋯** de la liste nomme le thème suivant et y passe aussi. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ## Réglages
 
@@ -3744,7 +3744,7 @@ Ouvrez **⋯**, puis **réglages**. Chaque appui sur une ligne passe à sa valeu
 | **télécharger en wifi seulement** | **actif**, **inactif** | **actif** |
 | **actualiser à l'ouverture** | **actif**, **inactif** | **actif** |
 | **effacer une fois écouté** (« sauf favoris et épisodes transcrits ») | **actif**, **inactif** | **inactif** |
-| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant | **blanc sur noir** |
+| **couleurs** | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page | **blanc sur noir** |
 | **taille du texte** | S, M, L | M |
 | **police** | sans-serif, serif, mono | sans-serif |
 | **retour haptique** | **actif**, **inactif** | **actif** |
@@ -3790,7 +3790,7 @@ Désinstaller l'app supprime tout ce qu'elle gardait, y compris les épisodes t�
 
 ## Sur l'ordinateur
 
-Le programme pour ordinateur est une seule fenêtre, dans les mêmes couleurs : les deux encres, puis les palettes Plume. Il n'a ni mise par écrit, ni traduction, ni widget. Il ajoute YouTube.
+Le programme pour ordinateur est une seule fenêtre, dans les mêmes couleurs : les deux encres, puis les palettes Plume. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page. Il n'a ni mise par écrit, ni traduction, ni widget. Il ajoute YouTube.
 
 ### La fenêtre
 
@@ -4141,7 +4141,7 @@ Faites un appui long sur le fichier dans la liste, puis touchez **retirer de la 
 
 ### Changer les couleurs
 
-Dans la liste, touchez **⋯**, puis l'entrée qui nomme le thème suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant, et après **nature** revient **blanc sur noir**. Dans les deux premiers, la ligne du fichier en cours et le bouton de lecture sont inversés ; dans les autres, ils sont remplis de la couleur d'accent du thème. Le même choix se trouve dans **réglages**, à la ligne **couleurs**, qui affiche le thème actuel et passe au suivant d'un toucher.
+Dans la liste, touchez **⋯**, puis l'entrée qui nomme le thème suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant, et après **nature** revient **blanc sur noir**. Dans les deux premiers, la ligne du fichier en cours et le bouton de lecture sont inversés ; dans les autres, ils sont remplis de la couleur d'accent du thème. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page. Le même choix se trouve dans **réglages**, à la ligne **couleurs**, qui affiche le thème actuel et passe au suivant d'un toucher.
 
 ### Mettre le widget de reprise sur l'écran d'accueil
 
@@ -4426,7 +4426,7 @@ La ligne indique alors **fonctionnement en arrière-plan : autorisé**.
 
 ### Changer les couleurs
 
-Touchez **⋯** sur l'accueil, puis l'entrée qui nomme les couleurs suivantes (**noir sur blanc**, **lavande**, …) ; ou bien, dans les **réglages**, touchez la ligne au-dessus de **couleurs**. Chaque toucher passe au thème suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour au **blanc sur noir**. Le widget suit.
+Touchez **⋯** sur l'accueil, puis l'entrée qui nomme les couleurs suivantes (**noir sur blanc**, **lavande**, …) ; ou bien, dans les **réglages**, touchez la ligne au-dessus de **couleurs**. Chaque toucher passe au thème suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour au **blanc sur noir**. Le widget suit. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ### Poser le widget sur un écran d'accueil
 
@@ -4744,7 +4744,7 @@ Faites l'étape 1 ci-dessus de temps en temps et gardez le fichier zip ailleurs 
 
 ### Changer l'apparence
 
-Dans **réglages**, touchez **couleurs**, **taille du texte** ou **police** ; chaque toucher passe au choix suivant. **couleurs** fait le tour de **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; dans les thèmes colorés, la bande et les lignes en évidence sont remplies de la couleur d'accent du thème.
+Dans **réglages**, touchez **couleurs**, **taille du texte** ou **police** ; chaque toucher passe au choix suivant. **couleurs** fait le tour de **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; dans les thèmes colorés, la bande et les lignes en évidence sont remplies de la couleur d'accent du thème. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ## Réglages
 
@@ -5164,7 +5164,7 @@ Les réglages du téléphone, dans l'ordre de l'écran. Toucher une ligne dont l
 | lignes du modèle « meilleur » | Télécharge ou retire le modèle Tesseract plus exact d'une langue | par langue | modèle rapide |
 | **trouver la page** | Qui trouve et redresse la page | **intégré (logiciel libre)**, **ML Kit (Google)** | votre choix du premier lancement |
 | **lire le texte** | Qui lit le texte | **Tesseract (logiciel libre)**, **ML Kit (Google)** | votre choix du premier lancement |
-| **couleurs** | Thème de couleurs de l'app : les deux encres, puis les palettes du clavier Plume ; chaque toucher passe au suivant | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
+| **couleurs** | Thème de couleurs de l'app : les deux encres, puis les palettes du clavier Plume ; chaque toucher passe au suivant. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | Taille du texte de l'app | S, M, L | M |
 | **police** | Police de l'app | sans-serif, serif, mono | sans-serif |
 | **vibration au toucher** | Une courte vibration sur les boutons | **oui**, **non** | **oui** |
@@ -5323,7 +5323,7 @@ Sous **lecture**, une ligne donne l'état pour la langue en cours : **français
 
 Le bas de la fenêtre montre la version.
 
-Deux réglages ne sont pas dans cette fenêtre : les couleurs et la taille du texte (Ctrl+= et Ctrl+-). Les couleurs forment un cycle de dix thèmes : **noir sur blanc** (au départ), **blanc sur noir**, puis les palettes du clavier Plume, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour au premier. Ctrl+T passe au suivant ; dans le menu **⋯**, l'entrée porte le nom du thème suivant (**blanc sur noir** au départ, puis **lavande**, et ainsi de suite) et y passe.
+Deux réglages ne sont pas dans cette fenêtre : les couleurs et la taille du texte (Ctrl+= et Ctrl+-). Les couleurs forment un cycle de dix thèmes : **noir sur blanc** (au départ), **blanc sur noir**, puis les palettes du clavier Plume, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour au premier. Ctrl+T passe au suivant ; dans le menu **⋯**, l'entrée porte le nom du thème suivant (**blanc sur noir** au départ, puis **lavande**, et ainsi de suite) et y passe. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 Pour utiliser les dossiers du téléphone, saisissez le même serveur, le même dossier et les mêmes identifiants que sur le téléphone, ou importez le fichier d'identifiants exporté par le téléphone. Si la section de l'app manque dans le fichier, le serveur et les identifiants de Reader's Notes ou de Reader's Recorder sont repris : **serveur et identifiants repris de Reader's Notes**. **exporter les identifiants…** écrit `readers-credentials.json` dans votre dossier personnel, sauf si vous choisissez un autre endroit ; si ce fichier existe déjà et qu'il est un fichier d'identifiants Reader's, la section de l'app y est ajoutée et celles des autres apps sont gardées. L'app indique alors **identifiants exportés dans … — le fichier contient vos mots de passe : gardez-le privé**.
 
@@ -5705,7 +5705,7 @@ Pendant la lecture : **⋯** › **serif** ou **sans-serif**. Ou, dans **régla
 
 ### Changer les couleurs
 
-Sur la liste d'accueil ou pendant la lecture : **⋯** › l'entrée qui porte le nom du thème suivant, **blanc sur noir** par exemple. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, puis retour à **blanc sur noir** ; chaque toucher passe au suivant. Ou, dans **réglages**, touchez la rangée **couleurs** : elle affiche le thème en cours et passe au suivant. Le widget de l'écran d'accueil prend les mêmes couleurs.
+Sur la liste d'accueil ou pendant la lecture : **⋯** › l'entrée qui porte le nom du thème suivant, **blanc sur noir** par exemple. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, puis retour à **blanc sur noir** ; chaque toucher passe au suivant. Ou, dans **réglages**, touchez la rangée **couleurs** : elle affiche le thème en cours et passe au suivant. Le widget de l'écran d'accueil prend les mêmes couleurs. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ### Faire tourner les listes en pages au lieu de défiler
 
@@ -6029,7 +6029,7 @@ L'app relance d'elle-même le blocage après un redémarrage du téléphone et a
 
 ### Changer les couleurs
 
-Ouvrez **⋯** et touchez l'entrée qui nomme le thème de couleurs suivant (le menu nomme les couleurs que vous allez obtenir). Chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour à **blanc sur noir**. Le même cycle se trouve dans **réglages**, à la ligne **couleurs**, qui affiche le thème en cours. Le widget suit.
+Ouvrez **⋯** et touchez l'entrée qui nomme le thème de couleurs suivant (le menu nomme les couleurs que vous allez obtenir). Chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour à **blanc sur noir**. Le même cycle se trouve dans **réglages**, à la ligne **couleurs**, qui affiche le thème en cours. Le widget suit. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ### Démarrer ou arrêter depuis l'écran d'accueil
 
@@ -6883,7 +6883,7 @@ Appuyez longuement sur la tuile **Filtre de nuit**.
 
 ### Changer les couleurs de l’application
 
-Ouvrez le menu **⋯** et touchez l’entrée qui nomme le thème suivant (**noir sur blanc** quand l’application est en blanc sur noir). Chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour à **blanc sur noir**. Le même changement se trouve dans **réglages**, ligne **couleurs**, qui montre le thème actuel et passe au suivant quand on la touche. Le filtre de nuit lui-même garde ses propres couleurs quel que soit le thème.
+Ouvrez le menu **⋯** et touchez l’entrée qui nomme le thème suivant (**noir sur blanc** quand l’application est en blanc sur noir). Chaque toucher passe au suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et retour à **blanc sur noir**. Le même changement se trouve dans **réglages**, ligne **couleurs**, qui montre le thème actuel et passe au suivant quand on la touche. Le filtre de nuit lui-même garde ses propres couleurs quel que soit le thème. Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page.
 
 ## Réglages
 
@@ -7218,7 +7218,7 @@ Touchez **⋯** puis le nom du thème suivant ; ou ouvrez les **réglages** et 
 |---|---|---|---|
 | **un rappel quotidien** | Une notification par jour avec le jour, le compte et une question | **désactivé**, **08:00**, **12:00**, **20:00**, **21:00**, ou toute heure tapée sous **heure (HH:MM)** | **désactivé** |
 | **sur le widget et dans le rappel** | L'habitude dont parlent le widget et le rappel (affiché avec deux habitudes ou plus) | l'une de vos habitudes | la première de la liste |
-| **couleurs** | Le thème de l'app et de son widget : un fond, une couleur de texte et une couleur d'accent qui remplit la ligne principale | **blanc sur noir**, **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
+| **couleurs** | Le thème de l'app et de son widget : un fond, une couleur de texte et une couleur d'accent qui remplit la ligne principale Avec un thème de couleurs, les lignes, les menus et les invites deviennent des cartes arrondies ; les deux encres restent du texte sur la page. | **blanc sur noir**, **noir sur blanc**, **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | La taille de tout le texte de l'app | **petite**, **moyenne**, **grande** | **moyenne** |
 | **police** | Le caractère de l'app | **sans empattement**, **avec empattement**, **à chasse fixe** | **sans empattement** |
 | **vibration au toucher** | Une courte vibration quand vous touchez une ligne qui compte ou ouvre quelque chose | **activé**, **désactivé** | **activé** |

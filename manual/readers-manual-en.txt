@@ -975,7 +975,7 @@ Each line shows its current value; a tap moves to the next one.
 
 | Setting | Choices | Default |
 |---|---|---|
-| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** (each tap moves to the next) | white on black |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** (each tap moves to the next). With a colour theme, the rows, the menus and the prompts become rounded cards; the two inks stay text on the page. | white on black |
 | **font** | **serif**, **sans**, **mono** | sans |
 | **text size** | **small**, **medium**, **large** | medium |
 | **alignment** | **left**, **center** | left |
@@ -1140,7 +1140,7 @@ Every view has a **⋯** sign at the top right. It opens the same menu everywher
 - **workdays**;
 - **month**;
 - **calendars**;
-- the name of the next colour theme (**black on white** when the app is white on black, and so on): switches the colours at once. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next;
+- the name of the next colour theme (**black on white** when the app is white on black, and so on): switches the colours at once. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page;
 - **settings**.
 
 Tap outside the menu to close it. On every screen except the agenda, the title at the top left starts with **←**: tap it, or use the phone's back gesture, to go back.
@@ -1430,7 +1430,7 @@ Use your launcher's way of adding a widget and choose **Reader's Calendar · nex
 ### Change the look quickly
 
 - Phone: **⋯** › the name of the next colour theme (**white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next).
-- Computer: Ctrl+T moves to the next colour theme (**white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and round again), Ctrl+= and Ctrl+- change the text size.
+- Computer: Ctrl+T moves to the next colour theme (**white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and round again), Ctrl+= and Ctrl+- change the text size. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page.
 
 ## Settings
 
@@ -1875,7 +1875,7 @@ All in **settings**. Each tap on a line moves to the next choice.
 | **alignment** | text aligned on the left or centred | **left**, **center** | **left** |
 | **haptic feedback** | a short vibration when you tick a box or long press | **on**, **off** | **on** |
 
-In the two inks the chosen list and the main action are filled with the text colour; in the other themes they take the theme's accent colour.
+In the two inks the chosen list and the main action are filled with the text colour; in the other themes they take the theme's accent colour. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page.
 
 ## Your data
 
@@ -1987,7 +1987,7 @@ The dialog also has **import credentials…** and **export credentials…**, and
 ### How it differs from the phone
 
 - The lists are always visible on the left; there is no separate lists screen.
-- It starts black on white. There is no settings screen: the colours are changed by Ctrl+T, or by the last entry of the lists' right-click menu, **colours: …**, which names the next theme; each press moves to the next one: **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, **white on black**, then round again (the same ten themes as on the phone). The text size is changed by Ctrl+= / Ctrl+- (from 9 to 30 points, 15 at the start). There is no choice of font or alignment, and no **follow system**.
+- It starts black on white. There is no settings screen: the colours are changed by Ctrl+T, or by the last entry of the lists' right-click menu, **colours: …**, which names the next theme; each press moves to the next one: **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, **white on black**, then round again (the same ten themes as on the phone). With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page. The text size is changed by Ctrl+= / Ctrl+- (from 9 to 30 points, 15 at the start). There is no choice of font or alignment, and no **follow system**.
 - It cannot set or remove a due date; it displays the ones that exist. Its task menu has no **call**, **write to** or **open** entries.
 - Subtasks made in another app are displayed as ordinary tasks; the phone app hides open subtasks.
 - It syncs the current list every 5 minutes, at each change of list, after each action, and on F5 or Ctrl+R. The lists themselves are read when the program connects: a list created on the server appears at the next start, or after Ctrl+, and **connect**.
@@ -2283,7 +2283,7 @@ The desktop app reads the same file (see "On the computer").
 
 ### Change the colours
 
-Tap **⋯** on the list or in a note, then the last line but one: it names the next theme and moves to it. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next. The two inks keep the app in pure black and white; the eight palettes are those of the Plume keyboard, with a tint for the background, the text and the inverted rows. The settings row **colours** does the same.
+Tap **⋯** on the list or in a note, then the last line but one: it names the next theme and moves to it. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next. The two inks keep the app in pure black and white; the eight palettes are those of the Plume keyboard, with a tint for the background, the text and the inverted rows. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page. The settings row **colours** does the same.
 
 ## Settings
 
@@ -2393,7 +2393,7 @@ The list and the page sit side by side in one window. There is no dictation, no 
 - **The list**: click a note to open it. The app reopens the note you were last in.
 - **+ new note** under the list. You can also just type on the empty page: that starts a note.
 - **Status line**: **syncing…**, **synced 09:33 1↑ 2↓**, or the error; click it to sync (or to open the settings when no server is set). **⚙** opens the settings.
-- **⋯** above the page: **+ new note**, **find**, **sync now** (with a server), **delete this note**, then the name of the next colour theme (**black on white** when the app is white on black, and so on round the cycle), **settings**. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each click moves to the next. The two inks keep the app in pure black and white; the eight palettes are those of the Plume keyboard, with a tint for the background, the text and the chosen row.
+- **⋯** above the page: **+ new note**, **find**, **sync now** (with a server), **delete this note**, then the name of the next colour theme (**black on white** when the app is white on black, and so on round the cycle), **settings**. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each click moves to the next. The two inks keep the app in pure black and white; the eight palettes are those of the Plume keyboard, with a tint for the background, the text and the chosen row. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page.
 - **Right click on a note**: **tags…** (a submenu: every known tag, **●** when the note carries it, **○** otherwise, each click adds or takes off that tag; then **+ new tag…**), **move to** (with folders on; the current place is marked **●**, **no folder** first) and **delete**. Right click on the empty part of the list: **+ new note**, **tags** and, in a list narrowed to a tag, **also with a tag…**. Right click on **all notes** or **+ new folder**: **+ new folder**.
 - **Tags in the list**: a note's second line shows its tags after the time, as **#work #idea**.
 
@@ -2657,7 +2657,7 @@ Your place in the book is kept when the size changes. The same adjustment is in 
 
 ### Change the colours
 
-On the shelf, tap **⋯** then the line that names the next theme (**black on white**, **lavender**, …). In a book, long press the page and tap the same entry. In **settings**, tap the **colours** line: it shows the current theme and each tap moves to the next. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and **white on black** again. The page of a book, its highlights and the widget take the theme's colours.
+On the shelf, tap **⋯** then the line that names the next theme (**black on white**, **lavender**, …). In a book, long press the page and tap the same entry. In **settings**, tap the **colours** line: it shows the current theme and each tap moves to the next. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and **white on black** again. The page of a book, its highlights and the widget take the theme's colours. With a colour theme, the rows, the menus and the prompts become rounded cards; the two inks stay text on the page.
 
 ### Change the font
 
@@ -3005,7 +3005,7 @@ Open **⋯** → **settings**. Each line shows the current value; each tap moves
 | Setting | Choices | At first |
 |---|---|---|
 | **language of the search** | English, français, Deutsch, español, português, русский | the phone's language if it is one of the six, else English |
-| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next | **white on black** |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next; with a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page | **white on black** |
 | **font** | **serif**, **sans serif**, **monospace** | **sans serif** |
 | **size** | **small**, **medium**, **large** | **medium** |
 | **haptic tick** | **on**, **off** | **on** |
@@ -3328,7 +3328,7 @@ The app answers **credentials imported**, then syncs. A credentials file exporte
 
 ### Change the look
 
-In the settings: **colours**, **text size**, **font**. **colours** shows the current theme and each tap moves to the next: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**. The list's **⋯** menu names the next theme and moves to it too.
+In the settings: **colours**, **text size**, **font**. **colours** shows the current theme and each tap moves to the next: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**. The list's **⋯** menu names the next theme and moves to it too. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page.
 
 ## Settings
 
@@ -3744,7 +3744,7 @@ Open **⋯**, then **settings**. Each tap on a row moves to its next value.
 | **download on wifi only** | **on**, **off** | **on** |
 | **refresh on opening** | **on**, **off** | **on** |
 | **delete when played** ("except favourites and transcribed episodes") | **on**, **off** | **off** |
-| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next | **white on black** |
+| **colours** | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page | **white on black** |
 | **text size** | S, M, L | M |
 | **font** | sans-serif, serif, mono | sans-serif |
 | **haptic tick** | **on**, **off** | **on** |
@@ -3790,7 +3790,7 @@ Uninstalling the app removes everything it kept, including downloaded episodes a
 
 ## On the computer
 
-The computer program is one window in the same colours: the two inks, then the Plume palettes. It has no transcription, no translation and no widget. It adds YouTube.
+The computer program is one window in the same colours: the two inks, then the Plume palettes. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page. It has no transcription, no translation and no widget. It adds YouTube.
 
 ### The window
 
@@ -4141,7 +4141,7 @@ Long press the file in the list, then tap **remove from the list**. If it was pl
 
 ### Change the colours
 
-In the list, tap **⋯**, then the entry that names the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next, and after **nature** comes **white on black** again. In the first two, the current file's line and the play button are inverted; in the others they are filled with the theme's accent colour. The same choice is in **settings**, on the **colours** line, which shows the current theme and moves to the next on tap.
+In the list, tap **⋯**, then the entry that names the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap moves to the next, and after **nature** comes **white on black** again. In the first two, the current file's line and the play button are inverted; in the others they are filled with the theme's accent colour. With a colour theme, the rows, the menus and the prompts become rounded cards; the two inks stay text on the page. The same choice is in **settings**, on the **colours** line, which shows the current theme and moves to the next on tap.
 
 ### Put the resume widget on the home screen
 
@@ -4426,7 +4426,7 @@ The line then reads **runs in the background: allowed**.
 
 ### Change the colours
 
-Tap **⋯** on the home screen and then the entry that names the next colours (**black on white**, **lavender**, …); or, in **settings**, tap the line above **colours**. Each tap moves to the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The widget follows.
+Tap **⋯** on the home screen and then the entry that names the next colours (**black on white**, **lavender**, …); or, in **settings**, tap the line above **colours**. Each tap moves to the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The widget follows. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page.
 
 ### Put the widget on a home screen
 
@@ -4744,7 +4744,7 @@ Do step 1 above from time to time and keep the zip file somewhere other than the
 
 ### Change the look
 
-In **settings**, touch **colours**, **text size** or **font**; each touch moves to the next choice. **colours** goes round **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; in the coloured themes the band and the highlighted lines are filled with the theme's accent colour.
+In **settings**, touch **colours**, **text size** or **font**; each touch moves to the next choice. **colours** goes round **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; in the coloured themes the band and the highlighted lines are filled with the theme's accent colour. With a colour theme, the rows, the menus and the prompts become rounded cards; the two inks stay text on the page.
 
 ## Settings
 
@@ -5164,7 +5164,7 @@ The settings of the phone, in the order of the screen. Touching a line with a fi
 | "best" model lines | Download or remove the more accurate Tesseract model of a language | per language | fast model |
 | **finding the page** | Who finds and straightens the page | **built-in (free software)**, **ML Kit (Google)** | your first-start choice |
 | **reading the text** | Who reads the text | **Tesseract (free software)**, **ML Kit (Google)** | your first-start choice |
-| **colours** | Colour theme of the app: the two inks, then the palettes of the Plume keyboard; each touch moves to the next | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
+| **colours** | Colour theme of the app: the two inks, then the palettes of the Plume keyboard; each touch moves to the next. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | Size of the app's text | S, M, L | M |
 | **font** | Typeface of the app | sans-serif, serif, mono | sans-serif |
 | **vibration on touch** | A short vibration on buttons | **on**, **off** | **on** |
@@ -5323,7 +5323,7 @@ Under **reading**, a line gives the state for the current language: **English: t
 
 The bottom of the window shows the version.
 
-Two settings are not in that window: the colours and the text size (Ctrl+= and Ctrl+-). The colours are a cycle of ten themes: **black on white** (at first), **white on black**, then the palettes of the Plume keyboard, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to the first. Ctrl+T moves to the next one; in the **⋯** menu the entry is named after the next theme (**white on black** at first, then **lavender**, and so on) and moves to it.
+Two settings are not in that window: the colours and the text size (Ctrl+= and Ctrl+-). The colours are a cycle of ten themes: **black on white** (at first), **white on black**, then the palettes of the Plume keyboard, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to the first. Ctrl+T moves to the next one; in the **⋯** menu the entry is named after the next theme (**white on black** at first, then **lavender**, and so on) and moves to it. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page.
 
 To use the phone's folders, enter the same server, folder and login as on the phone, or import the credentials file exported by the phone. If the app's own section is missing from the file, the server and login of Reader's Notes or Reader's Recorder are used: **server and login taken from Reader's Notes**. **export credentials…** writes `readers-credentials.json` in your home folder unless you choose another place; if that file already exists and is a Reader's credentials file, the app's section is added to it and the other apps' sections are kept. The app then says **credentials exported to … — the file holds your passwords: keep it private**.
 
@@ -5705,7 +5705,7 @@ While reading: **⋯** › **serif** or **sans-serif**. Or in **settings**, tap 
 
 ### Change the colours
 
-On the home list or while reading: **⋯** › the entry named after the next theme, **white on black** for instance. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, then back to **white on black**; each tap moves to the next one. Or in **settings**, tap the row **colours**: it shows the theme in use and moves to the next. The home-screen widget takes the same colours.
+On the home list or while reading: **⋯** › the entry named after the next theme, **white on black** for instance. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, then back to **white on black**; each tap moves to the next one. Or in **settings**, tap the row **colours**: it shows the theme in use and moves to the next. The home-screen widget takes the same colours. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page.
 
 ### Make the lists turn pages instead of scrolling
 
@@ -6029,7 +6029,7 @@ The app starts the blocking again by itself after the phone restarts and after a
 
 ### Change the colours
 
-Open **⋯** and tap the entry that names the next colour theme (the menu names the colours you will get). Each tap moves to the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The same cycle is in **settings**, on the **colours** line, which shows the current theme. The widget follows.
+Open **⋯** and tap the entry that names the next colour theme (the menu names the colours you will get). Each tap moves to the next theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The same cycle is in **settings**, on the **colours** line, which shows the current theme. The widget follows. With a colour theme the rows, menus and prompts become rounded cards; the two inks stay text on the page.
 
 ### Start or stop from the home screen
 
@@ -6882,7 +6882,7 @@ Press the **Night filter** tile for a long time.
 
 ### Change the app's colours
 
-Open the menu **⋯** and tap the entry that names the next theme (**black on white** when the app is white on black). Each tap moves to the next one: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The same change is in **settings**, row **colours**, which shows the current theme and moves to the next on tap. The night filter itself keeps its own colours whatever the theme.
+Open the menu **⋯** and tap the entry that names the next theme (**black on white** when the app is white on black). Each tap moves to the next one: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and back to **white on black**. The same change is in **settings**, row **colours**, which shows the current theme and moves to the next on tap. The night filter itself keeps its own colours whatever the theme. With a colour theme, the rows, the menus and the prompts become rounded cards; the two inks stay text on the page.
 
 ## Settings
 
@@ -7217,7 +7217,7 @@ Tap **⋯** then the name of the next theme; or open **settings** and tap the li
 |---|---|---|---|
 | **a daily reminder** | A notification once a day with the day, the count and a question | **off**, **08:00**, **12:00**, **20:00**, **21:00**, or any time typed under **time (HH:MM)** | **off** |
 | **on the widget and in the reminder** | The habit the widget and the reminder speak of (shown with two habits or more) | one of your habits | the first of the list |
-| **colours** | The theme of the app and of its widget: a background, a text colour and an accent colour that fills the main row | **white on black**, **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
+| **colours** | The theme of the app and of its widget: a background, a text colour and an accent colour that fills the main row With a colour theme, the rows, the menus and the prompts become rounded cards; the two inks stay text on the page. | **white on black**, **black on white**, **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | The size of all text in the app | **small**, **medium**, **large** | **medium** |
 | **font** | The typeface of the app | **sans serif**, **serif**, **monospace** | **sans serif** |
 | **vibration on tap** | A short vibration when you tap a line that counts or opens something | **on**, **off** | **on** |
