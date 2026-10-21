@@ -1,6 +1,6 @@
 # User manual — The Reader's apps and the other apps of gallaz.ch/apps
 
-Edition of 20 October 2026 · gallaz.ch/apps
+Edition of 21 October 2026 · gallaz.ch/apps
 
 
 <!-- Before you start -->
@@ -2098,7 +2098,7 @@ A widget shows old tasks: open the app, which syncs and redraws the widgets.
 
 # Reader's Notes
 
-*Android 1.7.0 · Windows, macOS, Linux 1.3.3*
+*Android 1.11.0 · Windows, macOS, Linux 1.6.0*
 
 ## What it is
 
@@ -2139,7 +2139,8 @@ The first time the desktop app opens without a server, the settings window opens
 The title line reads **notes**, with **⋯** on the right. Each note takes two lines: its title (the first line of the note, or **untitled**), then a small line with when it last changed (the time for today, **yesterday**, otherwise the date), the next line of the note, and the sign **✎** when the note has not yet reached the server. While a dictation is being written into a note, that small line shows **fetching the model · N%** or **transcribing · N%** instead.
 
 - **Tap a note** to open it.
-- **Long press a note** to open its menu, titled with the note's title: one line for each phone number, mail address or web address found in the note (**call …**, **write to …**, **open …**), then **share**, **move to a folder** (only when folders are on) and **delete**.
+- **Long press a note** to open its menu, titled with the note's title: one line for each phone number, mail address or web address found in the note (**call …**, **write to …**, **open …**), then **share**, **tags…**, **move to a folder** (only when folders are on) and **delete**.
+- **Tags**: a note's second line shows its tags after the time (**#work #idea**). The **⋯** menu holds **tags**, a page listing every tag with the number of notes carrying it; tap one to see those notes.
 - **+ new note** opens an empty note with the keyboard up.
 - **● dictate** creates a note and opens it with the microphone on.
 - **The small line at the bottom** shows the state of the sync (**syncing…**, **synced 21:03 2↑ 1↓ 1−**, or the error). Tap it to sync now. Without a server it reads **on this phone only — tap to set up a WebDAV folder** and a tap opens the settings. The figures count the notes sent (↑), received (↓) and deleted (−).
@@ -2246,6 +2247,25 @@ The line under the list reads **on this phone only — tap to set up a WebDAV fo
 1. In **settings**, tap **folders** to turn it **on**.
 2. Back on the first page, tap **new folder**, name it, confirm.
 3. To file an existing note: open **all notes**, long press the note, tap **move to a folder**, then the folder. The current place is marked **●**; **no folder** takes the note out of its folder.
+
+### Tag notes
+
+A tag is a word with **#** in front, written anywhere in a note: `#work`, `#idée`. You can simply type it. Or:
+
+1. Long press the note in the list (or tap **⋯** in the open note), then **tags…**.
+2. The sheet lists every tag known in your notes, **●** for those the note carries, **○** for the others: tap one to add it or take it off. **+ new tag** asks for a name; spaces become hyphens, capitals become small letters, and `#` is added for you.
+3. Tap **done**. Tags added this way go on the last line of the note, after a blank line; a tag taken off is removed from the text wherever it was written.
+
+A tag needs at least one letter, so `#12` or `#2026` is not one. Tags are the same whatever their capitals: `#Work` and `#work` are one tag, shown as `#work`.
+
+### Show the notes carrying one or several tags
+
+1. Tap **⋯**, then **tags** (with folders on, the folders page also has a row **tags**, marked **#**, with the number of tags). The page lists every tag, most used first, with its number of notes.
+2. Tap a tag: the list shows the notes carrying it, from every folder, titled **#work**.
+3. To keep only the notes that also carry another tag, tap **⋯**, then **also with a tag…**, then the tag. The title becomes **#work #idea** and only the notes carrying both remain. The entry is absent when none of the shown notes carries another tag.
+4. **←** goes back to the tags page, then to the list.
+
+Because tags are plain text inside the note, they travel with it to the server and to the desktop app, and any editor shows them.
 
 ### Rename or delete a folder
 
@@ -2374,9 +2394,16 @@ The list and the page sit side by side in one window. There is no dictation, no 
 - **+ new note** under the list. You can also just type on the empty page: that starts a note.
 - **Status line**: **syncing…**, **synced 09:33 1↑ 2↓**, or the error; click it to sync (or to open the settings when no server is set). **⚙** opens the settings.
 - **⋯** above the page: **+ new note**, **find**, **sync now** (with a server), **delete this note**, then the name of the next colour theme (**black on white** when the app is white on black, and so on round the cycle), **settings**. The themes come round in this order: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each click moves to the next. The two inks keep the app in pure black and white; the eight palettes are those of the Plume keyboard, with a tint for the background, the text and the chosen row.
-- **Right click on a note**: **move to** (with folders on; the current place is marked **●**, **no folder** first) and **delete**. Right click on the empty part of the list: **+ new note**. Right click on **all notes** or **+ new folder**: **+ new folder**.
+- **Right click on a note**: **tags…** (a submenu: every known tag, **●** when the note carries it, **○** otherwise, each click adds or takes off that tag; then **+ new tag…**), **move to** (with folders on; the current place is marked **●**, **no folder** first) and **delete**. Right click on the empty part of the list: **+ new note**, **tags** and, in a list narrowed to a tag, **also with a tag…**. Right click on **all notes** or **+ new folder**: **+ new folder**.
+- **Tags in the list**: a note's second line shows its tags after the time, as **#work #idea**.
 
 A note is saved a moment after you stop typing. An empty note is dropped when you leave it. Deleting has no confirmation. A page open on screen follows the server when you are not typing in it; if the server's version arrives while you are typing, it is kept as a second note ending in **(server copy)**.
+
+### Tags on the computer
+
+**⋯** › **tags** (or the row **tags** marked **#** on the folders page, present once a tag exists) opens the page of tags: every tag, most used first, with the number of notes carrying it. Click one: the list shows the notes carrying it, from every folder, and the line above the find field reads **← #work**. To narrow the list to the notes that also carry another tag, right click the empty part of the list or **⋯**, then **also with a tag…** and the tag: the line reads **← #work #idea**. Click that line to go back to the tags page, and once more to the list. The find field searches within the narrowed list. **+ new note** leaves the tags page, since a new note carries no tag yet.
+
+To tag the open note: **⋯** › **tags…**, or right click it in the list. Adding a tag writes it on the last line of the note, after a blank line; one Ctrl+Z undoes it. A tag can also be typed by hand anywhere in the note, as `#work`.
 
 ### Folders on the computer
 
@@ -2433,6 +2460,7 @@ The settings file holds the password and is readable by your user account only.
 - No bin and no undo for a deleted note; no confirmation before deleting a note.
 - Folders are one level deep. A folder name keeps at most 60 characters; the characters `\ / : * ? " < > |` are replaced by spaces. A name already taken is refused without a message.
 - The title is the first non-empty line, up to 80 characters.
+- A tag holds letters, digits, `_` and `-`, with at least one letter; it is compared without capitals. A `#` glued to a word (`C#`, `x.ch/#top`) or `#` followed by digits only is not a tag. A line made only of tags is not used as the preview under the title.
 - On the phone, a note is moved to a folder from its long press in the list, not from the open note.
 - On the phone, the server address must be `https://`.
 - On the phone, **username**, **password** and **folder on the server** cannot be emptied, only replaced. The **server** line can be emptied, which stops the sync.
@@ -4497,7 +4525,7 @@ The app does not receive shared content and does not open files, apart from the 
 
 # Reader's Food Log
 
-*Android 1.2.1*
+*Android 1.5.0*
 
 ## What it is
 
@@ -4542,9 +4570,11 @@ The back button on the home screen leaves the app.
 The viewfinder fills the screen, always upright (portrait). It uses the back camera, or the front one if the phone has no back camera. The screen stays lit while it is open.
 
 - A band at the top shows the label for the current time (**breakfast**, **lunch**, **dinner** or **snack**).
-- A band at the bottom says **touch anywhere**.
+- A band at the bottom says **touch anywhere**, with the row **from the gallery…** under it.
 
 Touch anywhere on the screen, or press a volume key (up or down) or the phone's camera key, to take the photo. The phone gives a short vibration, the screen shows a check mark with the label and the time (for example "lunch · 12:34") for about a second, and the viewfinder closes by itself. You are back where you were: the app, the home screen, or the lock screen.
+
+To add a picture you already have instead of taking one, touch **from the gallery…**: the phone's picture chooser opens, and the picture you pick is filed like a photo taken at that moment, with the label and the time of now (the journal records when you eat, not when the picture was taken). If you close the chooser without picking anything, you are back in the viewfinder. The app has no access to your other pictures.
 
 There is no zoom, no flash control, no choice of camera, and no preview to accept or retake. To leave without taking a photo, use the back button.
 
@@ -4615,6 +4645,12 @@ Opened by **settings** on the home screen. See "Settings" and "Your data" below.
 3. The label and the time appear for a moment, and the screen closes by itself.
 
 The photo is filed under today with the label for the time it was taken.
+
+### Add a picture you already have
+
+1. Open the viewfinder as above.
+2. Touch **from the gallery…** at the bottom, and pick the picture.
+3. The label and the time appear for a moment, and the screen closes by itself. The picture is filed under today, at the time you added it.
 
 ### Take a photo without unlocking the phone
 

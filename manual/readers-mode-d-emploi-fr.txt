@@ -1,6 +1,6 @@
 # Mode d'emploi — Les applications Reader's et les autres applications de gallaz.ch/apps
 
-Édition du 20 octobre 2026 · gallaz.ch/apps
+Édition du 21 octobre 2026 · gallaz.ch/apps
 
 
 <!-- Avant de commencer -->
@@ -2098,7 +2098,7 @@ Un widget montre de vieilles tâches : ouvrez l'application, qui synchronise et
 
 # Reader's Notes
 
-*Android 1.7.0 · Windows, macOS, Linux 1.3.3*
+*Android 1.11.0 · Windows, macOS, Linux 1.6.0*
 
 ## Ce que c'est
 
@@ -2139,7 +2139,8 @@ La première fois que l'application de bureau s'ouvre sans serveur, la fenêtre 
 La ligne de titre dit **notes**, avec **⋯** à droite. Chaque note occupe deux lignes : son titre (la première ligne de la note, ou **sans titre**), puis une petite ligne avec le moment de sa dernière modification (l'heure pour aujourd'hui, **hier**, sinon la date), la ligne suivante de la note, et le signe **✎** quand la note n'a pas encore atteint le serveur. Pendant qu'une dictée est mise par écrit dans une note, cette petite ligne montre à la place **téléchargement du modèle · N%** ou **transcription · N%**.
 
 - **Toucher une note** l'ouvre.
-- **Un appui long sur une note** ouvre son menu, intitulé du titre de la note : une ligne pour chaque numéro de téléphone, adresse de courriel ou adresse web trouvés dans la note (**appeler …**, **écrire à …**, **ouvrir …**), puis **partager**, **déplacer vers un dossier** (seulement quand les dossiers sont activés) et **supprimer**.
+- **Un appui long sur une note** ouvre son menu, intitulé du titre de la note : une ligne pour chaque numéro de téléphone, adresse de courriel ou adresse web trouvés dans la note (**appeler …**, **écrire à …**, **ouvrir …**), puis **partager**, **tags…**, **déplacer vers un dossier** (seulement quand les dossiers sont activés) et **supprimer**.
+- **Tags** : la seconde ligne d'une note montre ses tags après l'heure (**#travail #idée**). Le menu **⋯** contient **tags**, une page qui liste chaque tag avec le nombre de notes qui le portent ; touchez-en un pour voir ces notes.
 - **+ nouvelle note** ouvre une note vide, clavier sorti.
 - **● dicter** crée une note et l'ouvre, micro ouvert.
 - **La petite ligne du bas** donne l'état de la synchronisation (**synchronisation…**, **synchronisé à 21:03 2↑ 1↓ 1−**, ou l'erreur). Touchez-la pour synchroniser tout de suite. Sans serveur, elle dit **sur ce téléphone seulement — toucher pour configurer un dossier WebDAV** et un toucher ouvre les réglages. Les chiffres comptent les notes envoyées (↑), reçues (↓) et supprimées (−).
@@ -2246,6 +2247,25 @@ La ligne sous la liste indique de nouveau **sur ce téléphone seulement — tou
 1. Dans **réglages**, touchez **dossiers** pour le mettre sur **oui**.
 2. De retour sur la première page, touchez **nouveau dossier**, nommez-le, confirmez.
 3. Pour ranger une note existante : ouvrez **toutes les notes**, faites un appui long sur la note, touchez **déplacer vers un dossier**, puis le dossier. L'endroit actuel est marqué **●** ; **aucun dossier** sort la note de son dossier.
+
+### Mettre des tags aux notes
+
+Un tag est un mot précédé de **#**, écrit n'importe où dans une note : `#travail`, `#idée`. Vous pouvez simplement le taper. Ou bien :
+
+1. Faites un appui long sur la note dans la liste (ou touchez **⋯** dans la note ouverte), puis **tags…**.
+2. Le volet liste tous les tags connus dans vos notes, **●** pour ceux que la note porte, **○** pour les autres : touchez-en un pour l'ajouter ou le retirer. **+ nouveau tag** demande un nom ; les espaces deviennent des traits d'union, les majuscules des minuscules, et le `#` est ajouté pour vous.
+3. Touchez **terminé**. Les tags ajoutés ainsi vont sur la dernière ligne de la note, après une ligne vide ; un tag retiré est effacé du texte où qu'il ait été écrit.
+
+Un tag a besoin d'au moins une lettre : `#12` ou `#2026` n'en est pas un. Les majuscules ne comptent pas : `#Travail` et `#travail` sont un seul tag, affiché `#travail`.
+
+### Afficher les notes qui portent un ou plusieurs tags
+
+1. Touchez **⋯**, puis **tags** (avec les dossiers activés, la page des dossiers a aussi une ligne **tags**, marquée **#**, avec le nombre de tags). La page liste tous les tags, les plus utilisés d'abord, avec leur nombre de notes.
+2. Touchez un tag : la liste montre les notes qui le portent, de tous les dossiers, sous le titre **#travail**.
+3. Pour ne garder que les notes qui portent aussi un autre tag, touchez **⋯**, puis **aussi avec un tag…**, puis le tag. Le titre devient **#travail #idée** et seules les notes qui portent les deux restent. L'entrée est absente quand aucune des notes affichées ne porte d'autre tag.
+4. **←** ramène à la page des tags, puis à la liste.
+
+Comme les tags sont du texte brut dans la note, ils voyagent avec elle vers le serveur et l'application de bureau, et n'importe quel éditeur les montre.
 
 ### Renommer ou supprimer un dossier
 
@@ -2374,9 +2394,16 @@ La liste et la page sont côte à côte dans une seule fenêtre. Il n'y a ni dic
 - **+ nouvelle note** sous la liste. Vous pouvez aussi simplement taper sur la page vide : cela commence une note.
 - **Ligne d'état** : **synchronisation…**, **synchronisé 09:33 1↑ 2↓**, ou l'erreur ; cliquez dessus pour synchroniser (ou pour ouvrir les réglages quand aucun serveur n'est réglé). **⚙** ouvre les réglages.
 - **⋯** au-dessus de la page : **+ nouvelle note**, **chercher**, **synchroniser** (avec un serveur), **supprimer cette note**, puis le nom du prochain thème de couleurs (**noir sur blanc** quand l'application est en blanc sur noir, et ainsi de suite tout le tour), **réglages**. Les thèmes se suivent dans cet ordre : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque clic passe au suivant. Les deux encres gardent l'application en noir et blanc purs ; les huit palettes sont celles du clavier Plume, avec une teinte pour le fond, le texte et la ligne choisie.
-- **Clic droit sur une note** : **déplacer vers** (avec les dossiers activés ; l'endroit actuel est marqué **●**, **aucun dossier** en premier) et **supprimer**. Clic droit sur la partie vide de la liste : **+ nouvelle note**. Clic droit sur **toutes les notes** ou **+ nouveau dossier** : **+ nouveau dossier**.
+- **Clic droit sur une note** : **tags…** (un sous-menu : chaque tag connu, **●** quand la note le porte, **○** sinon, chaque clic ajoute ou retire ce tag ; puis **+ nouveau tag…**), **déplacer vers** (avec les dossiers activés ; l'endroit actuel est marqué **●**, **aucun dossier** en premier) et **supprimer**. Clic droit sur la partie vide de la liste : **+ nouvelle note**, **tags** et, dans une liste réduite à un tag, **aussi avec un tag…**. Clic droit sur **toutes les notes** ou **+ nouveau dossier** : **+ nouveau dossier**.
+- **Les tags dans la liste** : la seconde ligne d'une note montre ses tags après l'heure, sous la forme **#travail #idée**.
 
 Une note est enregistrée un instant après que vous avez cessé de taper. Une note vide est abandonnée quand vous la quittez. La suppression se fait sans confirmation. Une page ouverte à l'écran suit le serveur quand vous n'y tapez pas ; si la version du serveur arrive pendant que vous tapez, elle est gardée comme seconde note terminée par **(copie du serveur)**.
+
+### Les tags sur l'ordinateur
+
+**⋯** › **tags** (ou la ligne **tags** marquée **#** sur la page des dossiers, présente dès qu'un tag existe) ouvre la page des tags : chaque tag, les plus utilisés d'abord, avec le nombre de notes qui le portent. Cliquez sur l'un d'eux : la liste montre les notes qui le portent, de tous les dossiers, et la ligne au-dessus du champ de recherche indique **← #travail**. Pour réduire la liste aux notes qui portent aussi un autre tag, faites un clic droit sur la partie vide de la liste ou sur **⋯**, puis **aussi avec un tag…** et le tag : la ligne indique **← #travail #idée**. Cliquez sur cette ligne pour revenir à la page des tags, et encore une fois pour revenir à la liste. Le champ de recherche cherche dans la liste réduite. **+ nouvelle note** quitte la page des tags, puisqu'une nouvelle note n'a pas encore de tag.
+
+Pour mettre un tag à la note ouverte : **⋯** › **tags…**, ou un clic droit sur elle dans la liste. Ajouter un tag l'écrit sur la dernière ligne de la note, après une ligne vide ; un Ctrl+Z l'annule. Un tag peut aussi être tapé à la main n'importe où dans la note, comme `#travail`.
 
 ### Les dossiers sur l'ordinateur
 
@@ -2433,6 +2460,7 @@ Le fichier de réglages contient le mot de passe et n'est lisible que par votre 
 - Ni corbeille ni annulation pour une note supprimée ; pas de confirmation avant de supprimer une note.
 - Les dossiers n'ont qu'un niveau. Un nom de dossier garde au plus 60 caractères ; les caractères `\ / : * ? " < > |` sont remplacés par des espaces. Un nom déjà pris est refusé sans message.
 - Le titre est la première ligne non vide, jusqu'à 80 caractères.
+- Un tag contient des lettres, des chiffres, `_` et `-`, avec au moins une lettre ; il est comparé sans tenir compte des majuscules. Un `#` collé à un mot (`C#`, `x.ch/#top`) ou un `#` suivi de chiffres seulement n'est pas un tag. Une ligne faite seulement de tags ne sert pas d'aperçu sous le titre.
 - Sur le téléphone, une note se déplace vers un dossier par son appui long dans la liste, pas depuis la note ouverte.
 - Sur le téléphone, l'adresse du serveur doit être en `https://`.
 - Sur le téléphone, **identifiant**, **mot de passe** et **dossier sur le serveur** ne peuvent pas être vidés, seulement remplacés. La ligne **serveur** peut être vidée, ce qui arrête la synchronisation.
@@ -4497,7 +4525,7 @@ L'app ne reçoit pas de contenu partagé et n'ouvre pas de fichiers, hormis le f
 
 # Reader's Food Log
 
-*Android 1.2.1*
+*Android 1.5.0*
 
 ## Ce que c'est
 
@@ -4542,9 +4570,11 @@ Sur l'accueil, le bouton retour quitte l'app.
 Le viseur occupe tout l'écran, toujours à la verticale (portrait). Il utilise l'appareil photo arrière, ou l'avant si le téléphone n'en a pas à l'arrière. L'écran reste allumé tant qu'il est ouvert.
 
 - Une bande en haut indique l'étiquette correspondant à l'heure qu'il est (**petit-déjeuner**, **déjeuner**, **dîner** ou **collation**).
-- Une bande en bas indique **touchez n'importe où**.
+- Une bande en bas indique **touchez n'importe où**, avec la ligne **depuis la galerie…** en dessous.
 
 Touchez l'écran n'importe où, ou appuyez sur une touche de volume (haut ou bas) ou sur la touche photo du téléphone, pour prendre la photo. Le téléphone vibre brièvement, l'écran affiche une coche avec l'étiquette et l'heure (par exemple « déjeuner · 12:34 ») pendant une seconde environ, et le viseur se referme tout seul. Vous revenez où vous étiez : dans l'app, sur l'écran d'accueil du téléphone ou sur l'écran de verrouillage.
+
+Pour ajouter une image que vous avez déjà plutôt que d'en prendre une, touchez **depuis la galerie…** : le sélecteur d'images du téléphone s'ouvre, et l'image choisie est rangée comme une photo prise à cet instant, avec l'étiquette et l'heure de maintenant (le journal note quand vous mangez, pas quand l'image a été prise). Si vous fermez le sélecteur sans rien choisir, vous revenez dans le viseur. L'app n'a pas accès à vos autres images.
 
 Il n'y a ni zoom, ni réglage du flash, ni choix de l'appareil, ni aperçu à accepter ou à refaire. Pour sortir sans prendre de photo, utilisez le bouton retour.
 
@@ -4615,6 +4645,12 @@ Ouverts par **réglages** sur l'accueil. Voir « Réglages » et « Vos donn�
 3. L'étiquette et l'heure s'affichent un instant, et l'écran se referme tout seul.
 
 La photo est rangée dans aujourd'hui, avec l'étiquette de l'heure où elle a été prise.
+
+### Ajouter une image que vous avez déjà
+
+1. Ouvrez le viseur comme ci-dessus.
+2. Touchez **depuis la galerie…** en bas, puis choisissez l'image.
+3. L'étiquette et l'heure s'affichent un instant, et l'écran se referme tout seul. L'image est rangée dans aujourd'hui, à l'heure où vous l'avez ajoutée.
 
 ### Prendre une photo sans déverrouiller le téléphone
 
