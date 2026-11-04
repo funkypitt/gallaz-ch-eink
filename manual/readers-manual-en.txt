@@ -2626,10 +2626,9 @@ The titles come from the book's own table of contents; failing that, from the fi
 
 A magazine issue is an EPUB file whose contents page gives a section, a title and an author for each article. The app recognises such a file by itself and treats each article as a chapter.
 
-The contents screen is headed by the title of the issue, with an arrow **←** to go back. It shows the articles as whole pages, without scrolling, under their section names (in small print, in capitals); a page that begins in the middle of a section names the section again. Each article shows its title, its author if there is one, and on the right a square of its first picture if it has one. Once you have started reading the issue, the article you are in is shown in inverted colours, and the contents open on its page. The page number (for example **2/5**) is at the bottom right.
+The contents screen is headed by the title of the issue, with an arrow **←** to go back. It lists the articles under their section names (in small print, in capitals); slide the list up and down to see them all. Each article shows its title, its author if there is one, and on the right a square of its first picture if it has one. Once you have started reading the issue, the article you are in is shown in inverted colours, and the contents open on it.
 
-- **Tap the right third of the screen**: next page of the contents. **The left third**: previous page.
-- **Tap an article in the middle third**: opens it where you left it, or on its first page the first time.
+- **Tap an article**: opens it where you left it, or on its first page the first time.
 - In the article, pages turn as in a book; after the last page of an article, a tap on the right goes on to the next article.
 - **The bar at the top of an article**: **‹** (left) goes to the previous article, **contents** (middle) to the contents, **›** (right) to the next article. Each article opens where you left it. A dimmed arrow means there is no article on that side.
 - **The phone's back button** in an article returns to the contents.
@@ -2694,7 +2693,7 @@ From the shelf: long press the book, then **chapters**, then the chapter.
 ### Read a magazine issue
 
 1. On the shelf, tap the issue: the first time, its contents open; after that, the article where you stopped opens.
-2. In the contents, turn the pages with the left and right thirds of the screen, and tap an article in the middle.
+2. In the contents, slide the list to find an article, and tap it.
 3. Use the bar at the top of the article: **‹** previous article, **contents**, **›** next article. Or keep tapping on the right to pass to the next article.
 
 To return to the contents from an article you can also press the phone's back button, or long press the page and tap **contents**.

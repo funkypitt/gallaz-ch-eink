@@ -2626,10 +2626,9 @@ Les titres viennent de la table des matières du livre ; à défaut, du premier
 
 Un numéro de magazine est un fichier EPUB dont le sommaire donne une rubrique, un titre et un auteur pour chaque article. L'app reconnaît d'elle-même un tel fichier et traite chaque article comme un chapitre.
 
-L'écran du sommaire est coiffé du titre du numéro, avec une flèche **←** pour revenir. Il présente les articles en pages entières, sans défilement, sous le nom de leur rubrique (en petit, en capitales) ; une page qui commence au milieu d'une rubrique en redonne le nom. Chaque article montre son titre, son auteur s'il y en a un, et à droite un carré de sa première image s'il en a une. Une fois le numéro commencé, l'article où vous êtes est affiché en couleurs inversées, et le sommaire s'ouvre sur sa page. Le numéro de page (par exemple **2/5**) est en bas à droite.
+L'écran du sommaire est coiffé du titre du numéro, avec une flèche **←** pour revenir. Il présente les articles sous le nom de leur rubrique (en petit, en capitales) ; faites glisser la liste vers le haut ou vers le bas pour les voir tous. Chaque article montre son titre, son auteur s'il y en a un, et à droite un carré de sa première image s'il en a une. Une fois le numéro commencé, l'article où vous êtes est affiché en couleurs inversées, et le sommaire s'ouvre sur lui.
 
-- **Toucher le tiers droit de l'écran** : page suivante du sommaire. **Le tiers gauche** : page précédente.
-- **Toucher un article dans le tiers du milieu** : l'ouvre là où vous l'aviez laissé, ou à sa première page la première fois.
+- **Toucher un article** : l'ouvre là où vous l'aviez laissé, ou à sa première page la première fois.
 - Dans l'article, les pages se tournent comme dans un livre ; après la dernière page d'un article, un toucher à droite passe à l'article suivant.
 - **La barre en haut d'un article** : **‹** (à gauche) mène à l'article précédent, **sommaire** (au milieu) au sommaire, **›** (à droite) à l'article suivant. Chaque article s'ouvre là où vous l'aviez laissé. Une flèche estompée signifie qu'il n'y a pas d'article de ce côté.
 - **Le bouton retour du téléphone**, dans un article, ramène au sommaire.
@@ -2694,7 +2693,7 @@ Depuis l'étagère : appui long sur le livre, puis **chapitres**, puis le chapi
 ### Lire un numéro de magazine
 
 1. Sur l'étagère, touchez le numéro : la première fois, son sommaire s'ouvre ; ensuite, l'article où vous vous étiez arrêté.
-2. Dans le sommaire, tournez les pages avec les tiers gauche et droit de l'écran, et touchez un article au milieu.
+2. Dans le sommaire, faites glisser la liste jusqu'à l'article, et touchez-le.
 3. Utilisez la barre en haut de l'article : **‹** article précédent, **sommaire**, **›** article suivant. Ou continuez à toucher à droite pour passer à l'article suivant.
 
 Pour revenir au sommaire depuis un article, vous pouvez aussi appuyer sur le bouton retour du téléphone, ou faire un appui long sur la page et toucher **sommaire**.
