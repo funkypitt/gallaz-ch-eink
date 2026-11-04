@@ -2098,7 +2098,7 @@ Un widget montre de vieilles tâches : ouvrez l'application, qui synchronise et
 
 # Reader's Notes
 
-*Android 1.14.0 · Windows, macOS, Linux 1.8.0*
+*Android 1.15.0 · Windows, macOS, Linux 1.9.0*
 
 ## Ce que c'est
 
@@ -2239,6 +2239,10 @@ Une note qui ne contient qu'un dessin s'appelle « dessin » dans la liste ; éc
 ### Partager une note
 
 Faites un appui long sur la note (ou ouvrez-la et touchez **⋯**), puis **partager**. Le texte est remis à l'application que vous choisissez, avec le titre comme objet ; les images de la note partent avec lui, comme fichiers.
+
+### Exporter une note en PDF
+
+Faites un appui long sur la note (ou ouvrez-la et touchez **⋯**), puis **exporter en PDF**. Choisissez où l'enregistrer ; le fichier, en pages A4, contient le titre, le texte et les images à leur place. Sur le téléphone, il est ensuite proposé au partage. Sur l'ordinateur : **⋯** ou clic droit sur la note, **exporter en PDF…**.
 
 ### Supprimer une note
 
@@ -2523,13 +2527,13 @@ Le fichier de réglages contient le mot de passe et n'est lisible que par votre 
 
 # Reader's Books
 
-*Android 1.3.1*
+*Android 1.18.0*
 
 ## Ce que c'est
 
 Reader's Books est une étagère de livres numériques et une liseuse, pensées pour les téléphones à encre électronique. L'étagère est une simple liste ; un livre s'affiche en pages de texte coupées à la ligne entière, qu'on tourne d'un toucher, sans défilement ni animation. L'app lit les fichiers EPUB, MOBI, FB2 et texte brut, montre les images des livres EPUB dans la page et retient où vous en êtes dans chaque livre.
 
-L'app est faite de texte seul, sans icônes, blanc sur noir à moins de choisir un autre de ses thèmes de couleurs. Elle n'a ni boutique, ni compte, ni aucun accès au réseau : vous apportez vos propres fichiers. Elle ne garde volontairement que le texte et les images d'un livre : les polices, les couleurs, la mise en page et les liens du livre sont abandonnés. Elle ne lit pas les PDF.
+L'app est faite de texte seul, sans icônes, blanc sur noir à moins de choisir un autre de ses thèmes de couleurs. Elle n'a ni boutique ni compte : vous apportez vos propres fichiers, ouverts sur le téléphone ou rangés dans une bibliothèque à vous sur un drive (tout serveur WebDAV, comme kDrive ou Nextcloud). La bibliothèque est facultative ; sans elle, et sans dossier de Reader's Notes, l'app n'utilise pas le réseau. Elle ne garde volontairement que le texte et les images d'un livre : les polices, les couleurs, la mise en page et les liens du livre sont abandonnés. Elle ne lit pas les PDF.
 
 L'app existe en anglais, français, allemand, espagnol, portugais et russe ; elle suit la langue du téléphone.
 
@@ -2541,9 +2545,24 @@ Vous voyez l'étagère, intitulée **livres**, avec ce message : **rien sur l'�
 
 Touchez **+ ouvrir un livre**, choisissez un fichier dans le sélecteur de fichiers du téléphone, et le livre s'ouvre à sa première page.
 
+En dessous, une ligne plus petite indique **configurer une bibliothèque** — **vos livres sur votre drive, sur tous vos appareils**. Touchez-la pour arriver à la page où l'on configure une bibliothèque : l'adresse WebDAV du drive, un nom d'utilisateur et un mot de passe (ou **importer les identifiants**). Dès que ces trois éléments sont donnés, le drive est parcouru à la recherche de livres et la bibliothèque devient le premier écran de l'app : l'app s'ouvre dès lors toujours sur la bibliothèque, et la ligne **configurer une bibliothèque** disparaît. **oublier la bibliothèque**, dans les réglages, refait de l'étagère le premier écran.
+
 ## Les écrans
 
+### La bibliothèque (**bibliothèque**)
+
+Quand une bibliothèque est configurée, c'est le premier écran de l'app. En haut :
+
+- **le dernier livre lu** : son titre, et dessous **reprendre la lecture** avec où vous en êtes, par exemple **reprendre la lecture · 42%**. Touchez-le pour ouvrir le livre à sa page. La ligne n'apparaît qu'une fois un livre ouvert.
+- **les dossiers que vous suivez**, une ligne chacun, par exemple **journaux · 3 nouveaux** (voir « Suivre un dossier de journaux ou de magazines »). Le nombre de nouveaux livres est celui trouvé lors du dernier regard sur le drive ; rien n'est téléchargé avant que vous touchiez la ligne.
+- **sur ce téléphone**, avec le nombre de livres dessous : ouvre l'étagère, les livres gardés sur le téléphone.
+- **synchroniser maintenant**, avec **parcouru le** et la date de la dernière synchronisation dessous : relit le drive. La bibliothèque n'est synchronisée que quand vous touchez cette ligne (ou **poursuivre le parcours**, après un parcours interrompu) ; le dossier où Reader's Podcasts envoie ses transcriptions est relu chaque fois que la bibliothèque s'affiche.
+
+Viennent ensuite **rechercher**, **tous les livres** et les dossiers du drive qui contiennent des livres ; toucher un livre le télécharge et l'ouvre. Le bouton retour du téléphone, sur la bibliothèque, quitte l'app. **⋯** ouvre le menu de la bibliothèque (parcourir à nouveau, regroupement, ordre, dossiers de la bibliothèque, **réglages**).
+
 ### L'étagère (**livres**)
+
+Sans bibliothèque, l'étagère est le premier écran et s'intitule **livres**. Avec une bibliothèque, l'étagère s'ouvre depuis la ligne **sur ce téléphone** de la bibliothèque, s'intitule **sur ce téléphone**, et la flèche de retour ramène à la bibliothèque.
 
 L'étagère dresse la liste de vos livres, un par entrée, le plus récemment ouvert (ou ajouté) en premier. Chaque entrée montre :
 
@@ -2552,7 +2571,8 @@ L'étagère dresse la liste de vos livres, un par entrée, le plus récemment ou
 
 Les commandes :
 
-- **Toucher un livre** : l'ouvre à la page où vous l'avez laissé. Un numéro de magazine s'ouvre sur son sommaire (voir « Le sommaire d'un magazine »).
+- **Toucher un livre** : l'ouvre à la page où vous l'avez laissé. Un numéro de magazine jamais ouvert montre d'abord son sommaire (voir « Le sommaire d'un magazine ») ; une fois ouvert, il revient à l'article où vous vous êtes arrêté.
+- **Plusieurs numéros d'un même magazine** forment une seule entrée, par exemple **24 heures · 3 numéros**, avec le dernier numéro dessous. Touchez-la pour ouvrir le dernier numéro ; un appui long montre tous ses numéros, le plus récent en premier. Des numéros appartiennent au même magazine quand leurs titres sont identiques une fois la date retirée (ce qui précède « — Edition du … »).
 - **Appui long sur un livre** : ouvre un menu coiffé du titre du livre, avec **lire** (ouvrir à la page courante), **chapitres** (la liste des chapitres ; pour un magazine cette entrée s'appelle **sommaire**) et **retirer de l'étagère**.
 - **+ ouvrir un livre**, en bas : ouvre le sélecteur de fichiers du téléphone pour ajouter un livre.
 - **⋯**, en haut à droite : ouvre le menu de l'étagère, avec **+ ouvrir un livre**, puis les couleurs (la ligne nomme le thème suivant : **noir sur blanc** quand l'app est en blanc sur noir, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature**, et de nouveau **blanc sur noir** ; la toucher passe à ce thème), puis **réglages**.
@@ -2590,7 +2610,7 @@ Le menu du livre est coiffé du titre du livre et comporte ces entrées :
 | **livres** | Quitte le livre, comme le bouton retour. |
 | **noir sur blanc**, **lavande** … **blanc sur noir** | Passe toute l'app au thème de couleurs suivant : **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** ; chaque toucher passe au suivant. |
 
-La mise en page du texte : les paragraphes sont alignés à gauche, sans césure ; un paragraphe qui en suit un autre commence en retrait. Les titres sont plus grands et en gras. Dans les livres et magazines qui les signalent, le chapeau est en gras, et la rubrique, l'auteur, les légendes et les crédits sont plus petits et gris. Une page ne s'arrête jamais au milieu d'une ligne.
+La mise en page du texte : les paragraphes sont alignés à gauche, sans césure ; un paragraphe qui en suit un autre commence en retrait. Les titres sont plus grands et en gras. Les mots que le livre met en italique ou en gras sont affichés en italique ou en gras. Dans les livres et magazines qui les signalent, le chapeau est en gras, et la rubrique, l'auteur, les légendes et les crédits sont plus petits et gris. Une page ne s'arrête jamais au milieu d'une ligne.
 
 Les images (EPUB seulement) sont mises à la largeur du texte, centrées, et jamais coupées : une image qui ne tient pas dans ce qui reste de la page passe entière à la page suivante, et une image plus haute que la page est réduite à la hauteur de la page. Les très petites images (moins de 48 pixels de large ou de haut) sont laissées de côté.
 
@@ -2606,10 +2626,12 @@ Les titres viennent de la table des matières du livre ; à défaut, du premier
 
 Un numéro de magazine est un fichier EPUB dont le sommaire donne une rubrique, un titre et un auteur pour chaque article. L'app reconnaît d'elle-même un tel fichier et traite chaque article comme un chapitre.
 
-L'écran du sommaire est coiffé du titre du numéro, avec une flèche **←** pour revenir. Il range les articles sous le nom de leur rubrique (en petit, en capitales). Chaque article montre son titre, son auteur s'il y en a un, et à droite un petit carré de sa première image s'il en a une. Une fois le numéro commencé, l'article où vous êtes est affiché en couleurs inversées.
+L'écran du sommaire est coiffé du titre du numéro, avec une flèche **←** pour revenir. Il présente les articles en pages entières, sans défilement, sous le nom de leur rubrique (en petit, en capitales) ; une page qui commence au milieu d'une rubrique en redonne le nom. Chaque article montre son titre, son auteur s'il y en a un, et à droite un carré de sa première image s'il en a une. Une fois le numéro commencé, l'article où vous êtes est affiché en couleurs inversées, et le sommaire s'ouvre sur sa page. Le numéro de page (par exemple **2/5**) est en bas à droite.
 
-- **Toucher un article** : l'ouvre à sa première page.
+- **Toucher le tiers droit de l'écran** : page suivante du sommaire. **Le tiers gauche** : page précédente.
+- **Toucher un article dans le tiers du milieu** : l'ouvre là où vous l'aviez laissé, ou à sa première page la première fois.
 - Dans l'article, les pages se tournent comme dans un livre ; après la dernière page d'un article, un toucher à droite passe à l'article suivant.
+- **La barre en haut d'un article** : **‹** (à gauche) mène à l'article précédent, **sommaire** (au milieu) au sommaire, **›** (à droite) à l'article suivant. Chaque article s'ouvre là où vous l'aviez laissé. Une flèche estompée signifie qu'il n'y a pas d'article de ce côté.
 - **Le bouton retour du téléphone**, dans un article, ramène au sommaire.
 
 ### Les réglages (**réglages**)
@@ -2649,7 +2671,17 @@ Le partage fonctionne pour les fichiers EPUB, MOBI et FB2. Un fichier texte ne p
 
 ### Reprendre où vous en étiez
 
-Touchez le livre sur l'étagère : il s'ouvre à la page où vous l'avez laissé. Le dernier livre lu est en haut de l'étagère. Vous pouvez aussi passer par le widget d'écran d'accueil ou par la tuile livre de Reader's Launcher (voir « Avec les autres apps »).
+Avec une bibliothèque, touchez la première ligne de la bibliothèque, le dernier livre lu : il s'ouvre à sa page. Sans bibliothèque, touchez le livre sur l'étagère : il s'ouvre à la page où vous l'avez laissé. Le dernier livre lu est en haut de l'étagère. Vous pouvez aussi passer par le widget d'écran d'accueil ou par la tuile livre de Reader's Launcher (voir « Avec les autres apps »).
+
+### Surligner un passage ou ajouter un commentaire
+
+Cela marche dans tous les livres, qu'ils viennent de la bibliothèque ou aient été ouverts sur le téléphone.
+
+1. Dans la page, appuyez longuement sur le premier mot du passage, glissez dessus puis levez le doigt.
+2. Dans le menu, touchez **surligner**, **commenter** (écrivez alors le commentaire et touchez **ok**) ou **copier**.
+3. Un surlignage est une bande grise derrière les mots, soulignée quand il porte un commentaire. Touchez-le (au milieu de l'écran) pour voir son commentaire, le modifier, copier le passage ou retirer le surlignage.
+
+Dans un livre de la bibliothèque, les surlignages sont gardés à côté du livre sur le drive, avec la page où vous êtes, et le suivent sur vos autres appareils. Dans un livre ouvert depuis le téléphone, ils restent sur le téléphone. Si ce livre est ensuite ajouté à la bibliothèque (**ajouter à la bibliothèque** dans son menu), ou si le même livre est ouvert depuis la bibliothèque, ses surlignages le suivent. Avec un dossier de Reader's Notes indiqué dans les réglages, une note par livre reprend ses surlignages dans Reader's Notes, pour les deux sortes de livres. **exporter les surlignages**, dans le menu du livre, les partage sous forme de texte.
 
 ### Aller à un chapitre
 
@@ -2661,11 +2693,22 @@ Depuis l'étagère : appui long sur le livre, puis **chapitres**, puis le chapi
 
 ### Lire un numéro de magazine
 
-1. Sur l'étagère, touchez le numéro : son sommaire s'ouvre.
-2. Touchez un article.
-3. Appuyez sur le bouton retour du téléphone pour revenir au sommaire, ou continuez à toucher à droite pour passer à l'article suivant.
+1. Sur l'étagère, touchez le numéro : la première fois, son sommaire s'ouvre ; ensuite, l'article où vous vous étiez arrêté.
+2. Dans le sommaire, tournez les pages avec les tiers gauche et droit de l'écran, et touchez un article au milieu.
+3. Utilisez la barre en haut de l'article : **‹** article précédent, **sommaire**, **›** article suivant. Ou continuez à toucher à droite pour passer à l'article suivant.
 
-Pour revenir au sommaire depuis un article, vous pouvez aussi faire un appui long sur la page et toucher **sommaire**. Pour retourner directement à la page où vous vous étiez arrêté, faites un appui long sur le numéro dans l'étagère et touchez **lire**.
+Pour revenir au sommaire depuis un article, vous pouvez aussi appuyer sur le bouton retour du téléphone, ou faire un appui long sur la page et toucher **sommaire**.
+
+### Suivre un dossier de journaux ou de magazines
+
+Quand le journal du jour ou un magazine arrive dans un dossier de votre bibliothèque, vous pouvez suivre ce dossier et récupérer les nouveautés d'un seul geste.
+
+1. Dans la bibliothèque, faites un appui long sur le dossier et touchez **suivre ce dossier**.
+2. Le dossier a maintenant sa propre ligne en haut de la bibliothèque, après le dernier livre lu : son nom et le nombre de nouveaux livres, par exemple **journaux · 1 nouveau**. Au moment où vous commencez à suivre un dossier, les livres de son jour le plus récent comptent comme nouveaux ; les plus anciens non.
+3. Touchez la ligne. L'app relit ce dossier sur le drive (et seulement lui), puis télécharge ses nouveaux livres l'un après l'autre ; la ligne du dessous indique **recherche des nouveautés…**, puis **téléchargement 1 sur 3…**.
+4. Si un seul nouveau livre est arrivé, il s'ouvre. S'il en est arrivé plusieurs, ou aucun, la liste des numéros de ce dossier présents sur le téléphone s'ouvre, le plus récent en premier.
+
+Rien n'est téléchargé tout seul : le nombre affiché est celui trouvé lors de la dernière synchronisation ou du dernier toucher, et seul un toucher télécharge. Un livre téléchargé, ou retiré du téléphone après lecture, ne revient pas comme nouveau. Un appui long sur la ligne propose **numéros sur ce téléphone**, **tout le dossier sur le drive** et **ne plus suivre ce dossier**.
 
 ### Agrandir ou réduire le texte
 
@@ -2720,7 +2763,7 @@ Tous les réglages sont sur l'écran **réglages** (étagère, **⋯**, **régla
 
 ## Vos données
 
-Tout reste sur le téléphone. L'app n'a pas d'autorisation réseau : rien n'est envoyé nulle part et rien n'est téléchargé. La seule autorisation qu'elle utilise est la vibration, pour la **vibration légère** ; le téléphone ne vous demande pas de l'accorder.
+Sans bibliothèque et sans dossier de Reader's Notes, tout reste sur le téléphone : rien n'est envoyé nulle part et rien n'est téléchargé. Avec une bibliothèque, les surlignages et la page où vous êtes dans chaque livre de la bibliothèque sont écrits à côté du livre sur votre drive ; avec un dossier de Reader's Notes, une note par livre surligné y est écrite. Les surlignages d'un livre ouvert depuis le téléphone restent sur le téléphone. La seule autorisation qu'elle utilise est la vibration, pour la **vibration légère** ; le téléphone ne vous demande pas de l'accorder.
 
 Quand vous ajoutez un livre, l'app en fait sa propre copie dans son espace privé. Vous pouvez ensuite déplacer, renommer ou supprimer l'original : le livre reste sur l'étagère. À côté des copies, l'app garde la liste des livres avec, pour chacun, son titre, son format, la date de dernière ouverture et votre place dans le livre, ainsi que vos réglages.
 
@@ -2754,13 +2797,13 @@ Reader's Books se propose dans la liste « ouvrir avec » du téléphone pour 
 - MOBI désigne le format classique, non compressé ou avec la compression PalmDoc ordinaire. Les fichiers protégés contre la copie (DRM) ou utilisant l'autre compression (HUFF/CDIC) sont refusés.
 - Les images ne sont affichées que pour les EPUB. Celles des fichiers MOBI et FB2 sont laissées de côté.
 - Les fichiers texte et FB2 sont lus en UTF-8. Un fichier texte forme un seul chapitre ; son titre est le nom du fichier sans l'extension, les tirets bas étant remplacés par des espaces ; les paragraphes sont séparés par des lignes vides.
-- Les styles du livre sont abandonnés : polices, couleurs, italiques, alignement, tableaux en grille. Les liens, y compris les appels de notes, ne peuvent pas être suivis.
+- Les styles du livre sont abandonnés, sauf l'italique et le gras : polices, couleurs, alignement, tableaux en grille. L'italique est obtenu en penchant les lettres : les polices de lecture fournies avec l'app n'ont pas d'italique propre. Les liens, y compris les appels de notes, ne peuvent pas être suivis.
 - Les pages se tournent uniquement en touchant l'écran : pas de glissement, pas de changement de page avec les boutons de volume.
-- Pas de recherche dans un livre, pas de signets, pas de surlignage, pas de notes, pas de dictionnaire.
+- Pas de recherche dans un livre, pas de signets, pas de dictionnaire.
 - Pas de dossiers, pas de choix de tri ni de recherche sur l'étagère : l'ordre est toujours le plus récemment ouvert en premier.
 - Deux livres de même titre et de même format ne peuvent pas être ensemble sur l'étagère : le second remplace le premier.
 - On ajoute un fichier à la fois.
-- Pas de synchronisation, d'export ni d'import de l'étagère et des positions de lecture.
+- La page où vous êtes dans un livre ouvert depuis le téléphone, et ses surlignages, restent sur ce téléphone : ils ne passent sur d'autres appareils qu'une fois le livre dans la bibliothèque.
 
 ## Messages et problèmes
 
@@ -3308,6 +3351,10 @@ Si l'enregistrement est dans le dossier cloud, ses fichiers y sont renommés aus
 ### Partager le son ou la transcription
 
 Appui long sur la ligne (ou **⋯** sur la page de l'enregistrement), puis **partager le son** ou **partager la transcription**, et choisissez l'app destinataire. Le son partagé est la copie nettoyée quand elle existe, l'original sinon.
+
+### Faire une note d'un enregistrement
+
+Si Reader's Notes est installé, un enregistrement transcrit propose **en faire une note** (appui long dans la liste, ou **⋯** sur sa page). La note reprend le titre, les points principaux s'il y en a, puis la transcription, et s'ouvre dans Reader's Notes. Sa dernière ligne ramène à l'enregistrement : dans Notes, **⋯** › **ouvrir l'enregistrement**.
 
 ### Supprimer un enregistrement
 

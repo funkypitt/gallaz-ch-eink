@@ -2098,7 +2098,7 @@ A widget shows old tasks: open the app, which syncs and redraws the widgets.
 
 # Reader's Notes
 
-*Android 1.14.0 · Windows, macOS, Linux 1.8.0*
+*Android 1.15.0 · Windows, macOS, Linux 1.9.0*
 
 ## What it is
 
@@ -2239,6 +2239,10 @@ A note holding only a drawing is called « drawing » in the list; write a line 
 ### Share a note
 
 Long press the note (or open it and tap **⋯**), then **share**. The text is handed to the app you pick, with the title as subject; the note's pictures go along with it, as files.
+
+### Export a note as a PDF
+
+Long press the note (or open it and tap **⋯**), then **export as PDF**. Choose where to save it; the file, in A4 pages, holds the title, the text and the pictures in place. On the phone it is then offered to the share menu. On the computer: **⋯** or right-click the note, **export as PDF…**.
 
 ### Delete a note
 
@@ -2523,13 +2527,13 @@ The settings file holds the password and is readable by your user account only.
 
 # Reader's Books
 
-*Android 1.3.1*
+*Android 1.18.0*
 
 ## What it is
 
 Reader's Books is a shelf of e-books and a reader for them, made for e-ink phones. The shelf is a plain list; a book is shown as pages of text cut at whole lines, turned by a tap, with no scrolling and no animation. It reads EPUB, MOBI, FB2 and plain-text files, shows the pictures of EPUB books inside the page, and remembers your place in every book.
 
-The app is text only, with no icons, white on black unless you choose another of its colour themes. It has no store, no account and no network access at all: you bring your own files. It deliberately keeps only the text and the pictures of a book: the book's own fonts, colours, layout and links are dropped. It does not read PDF.
+The app is text only, with no icons, white on black unless you choose another of its colour themes. It has no store and no account: you bring your own files, opened on the phone or kept in a library of your own on a drive (any WebDAV server, such as kDrive or Nextcloud). The library is optional; without it, and without a Reader's Notes folder, the app uses no network. It deliberately keeps only the text and the pictures of a book: the book's own fonts, colours, layout and links are dropped. It does not read PDF.
 
 The app is available in English, French, German, Spanish, Portuguese and Russian; it follows the language of the phone.
 
@@ -2541,9 +2545,24 @@ You see the shelf, titled **books**, with this message: **nothing on the shelf. 
 
 Tap **+ open a book**, choose a file in the phone's file chooser, and the book opens on its first page.
 
+Below it, a smaller line reads **set up a library** — **your books on your drive, on all your devices**. Tap it to reach the page where a library is set up: the WebDAV address of the drive, a username and a password (or **import credentials**). As soon as these three are given, the drive is scanned for books and the library becomes the first screen of the app: from then on the app always opens on the library, and the **set up a library** line is gone. **forget the library**, in the settings, makes the shelf the first screen again.
+
 ## The screens
 
+### The library (**library**)
+
+When a library is set up, it is the first screen of the app. At its top:
+
+- **the book you read last**: its title, and beneath **continue reading** with how far you are, for example **continue reading · 42%**. Tap it to open the book at its page. The row is absent until a book has been opened.
+- **the folders you follow**, one row each, for example **journaux · 3 new** (see "Follow a folder of newspapers or magazines"). The number of new books is the one found at the last look at the drive; nothing is downloaded until you tap the row.
+- **on this phone**, with the number of books beneath: opens the shelf, the books kept on the phone.
+- **sync now**, with **scanned on** and the date of the last sync beneath: lists the drive again. The library is synced only when you tap this row (or **continue the scan**, after a scan that was cut short); the folder where Reader's Podcasts sends its transcriptions is looked at again each time the library is shown.
+
+Below come **search**, **all books** and the folders of the drive that hold books; tapping a book downloads it and opens it. The phone's back button on the library leaves the app. **⋯** opens the library's menu (scan again, grouping, order, folders of the library, **settings**).
+
 ### The shelf (**books**)
+
+Without a library, the shelf is the first screen and is titled **books**. With a library, the shelf is opened from the library's **on this phone** row, is titled **on this phone**, and the back arrow returns to the library.
 
 The shelf lists your books, one per entry, the most recently opened (or added) first. Each entry shows:
 
@@ -2552,7 +2571,8 @@ The shelf lists your books, one per entry, the most recently opened (or added) f
 
 Controls:
 
-- **Tap a book**: opens it at the page where you left it. A magazine issue opens on its contents instead (see "The contents of a magazine").
+- **Tap a book**: opens it at the page where you left it. A magazine issue you have never opened shows its contents first (see "The contents of a magazine"); once opened, it goes back to the article where you stopped.
+- **Several issues of one magazine** make a single entry, for example **24 heures · 3 issues**, with the latest issue beneath. Tap it to open the latest issue; long press it to see all its issues, the newest first. Issues belong to the same magazine when their titles are the same once the date is taken off (what comes before "— Edition du …").
 - **Long press a book**: opens a menu headed by the book's title, with **read** (open at the current page), **chapters** (the list of chapters; for a magazine this entry is called **contents**) and **remove from the shelf**.
 - **+ open a book**, at the bottom: opens the phone's file chooser to add a book.
 - **⋯**, at the top right: opens the shelf menu, with **+ open a book**, then the colour themes (the line names the next theme: **black on white** when the app is white on black, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**, and **white on black** again; tapping it moves to that theme), then **settings**.
@@ -2590,7 +2610,7 @@ The book's menu is headed by the book's title and has these entries:
 | **books** | Leaves the book, like the back button. |
 | **black on white**, **lavender** … **white on black** | Moves the whole app to the next colour theme: **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature**; each tap goes to the next. |
 
-How the text is laid out: paragraphs are aligned on the left, without hyphenation; a paragraph that follows another is indented. Headings are larger and bold. In books and magazines that mark them, the lead paragraph is bold, and the section name, the author, captions and credits are smaller and grey. A page never ends in the middle of a line.
+How the text is laid out: paragraphs are aligned on the left, without hyphenation; a paragraph that follows another is indented. Headings are larger and bold. Words the book sets in italic or bold are shown in italic or bold. In books and magazines that mark them, the lead paragraph is bold, and the section name, the author, captions and credits are smaller and grey. A page never ends in the middle of a line.
 
 Pictures (EPUB only) are scaled to the width of the text, centred, and never cut: a picture that does not fit in what is left of the page moves whole to the next page, and a picture taller than the page is reduced to the height of the page. Very small pictures (less than 48 pixels wide or high) are left out.
 
@@ -2606,10 +2626,12 @@ The titles come from the book's own table of contents; failing that, from the fi
 
 A magazine issue is an EPUB file whose contents page gives a section, a title and an author for each article. The app recognises such a file by itself and treats each article as a chapter.
 
-The contents screen is headed by the title of the issue, with an arrow **←** to go back. It lists the articles under their section names (in small print, in capitals). Each article shows its title, its author if there is one, and on the right a small square of its first picture if it has one. Once you have started reading the issue, the article you are in is shown in inverted colours.
+The contents screen is headed by the title of the issue, with an arrow **←** to go back. It shows the articles as whole pages, without scrolling, under their section names (in small print, in capitals); a page that begins in the middle of a section names the section again. Each article shows its title, its author if there is one, and on the right a square of its first picture if it has one. Once you have started reading the issue, the article you are in is shown in inverted colours, and the contents open on its page. The page number (for example **2/5**) is at the bottom right.
 
-- **Tap an article**: opens it on its first page.
+- **Tap the right third of the screen**: next page of the contents. **The left third**: previous page.
+- **Tap an article in the middle third**: opens it where you left it, or on its first page the first time.
 - In the article, pages turn as in a book; after the last page of an article, a tap on the right goes on to the next article.
+- **The bar at the top of an article**: **‹** (left) goes to the previous article, **contents** (middle) to the contents, **›** (right) to the next article. Each article opens where you left it. A dimmed arrow means there is no article on that side.
 - **The phone's back button** in an article returns to the contents.
 
 ### Settings (**settings**)
@@ -2649,7 +2671,17 @@ Sharing works for EPUB, MOBI and FB2 files. A plain-text file cannot be shared t
 
 ### Carry on where you left off
 
-Tap the book on the shelf: it opens at the page where you left it. The book you read last is at the top of the shelf. You can also use the home-screen widget or the book tile of Reader's Launcher (see "With the other apps").
+With a library, tap the first row of the library, the book you read last: it opens at its page. Without one, tap the book on the shelf: it opens at the page where you left it. The book you read last is at the top of the shelf. You can also use the home-screen widget or the book tile of Reader's Launcher (see "With the other apps").
+
+### Highlight a passage or add a comment
+
+This works in every book, whether it came from the library or was opened on the phone.
+
+1. In the page, press and hold the first word of the passage, then slide over it and lift your finger.
+2. In the menu, tap **highlight**, **comment** (then write the comment and tap **ok**) or **copy**.
+3. A highlight is a grey band behind the words, underlined when it has a comment. Tap it (in the middle of the screen) to see its comment, change it, copy the passage or remove the highlight.
+
+In a book of the library, the highlights are kept next to the book on the drive, with the page you are at, and follow it to your other devices. In a book opened from the phone, they stay on the phone. If that book is later added to the library (**add to the library** in its menu), or the same book is opened from the library, its highlights go with it. With a Reader's Notes folder given in the settings, a note per book lists its highlights in Reader's Notes, for books of both kinds. **export the highlights**, in the book's menu, shares them as text.
 
 ### Go to a chapter
 
@@ -2661,11 +2693,22 @@ From the shelf: long press the book, then **chapters**, then the chapter.
 
 ### Read a magazine issue
 
-1. On the shelf, tap the issue: its contents open.
-2. Tap an article.
-3. Press the phone's back button to return to the contents, or keep tapping on the right to pass to the next article.
+1. On the shelf, tap the issue: the first time, its contents open; after that, the article where you stopped opens.
+2. In the contents, turn the pages with the left and right thirds of the screen, and tap an article in the middle.
+3. Use the bar at the top of the article: **‹** previous article, **contents**, **›** next article. Or keep tapping on the right to pass to the next article.
 
-To return to the contents from an article you can also long press the page and tap **contents**. To go straight back to the page where you stopped, long press the issue on the shelf and tap **read**.
+To return to the contents from an article you can also press the phone's back button, or long press the page and tap **contents**.
+
+### Follow a folder of newspapers or magazines
+
+When the day's paper or a magazine arrives in a folder of your library, you can follow that folder and fetch what is new in one tap.
+
+1. In the library, long press the folder and tap **follow this folder**.
+2. The folder now has its own row near the top of the library, after the book you read last: its name and the number of new books, for example **journaux · 1 new**. When you first follow a folder, the books of its most recent day count as new; the older ones do not.
+3. Tap the row. The app looks at that folder on the drive again (and only that folder), then downloads its new books one after the other; the line beneath says **looking for new books…**, then **fetching 1 of 3…**.
+4. If one new book came, it opens. If several came, or none, the list of that folder's issues on the phone opens, the newest first.
+
+Nothing is downloaded by itself: the count shown is the one found at the last sync or the last tap, and only a tap downloads. A book you downloaded, or removed from the phone after reading it, does not come back as new. Long press the row for **issues on this phone**, **the whole folder on the drive** and **stop following this folder**.
 
 ### Make the text larger or smaller
 
@@ -2720,7 +2763,7 @@ All settings are on the **settings** screen (shelf, **⋯**, **settings**).
 
 ## Your data
 
-Everything stays on the phone. The app has no network permission: nothing is sent anywhere and nothing is downloaded. The only permission it uses is vibration, for the **haptic tick**; the phone does not ask you to grant it.
+Without a library and without a Reader's Notes folder, everything stays on the phone: nothing is sent anywhere and nothing is downloaded. With a library, the highlights and the page you are at in each book of the library are written next to the book on your drive; with a Reader's Notes folder, a note per highlighted book is written there. The highlights of a book opened from the phone are kept on the phone. The only permission it uses is vibration, for the **haptic tick**; the phone does not ask you to grant it.
 
 When you add a book, the app makes its own copy of the file in its private storage. You can then move, rename or delete the original: the book stays on the shelf. Next to the copies, the app keeps the list of books with, for each, its title, its format, the date it was last opened and your place in it, and your settings.
 
@@ -2754,13 +2797,13 @@ Reader's Books offers itself in the phone's "open with" list for EPUB, MOBI, AZW
 - MOBI means the classic format, uncompressed or with standard PalmDoc compression. Files with copy protection (DRM) or with the other compression (HUFF/CDIC) are refused.
 - Pictures are shown for EPUB only. Pictures in MOBI and FB2 files are left out.
 - Plain-text and FB2 files are read as UTF-8. A plain-text file is one chapter; its title is the file name without the extension, with underscores replaced by spaces; paragraphs are separated by blank lines.
-- The book's own styles are dropped: fonts, colours, italics, alignment, tables as grids. Links, including footnote links, cannot be followed.
+- The book's own styles are dropped, except italic and bold: fonts, colours, alignment, tables as grids. Italic is drawn by slanting the letters: the reading fonts shipped with the app have no italic of their own. Links, including footnote links, cannot be followed.
 - Pages are turned by tapping only: there is no swipe and no page turning with the volume buttons.
-- No search in a book, no bookmarks, no highlights, no notes, no dictionary.
+- No search in a book, no bookmarks, no dictionary.
 - No folders, no sorting choice and no search on the shelf: the order is always most recently opened first.
 - Two books with the same title and the same format cannot be on the shelf together: the second replaces the first.
 - One file is added at a time.
-- No sync, export or import of the shelf and reading positions.
+- The page you are at in a book opened from the phone, and its highlights, stay on that phone: they travel to other devices only once the book is in the library.
 
 ## Messages and problems
 
@@ -3308,6 +3351,10 @@ If the recording is in the cloud folder, its files there are renamed too.
 ### Share the sound or the transcript
 
 Long press the row (or **⋯** on the recording's page), then **share the audio** or **share the transcript**, and pick the app to send it to. The sound shared is the cleaned copy when it exists, the original otherwise.
+
+### Make a note of a recording
+
+If Reader's Notes is installed, a transcribed recording offers **make it a note** (long press in the list, or **⋯** on its page). The note takes the title, the main points if there are any, then the transcript, and opens in Reader's Notes. Its last line leads back to the recording: in Notes, **⋯** › **open the recording**.
 
 ### Delete one recording
 
