@@ -1,6 +1,6 @@
 # User manual — The Reader's apps and the other apps of gallaz.ch/apps
 
-Edition of 21 October 2026 · gallaz.ch/apps
+Edition of 4 November 2026 · gallaz.ch/apps
 
 
 <!-- Before you start -->
@@ -2098,7 +2098,7 @@ A widget shows old tasks: open the app, which syncs and redraws the widgets.
 
 # Reader's Notes
 
-*Android 1.11.0 · Windows, macOS, Linux 1.6.0*
+*Android 1.14.0 · Windows, macOS, Linux 1.8.0*
 
 ## What it is
 
@@ -2216,9 +2216,29 @@ The list keeps only the notes whose text contains what you typed, capitals ignor
 
 The phone app opens with the number ready; it never calls by itself. A mail address opens your mail app, a web address your browser. Up to eight such lines are offered per note. Phone numbers need 7 to 15 digits, so dates, prices and room numbers are left alone; web addresses must begin with `http://`, `https://` or `www.`.
 
+### Put a picture in a note
+
+On the phone, open the note, place the cursor, tap **⋯** then **insert a picture**, and pick it from the gallery. It goes on a line of its own, at the cursor. A picture shared from another app (gallery, camera) becomes a new note holding it.
+
+On the computer, **⋯** or right-click in the note, then **insert a picture…**; you can also paste a picture or drop an image file into the note.
+
+To take a picture out, tap it (right-click on the computer) then **remove from the note**. Pictures travel with the notes when a server is set; one that has not arrived yet shows as a frame saying « picture on its way ».
+
+### Draw
+
+- **A new drawn note**: tap **✎** at the bottom of the list (on the computer, **✎ drawing** next to **+ new note**, or **new drawing** in **⋯**).
+- **A drawing inside a note**: tap **✎ draw** under the note; the drawing goes in at the cursor.
+- **Go on with a drawing**: tap it, then **draw on it** (double-click on the computer).
+
+The drawing page is a white sheet. At the bottom, **pen** and **eraser**; at the top, **↶** undoes the last stroke. Going back saves the drawing; a sheet left blank saves nothing.
+
+With a stylus, the line follows the pressure, and the stylus's eraser end (or its button held) erases. Once a stylus has touched the sheet, fingers no longer draw: the hand resting on the screen leaves no marks. Without a stylus, you draw with a finger. On the computer, a graphics tablet draws with its pressure; the mouse draws a fixed line and its right button erases.
+
+A note holding only a drawing is called « drawing » in the list; write a line above it to give it a title.
+
 ### Share a note
 
-Long press the note (or open it and tap **⋯**), then **share**. The whole text is handed to the app you pick, with the title as subject.
+Long press the note (or open it and tap **⋯**), then **share**. The text is handed to the app you pick, with the title as subject; the note's pictures go along with it, as files.
 
 ### Delete a note
 

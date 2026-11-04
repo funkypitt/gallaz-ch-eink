@@ -1,6 +1,6 @@
 # Mode d'emploi — Les applications Reader's et les autres applications de gallaz.ch/apps
 
-Édition du 21 octobre 2026 · gallaz.ch/apps
+Édition du 4 novembre 2026 · gallaz.ch/apps
 
 
 <!-- Avant de commencer -->
@@ -2098,7 +2098,7 @@ Un widget montre de vieilles tâches : ouvrez l'application, qui synchronise et
 
 # Reader's Notes
 
-*Android 1.11.0 · Windows, macOS, Linux 1.6.0*
+*Android 1.14.0 · Windows, macOS, Linux 1.8.0*
 
 ## Ce que c'est
 
@@ -2216,9 +2216,29 @@ La liste ne garde que les notes dont le texte contient ce que vous avez tapé, s
 
 L'application de téléphone s'ouvre avec le numéro prêt ; elle n'appelle jamais d'elle-même. Une adresse de courriel ouvre votre application de courriel, une adresse web votre navigateur. Huit lignes de ce genre au plus sont proposées par note. Un numéro de téléphone doit compter 7 à 15 chiffres : les dates, les prix et les numéros de chambre sont donc laissés tranquilles ; une adresse web doit commencer par `http://`, `https://` ou `www.`.
 
+### Mettre une image dans une note
+
+Sur le téléphone, ouvrez la note, placez le curseur, touchez **⋯** puis **insérer une image**, et choisissez-la dans la galerie. Elle s'insère sur sa propre ligne, à l'endroit du curseur. Une image partagée depuis une autre application (galerie, appareil photo) devient une nouvelle note qui la contient.
+
+Sur l'ordinateur, **⋯** ou clic droit dans la note, puis **insérer une image…** ; on peut aussi coller une image ou déposer un fichier image dans la note.
+
+Pour retirer une image, touchez-la (clic droit sur l'ordinateur) puis **retirer de la note**. Les images voyagent avec les notes quand un serveur est réglé ; une image pas encore arrivée s'affiche comme un cadre « image en route ».
+
+### Dessiner
+
+- **Une nouvelle note dessinée** : touchez **✎** en bas de la liste (sur l'ordinateur, **✎ dessin** à côté de **+ nouvelle note**, ou **nouveau dessin** dans **⋯**).
+- **Un dessin dans une note** : touchez **✎ dessiner** sous la note ; le dessin s'insère à l'endroit du curseur.
+- **Reprendre un dessin** : touchez-le puis **dessiner dessus** (double-clic sur l'ordinateur).
+
+La page de dessin est une feuille blanche. En bas, **stylo** et **gomme** ; en haut, **↶** annule le dernier trait. Revenir en arrière enregistre le dessin ; une feuille laissée vierge n'enregistre rien.
+
+Avec un stylet, le trait suit la pression, et la gomme du stylet (ou son bouton tenu) efface. Dès qu'un stylet a touché la feuille, les doigts ne dessinent plus : la main posée sur l'écran ne laisse pas de trace. Sans stylet, on dessine au doigt. Sur l'ordinateur, une tablette graphique dessine selon la pression ; la souris dessine d'un trait fixe et son bouton droit efface.
+
+Une note qui ne contient qu'un dessin s'appelle « dessin » dans la liste ; écrivez une ligne au-dessus pour lui donner un titre.
+
 ### Partager une note
 
-Faites un appui long sur la note (ou ouvrez-la et touchez **⋯**), puis **partager**. Le texte entier est remis à l'application que vous choisissez, avec le titre comme objet.
+Faites un appui long sur la note (ou ouvrez-la et touchez **⋯**), puis **partager**. Le texte est remis à l'application que vous choisissez, avec le titre comme objet ; les images de la note partent avec lui, comme fichiers.
 
 ### Supprimer une note
 
