@@ -1,6 +1,6 @@
 # User manual — The Reader's apps and the other apps of gallaz.ch/apps
 
-Edition of 4 November 2026 · gallaz.ch/apps
+Edition of 11 November 2026 · gallaz.ch/apps
 
 
 <!-- Before you start -->
@@ -2168,6 +2168,8 @@ Everything is saved as you type; there is no save button. When you leave the not
 
 At the bottom, **● dictate** speaks into this note. While the microphone is open the row turns to **■** followed by the running time, under a line that moves with your voice; tap it to stop.
 
+A small line under the dictate row names the language, for example **dictation · language: recognised automatically**; a tap on it opens the settings. With **recognised automatically**, the app listens to what you say to find the language. Once the dictation is written, the line gives the language heard (**language heard: English**). If a language set in the settings is plainly not the one you spoke, the note is written in the language heard and the line says so (**language heard: English — setting: French**).
+
 The **⋯** menu holds the **call …**, **write to …** and **open …** lines for what the note contains, then **share** and **delete**, and under a line the name of the next colour theme.
 
 ### Settings (phone)
@@ -2325,7 +2327,7 @@ Tap **⋯** on the list or in a note, then the last line but one: it names the n
 | **export credentials** | Shares a file with server, folder, username and password. Present only when a server is set | – | – |
 | **import credentials** | Reads such a file | – | – |
 | **careful** / **ordinary** | The speech model used for dictation; the chosen one is shown inverted | **careful** (574 MB, **recommended**, **four times slower**) / **ordinary** (190 MB) | **careful** |
-| **language spoken** | The language you dictate in | the phone's language / english / **detected** | the phone's language |
+| **language spoken** | The language you dictate in | **recognised automatically** / the phone's language / english | **recognised automatically** |
 | **colours** | The colour theme; shows the current one, a tap moves to the next | **white on black**, **black on white**, then **lavender**, **sage**, **nordic**, **terracotta**, **coquette**, **activist**, **sultry**, **nature** | **white on black** |
 | **text size** | Size of all text | S / M / L | M |
 | **font** | Typeface of all text | sans-serif / serif / mono | sans-serif |
@@ -2488,7 +2490,7 @@ The settings file holds the password and is readable by your user account only.
 - On the phone, a note is moved to a folder from its long press in the list, not from the open note.
 - On the phone, the server address must be `https://`.
 - On the phone, **username**, **password** and **folder on the server** cannot be emptied, only replaced. The **server** line can be emptied, which stops the sync.
-- Dictation exists on the phone only. Languages offered: the phone's language, English, or **detected**. The app keeps the phone awake for up to two hours of recording.
+- Dictation exists on the phone only. Languages offered: **recognised automatically**, the phone's language, or English. The app keeps the phone awake for up to two hours of recording.
 - The sync is with a WebDAV folder only; there is no other cloud service and no sharing of a note between people other than through that folder.
 - Sorting is fixed: most recently changed first.
 
@@ -3277,7 +3279,7 @@ The **⋯** menu contains, depending on the recording's state:
 | **share the transcript** | when there is a transcript | sends the text to another app |
 | **upload now** | cloud folder set up, recording not uploaded yet | starts a sync |
 | **try again** | uploaded, and an error is shown | clears the error and syncs |
-| **transcribe now** | not transcribed yet, the phone transcribes | starts the transcription |
+| **transcribe now** | not transcribed yet, the phone transcribes | asks **Which language is spoken?**, one row per language (**transcribe · language: …**), then starts the transcription |
 | **write the main points (beta)** | the option is on, its model is on the phone, the recording is transcribed and has no points | asks for the points of this recording |
 | **stop** | the phone is working on this recording | stops the work in progress |
 | **delete** | always | deletes the recording, on the phone and in the cloud folder |
@@ -3325,7 +3327,9 @@ Playback continues with the screen off and when you leave the app. It pauses whe
 
 ### Read the transcript
 
-Open the recording: the transcript is under the player. It is written automatically after each recording when **who transcribes** is **this phone**. To start it at once, tap the line **the transcript will appear here… — tap to start now**, or **⋯** then **transcribe now**.
+Open the recording: the transcript is under the player. It is written automatically after each recording when **who transcribes** is **this phone**. To start it at once, tap the line **the transcript will appear here… — tap to start now**, or **⋯** then **transcribe now**, which first asks **Which language is spoken?**: each row names a language (**transcribe · language: recognised automatically**, **transcribe · language: English**…).
+
+With **recognised automatically**, the app listens to several passages of the recording, not only its beginning, to find the language. A line above the transcript gives the language: **language heard: English**, or **language chosen: French** when you chose it. If you chose a language in **transcribe now** and the recording plainly speaks another one, the app stops before transcribing and says, for example, *Language heard: English. Language chosen: French.*, with one row per answer (**transcribe · language: English**, **transcribe · language: French**); tap the one you want.
 
 ### Stop a transcription in progress
 
@@ -3419,7 +3423,7 @@ Transcription and recording:
 | quality: **ordinary** (190 MB) or **careful** (574 MB, marked **recommended**) | tap one of the two rows; the chosen one is inverted | **ordinary** |
 | **also make a cleaned copy (volume, rumble)** | **on**, **off** | **on** |
 | **also write the main points (beta)** | **on**, **off** | **off** |
-| **language spoken** | the phone's language, English, **detected** | the phone's language |
+| **language spoken** | **recognised automatically**, the phone's language, English, French, German, Spanish, Portuguese, Russian, Italian | **recognised automatically** |
 | **kind of the next recording** | **memo**, **lecture**, **conversation** | **memo** |
 
 Look:
@@ -3437,7 +3441,7 @@ Notes on these settings:
 - **Quality**: **ordinary** is quick; **careful** makes fewer mistakes and is much slower. A model not yet on the phone is marked **to fetch**; it is downloaded at the next transcription. Changing the quality does not transcribe again what is already transcribed.
 - **also make a cleaned copy (volume, rumble)**: after the transcript, the phone makes a second sound file with the low rumble removed and the loudness brought to a steady level, without compressing the dynamics. The original is kept. The copy is what you hear and what **share the audio** sends.
 - **also write the main points (beta)**: needs a phone with about 6 GB of memory. On a smaller phone the row reads **off** with **this phone has N GB: not enough** and cannot be turned on. The model needs about 2.2 GB of free storage. When Reader's Audio Player already holds the model, the row says **shared with Audio Player** and nothing is downloaded.
-- **language spoken**: tells the transcription which language to expect. **detected** lets it find out by itself.
+- **language spoken**: a tap opens **Which language is spoken?**. With **recognised automatically**, the app listens to the recording to find the language. A language chosen here is used for every recording, unless a recording plainly speaks another one: the transcript is then written in the language heard, and the line above it says so (**language heard: English — setting: French**).
 - **haptic tick**: a short vibration when you tap **pause**, **resume** or **■ stop** on the recording page.
 
 The last two rows show the app's name with **records and transcribes on the phone; a cloud folder is optional**, and the credits.
@@ -3489,7 +3493,6 @@ The app sends sound files, transcripts and the credentials file to other apps th
 - The main points can be read in the app and are copied to the cloud folder, but there is no entry to share them.
 - A recording already transcribed cannot be transcribed again with another quality or language.
 - The cleaned copy is made together with the transcript. Turning the option on later does not add it to recordings already transcribed, and nothing is cleaned when **who transcribes** is **nobody**.
-- The language choice is limited to the phone's language, English and **detected**.
 - No import of sound files recorded elsewhere, no search, no folders.
 - The cloud folder is WebDAV only, over https, and is one-way: the phone sends, it never receives. Syncing happens when the app is opened, when a recording or a transcription ends, or by hand; there is no sync on a timer.
 - Changing the folder's name does not move what was already sent, and recordings already uploaded are not sent again to the new folder.
@@ -3673,9 +3676,9 @@ An episode does not need to be downloaded: **▶** plays it over the connection.
 
 When you tap **write down what is said**, a sheet opens with the episode's title and:
 
-- **spoken language**, which reads **to choose** until you pick one. The list of languages opens by itself. It offers the phone's language, English, **let it work it out**, then French, German, Spanish, Portuguese, Russian and Italian, each written in its own language. If another episode of the same channel was written down before, its language comes first, marked **last time**.
+- **spoken language**, which reads **recognised automatically** to begin with: before writing down, the app listens to several passages spread through the episode (not only its beginning, which may be music) and finds the language. Tap it to choose the language yourself: after **recognised automatically**, the list offers the language of the last episode of the same channel written down (marked **last time**), the phone's language, English, then French, German, Spanish, Portuguese, Russian and Italian, each written in its own language.
 - Two qualities: **ordinary** (190 MB, **recommended**) and **careful** (574 MB, **four times slower**). A quality whose model is not on the phone yet reads **to fetch**. **ordinary** is selected to begin with.
-- **cancel** and **start**. **start** does nothing until a language is chosen.
+- **start**, whose second line names the language (for example **language: recognised automatically**), and **cancel**.
 
 ### The text screen
 
@@ -3766,13 +3769,15 @@ Long press the channel and tap **unsubscribe**. It takes effect at once, without
 
 1. Download the episode. Until then the row reads **write down what is said** with "download the episode first", and a tap starts the download.
 2. Tap **write down what is said** ("on the phone; long, and nothing leaves it").
-3. Choose the spoken language.
+3. Leave the spoken language on **recognised automatically**, or choose it yourself.
 4. Choose **ordinary** or **careful**.
 5. Tap **start**.
 
 The first time, the model for the chosen quality is fetched ("fetching the model 30 %"). Then the row shows "writing it down 12 %", followed after a while by an estimate such as "20 min left", then **saving…**. The work goes on with the screen off; a notification shows it. To stop, tap the row (its second line reads **stop**) or **stop** in the notification.
 
-When it is done, **the text** appears in the episode screen and a copy is saved as a .txt file named after the episode in Documents/Transcriptions. Writing the same episode down again replaces that file.
+When you chose a language yourself and the episode plainly speaks another one, the app stops before writing down and says, for example, *Language heard: English. Language chosen: French.*, with one row per answer: **write down · language: English** and **write down · language: French**. Tap the one you want; the answer is kept for that episode.
+
+When it is done, **the text** appears in the episode screen, with the language heard under it (for example **language heard: English**), and a copy is saved as a .txt file named after the episode in Documents/Transcriptions. Writing the same episode down again replaces that file.
 
 ### Read the text while listening
 
@@ -4079,7 +4084,7 @@ If the last attempt failed, the reason is written under these lines.
 
 It opens from **transcribe** or **transcribe again**, and is shown before every transcription. It has the title of the file at the top, then:
 
-- **language spoken**: the language of the audio. It starts on the language of your phone. Tap it to choose among the phone's language, English, **detected** (the app works out the language by itself), French, German, Spanish, Portuguese, Russian and Italian. A **✓** marks the current choice.
+- **language spoken**: the language of the audio. It starts on **recognised automatically**: before transcribing, the app listens to several passages spread through the file (not only its beginning, which may be music) and finds the language. Tap it to choose instead among the phone's language, English, French, German, Spanish, Portuguese, Russian and Italian. A **✓** marks the current choice.
 - **ordinary** — *190 MB · recommended*: the quick model. It is the one selected when the sheet opens.
 - **careful** — *574 MB · four times slower*: a more accurate model, with better punctuation, but much slower.
   The selected quality is the inverted line. A model that is not yet on the phone is marked **to fetch**; it is downloaded when the transcription starts.
@@ -4093,7 +4098,7 @@ This screen opens when you tap **the main points (beta)** on a file whose points
 At the bottom:
 
 - **open the transcript** (*a .txt in Documents/Transcriptions*): opens the full text file.
-- **write them again**: asks for the **language spoken** — in fact the language the points will be written in — then writes them anew. The list is the same as in the transcription sheet, without **detected**. If the model is no longer on the phone, the line says so and a tap fetches it.
+- **write them again**: asks for the **language spoken** — in fact the language the points will be written in — then writes them anew. The list is the same as in the transcription sheet, without **recognised automatically**. If the model is no longer on the phone, the line says so and a tap fetches it.
 
 ### Settings
 
@@ -4144,10 +4149,14 @@ In the player, tap **⋯**, then **stop**. You can also use **stop** in the play
 ### Transcribe a file
 
 1. Open the file in the player and tap **transcribe** (or long press the file in the list, then **transcribe**).
-2. Check **language spoken**. Tap it to change it, or choose **detected** if you do not know.
+2. Check **language spoken**. Leave it on **recognised automatically**, or tap it to choose the language yourself.
 3. Choose the quality: **ordinary** (recommended for long recordings) or **careful** (four times slower).
 4. If you also want the main points, tap **main points too (beta)** so that the line is inverted (the first tap downloads the model if it is not on the phone).
-5. Tap **transcribe**.
+5. Tap the inverted button, which names the language: **transcribe · language: recognised automatically** (or the language chosen).
+
+When you chose a language yourself and the recording plainly speaks another one, the app stops before transcribing. The file shows **language to confirm** in the list, and the player says, for example, *Language heard: English. Language chosen: French.*, with one row per answer: **transcribe · language: English** and **transcribe · language: French**. Tap the one you want; the answer is kept for that file.
+
+Once the transcript is written, the line under **open the transcript** gives the language heard, for example **language heard: English**.
 
 The first time, the model is downloaded (**fetching the model · …%**); then the progress reads **transcribing · …%**. You can leave the app: the work continues, and the notification shows where it is. When it is finished, the file shows **transcript** in the list and the player offers **open the transcript**.
 
@@ -4174,7 +4183,7 @@ There are two ways.
 2. *written at the top of the transcript*: the model is on the phone. Tap to write the points; progress reads **writing the main points, …%**.
 3. *written · tap to read them*: the points are ready. Tap to read them.
 
-The points are written in the language chosen for the transcription; with **detected**, in the language of the phone. The instructions exist in English, French, German, Spanish, Portuguese and Russian; for any other language the points come out in English. To have them in another language, open them and use **write them again**.
+The points are written in the language of the transcription (the language heard, when it was recognised automatically). The instructions exist in English, French, German, Spanish, Portuguese and Russian; for any other language the points come out in English. To have them in another language, open them and use **write them again**.
 
 The result is two sentences on the subject, then a short list of points. They are also placed at the top of the transcription's text file, under the heading **MAIN POINTS**, above the full text.
 
@@ -4233,7 +4242,7 @@ Other choices are made where they are used and are remembered:
 | **speed** | In the player; applies to every file. | 1× |
 | **main points too (beta)** | In the transcription sheet. | Off. It is switched on once the model has been downloaded. |
 
-The language spoken and the quality are asked again before every transcription: the sheet always opens on the language of the phone and on **ordinary**.
+The language spoken and the quality are asked again before every transcription: the sheet always opens on **recognised automatically** and on **ordinary**.
 
 ## Your data
 

@@ -1,6 +1,6 @@
 # Mode d'emploi — Les applications Reader's et les autres applications de gallaz.ch/apps
 
-Édition du 4 novembre 2026 · gallaz.ch/apps
+Édition du 11 novembre 2026 · gallaz.ch/apps
 
 
 <!-- Avant de commencer -->
@@ -2168,6 +2168,8 @@ Tout est enregistré à mesure que vous tapez ; il n'y a pas de bouton pour en
 
 En bas, **● dicter** parle dans cette note. Tant que le micro est ouvert, la ligne devient **■** suivi du temps écoulé, sous un trait qui bouge avec votre voix ; touchez-la pour arrêter.
 
+Une petite ligne sous la rangée de dictée nomme la langue, par exemple **dictée · langue : reconnue automatiquement** ; un toucher ouvre les réglages. Avec **reconnue automatiquement**, l'app écoute ce que vous dites pour trouver la langue. Une fois la dictée écrite, la ligne donne la langue entendue (**langue entendue : anglais**). Si la langue fixée dans les réglages n'est manifestement pas celle que vous avez parlée, la note est écrite dans la langue entendue et la ligne le dit (**langue entendue : anglais — réglage : français**).
+
 Le menu **⋯** contient les lignes **appeler …**, **écrire à …** et **ouvrir …** pour ce que la note contient, puis **partager** et **supprimer**, et sous un trait le nom du prochain thème de couleurs.
 
 ### Les réglages (téléphone)
@@ -2325,7 +2327,7 @@ Touchez **⋯** dans la liste ou dans une note, puis l'avant-dernière ligne : 
 | **exporter les identifiants** | Partage un fichier contenant serveur, dossier, identifiant et mot de passe. Présent seulement quand un serveur est réglé | – | – |
 | **importer les identifiants** | Lit un tel fichier | – | – |
 | **soignée** / **ordinaire** | Le modèle de reconnaissance utilisé pour la dictée ; celui qui est choisi est affiché en inversé | **soignée** (574 Mo, **recommandé**, **4 fois plus lente**) / **ordinaire** (190 Mo) | **soignée** |
-| **langue parlée** | La langue dans laquelle vous dictez | la langue du téléphone / anglais / **détectée** | la langue du téléphone |
+| **langue parlée** | La langue dans laquelle vous dictez | **reconnue automatiquement** / la langue du téléphone / anglais | **reconnue automatiquement** |
 | **couleurs** | Le thème de couleurs ; montre celui en cours, un toucher passe au suivant | **blanc sur noir**, **noir sur blanc**, puis **lavande**, **sauge**, **nordique**, **terracotta**, **coquette**, **militante**, **torride**, **nature** | **blanc sur noir** |
 | **taille du texte** | Taille de tout le texte | S / M / L | M |
 | **police** | Caractères de tout le texte | sans-serif / serif / mono | sans-serif |
@@ -2488,7 +2490,7 @@ Le fichier de réglages contient le mot de passe et n'est lisible que par votre 
 - Sur le téléphone, une note se déplace vers un dossier par son appui long dans la liste, pas depuis la note ouverte.
 - Sur le téléphone, l'adresse du serveur doit être en `https://`.
 - Sur le téléphone, **identifiant**, **mot de passe** et **dossier sur le serveur** ne peuvent pas être vidés, seulement remplacés. La ligne **serveur** peut être vidée, ce qui arrête la synchronisation.
-- La dictée n'existe que sur le téléphone. Langues proposées : celle du téléphone, l'anglais, ou **détectée**. L'application tient le téléphone éveillé jusqu'à deux heures d'enregistrement.
+- La dictée n'existe que sur le téléphone. Langues proposées : **reconnue automatiquement**, celle du téléphone, ou l'anglais. L'application tient le téléphone éveillé jusqu'à deux heures d'enregistrement.
 - La synchronisation ne se fait qu'avec un dossier WebDAV ; il n'y a pas d'autre service en ligne, ni de partage d'une note entre personnes autrement que par ce dossier.
 - Le tri est fixe : la note modifiée le plus récemment d'abord.
 
@@ -3277,7 +3279,7 @@ Le menu **⋯** contient, selon l'état de l'enregistrement :
 | **partager la transcription** | s'il y a une transcription | envoie le texte à une autre app |
 | **envoyer maintenant** | dossier cloud configuré, enregistrement pas encore envoyé | lance une synchronisation |
 | **réessayer** | envoyé, et une erreur est affichée | efface l'erreur et synchronise |
-| **transcrire maintenant** | pas encore transcrit, le téléphone transcrit | lance la transcription |
+| **transcrire maintenant** | pas encore transcrit, le téléphone transcrit | demande **Quelle langue est parlée ?**, une rangée par langue (**transcrire · langue : …**), puis lance la transcription |
 | **écrire les points principaux (beta)** | l'option est active, son modèle est sur le téléphone, l'enregistrement est transcrit et n'a pas de points | demande les points de cet enregistrement |
 | **arrêter** | le téléphone travaille sur cet enregistrement | arrête le travail en cours |
 | **supprimer** | toujours | supprime l'enregistrement, sur le téléphone et dans le dossier cloud |
@@ -3325,7 +3327,9 @@ La lecture continue écran éteint et quand vous quittez l'app. Elle se met en p
 
 ### Lire la transcription
 
-Ouvrez l'enregistrement : la transcription est sous le lecteur. Elle est écrite automatiquement après chaque enregistrement quand **qui transcrit** est sur **ce téléphone**. Pour la lancer tout de suite, touchez la ligne **la transcription apparaîtra ici… — toucher pour lancer maintenant**, ou **⋯** puis **transcrire maintenant**.
+Ouvrez l'enregistrement : la transcription est sous le lecteur. Elle est écrite automatiquement après chaque enregistrement quand **qui transcrit** est sur **ce téléphone**. Pour la lancer tout de suite, touchez la ligne **la transcription apparaîtra ici… — toucher pour lancer maintenant**, ou **⋯** puis **transcrire maintenant**, qui demande d'abord **Quelle langue est parlée ?** : chaque rangée nomme une langue (**transcrire · langue : reconnue automatiquement**, **transcrire · langue : anglais**…).
+
+Avec **reconnue automatiquement**, l'app écoute plusieurs passages de l'enregistrement, pas seulement le début, pour trouver la langue. Une ligne au-dessus de la transcription donne la langue : **langue entendue : anglais**, ou **langue choisie : français** quand vous l'avez choisie. Si vous avez choisi une langue dans **transcrire maintenant** et que l'enregistrement en parle manifestement une autre, l'app s'arrête avant de transcrire et dit par exemple *Langue entendue : anglais. Langue choisie : français.*, avec une rangée par réponse (**transcrire · langue : anglais**, **transcrire · langue : français**) ; touchez celle que vous voulez.
 
 ### Arrêter une transcription en cours
 
@@ -3419,7 +3423,7 @@ Transcription et enregistrement :
 | qualité : **ordinaire** (190 Mo) ou **soignée** (574 Mo, marquée **recommandé**) | touchez l'une des deux lignes ; celle qui est choisie est inversée | **ordinaire** |
 | **faire aussi une copie nettoyée (volume, ronflement)** | **actif**, **inactif** | **actif** |
 | **écrire aussi les points principaux (beta)** | **actif**, **inactif** | **inactif** |
-| **langue parlée** | la langue du téléphone, l'anglais, **détectée** | la langue du téléphone |
+| **langue parlée** | **reconnue automatiquement**, la langue du téléphone, l'anglais, le français, l'allemand, l'espagnol, le portugais, le russe, l'italien | **reconnue automatiquement** |
 | **type du prochain enregistrement** | **mémo**, **conférence**, **conversation** | **mémo** |
 
 Apparence :
@@ -3437,7 +3441,7 @@ Précisions sur ces réglages :
 - **Qualité** : **ordinaire** est rapide ; **soignée** fait moins de fautes et est beaucoup plus lente. Un modèle qui n'est pas encore sur le téléphone est marqué **à récupérer** ; il est téléchargé à la prochaine transcription. Changer de qualité ne retranscrit pas ce qui l'est déjà.
 - **faire aussi une copie nettoyée (volume, ronflement)** : après la transcription, le téléphone fabrique un second fichier son, débarrassé du ronflement grave et ramené à un volume régulier, sans écraser la dynamique. L'original est conservé. C'est cette copie que vous entendez et que **partager le son** envoie.
 - **écrire aussi les points principaux (beta)** : demande un téléphone d'environ 6 Go de mémoire. Sur un téléphone plus petit, la ligne indique **inactif** avec **ce téléphone a N Go : pas assez** et ne peut pas être activée. Le modèle demande environ 2,2 Go de stockage libre. Quand Reader's Audio Player détient déjà le modèle, la ligne indique **partagé avec Audio Player** et rien n'est téléchargé.
-- **langue parlée** : indique à la transcription quelle langue attendre. **détectée** la laisse trouver seule.
+- **langue parlée** : un toucher ouvre **Quelle langue est parlée ?**. Avec **reconnue automatiquement**, l'app écoute l'enregistrement pour trouver la langue. Une langue choisie ici sert pour chaque enregistrement, sauf si un enregistrement en parle manifestement une autre : la transcription est alors écrite dans la langue entendue, et la ligne au-dessus le dit (**langue entendue : anglais — réglage : français**).
 - **retour haptique** : une courte vibration quand vous touchez **pause**, **reprendre** ou **■ arrêter** sur la page d'enregistrement.
 
 Les deux dernières lignes affichent le nom de l'app avec **enregistre et transcrit sur le téléphone ; un dossier cloud est facultatif**, et les crédits.
@@ -3489,7 +3493,6 @@ L'app envoie les fichiers son, les transcriptions et le fichier d'identifiants �
 - Les points principaux se lisent dans l'app et sont copiés dans le dossier cloud, mais aucune entrée ne permet de les partager.
 - Un enregistrement déjà transcrit ne peut pas être retranscrit avec une autre qualité ou une autre langue.
 - La copie nettoyée est faite en même temps que la transcription. Activer l'option plus tard ne l'ajoute pas aux enregistrements déjà transcrits, et rien n'est nettoyé quand **qui transcrit** est sur **personne**.
-- Le choix de langue se limite à la langue du téléphone, à l'anglais et à **détectée**.
 - Pas d'import de fichiers son enregistrés ailleurs, pas de recherche, pas de dossiers.
 - Le dossier cloud est en WebDAV uniquement, en https, et à sens unique : le téléphone envoie, il ne reçoit jamais. La synchronisation a lieu à l'ouverture de l'app, à la fin d'un enregistrement ou d'une transcription, ou à la main ; il n'y a pas de synchronisation périodique.
 - Changer le nom du dossier ne déplace pas ce qui a déjà été envoyé, et les enregistrements déjà envoyés ne sont pas renvoyés dans le nouveau dossier.
@@ -3673,9 +3676,9 @@ Un épisode n'a pas besoin d'être téléchargé : **▶** le lit par la connex
 
 Quand vous touchez **mettre par écrit**, une feuille s'ouvre avec le titre de l'épisode et :
 
-- **langue parlée**, qui indique **à choisir** tant que vous n'en avez pas choisi une. La liste des langues s'ouvre d'elle-même. Elle propose la langue du téléphone, l'anglais, **la laisser trouver**, puis le français, l'allemand, l'espagnol, le portugais, le russe et l'italien, chacune écrite dans sa propre langue. Si un autre épisode de la même chaîne a déjà été mis par écrit, sa langue vient en premier, marquée **la dernière fois**.
+- **langue parlée**, qui indique d'abord **reconnue automatiquement** : avant la mise par écrit, l'app écoute plusieurs passages répartis dans l'épisode (pas seulement le début, qui peut être de la musique) et trouve la langue. Touchez-la pour choisir la langue vous-même : après **reconnue automatiquement**, la liste propose la langue du dernier épisode de la même chaîne mis par écrit (marquée **la dernière fois**), la langue du téléphone, l'anglais, puis le français, l'allemand, l'espagnol, le portugais, le russe et l'italien, chacune écrite dans sa propre langue.
 - Deux qualités : **ordinaire** (190 Mo, **recommandé**) et **soignée** (574 Mo, **4 fois plus lente**). Une qualité dont le modèle n'est pas encore sur le téléphone indique **à récupérer**. **ordinaire** est sélectionnée au départ.
-- **annuler** et **commencer**. **commencer** ne fait rien tant qu'une langue n'est pas choisie.
+- **commencer**, dont la deuxième ligne nomme la langue (par exemple **langue : reconnue automatiquement**), et **annuler**.
 
 ### L'écran du texte
 
@@ -3766,13 +3769,15 @@ Faites un appui long sur la chaîne et touchez **se désabonner**. L'effet est i
 
 1. Téléchargez l'épisode. Tant que ce n'est pas fait, la ligne indique **mettre par écrit** avec « l'épisode doit d'abord être téléchargé », et un appui lance le téléchargement.
 2. Touchez **mettre par écrit** (« sur le téléphone ; c'est long, et rien n'en sort »).
-3. Choisissez la langue parlée.
+3. Laissez la langue parlée sur **reconnue automatiquement**, ou choisissez-la vous-même.
 4. Choisissez **ordinaire** ou **soignée**.
 5. Touchez **commencer**.
 
 La première fois, le modèle de la qualité choisie est récupéré (« récupération du modèle 30 % »). Puis la ligne affiche « mise par écrit 12 % », suivi au bout d'un moment d'une estimation comme « encore 20 min », puis **enregistrement…**. Le travail continue écran éteint ; une notification le montre. Pour arrêter, touchez la ligne (sa seconde ligne indique **arrêter**) ou **arrêter** dans la notification.
 
-Quand c'est fini, **le texte** apparaît dans l'écran de l'épisode et une copie est enregistrée en fichier .txt, au nom de l'épisode, dans Documents/Transcriptions. Remettre le même épisode par écrit remplace ce fichier.
+Si vous avez choisi une langue vous-même et que l'épisode en parle manifestement une autre, l'app s'arrête avant la mise par écrit et dit par exemple *Langue entendue : anglais. Langue choisie : français.*, avec une rangée par réponse : **mettre par écrit · langue : anglais** et **mettre par écrit · langue : français**. Touchez celle que vous voulez ; la réponse est gardée pour cet épisode.
+
+Quand c'est fini, **le texte** apparaît dans l'écran de l'épisode, avec dessous la langue entendue (par exemple **langue entendue : anglais**), et une copie est enregistrée en fichier .txt, au nom de l'épisode, dans Documents/Transcriptions. Remettre le même épisode par écrit remplace ce fichier.
 
 ### Lire le texte pendant l'écoute
 
@@ -4079,7 +4084,7 @@ Si la dernière tentative a échoué, la raison est écrite sous ces lignes.
 
 Il s'ouvre depuis **transcrire** ou **transcrire à nouveau**, et s'affiche avant chaque transcription. Il porte le titre du fichier en haut, puis :
 
-- **langue parlée** : la langue du son. Elle est d'abord réglée sur la langue de votre téléphone. Touchez-la pour choisir entre la langue du téléphone, l'anglais, **détectée** (l'app trouve la langue toute seule), le français, l'allemand, l'espagnol, le portugais, le russe et l'italien. Un **✓** marque le choix actuel.
+- **langue parlée** : la langue du son. Elle est d'abord sur **reconnue automatiquement** : avant de transcrire, l'app écoute plusieurs passages répartis dans le fichier (pas seulement le début, qui peut être de la musique) et trouve la langue. Touchez-la pour choisir plutôt entre la langue du téléphone, l'anglais, le français, l'allemand, l'espagnol, le portugais, le russe et l'italien. Un **✓** marque le choix actuel.
 - **ordinaire** — *190 Mo · recommandé* : le modèle rapide. C'est celui qui est sélectionné à l'ouverture du volet.
 - **soignée** — *574 Mo · 4 fois plus lente* : un modèle plus exact, à la ponctuation meilleure, mais beaucoup plus lent.
   La qualité choisie est la ligne inversée. Un modèle qui n'est pas encore sur le téléphone est marqué **à récupérer** ; il est téléchargé au lancement de la transcription.
@@ -4093,7 +4098,7 @@ Cet écran s'ouvre quand vous touchez **les points principaux (beta)** sur un fi
 En bas :
 
 - **ouvrir la transcription** (*un .txt dans Documents/Transcriptions*) : ouvre le fichier texte complet.
-- **les réécrire** : demande la **langue parlée** — en réalité la langue dans laquelle les points seront rédigés — puis les rédige de nouveau. La liste est la même que dans le volet de transcription, sans **détectée**. Si le modèle n'est plus sur le téléphone, la ligne le dit et un toucher le télécharge.
+- **les réécrire** : demande la **langue parlée** — en réalité la langue dans laquelle les points seront rédigés — puis les rédige de nouveau. La liste est la même que dans le volet de transcription, sans **reconnue automatiquement**. Si le modèle n'est plus sur le téléphone, la ligne le dit et un toucher le télécharge.
 
 ### Réglages
 
@@ -4144,10 +4149,14 @@ Dans le lecteur, touchez **⋯**, puis **arrêter**. Vous pouvez aussi utiliser 
 ### Transcrire un fichier
 
 1. Ouvrez le fichier dans le lecteur et touchez **transcrire** (ou faites un appui long sur le fichier dans la liste, puis **transcrire**).
-2. Vérifiez **langue parlée**. Touchez-la pour la changer, ou choisissez **détectée** si vous ne savez pas.
+2. Vérifiez **langue parlée**. Laissez-la sur **reconnue automatiquement**, ou touchez-la pour choisir la langue vous-même.
 3. Choisissez la qualité : **ordinaire** (recommandée pour les longs enregistrements) ou **soignée** (4 fois plus lente).
 4. Si vous voulez aussi les points principaux, touchez **les points principaux aussi (beta)** pour que la ligne soit inversée (le premier toucher télécharge le modèle s'il n'est pas sur le téléphone).
-5. Touchez **transcrire**.
+5. Touchez le bouton inversé, qui nomme la langue : **transcrire · langue : reconnue automatiquement** (ou la langue choisie).
+
+Si vous avez choisi une langue vous-même et que l'enregistrement en parle manifestement une autre, l'app s'arrête avant de transcrire. Le fichier porte la mention **langue à confirmer** dans la liste, et le lecteur dit par exemple *Langue entendue : anglais. Langue choisie : français.*, avec une rangée par réponse : **transcrire · langue : anglais** et **transcrire · langue : français**. Touchez celle que vous voulez ; la réponse est gardée pour ce fichier.
+
+Une fois la transcription écrite, la ligne sous **ouvrir la transcription** donne la langue entendue, par exemple **langue entendue : anglais**.
 
 La première fois, le modèle est téléchargé (**téléchargement du modèle · …%**) ; puis l'avancement indique **transcription · …%**. Vous pouvez quitter l'app : le travail continue, et la notification montre où il en est. Quand c'est fini, le fichier porte la mention **transcription** dans la liste et le lecteur propose **ouvrir la transcription**.
 
@@ -4174,7 +4183,7 @@ Il y a deux façons.
 2. *écrits en tête de la transcription* : le modèle est sur le téléphone. Touchez pour rédiger les points ; l'avancement indique **rédaction des points principaux, … %**.
 3. *écrits · toucher pour les lire* : les points sont prêts. Touchez pour les lire.
 
-Les points sont rédigés dans la langue choisie pour la transcription ; avec **détectée**, dans la langue du téléphone. Les consignes existent en français, anglais, allemand, espagnol, portugais et russe ; pour toute autre langue, les points sortent en anglais. Pour les avoir dans une autre langue, ouvrez-les et utilisez **les réécrire**.
+Les points sont rédigés dans la langue de la transcription (la langue entendue, quand elle a été reconnue automatiquement). Les consignes existent en français, anglais, allemand, espagnol, portugais et russe ; pour toute autre langue, les points sortent en anglais. Pour les avoir dans une autre langue, ouvrez-les et utilisez **les réécrire**.
 
 Le résultat tient en deux phrases sur le sujet, puis une courte liste de points. Ils sont aussi placés en tête du fichier texte de la transcription, sous le titre **POINTS PRINCIPAUX**, au-dessus du texte complet.
 
@@ -4233,7 +4242,7 @@ D'autres choix se font là où ils servent et sont retenus :
 | **vitesse** | Dans le lecteur ; vaut pour tous les fichiers. | 1× |
 | **les points principaux aussi (beta)** | Dans le volet de transcription. | Désactivé. Il est activé une fois le modèle téléchargé. |
 
-La langue parlée et la qualité sont redemandées avant chaque transcription : le volet s'ouvre toujours sur la langue du téléphone et sur **ordinaire**.
+La langue parlée et la qualité sont redemandées avant chaque transcription : le volet s'ouvre toujours sur **reconnue automatiquement** et sur **ordinaire**.
 
 ## Vos données
 
