@@ -1,6 +1,6 @@
 # Mode d'emploi — Les applications Reader's et les autres applications de gallaz.ch/apps
 
-Édition du 11 novembre 2026 · gallaz.ch/apps
+Édition du 12 novembre 2026 · gallaz.ch/apps
 
 
 <!-- Avant de commencer -->
@@ -2529,7 +2529,7 @@ Le fichier de réglages contient le mot de passe et n'est lisible que par votre 
 
 # Reader's Books
 
-*Android 1.18.0*
+*Android 1.24.0*
 
 ## Ce que c'est
 
@@ -2561,6 +2561,8 @@ Quand une bibliothèque est configurée, c'est le premier écran de l'app. En ha
 - deux boutons encadrés, **rechercher** et **synchroniser maintenant**, avec **parcouru le** et la date de la dernière synchronisation dessous. **synchroniser maintenant** relit le drive, en commençant par les dossiers qui contenaient des livres à la dernière synchronisation, à jour en quelques secondes ; le reste du drive est ensuite parcouru à la recherche de nouveaux livres. La bibliothèque n'est synchronisée que quand vous le touchez (ou **› poursuivre le parcours**, en petit sous les boutons après un parcours interrompu) ; le dossier où Reader's Podcasts envoie ses transcriptions est relu chaque fois que la bibliothèque s'affiche.
 
 Sous un trait, **SUR LE DRIVE** coiffe les livres de la bibliothèque, et rien d'autre : **actualités**, **tous les livres** et les dossiers du drive qui contiennent des livres ; toucher un livre le télécharge et l'ouvre. **actualités** n'apparaît que si la bibliothèque contient des numéros de journaux ou de magazines, ou des recueils d'articles (d'une lettre d'information, résumés d'une chaîne) : elle les rassemble depuis tous les dossiers, les plus récents d'abord (selon la date du numéro, à défaut la date de création du fichier sur le drive), avec sous son nom le nombre de numéros et la date du dernier. L'app reconnaît un numéro à son sommaire, lu sur le drive sans télécharger le livre ; tant qu'elle examine encore de nouveaux livres, la ligne indique « recherche en cours… ». Le bouton retour du téléphone, sur la bibliothèque, quitte l'app. **⋯** ouvre le menu de la bibliothèque (parcourir à nouveau, regroupement, ordre, dossiers de la bibliothèque, **réglages**).
+
+Dans **actualités**, le menu **⋯** propose **par périodique** : la page montre alors une ligne par journal, magazine, lettre d'information ou chaîne, celui dont la dernière parution est la plus récente en premier, avec le nombre de ses numéros et la date du dernier ; toucher une ligne ouvre la liste de ses numéros, les plus récents d'abord, chacun sous son propre titre. Les numéros sont réunis d'après ce que leurs noms de fichier ont en commun (« 2026-11-10-letemps.epub »), et le périodique porte le nom que ses numéros lui donnent (« Le Temps »). **chaque numéro**, dans le même menu, revient à la liste de tous les numéros à la suite.
 
 ### L'étagère (**livres**)
 

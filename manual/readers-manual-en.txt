@@ -1,6 +1,6 @@
 # User manual — The Reader's apps and the other apps of gallaz.ch/apps
 
-Edition of 11 November 2026 · gallaz.ch/apps
+Edition of 12 November 2026 · gallaz.ch/apps
 
 
 <!-- Before you start -->
@@ -2529,7 +2529,7 @@ The settings file holds the password and is readable by your user account only.
 
 # Reader's Books
 
-*Android 1.18.0*
+*Android 1.24.0*
 
 ## What it is
 
@@ -2561,6 +2561,8 @@ When a library is set up, it is the first screen of the app. At its top:
 - two framed buttons, **search** and **sync now**, with **scanned on** and the date of the last sync beneath them. **sync now** lists the drive again, the folders that held books at the last sync first, so they are up to date within seconds; the rest of the drive is then looked through for new books. The library is synced only when you tap it (or **› continue the scan**, in small print under the buttons after a scan that was cut short); the folder where Reader's Podcasts sends its transcriptions is looked at again each time the library is shown.
 
 Under a rule, **ON THE DRIVE** heads the books of the library, and nothing else: **news**, **all books** and the folders of the drive that hold books; tapping a book downloads it and opens it. **news** appears only when the library holds issues of newspapers or magazines, or gatherings of articles (a newsletter's, a channel's summaries): it gathers them from every folder, the newest first (by the issue's own date, else by when the file was made on the drive), with the number of issues and the date of the latest under its name. The app tells an issue from a book by its contents page, read on the drive without downloading the book; while it is still looking through new books, the row says « looking for more… ». The phone's back button on the library leaves the app. **⋯** opens the library's menu (scan again, grouping, order, folders of the library, **settings**).
+
+In **news**, the **⋯** menu offers **by periodical**: the page then shows one line per newspaper, magazine, newsletter or channel, the one with the latest issue first, with the number of its issues and the date of the latest; tapping a line opens the list of its issues, the newest first, each under its own title. Issues are put together by what their file names share (« 2026-11-10-letemps.epub »), and the periodical carries the name its issues give it (« Le Temps »). **every issue**, in the same menu, goes back to the list of all the issues one after the other.
 
 ### The shelf (**books**)
 
