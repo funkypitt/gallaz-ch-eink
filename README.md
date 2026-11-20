@@ -24,13 +24,13 @@ Everything public and of use beyond the author's circle, in both languages, each
 to its GitHub repository and to wherever else it is distributed (the F-Droid repository, GitHub
 releases, the apt repository, PyPI).
 
-1. **Getting the apps** (`#get`): Reader's Installer and Updater first (card `#readers-installer`,
-   direct APK link, three steps), then the three other ways (`#fdroid`, `#obtainium`, `#apk`).
-2. **The Reader's family** (`#readers`): one card per app, in the order of the installer's list.
-   `tool/make_catalog.py` of the installer reads this section: each card's Obtainium link gives the
-   app's id and name, and a download button starting with "Windows", "macOS" or "Linux" gives its
-   desktop link.
-3. **Also in the installer** (`#also`): ePub Magazine Reader, Le dictionnaire Littré, Clavier Plume,
+1. **Getting the apps** (`#get`): two ways, Google Play (`#play`) and the F-Droid repository
+   (`#fdroid`), then the APK file as a last resort (`#apk`). `tools/update_versions.py` adds a
+   Google Play button to a card once the app's store page exists.
+2. **The Reader's family** (`#readers`): one card per app. (The cards no longer carry Obtainium
+   links since 2026-11-20: `tool/make_catalog.py` of Reader's Installer, which read them here,
+   needs another source before it is run again.)
+3. **Reading, writing, playing** (`#also`): ePub Magazine Reader, Le dictionnaire Littré, Clavier Plume,
    Funky's 2P Games.
 4. **Meditation and breathing** (`#meditation`): Retreat Timer, Player, Walk, 4 Minutes Breathing.
 5. **More Android apps** (`#android`): MP4 Remixer, MP4 to MP3, Timer for 9Barista, Tank Wars Mobile.

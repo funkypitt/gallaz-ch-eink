@@ -27,8 +27,8 @@
 <section class="hero">
   <div>
     <h1>Des applications libres, écrites avec Claude Code</h1>
-    <p class="lede">Des applications libres et gratuites pour Android, l'ordinateur et le navigateur, développées avec <a href="https://claude.com/claude-code">Claude Code</a> et offertes&nbsp;: sans pub, sans compte, sans algorithme, rien qui réclame votre attention. En premier lieu, la <a href="#readers">série Reader's</a>&nbsp;: un téléphone plus calme, en noir et blanc, texte seul, et <a href="#get">une petite application</a> qui installe le tout. Puis des bols pour la méditation, quelques petits utilitaires, des outils pour Linux et deux extensions de navigateur. Tout ce qui est public est ici, en anglais et en français, avec son code source sur GitHub.</p>
-    <p class="cta"><a class="btn primary" href="#get">Obtenir l’installateur</a> <a class="btn" href="#readers">Voir les applications</a></p>
+    <p class="lede">Des applications libres et gratuites pour Android, l'ordinateur et le navigateur, développées avec <a href="https://claude.com/claude-code">Claude Code</a> et offertes&nbsp;: sans pub, sans compte, sans algorithme, rien qui réclame votre attention. En premier lieu, la <a href="#readers">série Reader's</a>&nbsp;: un téléphone plus calme, en noir et blanc, texte seul, sur <a href="#get">Google Play et F-Droid</a>. Puis des bols pour la méditation, quelques petits utilitaires, des outils pour Linux et deux extensions de navigateur. Tout ce qui est public est ici, en anglais et en français, avec son code source sur GitHub.</p>
+    <p class="cta"><a class="btn primary" href="#get">Obtenir les applications</a> <a class="btn" href="#readers">Voir les applications</a></p>
     <p class="manual">Mode d'emploi, toutes les fonctions de toutes les applications&nbsp;: <a href="manual/readers-mode-d-emploi-fr.pdf">PDF</a> · <a href="manual/readers-mode-d-emploi-fr.txt">texte brut, à confier à un assistant IA</a> · <a href="manual/readers-manual-en.pdf">in English</a></p>
   </div>
   <p class="phones"><img src="img/com.freedomfighter.readerslauncher-1.png" alt="" width="260" height="462"><img src="img/com.freedomfighter.readersnotes-1.png" alt="" width="260" height="462"><img src="img/com.freedomfighter.readerscalendar-1.png" alt="" width="260" height="462"><img src="img/com.freedomfighter.readerstasks-1.png" alt="" width="260" height="462"></p>
@@ -39,7 +39,7 @@
   <ol>
     <li><a href="#get">Obtenir les applications</a></li>
     <li><a href="#readers">La série Reader's</a></li>
-    <li><a href="#also">Aussi dans l'installateur</a></li>
+    <li><a href="#also">Lire, écrire, jouer</a></li>
     <li><a href="#meditation">Méditation et respiration</a></li>
     <li><a href="#android">D'autres applications Android</a></li>
     <li><a href="#desktop">Sur l'ordinateur</a></li>
@@ -51,37 +51,19 @@
 </nav>
 <div class="content">
 
-<!-- ==================== Getting the apps: the installer ==================== -->
+<!-- ==================== Getting the apps ==================== -->
 <section class="platform get" id="get">
   <h2>Obtenir les applications</h2>
-  <p class="lede">Une petite application installe toutes les autres et les tient à jour. Toutes celles de la <a href="#readers">série Reader's</a> et les quatre qui la <a href="#also">suivent</a> sont dans sa liste.</p>
-
-  <article class="app" id="readers-installer">
-    <div class="text">
-    <h2>Reader's Installer and Updater</h2>
-    <p class="meta"><span>v1.0.2</span><span>GPL-3.0</span><code>com.freedomfighter.readersinstaller</code></p>
-    <p>Ouvrez-le une fois&nbsp;: chaque application est dans la liste, à un toucher de l'installation. Ensuite les mises à jour arrivent toutes seules, celles de l'installateur comprises. Quand une application existe aussi pour l'ordinateur, sa page dans l'installateur y mène. Version modifiée d'<a href="https://github.com/ImranR98/Obtainium">Obtainium</a> (GPL-3.0), sans lien avec ses auteurs&nbsp;; il peut suivre n'importe quelle autre application de la même façon.</p>
-    <div class="links">
-      <a class="btn primary" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersInstaller-v1.0.2.apk">Télécharger l'installateur (APK)</a>
-      <a class="btn" href="https://github.com/funkypitt/readers-installer">Code source</a>
-    </div>
-    </div>
-  </article>
-
-  <section class="way" id="steps">
-    <h3>Trois étapes</h3>
-    <ol class="steps">
-      <li>Sur le téléphone, touchez <strong>Télécharger l'installateur</strong> ci-dessus, puis ouvrez le fichier. Android demande une fois d'autoriser le navigateur à installer des applications&nbsp;: acceptez.</li>
-      <li>Ouvrez Reader's Installer. Les applications sont dans la liste&nbsp;: touchez-en une, puis <strong>Installer</strong>. Android demande une fois d'autoriser l'installateur à installer des applications.</li>
-      <li>C'est tout. Les mises à jour sont cherchées en arrière-plan&nbsp;; sur Android 12 et suivants, elles s'installent sans rien demander pour les applications que l'installateur a installées lui-même.</li>
-    </ol>
-    <p><small>Pour ARM 64 bits, soit presque tous les téléphones et tablettes depuis 2017. Une application installée auparavant depuis F-Droid ou un APK demande une confirmation, une fois, puis suit.</small></p>
-  </section>
-
-  <p class="lede other">Trois autres façons, si vous préférez vous passer de l'installateur. Les fichiers sont identiques et portent la même signature quelle que soit la voie choisie&nbsp;: on peut changer d'avis plus tard sans rien désinstaller.</p>
+  <p class="lede">Deux voies, et toutes deux tiennent les applications à jour toutes seules&nbsp;: <strong>Google Play</strong> pour celles qui y sont publiées, et le <strong>dépôt F-Droid</strong>, qui les contient toutes. La fiche de chaque application, plus bas, porte ses boutons. Les deux copies d'une application ne portent pas la même signature&nbsp;: pour passer d'une voie à l'autre, désinstallez d'abord l'application.</p>
 
   <div class="ways">
-<section class="way" id="fdroid">
+  <section class="way" id="play">
+    <h3>Google Play <small>(les mises à jour arrivent toutes seules)</small></h3>
+    <p>Les applications présentes sur Google Play ont un bouton <strong>Google Play</strong> sur leur fiche&nbsp;: touchez-le sur le téléphone, ou ouvrez-le sur un ordinateur et choisissez le téléphone où installer. Rien d'autre à régler.</p>
+    <p>Toutes n'y sont pas&nbsp;: certaines sont encore en cours d'examen, et quelques-unes n'ont pas leur place dans cette boutique. Celles-là viennent de F-Droid.</p>
+  </section>
+
+  <section class="way" id="fdroid">
     <h3>F-Droid <small>(les mises à jour arrivent toutes seules)</small></h3>
     <ol>
       <li>Installez le client <a href="https://f-droid.org/">F-Droid</a> (Droid-ify ou Neo Store conviennent aussi).</li>
@@ -93,14 +75,9 @@
     <p>Adresse&nbsp;: <code>https://funkypitt.github.io/fdroid-repo/repo</code><br>Empreinte&nbsp;: <code>64191E58C98AD1971BCA0669B6BFAB5C7135D6411A8EAA252741C2D35F16107C</code></p>
   </section>
 
-  <section class="way" id="obtainium">
-    <h3>Obtainium <small>(mises à jour directement depuis GitHub)</small></h3>
-    <p><a href="https://obtainium.imranr.dev/">Obtainium</a> installe et met à jour les applications depuis leurs versions publiées sur GitHub, sans magasin intermédiaire. Avec Obtainium sur le téléphone, touchez le bouton <strong>Obtainium</strong> de n'importe quelle application ci-dessous. Le lien ouvre Obtainium directement et ne passe par aucune page tierce.</p>
-  </section>
-
   <section class="way" id="apk">
-    <h3>Le fichier APK <small>(dernier recours : pas de mises à jour)</small></h3>
-    <p>Chaque application a aussi un lien <strong>APK</strong>. Installée ainsi, une application ne se met jamais à jour : il faudrait revenir ici à chaque nouvelle version. À réserver à un essai, ou à un appareil où ni F-Droid ni Obtainium ne peuvent tourner.</p>
+    <h3>Le fichier APK <small>(en dernier recours : pas de mises à jour)</small></h3>
+    <p>Chaque application a aussi un lien <strong>APK</strong>, le même fichier que dans le dépôt F-Droid. Installée ainsi, une application ne se met jamais à jour : il faudrait revenir ici à chaque nouvelle version. À réserver à un essai, ou à un appareil sans Google Play ni F-Droid.</p>
   </section>
   </div>
 </section>
@@ -108,7 +85,7 @@
 <!-- ==================== Reader's ==================== -->
 <section class="platform" id="readers">
   <h2>La série Reader's</h2>
-  <p class="lede">Un téléphone qui se lit comme une page. Des applications en texte seul, blanc sur noir par défaut, avec les dix mêmes thèmes de couleurs que le clavier Plume si on le souhaite&nbsp;: pas d'icônes, pas de cartes, pas de compte. Le launcher affiche des mots&nbsp;; l'agenda, les tâches, les notes, les livres et les flux se lisent comme un journal&nbsp;; Reader's Detox tient les réseaux sociaux à distance. Dans l'esprit du Light Phone, sur n'importe quel Android. Toutes sont dans la liste de l'<a href="#get">installateur</a>, en anglais, français, allemand, espagnol, portugais et russe. La plupart fournissent aussi des widgets standard, noir et blanc, pour n'importe quel autre launcher. Le noir et blanc convient à un téléphone ou une tablette à encre électronique autant qu'à tout écran&nbsp;: c'est là que ces applications sont nées.</p>
+  <p class="lede">Un téléphone qui se lit comme une page. Des applications en texte seul, blanc sur noir par défaut, avec les dix mêmes thèmes de couleurs que le clavier Plume si on le souhaite&nbsp;: pas d'icônes, pas de cartes, pas de compte. Le launcher affiche des mots&nbsp;; l'agenda, les tâches, les notes, les livres et les flux se lisent comme un journal&nbsp;; Reader's Detox tient les réseaux sociaux à distance. Dans l'esprit du Light Phone, sur n'importe quel Android. Toutes existent en anglais, français, allemand, espagnol, portugais et russe. La plupart fournissent aussi des widgets standard, noir et blanc, pour n'importe quel autre launcher. Le noir et blanc convient à un téléphone ou une tablette à encre électronique autant qu'à tout écran&nbsp;: c'est là que ces applications sont nées.</p>
 
   <article class="app" id="readers-launcher">
     <div class="text">
@@ -117,7 +94,6 @@
     <p>Votre écran d'accueil en mots : applications et catégories une par ligne, une petite grille pour les plus utilisées, et des tuiles de deux lignes pour l'heure, la météo, le prochain rendez-vous, les tâches, une note, le livre en cours ou le mot du jour. Des pages fixes, pas de défilement ; un glissement ouvre un livre.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.readerslauncher">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readerslauncher%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-launcher%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Launcher%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersLauncher-v1.28.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-launcher">Code source</a>
     </div>
@@ -132,7 +108,6 @@
     <p>Un agenda en noir et blanc pour les calendriers déjà présents sur le téléphone. Les événements sont des blocs pleins sur une grille horaire, le blanc est du temps libre ; le calendrier d'un événement est un mot, pas une couleur. Sur ordinateur — Windows, macOS, Linux —, la même mise en page sur CalDAV, ou Google avec votre propre client OAuth.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.readerscalendar">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readerscalendar%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-calendar%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Calendar%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersCalendar-v1.21.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-calendar-desktop/releases/latest">Windows, macOS, Linux</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
@@ -149,7 +124,6 @@
     <p>Vos listes de tâches CalDAV (Infomaniak, Tasks.org, Nextcloud, Radicale) en listes de texte ; un glisser réordonne, et l'ordre est enregistré sur le serveur. Aussi sur ordinateur : Windows, macOS et Linux.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.readerstasks">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readerstasks%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-tasks-android%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Tasks%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersTasks-v1.9.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-tasks/releases/latest">Windows, macOS, Linux</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
@@ -166,7 +140,6 @@
     <p>Des notes en texte brut, tapées ou dictées — la parole est mise par écrit sur le téléphone, rien n'est envoyé. Chaque note est un fichier .txt, synchronisé si vous le voulez avec votre propre dossier WebDAV (kDrive, Nextcloud…) : votre ordinateur voit des fichiers ordinaires. Sur ordinateur — Windows, macOS, Linux —, les mêmes notes par le même dossier.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.readersnotes">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersnotes%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-notes%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Notes%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersNotes-v1.17.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-notes-desktop/releases/latest">Windows, macOS, Linux</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
@@ -183,7 +156,6 @@
     <p>Une liseuse pour l'encre électronique : l'étagère en liste, des pages qui se tournent d'un toucher, pas de défilement, rien d'autre à l'écran. EPUB, MOBI, FB2 et texte, ouverts depuis l'app, un gestionnaire de fichiers ou un partage. La même étagère et les mêmes pages sur l'ordinateur.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.readersbooks">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersbooks%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-books%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Books%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBooks-v1.24.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-books-desktop/releases/latest">Windows, macOS, Linux</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
@@ -199,7 +171,6 @@
     <p class="meta"><span>v1.5.0</span><span>MIT</span><code>com.freedomfighter.readersbookshop</code></p>
     <p>Trouve des livres numériques gratuits et les télécharge pour Reader's Books ou n'importe quelle liseuse. Une recherche interroge Project Gutenberg, Standard Ebooks, Wikisource, la Bibliothèque numérique romande, Ebooks libres et gratuits, textos.info et l'Internet Archive. Dit si l'œuvre est dans le domaine public quand les dates de l'auteur sont connues. Anna's Archive reste éteint tant que vous ne l'activez pas.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersbookshop%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-bookshop%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Bookshop%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersBookshop-v1.5.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-bookshop">Code source</a>
     </div>
@@ -213,7 +184,6 @@
     <p class="meta"><span>v1.16.0</span><span>MIT</span><code>com.freedomfighter.readersrecorder</code></p>
     <p>Un toucher enregistre un mémo, une conférence ou une conversation. Le téléphone transcrit lui-même (whisper.cpp), égalise le volume d'une copie d'écoute et peut écrire les points principaux (beta) : rien ne le quitte. Export facultatif vers votre propre dossier WebDAV.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersrecorder%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-recorder%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Recorder%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersRecorder-v1.16.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-recorder">Code source</a>
     </div>
@@ -227,7 +197,6 @@
     <p>Un lecteur de podcasts tout en texte : chaînes, épisodes, favoris, téléchargés — pas de vignettes, pas de boutique, pas de recommandations. Import et export OPML ; un jumeau de bureau lit les mêmes listes. Un épisode se transcrit et se traduit sur le téléphone, et se lit pendant l'écoute : un appui sur une ligne y envoie le son.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.readerspodcasts">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readerspodcasts%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-podcasts%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Podcasts%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersPodcasts-v1.16.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-podcasts-desktop/releases/latest">Linux (.deb, PKGBUILD)</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
@@ -243,7 +212,6 @@
     <p class="meta"><span>v1.11.0</span><span>MIT</span><code>com.freedomfighter.readersaudio</code></p>
     <p>Un lecteur audio en noir et blanc dont le seul ajout est la transcription sur le téléphone : langue et qualité choisies à chaque fois, le texte enregistré en .txt que toute liseuse ouvre et, à la demande, les points principaux (beta) écrits en tête. La transcription se traduit aussi sur le téléphone. Partagez le son ou la transcription.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersaudio%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-audio%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Audio%20Player%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersAudio-v1.11.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-audio">Code source</a>
     </div>
@@ -258,7 +226,6 @@
     <p>Un bol qui sonne quand vous en avez besoin : un coup toutes les quelques minutes jusqu'à ce que vous l'arrêtiez, une assise d'une durée fixée close par trois bols, ou un ou trois bols à heures fixes chaque jour. Cinq bols ou votre propre enregistrement. Il sonne à l'heure, même en veille profonde.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.readersmindful">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersmindful%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-mindful%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Mindful%20Tool%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersMindful-v1.3.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-mindful">Code source</a>
     </div>
@@ -272,7 +239,6 @@
     <p class="meta"><span>v1.6.1</span><span>MIT</span><code>com.freedomfighter.readersfoodlog</code></p>
     <p>Un journal alimentaire fait de photos, rien d'autre. Un toucher — widget, tuile des réglages rapides ou grand bouton — prend la photo, étiquetée petit-déjeuner, déjeuner, dîner ou collation d'après l'heure. Un dossier par jour, l'activité en un toucher, votre poids et sa courbe. Ni calories, ni saisie, ni permission réseau.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersfoodlog%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-foodlog%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Food%20Log%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersFoodLog-v1.6.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-foodlog">Code source</a>
     </div>
@@ -286,7 +252,6 @@
     <p>Un scanner de documents : la page est trouvée, redressée et nettoyée, une prise floue est signalée aussitôt, et le texte est lu sur le téléphone en sept langues. Chaque document devient un PDF cherchable, daté et nommé par vous, dans de grands dossiers simples, partagé en PDF, images ou texte, copié dans votre dossier WebDAV si vous le voulez. Au premier démarrage, vous choisissez le moteur : Google ML Kit (le plus sûr ; code fermé, services Google Play nécessaires, statistiques d'utilisation envoyées à Google, jamais vos documents) ou les moteurs libres (son propre détecteur de page et Tesseract). Sur l'ordinateur — Windows, macOS, Linux — un bouton pour un vrai scanner : trouvé tout seul, chargeur ou vitre, recto verso, les mêmes dossiers que le téléphone. Les scanners anciens ont besoin de <a href="https://www.naps2.com/download">NAPS2</a>.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.readersscanner">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersscanner%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-scanner%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Scanner%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersScanner-v1.5.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-scanner-desktop/releases/latest">Windows, macOS, Linux</a>
       <a class="btn" href="https://funkypitt.github.io/apt-repo/">apt</a>
@@ -302,7 +267,6 @@
     <p class="meta"><span>v1.5.0</span><span>GPL-3.0</span><code>com.freedomfighter.readersfeeds</code></p>
     <p>Un lecteur RSS et Atom pour l'encre électronique : les articles se lisent en pages propres tirées du web, sans défilement. Import et export OPML, Substacks payants.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersfeeds%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-feeds%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Feeds%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersFeeds-v1.5.0-arm64.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-feeds">Code source</a>
     </div>
@@ -316,7 +280,6 @@
     <p class="meta"><span>v1.10.0</span><span>GPL-3.0</span><code>com.parentcontrol.socialblocker.detox</code></p>
     <p>Anciennement Social Detox. Bloque YouTube, Instagram, TikTok, Reddit, X et Substack par un VPN local qui refuse leurs requêtes DNS : pas de proxy, pas de certificat, rien ne quitte le téléphone. Ouvert aux heures que vous permettez ; pendant le blocage, sites et heures sont verrouillés, et cinq problèmes de maths peuvent vous séparer de l'arrêt. Ou un budget quotidien : un nombre de minutes par jour dans les apps des sites choisis, puis bloqués jusqu'à minuit. Une friction choisie, pas un contrôle parental.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.parentcontrol.socialblocker.detox%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2FSocialBlocker-Detox%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Detox%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/SocialDetox-v1.10.0-detox.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/SocialBlocker-Detox">Code source</a>
     </div>
@@ -330,7 +293,6 @@
     <p class="meta"><span>v1.0.0</span><span>GPL-3.0</span><code>com.freedomfighter.readersfiles</code></p>
     <p>Un gestionnaire de fichiers qui s'ouvre sur une page de mots : Téléchargements, Vidéos, Images, Audio, Documents, Applications, Archives, puis le stockage du téléphone et sa racine, avec la place restante. Les ZIP se parcourent sur place ; les 7z, rar, tar et leurs formes compressées se décompressent à côté de l'archive. Visionneuses intégrées pour les images, la vidéo, l'audio, le PDF et le texte. Version modifiée de <a href="https://github.com/Raival-e/Prism-File-Explorer">Prism File Explorer</a> (GPL-3.0). Aucune autorisation réseau.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersfiles%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-files%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Files%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersFiles-v1.0.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-files">Code source</a>
     </div>
@@ -343,7 +305,6 @@
     <p class="meta"><span>v1.8.0</span><span>MIT</span><code>com.freedomfighter.readersphone</code></p>
     <p>Un téléphone en grands caractères : un appel sonne en plein écran avec deux grands boutons, les appels manqués restent en haut jusqu'à ce qu'on y réponde, les contacts lisent les favoris puis les récents puis tout le monde, un clavier aux grandes touches. On quitte l'appel pour une autre application et il reste sous les yeux. Il peut enregistrer un appel et le mettre par écrit sur le téléphone (whisper.cpp, modèle partagé) — prévenez votre interlocuteur.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersphone%22%2C%22url%22%3A%22https%3A%2F%2Ffunkypitt.github.io%2Ffdroid-repo%2Frepo%3FappId%3Dcom.freedomfighter.readersphone%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Phone%22%2C%22overrideSource%22%3A%22FDroidRepo%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersPhone-v1.8.0.apk">APK</a>
     </div>
     </div>
@@ -356,7 +317,6 @@
     <p>Un seul interrupteur rend l'écran gris, aussi chaud que le téléphone le permet, et sombre, puis remet tout comme avant. Il se trouve dans les réglages rapides, dans un widget et dans l'application. Il demande une autorisation donnée une seule fois depuis un ordinateur, par une commande affichée dans l'application ; pas de root. Android ne laisse pas une application retirer tout le bleu : la teinte s'arrête au réglage le plus chaud du téléphone. Sans l'étape sur l'ordinateur, il pose quand même un voile chaud et assombri sur les applications, et explique pourquoi la commande et ses niveaux de gris comptent. Il peut s'activer tout seul à une heure ou au coucher du soleil et se désactiver le matin.</p>
     <p>Sur l'ordinateur et dans le navigateur, où une application peut retirer tout le bleu&nbsp;: gris et ambre à la luminosité choisie, sur GNOME, KDE Plasma, Windows, macOS (ces deux-là en avant-première) et dans Chrome et Brave. Détails sous <a href="#desktop">Sur l'ordinateur</a>.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersnight%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-night%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Night%20Filter%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersNight-v1.5.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-night-desktop/releases/latest">Linux, navigateur (Windows et macOS en avant-première)</a>
       <a class="btn" href="https://github.com/funkypitt/readers-night">Code source</a>
@@ -369,7 +329,6 @@
     <p class="meta"><span>Android v1.4.0</span><span>MIT</span><code>com.freedomfighter.readersattention</code></p>
     <p>Non pas le temps d'écran, mais l'usage sans but&nbsp;: les applications ouvertes par réflexe (réseaux sociaux, jeux, vidéo courte), comptées chaque jour en mots — combien d'ouvertures et pour combien de temps, ce qui est venu en premier après le déverrouillage, la plus longue séquence, le soir, les coups d'œil de moins d'une minute. Un toucher déplace n'importe quelle application entre «&nbsp;réflexe&nbsp;» et «&nbsp;outils&nbsp;». Désactivé tant qu'on ne l'allume pas, et jamais bloquant&nbsp;: une pause avant une application réflexe demande «&nbsp;pour quoi faire&nbsp;?&nbsp;» et attend quelques secondes (plus le soir, ou avec la raison à taper), puis laisse l'application tranquille dix minutes&nbsp;; un mot d'une ligne après quinze minutes. Le relevé d'utilisation d'Android lui-même, lu avec l'autorisation «&nbsp;accès aux données d'utilisation&nbsp;»&nbsp;; aucune permission réseau, rien ne quitte le téléphone. Les notifications peuvent être remises ensemble à trois heures du jour que vous choisissez, avec une tuile dans les réglages rapides&nbsp;; une pause respiration (cinq respirations guidées par un anneau) avant une application réflexe&nbsp;; le niveau de pause se règle pour une seule application.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersattention%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-attention%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Attention%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersAttention-v1.4.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-attention">Code source</a>
     </div>
@@ -381,7 +340,6 @@
     <p class="meta"><span>Android v1.2.0</span><span>MIT</span><code>com.freedomfighter.readersmotivation</code></p>
     <p>Compter les jours, et les envies surmontées. Pour quelque chose à arrêter (le sucre, la cigarette, l'alcool, les écrans le soir) ou à faire chaque jour. Une page par habitude&nbsp;: le jour en grand, les envies surmontées, ce qu'on a évité en unités et en argent, la prochaine étape («&nbsp;jour 2 sur une semaine&nbsp;», puis «&nbsp;encore 5 jours avant 66 jours&nbsp;»), sa propre raison, les dernières semaines en carrés. Un écart coûte un jour et rien d'autre&nbsp;: les totaux ne baissent jamais, le titre ce jour-là est ce qui reste acquis («&nbsp;19 jours tenus&nbsp;»), et l'app redonne votre plan. «&nbsp;Une envie, maintenant&nbsp;»&nbsp;: trois minutes avec un anneau de respiration, votre raison et votre plan, puis «&nbsp;elle a passé&nbsp;» ou «&nbsp;j'ai craqué&nbsp;». Un plan décidé à l'avance, une date de début qui marque un nouveau départ, une ligne pour dire à quelqu'un où on en est. Un widget avec un ✓ qui compte une envie surmontée, un rappel quotidien qu'on allume soi-même, une sauvegarde. Chaque choix vient de la recherche publiée sur les habitudes et les écarts (la revue est dans le dépôt). Texte seul, blanc sur noir, six langues, aucune permission réseau.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.readersmotivation%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Freaders-motivation%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Reader%27s%20Motivation%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/ReadersMotivation-v1.2.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/readers-motivation">Code source</a>
     </div>
@@ -390,10 +348,10 @@
 
 </section>
 
-<!-- ==================== Also in the installer ==================== -->
+<!-- ==================== Reading, writing, playing ==================== -->
 <section class="platform" id="also">
-  <h2>Aussi dans l'installateur</h2>
-  <p class="lede">Quatre applications hors de la série Reader's, elles aussi dans la liste de l'installateur.</p>
+  <h2>Lire, écrire, jouer</h2>
+  <p class="lede">Cinq applications hors de la série Reader's.</p>
 
   <article class="app" id="epub-eink-newsreader">
     <div class="text">
@@ -401,7 +359,6 @@
     <p class="meta"><span>v0.3.0</span><span>GPL-3.0</span><code>com.freedomfighter.magazinereader</code></p>
     <p>Lit les quotidiens et les magazines que les recettes de Calibre livrent en ePub (NZZ, The Economist, Courrier International…) : le sommaire paginé, chaque article sur une page.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.magazinereader%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fepub-eink-newsreader%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22ePub%20Magazine%20reader%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/MagazineReader-v0.3.0-magazine.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/epub-eink-newsreader">Code source</a>
     </div>
@@ -415,7 +372,6 @@
     <p>Le Littré complet hors ligne : 78 599 entrées avec étymologie, citations et prononciation. Un mot du jour en widget. Ni connexion ni compte.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=ch.littre.littre_app">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22ch.littre.littre_app%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Flittre-app%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22%5C%22Le%20dictionnaire%20Littr%5C%5CxE9%5C%22%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/Littre-v1.2.0-arm64.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/littre-app">Code source</a>
     </div>
@@ -428,10 +384,9 @@
     <h2>Clavier Plume</h2>
     <p class="meta"><span>v2.1.3</span><span>FUTO Source First 1.1</span><code>ch.plume.clavier</code></p>
     <p>Un clavier français et anglais sans permission Internet, construit sur FUTO Keyboard. Son dictionnaire français comprend les élisions (l'ordinateur, qu'elle), les inversions (a-t-il) et la typographie, et reconnaît les mots rares sans vous les imposer. Les corrections viennent du dictionnaire seul — pas de modèle de langue. Dictée vocale hors ligne.</p>
-    <p>Trop volumineux pour le dépôt F-Droid&nbsp;: l'<a href="#get">installateur</a> et <a href="https://obtainium.imranr.dev/">Obtainium</a> suivent ses publications GitHub.</p>
+    <p>Trop volumineux pour le dépôt F-Droid&nbsp;: l'APK est sur sa page de publications GitHub, où paraît chaque nouvelle version.</p>
     <div class="links">
-      <a class="btn primary" href="obtainium://app/%7B%22id%22%3A%22ch.plume.clavier%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fclavier-plume%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Clavier%20Plume%22%7D">Obtainium</a>
-      <a class="btn" href="https://github.com/funkypitt/clavier-plume/releases/latest">APK</a>
+      <a class="btn primary" href="https://github.com/funkypitt/clavier-plume/releases/latest">APK</a>
       <a class="btn" href="https://github.com/funkypitt/clavier-plume">Code source</a>
     </div>
     </div>
@@ -444,12 +399,24 @@
     <p>16 jeux tactiles pour deux sur un même téléphone, l'écran partagé en deux moitiés&nbsp;: 4 in a Row, Caro, Awalé, Memory, Duck Chess, Tank Wars, Word Clash, Reversi, Tennis, Pool, Carrom, Air Hockey, Mini Golf, Star Clash, Hangman, Horse Jump. Les règles sont derrière un ? dans chaque jeu. Aucune connexion nécessaire, aucune autorisation demandée. Sans pub, sans compte, sans achat.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.local2p.games">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.local2p.games%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Flocal-2p-games%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Funky%27s%202P%20Games%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/2P-Games-v1.48.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/local-2p-games">Code source</a>
     </div>
     </div>
     <p class="shots"><img src="img/com.local2p.games-1.png" alt="" loading="lazy"><img src="img/com.local2p.games-2.png" alt="" loading="lazy"></p>
+  </article>
+  <article class="app" id="devine-moi">
+    <div class="text">
+    <h2>Devine-moi</h2>
+    <p class="meta"><span>v1.1.0</span><span>MIT</span><code>com.freedomfighter.devinemoi</code></p>
+    <p>Deux jeux de lettres en français, nouveaux chaque jour à minuit, les mêmes pour tout le monde. Le mot du jour&nbsp;: un mot de cinq lettres à trouver en six essais, avec un entraînement illimité en 5, 6 ou 7 lettres. Le mot brouillé&nbsp;: des lettres à remettre dans l'ordre, de quatre à huit lettres, une de plus à chaque mot trouvé, puis un mot bonus de neuf lettres. Clavier AZERTY, QWERTZ ou QWERTY. Sans pub, sans compte, sans connexion, sans autorisation.</p>
+    <div class="links">
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.devinemoi">Google Play</a>
+      <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/Devine-moi-v1.1.0.apk">APK</a>
+      <a class="btn" href="https://github.com/funkypitt/devine-moi">Code source</a>
+    </div>
+    </div>
+    <p class="shots"><img src="img/com.freedomfighter.devinemoi-1.png" alt="" loading="lazy"><img src="img/com.freedomfighter.devinemoi-2.png" alt="" loading="lazy"></p>
   </article>
 
 </section>
@@ -458,7 +425,7 @@
 <a id="others"></a>
 <section class="platform" id="meditation">
   <h2>Méditation et respiration</h2>
-  <p class="lede">Quatre applications Android qui font chacune une seule chose. Les trois Retreat tiennent l'horaire d'une retraite et rien ne les interrompt&nbsp;: ni la veille profonde, ni le mode avion, ni un autre son. Elles ne sont pas dans la liste de l'installateur&nbsp;: prenez-les dans le <a href="#fdroid">dépôt F-Droid</a>, par Obtainium ou par l'APK.</p>
+  <p class="lede">Quatre applications Android qui font chacune une seule chose. Les trois Retreat tiennent l'horaire d'une retraite et rien ne les interrompt&nbsp;: ni la veille profonde, ni le mode avion, ni un autre son.</p>
 
   <article class="app" id="retreat-timer">
     <div class="text">
@@ -467,7 +434,6 @@
     <p>Des bols chantants aux heures que vous choisissez — le signal du début ou de la fin d'une assise — pour qu'une retraite tienne son horaire sans que personne ne surveille la montre. Ils sonnent quoi qu'il arrive, même en veille profonde. Cinq bols ou votre propre enregistrement.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.retreattimer">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.retreattimer%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fretreat-timer%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Retreat%20Timer%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/RetreatTimer-v1.14.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/retreat-timer">Code source</a>
     </div>
@@ -482,7 +448,6 @@
     <p>Lit les causeries, cloches et chants pendant une retraite, et rien ne l'interrompt une fois lancé — ni la veille profonde, ni le mode avion.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.retreatplayer">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.retreatplayer%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fretreat-player%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Retreat%20Player%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/RetreatPlayer-v1.6.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/retreat-player">Code source</a>
     </div>
@@ -495,7 +460,6 @@
     <p class="meta"><span>v1.1.0</span><span>MIT</span><code>com.freedomfighter.retreatwalk</code></p>
     <p>Un bol toutes les dix minutes — ou l'intervalle de votre choix — jusqu'à ce que vous l'arrêtiez. Pour changer de partenaire dans un exercice à deux, ou comme rappel pour rester éveillé. Un nombre, un bouton.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.retreatwalk%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fretreat-walk%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Retreat%20Walk%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/RetreatWalk-v1.1.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/retreat-walk">Code source</a>
     </div>
@@ -510,7 +474,6 @@
     <p>Choisissez une forme et suivez le point autour d'elle pendant quatre minutes&nbsp;: carré (4-4-4-4), triangle (4-4-4), 4-7-8, pétale (3-3-6) ou cercle (cohérence cardiaque, 5-5). Aucun réglage, aucune série à tenir, aucun compte, aucun pistage&nbsp;; la séance se termine sur une respiration complète. Consignes en français et en anglais ensemble. Anciennement Box Breathing 4min.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.boxbreathing">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.boxbreathing%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fbox-breathing%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%224%20Minutes%20Breathing%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/box-breathing-v2.2.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/box-breathing">Code source</a>
     </div>
@@ -521,7 +484,7 @@
 <!-- ==================== More Android apps ==================== -->
 <section class="platform" id="android">
   <h2>D'autres applications Android</h2>
-  <p class="lede">De petits utilitaires et un jeu, hors de la liste de l'installateur&nbsp;: par le <a href="#fdroid">dépôt F-Droid</a>, Obtainium ou l'APK.</p>
+  <p class="lede">De petits utilitaires et un jeu.</p>
 
   <article class="app" id="rappels-geants">
     <div class="text">
@@ -529,7 +492,6 @@
     <p class="meta"><span>v0.1.0</span><span>MIT</span><code>com.freedomfighter.rappelsgeants</code></p>
     <p>Des rappels impossibles à rater, pensés pour les personnes qui ont un TDAH. À l'heure dite, le rappel couvre tout l'écran en très gros et en couleur et sonne comme un réveil, téléphone verrouillé ou non, puis revient toutes les 5&nbsp;minutes jusqu'à ce qu'on touche «&nbsp;C'est fait&nbsp;» (ou «&nbsp;plus tard&nbsp;»&nbsp;: 5&nbsp;min, 15&nbsp;min, 1&nbsp;h). Répétitions simples. Rappels familiaux&nbsp;: la famille partage un agenda Google, et tout ce qu'il contient sonne sur chaque téléphone où l'app est installée&nbsp;; chacun répond pour soi. N'importe quel événement de n'importe quel agenda du téléphone (Google, CalDAV…) peut recevoir son rappel personnel. La configuration montre chaque réglage d'Android avant qu'on le voie et revient d'elle-même dès qu'il est activé. Français et anglais. Pas de compte, pas de serveur.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.rappelsgeants%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Frappels-geants%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Rappels%20g%C3%A9ants%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/RappelsGeants-v0.1.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/rappels-geants">Source</a>
     </div>
@@ -544,7 +506,6 @@
     <p>Une carte pour le vélo, la marche et les transports publics en Suisse, dans l'esprit des anciens GPS&nbsp;: un seul écran, de gros boutons, les chemins de randonnée, itinéraires cyclables et lignes de transports publics officiels dans leurs couleurs de balisage sur la carte swisstopo. Itinéraires calculés sur le téléphone par autant d'étapes qu'on veut, guidage à grande flèche qui continue écran éteint, profil d'altitude, traces GPX, favoris, carte de nuit, toute la Suisse hors ligne en un bouton. Transports publics&nbsp;: les prochains trajets vers l'arrêt choisi, dessinés étape par étape, puis un guidage en grosses lettres (marcher, prendre, descendre, changer), temps réel en ligne et horaire hors ligne de toute la Suisse en option. Ce qu'il y a autour de vous, hors ligne&nbsp;: eau potable, abris, cabanes, places de feu, magasins de vélos, boulangeries, magasins de ferme, restaurants, campings… d'OpenStreetMap. Six langues. Pas de compte, pas de pistage.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.swissbikehike">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.swissbikehike%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fswiss-bike-hike-map%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Swiss%20Bikers%20and%20Pedestrians%20Map%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/SwissBikersPedestriansMap-v0.21.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/swiss-bike-hike-map">Source</a>
     </div>
@@ -558,7 +519,6 @@
     <p class="meta"><span>v1.0.0</span><span>GPL-3.0</span><code>com.freedomfighter.mp4remixer</code></p>
     <p>Rend des vidéos carrées, ou les ramène en 1080p ou 720p, ou les deux. Choisissez-les dans la galerie ou partagez-les vers l'application&nbsp;; pour le carré, glissez un cadre sur chaque vidéo pour choisir ce qu'elle garde. Les nouveaux fichiers vont dans Movies/MP4 Remixer, les originaux restent intacts&nbsp;; un lot continue quand on quitte l'application. Aucune permission réseau. Android 10 ou plus récent.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.mp4remixer%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fmp4-remixer%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22MP4%20Remixer%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/MP4-Remixer-v1.0.0.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/mp4-remixer">Code source</a>
     </div>
@@ -571,7 +531,6 @@
     <p class="meta"><span>v1.0.2</span><span>GPL-3.0</span><code>app.mp4tomp3</code></p>
     <p>Choisissez des vidéos, ou partagez-les vers l'application&nbsp;: chacune devient un MP3 à 320 kbit/s dans Téléchargements, prêt à partager. Un seul écran, des lots entiers, et ça continue en arrière-plan. Tous les formats que le téléphone sait lire. Aucune permission réseau.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22app.mp4tomp3%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Fmp4-to-mp3%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22MP4%20to%20MP3%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/MP4-to-MP3-v1.0.2.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/mp4-to-mp3">Code source</a>
     </div>
@@ -586,7 +545,6 @@
     <p>Un minuteur d'espresso pour la machine 9Barista, trois touchers par café&nbsp;: quand elle va sur le feu, quand le café apparaît, quand c'est fini. Le temps de chauffe, puis l'extraction avec la zone 25–30 s marquée, puis le conseil de mouture. Rien n'est enregistré&nbsp;; la seule permission est la vibration.</p>
     <div class="links">
       <a class="btn" href="https://play.google.com/store/apps/details?id=com.freedomfighter.baristatimer">Google Play</a>
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.baristatimer%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2F9barista-timer%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Timer%20for%209Barista%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/TimerFor9Barista-v1.3.2.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/9barista-timer">Code source</a>
     </div>
@@ -600,7 +558,6 @@
     <p class="meta"><span>v1.1.1</span><span>MIT</span><code>com.freedomfighter.tankwars</code></p>
     <p>Le jeu d'artillerie DOS Tank Wars 3.2 (1992) de Kenneth Morse, refait pour l'écran tactile&nbsp;: angle, puissance, vent, aucun aperçu de trajectoire&nbsp;; 16 armes, 3 défenses, terrain destructible. À deux sur un téléphone, ou en ligne avec un code de salle. Sans pub, sans achat. Aussi l'un des 16 jeux de <a href="#local-2p-games">Funky's 2P Games</a>.</p>
     <div class="links">
-      <a class="btn" href="obtainium://app/%7B%22id%22%3A%22com.freedomfighter.tankwars%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Ffunkypitt%2Ftankwars-mobile%22%2C%22author%22%3A%22funkypitt%22%2C%22name%22%3A%22Tank%20Wars%20Mobile%22%7D">Obtainium</a>
       <a class="btn" href="https://funkypitt.github.io/fdroid-repo/repo/TankWars-v1.1.1.apk">APK</a>
       <a class="btn" href="https://github.com/funkypitt/tankwars-mobile">Code source</a>
     </div>
@@ -612,7 +569,7 @@
 <!-- ==================== Desktop ==================== -->
 <section class="platform" id="desktop">
   <h2>Sur l'ordinateur</h2>
-  <p class="lede">Reader's Calendar, Tasks, Notes et Scanner existent aussi pour Windows, macOS et Linux, Reader's Podcasts pour Linux, et Reader's Night Filter pour l'ordinateur et le navigateur. Le bouton de téléchargement est sur la fiche de chaque application, plus haut&nbsp;; dans l'installateur, la page de l'application mène à sa version pour l'ordinateur.</p>
+  <p class="lede">Reader's Calendar, Tasks, Notes et Scanner existent aussi pour Windows, macOS et Linux, Reader's Podcasts pour Linux, et Reader's Night Filter pour l'ordinateur et le navigateur. Le bouton de téléchargement est sur la fiche de chaque application, plus haut.</p>
 
   <article class="app" id="readers-video-editor">
     <div class="text">
