@@ -5,7 +5,9 @@ Sources de vérité :
   - le dépôt F-Droid personnel (https://funkypitt.github.io/fdroid-repo/repo/index-v1.json) pour les
     applications Android, identifiées par le <code>paquet</code> de leur bloc ;
   - la dernière release GitHub pour les applications distribuées par release (Clavier Plume, versions Linux).
-Ne touche qu'aux versions et aux noms de fichiers APK ; le texte reste tel quel.
+  - la boutique Google Play : une application dont la fiche publique existe reçoit un bouton
+    « Google Play » en tête de ses liens (ajouté une fois, jamais retiré par ce script).
+Ne touche qu'aux versions, aux noms de fichiers APK et à ce bouton ; le texte reste tel quel.
 """
 import json, os, re, sys, urllib.request
 
@@ -39,6 +41,22 @@ def latest_release(repo, cache={}):
     return cache[repo]
 
 
+PLAY = "https://play.google.com/store/apps/details?id="
+LINKS = re.compile(r'(<div class="links">\n)(\s*)')
+
+
+def on_play(pkg, cache={}):
+    """La fiche publique de la boutique existe-t-elle ? (200 : oui ; 404 ou panne : non, on réessaiera demain)"""
+    if pkg not in cache:
+        try:
+            req = urllib.request.Request(PLAY + pkg + "&hl=en", headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                cache[pkg] = r.status == 200
+        except Exception:
+            cache[pkg] = False
+    return cache[pkg]
+
+
 def display(version_name):
     return version_name.split("-")[0]          # « 0.2.24-magazine » s'affiche « 0.2.24 »
 
@@ -58,6 +76,8 @@ def update_block(block, fdroid):
         else:
             new_meta = re.sub(r"\bv\d[\w.]*", f"v{shown}", new_meta, count=1)
         new_block = APK_HREF.sub(lambda mm: mm.group(1) + apk, new_block)
+    if pkg and PLAY + pkg.group(1) not in new_block and on_play(pkg.group(1)):
+        new_block = LINKS.sub(lambda mm: f'{mm.group(1)}{mm.group(2)}<a class="btn" href="{PLAY}{pkg.group(1)}">Google Play</a>\n{mm.group(2)}', new_block, count=1)
     for repo in RELEASE_LINK.findall(block):
         tag = latest_release(repo)
         if not tag:
